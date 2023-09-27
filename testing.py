@@ -148,8 +148,29 @@ def alvino_xy(u):
         for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.005)
 def RIFATj(u):
         for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.01)
+def clear():
+	os.system('clear')
+def back():
+	login()
+	
+	import getpass
+ 
+attemps = 0
+ 
+while attemps < 12345677901:
+    username = input(' \033[0;92mEnter Username: ')
+    password = input(' \033[0;93mEnter Password: ')
+ 
+    if username == 't' and password == 'r':
+        print(' \033[0;92mYou Have Successfully Logged in.')
+        break
+    else:
+        print(' Incorrect Pass Please Trying ')
+        attemps += 1
+        continue
+os.system('clear')
 
-	 # CLEAR
+ # CLEAR
 def clear():
 	os.system('clear')
 # BACK
@@ -171,22 +192,6 @@ def chk():
       #os.system('xdg-open https://wa.me/+2349055012862')
       time.sleep(1) 
       sys.exit() 
-	import getpass
- 
-attemps = 0
- 
-while attemps < 12345677901:
-    username = input(' \033[0;92mEnter Username: ')
-    password = input(' \033[0;93mEnter Password: ')
- 
-    if username == 't' and password == 'r':
-        print(' \033[0;92mYou Have Successfully Logged in.')
-        break
-    else:
-        print(' Incorrect Pass Please Trying ')
-        attemps += 1
-        continue
-os.system('clear')
 #------------------[ MAIN ]-----------------#
 
 def banner():
