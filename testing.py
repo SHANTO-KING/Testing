@@ -170,9 +170,6 @@ while attemps < 12345677901:
         continue
 os.system('clear')
 
- # CLEAR
-def clear():
-	os.system('clear')
 # BACK
 def back():
 	login()
