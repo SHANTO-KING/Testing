@@ -169,20 +169,22 @@ while attemps < 12345677901:
         continue
 os.system('clear')
 #-------------logo-----------------#
-logo=(f'''{B}
-`7MM"""Mq. `7MMF' `7MN.   `7MF'  .g8"""bgd
-{warna}  MM   `MM.  MM     MMN.    M  .dP'     `M
-{B}  MM   ,M9   MM     M YMb   M  dM'       `
-{warna}  MMmmdM9    MM     M  `MN. M  MM
- {B} MM         MM     M   `MM.M  MM.    `7MMF'
-{warna}  MM         MM     M     YMM  `Mb.     MM
-{B}.JMML.     .JMML. .JML.    YM    `"bmmmdPY
-{warna}--------------------------------------------{B}
- Owner    : {C}MR.DIPTO{B}
- Guthub   : MR-DIPTO-404
- Facebook : ADRIAN DIPTO
- Tools    : F{C}/{B}R{C}/{B}G{M} •{warna}[{H}TRAIL{warna}]{warna}
---------------------------------------------{B}''')
+logo = """\033[1;97m
+██   ██  █████   ██████  ███    ███  █████  ██
+██   ██ ██   ██ ██    ██ ████  ████ ██   ██ ██
+███████ ███████ ██    ██ ██ ████ ██ ███████ ██
+██   ██ ██   ██ ██ ▄▄ ██ ██  ██  ██ ██   ██ ██
+██   ██ ██   ██  ██████  ██      ██ ██   ██ ███████
+                    ▀▀
+----------------------------------------------
+:AUTHER   : RAEES HAQMAL
+:Facebook : RAEES HAQMAL
+:Tool Name: RANDOM AND FILE
+:FRIEND   : WAHID WL
+Tools Type: Free
+--------------------------------------------
+ VERSION : 1.5
+--------------------------------------------"""
 def login():
 	banner()
 	SHANTOj('\033[1;96m[1] File Cloning\n\x1b[1;92m[2] Contact With Admin\n\033[0;97m[0] \033[0;91mEXIT ')
