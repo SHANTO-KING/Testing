@@ -1,5 +1,5 @@
-#MAKED-BY-MD SHANTO REZA
-#GITHUB-R4G3-F14M3
+#MAKED-BY-RJ-SHANTO
+#GITHUB-SHANTO-KING
 #ACTIVE FILE CLONING
 #ONLY ACTIVE ACCOUNT FOR GAME ACCOUNT USE FILE 10000 
 #DEC-FUCK-YOUR-MOM-DON'T-BYPASS-MY-COMMAND
@@ -31,7 +31,8 @@ CON=sol()
 ua = '[FBAN/FB4A;FBAV/396.1.0.28.104;FBBV/429650999;FBDM/{density=2.25,width=720,height=1452};FBLC/en_US;FBRV/437165341;FBCR/AIRTEL;FBMF/INFINIX MOBILE LIMITED;FBBD/INFINIX;FBPN/com.facebook.katana;FBDV/INFINIX X676C;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]'
 ua = '[FBAN/FB4A;FBAV/433.0.0.31.111;FBBV/445612523;FBDM/{density=2.25,width=720,height=1452};FBLC/en_US;FBRV/445612523;FBCR/AIRTEL;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-A720F;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]'
 ua = '[FBAN/Orca-Android;FBAV/396.1.0.28.104;FBPN/com.facebook.orca;FBLC/pl_PL;FBBV/429650999;FBCR/PLAY (T-Mobile);FBMF/Xiaomi;FBBD/xiaomi;FBDV/Redmi Note 8T;FBSV/9;FBCA/arm64-v8a:null;FBDM/{density=2.75,width=1080,height=2130};FB_FW/1;] FBBK/1'
-ua = '[FBAN/FB4A;FBAV/396.1.0.28.104;FBBV/429650999;FBDM/{density=2.25,width=720,height=1452};FBLC/en_US;FBRV/437165341;FBCR/AIRTEL;FBMF/INFINIX MOBILE LIMITED;FBBD/INFINIX;FBPN/com.facebook.katana;FBDV/INFINIX X676C;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]'
+##ua = ["Mozilla/5.0 (Linux; Android 13; 21081111RG Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/423.0.0.21.64]",]
+##ua = ["Mozilla/5.0 (Linux; Android 11; SM-S205DL Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/433.0.0.31.111;]",]
 ugen2=[]
 ugen=[]
 cokbrut=[]
@@ -160,7 +161,7 @@ while attemps < 12345677901:
     username = input(' \033[0;92mEnter Username: ')
     password = input(' \033[0;93mEnter Password: ')
  
-    if username == 'R' and password == 'J':
+    if username == 'r' and password == 'j':
         print(' \033[0;92mYou Have Successfully Logged in.')
         break
     else:
@@ -168,24 +169,26 @@ while attemps < 12345677901:
         attemps += 1
         continue
 os.system('clear')
-#-------------logo-----------------#
-logo =("""          \033[1;96m____ \033[1;92m                       \033[1;96m____          
+#------------------[ MAIN ]-----------------#
 
-
-   ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
-   ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
-   ░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█
-                                            \033
-┏───────────────────────────────────────────────┓
-  [+]   𝘈𝘜𝘛𝘏𝘖𝘙     : 𝘿𝙍𝘼𝙂𝙊𝙉 𝙇𝙊𝙍𝘿                        [+]   𝘛𝘠𝘗𝘌       : 𝙁𝙍𝙀𝙀🔥
-  [+]   𝘎𝘐𝘛𝘏𝘜𝘉     : 𝘿𝙧𝙖𝙜𝙤𝙣-𝙇𝙤𝙧𝙙-404                    [+]   𝘛𝘖𝘖𝘓       : 𝙁𝙄𝙇𝙀-𝘾𝙇𝙊𝙉𝙄𝙉𝙂
-  [+]   𝘝𝘌𝘙𝘚𝘐𝘖𝘕    : 4.9.0
-┗───────────────────────────────────────────────┛\033[1;96m""")
+def banner():
+	os.system("clear")
+	print (f"""
+\033[0;92mâ•”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â•—
+    ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
+    ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
+    ░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█
+\033[0;92mâ•šâ”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â•   \033[0;92m               
+  \033[0;92mâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+\033[0;92m â€¢ MD SHANTO REZA(ðŸ¥°)
+\033[0;92m â€¢ FILE CLONING ACTIVE FIRE (ðŸ”¥)
+\033[0;92m â€¢ VERSION CODE [ 1 ] FIRE (ðŸ˜»)
+  \033[0;92mâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• \033[1;31m""")
 def login():
-	print('\033[1;96m[1] FILE CLONEING\n\x1b[1;92m[2] Contact With Admin\n\033[0;97m[0] \033[0;91mEXIT ')
-	print('\033[0;97m===============================================')
-	me= input('\x1b[1;92m[+] CHOOSE: ');time.sleep(0.01)
-	
+	banner()
+	SHANTOj('\033[1;96m[1] File Cloning\n\x1b[1;92m[2] Contact With Admin\n\033[0;97m[0] \033[0;91mEXIT ')
+	SHANTOj('\033[0;97m===============================================')
+	SHANTO= input('\x1b[1;92m[+] CHOOSE: ');time.sleep(0.01)
 	if SHANTO in ['m']:
 		public()
 	elif SHANTO in ['1']:
@@ -392,8 +395,8 @@ def setting():
 		for bacot in id:
 			xx = random.randint(0,len(id2))
 			id2.insert(xx,bacot)
-	print('\x1b[1;92m ACTIVE FILE\n\x1b[1;97m [1] METHOD RJ.. ')
-	os.system('espeak -a 300 " 1,  method,  RJ"')
+	print('\x1b[1;92m ACTIVE FILE\n\x1b[1;97m [1] METHOD FIRE.. ')
+	os.system('espeak -a 300 " 1,  method,  FIRE"')
 	hc = input(' CHOOSE: ')
 	if hc in ['1','01']:
 		method.append('mobile')
