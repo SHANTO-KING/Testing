@@ -183,9 +183,9 @@ logo =("""          \033[1;96m____ \033[1;92m                       \033[1;96m__
 ┗───────────────────────────────────────────────┛\033[1;96m""")
 def login():
 
-	SHANTOj('\033[1;96m[1] File Cloning\n\x1b[1;92m[2] Contact With Admin\n\033[0;97m[0] \033[0;91mEXIT ')
-	SHANTOj('\033[0;97m===============================================')
-	SHANTOj= input('\x1b[1;92m[+] CHOOSE: ');time.sleep(0.01)
+	print(f" \033[1;96m[1] File Cloning\n\x1b[1;92m[2] Contact With Admin\n\033[0;97m[0] \033[0;91mEXIT ')
+	print(f" \033[0;97m===============================================')
+	print(f" = input('\x1b[1;92m[+] CHOOSE: ');time.sleep(0.01)
 	if SHANTO in ['m']:
 		public()
 	elif SHANTO in ['1']:
