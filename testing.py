@@ -37,7 +37,6 @@ ua = 'Mozilla/5.0 (Linux; U; Android 10; vi-vn; Redmi K20 Pro Build/QKQ1.190716.
 ua = 'LightSpeed [FBAN/MessengerLiteForiOS;FBAV/390.0.0.20.104;FBBV/428146516;FBDV/iPhone13,1;FBMD/iPhone;FBSN/iOS;FBSV/16.1.2;FBSS/3;FBCR/;FBID/phone;FBLC/it;FBOP/0]'
 ua = 'Mozilla/5.0 (Linux; U; Android 13; zh-tw; 2206122SC Build/TKQ1.220829.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.118 Mobile Safari/537.36 XiaoMi/MiuiBrowser/17.8.70926 swan-mibrowser'
 ua = 'Mozilla/5.0 (Linux; U; Android 11; en-us; MI CC9 Pro Premium Edition Build/RKQ1.200826.002) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.116 Mobile Safari/537.36 XiaoMi/MiuiBrowser/12.13.2-gn'
-ua=random.choice(ugen)
 ugen2=[]
 ugen=[]
 cokbrut=[]
