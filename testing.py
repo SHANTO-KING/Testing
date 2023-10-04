@@ -28,11 +28,11 @@ from rich.text import Text as tekz
 pretty.install()
 CON=sol()
 #------------------[ USER-AGENT ]-------------------#
-ua = ["Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/FBIOS;FBDV/iPhone4,1;FBMD/iPhone;FBSN/iPhone OS;FBSV/9.3.5;FBSS/2;FBID/phone;FBLC/en_US;FBOP/5;FBCR/Djezzy]",]
-ua = ["Dalvik/2.1.0 (Android 9; L-03K Build/PKQ1.190522.001) [FBAN/FB4A;FBAV/979.2.9.20.981;FBPN/com.facebook.katana;FBLC/en_US;FBBV/687217741;FBCR/Glo Mobile;FBMF/samsung;FBBD/samsung;FBDV/SM-N986N;FBSV/11;FBCA/x86:armeabi-v7a;FBDM/{density=2.5,width=1080,height=2220};FB_FW/0;FBRV/0;]",]
-ua = ["Mozilla/5.0 (Linux; Android 11; CPH2269 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.138 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/425.0.0.22.49;]",]
-ua = ["Mozilla/5.0 (Linux; Android 13; 21081111RG Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/423.0.0.21.64]",]
-ua = ["Mozilla/5.0 (Linux; Android 11; SM-S205DL Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/433.0.0.31.111;]",]
+ua = ["FBAN/FB4A;FBAV/396.1.0.28.104;FBBV/429650999;FBDM/{density=2.25,width=720,height=1452};FBLC/en_US;FBRV/437165341;FBCR/AIRTEL;FBMF/INFINIX MOBILE LIMITED;FBBD/INFINIX;FBPN/com.facebook.katana;FBDV/INFINIX X676C;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]",]
+ua = ["FBAN/FB4A;FBAV/396.1.0.28.104;FBBV/429650999;FBDM/{density=2.25,width=720,height=1452};FBLC/en_US;FBRV/437165341;FBCR/AIRTEL;FBMF/XiaoMi;FBBD/MiuiBrowser;FBPN/com.facebook.katana;FBDV/Mi 11 LE;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]",]
+##ua = ["Mozilla/5.0 (Linux; Android 11; CPH2269 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.138 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/425.0.0.22.49;]",]
+##ua = ["Mozilla/5.0 (Linux; Android 13; 21081111RG Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/423.0.0.21.64]",]
+##ua = ["Mozilla/5.0 (Linux; Android 11; SM-S205DL Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/433.0.0.31.111;]",]
 ugen2=[]
 ugen=[]
 cokbrut=[]
