@@ -294,14 +294,6 @@ def rcrack1(uid,pwx,tl):
         loop+=1
         sys.stdout.write(f'\r\033[m[PARVEJ-KING💥] \033[1;92m%s\033[m |\033[m[\033[mOK:\033[1;92m%s\033[m] '%(loop,len(oks))),
         sys.stdout.flush()
-              try:
-                    uid=lo['uid']
-                except:
-                    uid=cid
-                    ckkx=lock_check(uid)
-                if ckkx=='LOCK':
-                    return
-                else:
     except:
         pass
 Main()
