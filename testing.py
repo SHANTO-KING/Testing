@@ -198,13 +198,6 @@ def dynamic(text):
         sys.stdout.flush();time.sleep(1)
 
 #User agents
-ua = ["Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; Xiaomi MI 4(MI 4W) Build/KTU84P) AppleWebKit/534.24 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.24 T5/2.0 baidubrowser/5.6.3.0 (Baidu; P1 4.4.4)",]
-ua = ["Mozilla/5.0 (Linux; U; Android 13; en-gb; Xiaomi 13 Ultra Build/TKQ1.221114.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.136 Mobile Safari/537.36 XiaoMi/MiuiBrowser/13.37.1-gn",]
-ua = ["Mozilla/5.0 (Linux; U; Android 13; fr-fr; TECNO CK6 Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.128 Mobile Safari/537.36 PHX/13.6",]
-ua = ["Mozilla/5.0 (Linux; U; Android 13; es-es; Redmi Pad Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.127 Mobile Safari/537.36 XiaoMi/MiuiBrowser/13.25.2.2-gn",]
-ua = ["Mozilla/5.0 (Linux; Android 12; Armor X10 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36",]
-ua = ["Mozilla/5.0 (Linux; Android 12; 2209116AG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 Mobile Safari/537.36 OPR/68.3.3557.65821",]
-ua = ["Mozilla/5.0 (Linux; Android 13; TECNO CK9n Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36[FBAN/EMA;FBLC/en_US;FBAV/361.0.0.12.5;]",]
 ugen2=[]
 ugen=[]
 uas=[] 
