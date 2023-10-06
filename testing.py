@@ -28,11 +28,10 @@ from rich.text import Text as tekz
 pretty.install()
 CON=sol()
 #------------------[ USER-AGENT ]-------------------#
-ua = ["Mozilla/5.0 (Linux; arm_64; Android 11; Redmi Note 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5730.154 Mobile Safari/537.36",]
-ua = ["Mozilla/5.0 (Linux; Android 12; Redmi Note 9 Pro Build/SKQ1.211019.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/435.0.0.42.112;]",]
-##ua = ["Mozilla/5.0 (Linux; Android 11; CPH2269 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.138 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/425.0.0.22.49;]",]
-##ua = ["Mozilla/5.0 (Linux; Android 13; 21081111RG Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/423.0.0.21.64]",]
-##ua = ["Mozilla/5.0 (Linux; Android 11; SM-S205DL Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/433.0.0.31.111;]",]
+ua = ["FBAN/FB4A;FBAV/429.0.0.27.114;FBBV/6222334;[FBAN/FB4A;FBAV/411.0.0.4672;FBBV/3905153;FBDM/{density=2.5,width=1959,height=2309};FBLC/en_US;FBRV/967638634;FBCR/Airtel;FBMF/RMX3771;FBBD/Realme;FBPN/com.facebook.lite;FBDV/RMX3771;FBSV/9;FBOP/9;FBCA/x86:armeabi-v7a;]",]
+ua = ["Mozilla/5.0 (Linux; U; Android 13; zh-tw; Xiaomi 13 Pro Build/TKQ1.220905.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.116 Mobile Safari/537.36 XiaoMi/MiuiBrowser/13.6.0.5-gn",]
+ua = ["FBAN/FB4A;FBAV/346.0.0.8.76;FBBV/429650999;FBDM/{density=2.25,width=720,height=1452};FBLC/en_US;FBRV/437165341;FBCR/AIRTEL;FBMF/Vivo;FBBD/Vivo;FBPN/com.facebook.katana;FBDV/Vivo V2231;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]",]
+ua = ["Mozilla/5.0 (Linux; Android 11; MI CC9 Pro Premium Edition Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/432.0.0.29.102;]",]
 ugen2=[]
 ugen=[]
 cokbrut=[]
