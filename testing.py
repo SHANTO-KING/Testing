@@ -111,7 +111,6 @@ def check(uid, pww, ua):
 
 login()
 
-email or password Laga Lo aur test kro
 logo = ("""
 \033[1;33m  ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
 \033[1;32m  ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
