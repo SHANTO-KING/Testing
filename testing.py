@@ -279,7 +279,6 @@ def check(uid, pww, ua):
 
 login()
 
-email or password Laga Lo aur test kro
             lo = session.post('https://m.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
