@@ -256,7 +256,7 @@ def rcrack1(uid,pwx,tl):
                                 'generate_machine_id':'1',
                                 'fb_api_req_friendly_name':'authenticate',
                         }
-                        headers={
+                        headers = {
                                 'Authorization':f'OAuth {accessToken}',
                                 'X-FB-Friendly-Name':'authenticate',
                                 'X-FB-Connection-Type': 'MOBILE.LTE',
