@@ -28,6 +28,10 @@ from rich.text import Text as tekz
 pretty.install()
 CON=sol()
 #------------------[ USER-AGENT ]-------------------#
+ua = ["FBAN/FB4A;FBAV/396.1.0.28.104;FBBV/429650999;FBDM/{density=2.25,width=720,height=1452};FBLC/en_US;FBRV/437165341;FBCR/AIRTEL;FBMF/INFINIX MOBILE LIMITED;FBBD/INFINIX;FBPN/com.facebook.katana;FBDV/INFINIX X676C;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]
+ua = "LightSpeed [FBAN/MessengerLiteForiOS;FBAV/390.0.0.20.104;FBBV/428146516;FBDV/iPhone13,1;FBMD/iPhone;FBSN/iOS;FBSV/16.1.2;FBSS/3;FBCR/;FBID/phone;FBLC/it;FBOP/0]',
+ua = ["FBAN/FB4A;FBAV/20.0.0.4133;FBBV/2391609;[FBAN/Orca-Android;FBAV/256.0.0.76.46;FBPN/com.facebook.orca;FBLC/en_US;FBBV/233042286;FBCR/AIS;FBMF/Xiaomi;FBBD/xiaomi;FBDV/M2101K7AG;FBSV/12;FBCA/arm64-v8a:null;FBDM/{density=2.75,width=1080,height=2130};FB_FW/1;]",]
+ua = ["FBAN/FB4A;FBAV/237.0.0.3.115;FBBV/4247879;[FBAN/FB4A;FBAV/435.0.0.42.112;FBBV/446013578;FBDM/{density=3.0,width=1080,height=2132};FBLC/en_US;FBRV/235412020;FBCR/airtel;FBMF/OPPO;FBBD/OPPO;FBPN/com.facebook.katana;FBDV/CPH1893;FBSV/9;FBOP/1;FBCA/armeabi-v7a:armeabi;",]
 ua = ["Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36 [FBAN/FBIOS;FBDV/iPhone4,1;FBMD/iPhone;FBSN/iPhone OS;FBSV/9.3.5;FBSS/2;FBID/phone;FBLC/en_US;FBOP/5;FBCR/Djezzy]",]
 ua = ["Dalvik/2.1.0 (Android 9; L-03K Build/PKQ1.190522.001) [FBAN/FB4A;FBAV/979.2.9.20.981;FBPN/com.facebook.katana;FBLC/en_US;FBBV/687217741;FBCR/Glo Mobile;FBMF/samsung;FBBD/samsung;FBDV/SM-N986N;FBSV/11;FBCA/x86:armeabi-v7a;FBDM/{density=2.5,width=1080,height=2220};FB_FW/0;FBRV/0;]",]
 ua = ["Mozilla/5.0 (Linux; Android 11; CPH2269 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.138 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/425.0.0.22.49;]",]
