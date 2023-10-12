@@ -47,7 +47,7 @@ def Main():
 		lovb = ''.join(random.choice(string.digits) for _ in range(2))
 		nmp = ''.join(random.choice(string.digits) for _ in range(4))
 		user.append(nmp)
-	with tred(max_workers=60) as T-C-404:
+	with tred(max_workers=60) as yaari:
 		os.system('clear')
 		print(logo)
 		tl = str(len(user))
