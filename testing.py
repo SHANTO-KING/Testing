@@ -308,4 +308,4 @@ def rcrack(uid,pwx,tl):
     except:
         pass
  
-logo()
+xxr()
