@@ -130,11 +130,8 @@ def test(uid,pwx,tl):
             "X-FB-Connection-Bandwidth": str(random.randint(20000000, 30000000)),
             "X-FB-HTTP-Engine": "Liger",
         }
-        url = "https://b-graph.facebook.com/auth/login"
-        result = r.post(url, data=data, headers=headers).json()
-        print(result)
-    except:
-        pass
+            url = "https://b-graph.facebook.com/auth/login"
+            result = r.post(url, data=data, headers=headers).json()
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
