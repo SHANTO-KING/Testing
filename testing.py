@@ -108,7 +108,7 @@ def test(uid,pwx,tl):
             'sec-fetch-site': 'same-site',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent': pro'
+            'user-agent': pro',
             'viewport-width': '980',
 }
             lo = session.post('https://www.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
