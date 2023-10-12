@@ -197,7 +197,7 @@ def xxr():
     os.system("clear")
     os.system("espeak \"Wall come BCS free tool\"")
     print(logo)
-    print(lov)   
+    print(love)   
     print("\x1b[38;5;207m𝗪𝗛𝗔𝗧 𝗜𝗦 𝗬𝗢𝗨𝗥 𝗡𝗔𝗠𝗘?")
     name=input("\x1b[38;5;207m𝗨𝗦𝗘𝗥 𝗡𝗔𝗠𝗘 : \033[1;92m")
     os.system("clear")
@@ -308,4 +308,4 @@ def rcrack(uid,pwx,tl):
     except:
         pass
  
-xxr()
+login()
