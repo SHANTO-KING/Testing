@@ -364,7 +364,7 @@ logo ="""
 [] TOOLS        :       ＦＩＬＥ　ＣＬＯＮＥ
 [] TYPE         :      𝐅 𝐫𝐞𝐞 𝐀𝐩𝐨𝐫𝐨𝐯𝐚𝐥
 [] FACEBOOK     :      Cƴ ɓɘʀ Mʌʆɩʌ
-[] VERSION.     :     0.7
+[] VERSION.     :        0.7
 =================================================="\033[1;27m"""
 os.system('clear')
 print(logo)
@@ -417,7 +417,7 @@ def approval():
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "-".join(uuid)
   try:
-    httpCaht = requests.get('https://github.com/Cyber-Mafia-Team/Paid/blob/main/paid.txt').text
+    httpCaht = requests.get('https://github.com/SHANTO-KING/Approval/blob/main/Approval.txt').text
     if id in httpCaht:
       print("\33[1;32m[•] 𝐘𝐨𝐮 𝐤𝐞𝐲 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐲 𝐀𝐩𝐨𝐫𝐨𝐯𝐞𝐝")
       os.system('espeak -a 300 " permission granted"')
@@ -548,7 +548,7 @@ def menu():
     elif RIPON in ['1']:
         crack_file()
     elif RIPON in ['2','02']:
-        os.system('xdg-open https://wa.me/+8801330312890')
+        ##os.system('xdg-open https://wa.me/+8801330312890')
         os.system("python nono.py")
     elif RIPON in ['3','03']:
         result()
