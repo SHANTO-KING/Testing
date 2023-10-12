@@ -613,7 +613,7 @@ def Filex():
 def convert(cookie):
     cookies = {"cookie":cookie}
     res = requests.Session().get('https://m.facebook.com/login/device-based/password/?uid=100075753536897&flow=login_no_pin&refsrc=deprecated&_rdr') headers = {
-        'user-agent'     :     ['FBAN/FB4A;FBAV/20.0.0.4133;FBBV/2391609;[FBAN/Orca-Android;FBAV/256.0.0.76.46;FBPN/com.facebook.orca;FBLC/en_US;FBBV/233042286;FBCR/Airtel;FBMF/Xiaomi;FBBD/xiaomi;FBDV/M2101K7AG;FBSV/12;FBCA/arm64-v8a:null;FBDM/{density=2.75,width=1080,height=2130};FB_FW/1;]
+        'user-agent'     :     'Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36',
         'referer'     :     'https://m.facebook.com/',
         'host'     :     'mbasic.facebook.com',
         'origin'     :     'https://m.facebook.com',
