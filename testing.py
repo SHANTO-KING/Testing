@@ -84,9 +84,6 @@ def Main():
 		print('<> CRACK STARTED....... ')
 		print(50*'━')
 		for guru in user:
-import os, uuid, random
-import requests as r
-
 def login():
     os.system("clear")
     print("\033[1;37m")
