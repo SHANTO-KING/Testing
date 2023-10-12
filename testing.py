@@ -303,9 +303,15 @@ def rcrack(uid,pwx,tl):
                 print('\033[1;93m\033[0;34mIN-2F '+uid+' • '+ps+'  \033[0;97m')
                 break
             else:
-                continue
-        loop+=1
-    except:
-        pass
-        
-Main()
+				continue
+		except requests.exceptions.ConnectionError:
+			time.sleep(31)
+	loop+=1
+	#----------------------------------------------#
+if __name__=='__main__':
+	try:os.system('git pull')
+	except:pass
+	try:os.system('touch prox.txt')
+	except:pass
+	
+login()
