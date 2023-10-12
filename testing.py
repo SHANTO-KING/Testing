@@ -66,7 +66,7 @@ def Main():
 		os.system('clear')
 		print(logo)
 		tl = str(len(user))
-		print('<> CHOICE CODE : '+love)
+		print('<> CHOICE CODE : '+kode)
 		print('<> TOTAL ID   :  '+tl)
 		print('<> CRACK STARTED....... ')
 		print(50*'━')
