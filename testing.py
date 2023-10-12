@@ -27,11 +27,11 @@ from rich.text import Text as tekz
 pretty.install()
 CON=sol()
 #------------------[ USER-AGENT ]-------------------#
-ua = ["FBAN/FB4A;FBAV/323.0.0.46.119;FBBV/298672900;FBDM/{density=3.1,width=1080,height=1958};FBLC/ru_RU;FBRV/0;FBCR/YOTA;FBMF/LENOVO;FBBD/Lenovo;FBPN/com.facebook.katana;FBDV/Lenovo Z90a40;FBSV/6.0.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]",]
+ua = ["Mozilla/5.0 (iPhone; CPU iPhone OS 11_2_5 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Mobile/15D60 [FBAN/FBPageAdmin;FBAV/106.0;FBBV/115375790;FBDV/iPhone9,3;FBMD/iPhone;FBSN/iOS;FBSV/11.2.5;FBSS/2;FBCR/NOS;FBID/phone;FBLC/pt_PT;FBOP/5;FBRV/0]",]
 ua = ["FBAN/FB4A;FBAV/20.0.0.4133;FBBV/2391609;[FBAN/Orca-Android;FBAV/256.0.0.76.46;FBPN/com.facebook.orca;FBLC/en_US;FBBV/233042286;FBCR/Airtel;FBMF/Xiaomi;FBBD/xiaomi;FBDV/M2101K7AG;FBSV/12;FBCA/arm64-v8a:null;FBDM/{density=2.75,width=1080,height=2130};FB_FW/1;]",]
-ua = ["FBAN/FB4A;FBAV/237.0.0.3.115;FBBV/4247879;[FBAN/FB4A;FBAV/435.0.0.42.112;FBBV/446013578;FBDM/{density=3.0,width=1080,height=2132};FBLC/en_US;FBRV/235412020;FBCR/airtel;FBMF/OPPO;FBBD/OPPO;FBPN/com.facebook.katana;FBDV/CPH1893;FBSV/9;FBOP/1;FBCA/armeabi-v7a:armeabi;",]
-ua = "Mozilla/5.0 (iPhone; CPU iPhone OS 11_2_5 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Mobile/15D60 [FBAN/FBPageAdmin;FBAV/106.0;FBBV/115375790;FBDV/iPhone9,3;FBMD/iPhone;FBSN/iOS;FBSV/11.2.5;FBSS/2;FBCR/NOS;FBID/phone;FBLC/pt_PT;FBOP/5;FBRV/0]'
-ua = ["FBAN/FB4A;FBAV/115.60.56.67;FBBV/18022847;FBDM/{density=1.0,width=1100,height=1342};FBLC/en_US;FBRV/69280589;FBCR/null;FBMF/lge;FBBD/lge;FBPN/com.facebook.katana;FBDV/LGE;FBSV/9.8;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
+ua = ["FBAN/FB4A;FBAV/115.60.56.67;FBBV/18022847;FBDM/{density=1.0,width=1100,height=1342};FBLC/en_US;FBRV/69280589;FBCR/null;FBMF/lge;FBBD/lge;FBPN/com.facebook.katana;FBDV/LGE;FBSV/9.8;FBOP/1;FBCA/armeabi-v7a:armeabi;]",]
+##ua = ''Mozilla/5.0 (iPhone; CPU iPhone OS 11_2_5 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Mobile/15D60 [FBAN/FBPageAdmin;FBAV/106.0;FBBV/115375790;FBDV/iPhone9,3;FBMD/iPhone;FBSN/iOS;FBSV/11.2.5;FBSS/2;FBCR/NOS;FBID/phone;FBLC/pt_PT;FBOP/5;FBRV/0]'',
+##ua = [''FBAN/FB4A;FBAV/115.60.56.67;FBBV/18022847;FBDM/{density=1.0,width=1100,height=1342};FBLC/en_US;FBRV/69280589;FBCR/null;FBMF/lge;FBBD/lge;FBPN/com.facebook.katana;FBDV/LGE;FBSV/9.8;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
 ##ua = 'Mozilla/5.0 (Linux; Android 9; STK-LX1 Build/HUAWEISTK-LX1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.101 Mobile Safari/537.36 YaApp_Android/10.91 YaSearchBrowser/10.91'
 ##ua = ["Mozilla/5.0 (Linux; Android 13; TECNO CK9n Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128 Mobile Safari/537.36[FBAN/EMA;FBLC/en_US;FBAV/361.0.0.12.5;]",]
 ugen2=[]
