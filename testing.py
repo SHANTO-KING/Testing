@@ -83,7 +83,6 @@ def Main():
 		print('<> TOTAL ID   :  '+tl)
 		print('<> CRACK STARTED....... ')
 		print(50*'━')
-		for guru in user:
 def login():
     os.system("clear")
     print("\033[1;37m")
