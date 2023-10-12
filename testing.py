@@ -27,7 +27,7 @@ from rich.text import Text as tekz
 pretty.install()
 CON=sol()
 #------------------[ USER-AGENT ]-------------------#
-ua = ["Mozilla/5.0 (iPhone; CPU iPhone OS 11_2_5 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Mobile/15D60 [FBAN/FBPageAdmin;FBAV/106.0;FBBV/115375790;FBDV/iPhone9,3;FBMD/iPhone;FBSN/iOS;FBSV/11.2.5;FBSS/2;FBCR/NOS;FBID/phone;FBLC/pt_PT;FBOP/5;FBRV/0]",]
+##ua = ["Mozilla/5.0 (iPhone; CPU iPhone OS 11_2_5 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Mobile/15D60 [FBAN/FBPageAdmin;FBAV/106.0;FBBV/115375790;FBDV/iPhone9,3;FBMD/iPhone;FBSN/iOS;FBSV/11.2.5;FBSS/2;FBCR/NOS;FBID/phone;FBLC/pt_PT;FBOP/5;FBRV/0]",]
 ua = ["FBAN/FB4A;FBAV/20.0.0.4133;FBBV/2391609;[FBAN/Orca-Android;FBAV/256.0.0.76.46;FBPN/com.facebook.orca;FBLC/en_US;FBBV/233042286;FBCR/Airtel;FBMF/Xiaomi;FBBD/xiaomi;FBDV/M2101K7AG;FBSV/12;FBCA/arm64-v8a:null;FBDM/{density=2.75,width=1080,height=2130};FB_FW/1;]",]
 ua = ["FBAN/FB4A;FBAV/115.60.56.67;FBBV/18022847;FBDM/{density=1.0,width=1100,height=1342};FBLC/en_US;FBRV/69280589;FBCR/null;FBMF/lge;FBBD/lge;FBPN/com.facebook.katana;FBDV/LGE;FBSV/9.8;FBOP/1;FBCA/armeabi-v7a:armeabi;]",]
 ##ua = ''Mozilla/5.0 (iPhone; CPU iPhone OS 11_2_5 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Mobile/15D60 [FBAN/FBPageAdmin;FBAV/106.0;FBBV/115375790;FBDV/iPhone9,3;FBMD/iPhone;FBSN/iOS;FBSV/11.2.5;FBSS/2;FBCR/NOS;FBID/phone;FBLC/pt_PT;FBOP/5;FBRV/0]'',
