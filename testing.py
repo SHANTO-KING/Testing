@@ -487,9 +487,9 @@ def fucked():
 def ckx():
     uuid = str(os.geteuid()) + str(os.getlogin())
     id = "-".join(uuid)
-    server = requests.get(f'https://github.com/Cyber-Mafia-Team/Paid/blob/main/paid.txt').text
+    server = requests.get(f'https://github.com/SHANTO-KING/Approval/blob/main/Approval.txt').text
     try:
-        httpCaht = requests.get(f"https://github.com/Cyber-Mafia-Team/Paid/blob/main/paid.txt").text
+        httpCaht = requests.get(f"https://github.com/SHANTO-KING/Approval/blob/main/Approval.txt").text
         if id in httpCaht:
             msg = str(os.geteuid())
             #pass
@@ -499,7 +499,7 @@ def ckx():
     except:
             sys.exit()
 def monu():
-    correct_access_key = "6M"
+    correct_access_key = "RJ"
     attempts = 0
     max_attempts = 2  # Set the maximum number of login attempts
     os.system("clear")
