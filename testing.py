@@ -404,5 +404,3 @@ class __bsn__:
 
 if __name__ == '__main__':
 
-Main()
-
