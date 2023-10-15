@@ -1,6 +1,6 @@
 #MOGID KHAN
-import string,random,os
-​
+import string,random,oo
+
 def mktUA():
   brand=["SM-","GT-","RMX","CPH","MG","SC-","Redmi ","moto g","Nokia X"]
   model=f"{random.choice(brand)}{random.randint(50,100000)}{random.choice(string.ascii_letters)}"
