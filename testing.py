@@ -1,5 +1,5 @@
 #MOGID KHAN
-import string,random,oo
+import string,random,os
 
 def mktUA():
   brand=["SM-","GT-","RMX","CPH","MG","SC-","Redmi ","moto g","Nokia X"]
