@@ -80,8 +80,8 @@ import requests as r
 def login():
     os.system("clear")
     print("\033[1;37m")
-            uid = code
-            pwx = [love,uid]
+            uid = kode+guru
+			pwx = [guru,kode+guru]
     ua = "[FBAN/Orca-Android;FBAV/5.0.0.16.1;FBLC/tr_TR;FBBV/2302400;FBCR/ T-Mobile;FBMF/samsung;FBBD/samsung;FBDV/GT-I9300;FBSV/4.0.4;FBCA/armeabi-v7a:armeabi;FBDM/{density=1.0,width=1066,height=552};]"
     check(uid, pww, ua)
 
