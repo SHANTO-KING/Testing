@@ -193,7 +193,7 @@ for xd in range(10000):
 
 def samiya(uid):
     if len(uid)==15:l
-        elif uid[:10] in ['1000000000']       :shanto = ' (*-*) 2009'
+        elif uid[:10] in ['1000000000']       :shanto = ' √ 2009'
         elif uid[:9] in ['100000000']       :shanto = '√ 2009'
         elif uid[:8] in ['10000000']        :shanto = '√ 2009'
         elif uid[:7] in ['1000000','1000001','1000002','1000003','1000004','1000005']:shanto = '√ 2009'
