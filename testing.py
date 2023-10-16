@@ -306,7 +306,7 @@ def rcrack(uid,pwx,tl):
                 if 'LOCK' in res:
                     return 'LOCK'
                 else:
-                print("\r\33[1;36m[RJ-404-CP] {uid} ¤ {ps}")
+                print('\r\r\33[1;36m[RJ-404-CP] {uid} ¤ {ps}")
                 open('/sdcard/HASAN-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(cid)
                 break
