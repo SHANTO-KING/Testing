@@ -307,7 +307,7 @@ def rcrack(uid,pwx,tl):
                     return 'LOCK'
                 else:
                 ##print('\r\r\33[1;31m [HASAN-CP💔] ' +uid+ ' | ' +ps+           '  \33[0;97m')
-                open('/sdcard/HASAN-CP.txt', 'a').write( uid+' | '+ps+' \n')
+                ##open('/sdcard/HASAN-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(cid)
                 break
             else:
