@@ -306,7 +306,7 @@ def rcrack(uid,pwx,tl):
                 if 'LOCK' in res:
                     return 'LOCK'
                 else:
-                print(f'\r\033[0;94m[{time.strftime("%H:%M")}SHANTO-Cp] {idf}  {pw}\n\033[0;93')
+                print(f"\r\33[1;36m[RJ-404-CP] {uid} ¤ {ps}")
                 open('/sdcard/HASAN-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(cid)
                 break
