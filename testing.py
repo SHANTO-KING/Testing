@@ -244,7 +244,7 @@ class __xxx__:
             print('\033[1;37m Cracking Started...')
             print(47*"-")
             with tred(max_workers=30) as pool:
-		for yuzong in id2:
+		for zsb in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
 			frs = nmf.split(' ')[0]
 			pwv = []
