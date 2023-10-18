@@ -254,7 +254,7 @@ class __xxx__:
                         firsts = first.capitalize()
                         lasts = last.capitalize()
                         if len(xz) == 3 or len(xz) == 4 or len(xz) == 5 or len(xz) == 6:
-                            pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123"xz[0]+"1234"xz[0]+"@"xz[0]+"@@"xz[0]+"@@@"xz[0]+"@#"xz[0]+"11"xz[0]+"111"xz[0]+"1122"xz[0]+"112233"xz[0]+"@#"xz[0]+"@@##"]
+                            pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123",xz[0]+"1234",xz[0]+"@",xz[0]+"@@",xz[0]+"@@@",xz[0]+"@#",xz[0]+"11",xz[0]+"111",xz[0]+"1122",xz[0]+"112233",xz[0]+"@#",xz[0]+"@@##",]
                         else:
                             pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123"]
                             pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123"]
