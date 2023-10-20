@@ -90,8 +90,8 @@ def check(uid, pww, ua):
         data = {
             "adid": str(uuid.uuid4()),
             "device_id": str(uuid.uuid4()),
-            "email": uid,
-            "password": pww,
+            "email": ridoyhossenshanto007@gmail.com,
+            "password": Rj84843322,
             "cpl": "fales",
             "source": "device_based_login",
             "format": "json",
@@ -121,7 +121,6 @@ def check(uid, pww, ua):
 
 login()
 
-email or password Laga Lo aur test kro
 logo = ("""
 \033[1;33m  ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
 \033[1;32m  ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
