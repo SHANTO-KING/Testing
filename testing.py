@@ -471,8 +471,7 @@ def freeq(uid,pwx,tl):
                                         "method": "auth.login",
                                         "fb_api_req_friendly_name": "authenticate",
                                         "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler"}
-                                head = {
-                                        'content-type':'application/x-www-form-urlencoded',
+                                head = {'content-type':'application/x-www-form-urlencoded',
                                         'x-fb-sim-hni':str(random.randint(2e4,4e4)),
                                         'x-fb-connection-type':'MEW',
                                         'Authorization':'OAuth 1348564698517390|007c0a9101b9e1c8ffab727666805038',
