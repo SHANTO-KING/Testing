@@ -11,7 +11,7 @@ import os,zlib
 from os import system as osRUB
 from os import system as cmd
 os.system('clear')
-print('Inastall Files...\n')
+print('Welcome to RJ tools...\n')
 
 
 
