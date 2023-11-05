@@ -78,7 +78,7 @@ for xd in range(1000):
 	ugen.append(uaku2)
 for x in range(10):
 	aa = 'Mozilla/5.0 (Linux; Android 13; TECNO CK9n Build/TP1A.220624.014; wv)'
-    b = random.choice(['6', '7', '8', '9', '10', '11', '12'])
+    b =random.choice(['6', '7', '8', '9', '10', '11', '12'])
     c = 'Android 13; TECNO CK9n Build/'
     d = random.choice(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
     e = random.randint(1, 999)
