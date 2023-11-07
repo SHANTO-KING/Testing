@@ -91,23 +91,21 @@ def result(OKs,cps):
         menu()
 #<----[banner]------>
 logo=(f"""
-\033[1;33m  ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
-\033[1;32m  ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
-\033[1;36m  ░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█
-                                                 
-\033[1;91m\033[1;41m\033[1;97m              WELCOME TO SHANTO TOOLS               \033[;0m\033[1;91m\033[1;92m
+\033[1;97m  ░█▀▀▀█ ░█─░█ ─█▀▀█ ░█▄─░█ ▀▀█▀▀ ░█▀▀▀█ 
+\033[1;97m  ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
+\033[1;97m  ░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█                                               
 ===============================================
   Auther        :  RJ SHANTO
   Facebook      :  SH AN TO 
   TOOLS         :  PRIVATE
-  Version       :  V-4
+  Version       :  V-1
   WhatsApp      :  013108682**
-=============================================== \033[1;31m""")
+=============================================== \033[1;97m""")
 def clear():
 	os.system('clear')
 	print(logo)
 def linex():
-	print('\33[1;37m--------------------------------------------------')
+	print('\033[1;97m--------------------------------------------------')
 #<----[main_menu]------>
 def menu():
 	clear()
@@ -271,7 +269,7 @@ class main_crack():
                     open('/sdcard/SHANTO-OK.txt','a').write(rid+'|'+ps+'|'+cookie+'\n')
                     break
                 elif 'www.facebook.com' in q['error']['message']:
-                     print(f'\r\r\x1b[1;91m [SHANTO-CP] {rid} | {ps}\033[1;97m')
+                     ##print(f'\r\r\x1b[1;91m [SHANTO-CP] {rid} | {ps}\033[1;97m')
                      cps.append(rid)
                      open('/sdcard/SHANTO-CP.txt','a').write(rid+'|'+ps+'\n')
                 else:
@@ -325,7 +323,7 @@ class main_crack():
                     open('/sdcard/SHANTO-OK.txt','a').write(rid+'|'+ps+'\n');open('/sdcard/REFAT_iDs_COOKiES_M1.txt','a').write(rid+'|'+ps+'|'+cookie+'\n')
                     break
                 elif 'www.facebook.com' in q['error']['message']:
-                     print(f'\r\r\x1b[1;91m[SHANTO-CP] {rid} | {ps}\033[1;97m')
+                     ##print(f'\r\r\x1b[1;91m[SHANTO-CP] {rid} | {ps}\033[1;97m')
                      cps.append(rid)
                      open('/sdcard/SHANTO-CP.txt','a').write(rid+'|'+ps+'\n')
                 else:
@@ -395,7 +393,7 @@ class main_crack():
                     open('/sdcard/SHANTO-OK.txt','a').write(rid+'|'+ps+'|'+cookie+'\n')
                     break
                 elif 'www.facebook.com' in q['error']['message']:
-                     print(f'\r\r\x1b[1;91m [SHANTO-CP] {rid} | {ps}\033[1;97m')
+                     ##print(f'\r\r\x1b[1;91m [SHANTO-CP] {rid} | {ps}\033[1;97m')
                      cps.append(rid)
                      open('/sdcard/SHANTO-CP.txt','a').write(rid+'|'+ps+'\n')
                 else:
