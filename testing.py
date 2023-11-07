@@ -78,7 +78,7 @@ def riazfile():
 #<------[userugrnt]----->M1
 def riazfilee():
     END = '[FBAN/FB4A;FBAV/72.0.0.2133;FBBV/6966247;[FBAN/FB4A;FBAV/318.0.0.24.109;FBBV/377639763;FBDM/{density=3.06,width=720,height=1600};FBLC/en_US;FBRV/0;FBCR/Cerillion;FBMF/HUAWEI;FBBD/HUAWEI;FBPN/com.facebook.katana;FBDV/SM-A107F;FBSV/12;FBBK/1;FBOP/1;FBCA/arm64-v8a:;]'
-    ua = random.choice("Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}))
+    ua = random.choice("Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)})) '+END
     return ua
   
 def result(OKs,cps):
