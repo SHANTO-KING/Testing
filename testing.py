@@ -888,4 +888,3 @@ if not os.path.exists("/sdcard/xnxxsunnyleonexkhalifa.txt"):
 else:
         os.system("git pull")
         caseher()'''
-lord_main()
