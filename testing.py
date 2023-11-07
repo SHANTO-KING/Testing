@@ -68,7 +68,7 @@ def randBuildLSB():
     vchrome = str(random.randint(100,925))+".0.0."+str(random.randint(1,8))+"."+str(random.randint(40,150))
     VAPP = random.randint(410000000,499999999)
     END = '[FBAN/FB4A;FBAV/326.0.0.13.97;FBBV/2685664;[FBAN/FB4A;FBAV/439.0.0.44.117;FBBV/446812233;FBDM/{density=3.0,width=1080,height=1920};FBLC/en_GB;FBCR/Telstra Mobile;FBMF/Infinix X5515F;FBBD/Infinix X5515F;FBPN/com.facebook.katana;FBDV/Infinix X5515F;FBSV/4.4.2;FBCA/armeabi-v7a:armeabi;]'
-    ua = (f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/PPR1.random.randint(111111,999999)}.{random.randint(111,999)}) '+END
+    ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
     return ua
 #<------[main-ua]---->M3
 def riazfile():
