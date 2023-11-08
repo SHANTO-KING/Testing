@@ -95,17 +95,17 @@ logo=(f"""
 \033[1;97m  ─▀▀▀▄▄ ░█▀▀█ ░█▄▄█ ░█░█░█ ─░█── ░█──░█ 
 \033[1;97m  ░█▄▄▄█ ░█─░█ ░█─░█ ░█──▀█ ─░█── ░█▄▄▄█                                               
 ===============================================
-  Auther        :  RJ SHANTO
-  Facebook      :  SH AN TO 
-  TOOLS         :  PRIVATE
-  Version       :  V-1
-  WhatsApp      :  013108682**
+  Auther        :->  RJ SHANTO
+  Facebook      :->  SH AN TO 
+  TOOLS         :->  PRIVATE
+  Version       :->  V-1
+  WhatsApp      :->  013108682**
 =============================================== \033[1;97m""")
 def clear():
 	os.system('clear')
 	print(logo)
 def linex():
-	print('\033[1;97m-----------------------------------------------')
+	print('\033[1;97m--------------------------------------------')
 #<----[main_menu]------>
 def menu():
 	clear()
@@ -1613,7 +1613,13 @@ for xd in range(10000):
 	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	ugen.append(uaku2)
 awan =[
-'[FBAN/FB4A;FBAV/72.0.0.2133;FBBV/6966247;[FBAN/FB4A;FBAV/318.0.0.24.109;FBBV/377639763;FBDM/{density=3.06,width=720,height=1600};FBLC/en_US;FBRV/0;FBCR/Cerillion;FBMF/HUAWEI;FBBD/HUAWEI;FBPN/com.facebook.katana;FBDV/SM-A107F;FBSV/12;FBBK/1;FBOP/1;FBCA/arm64-v8a:;]
+'Davik/2.1.0 (Linux; U; Android 8.0.0; SM-G955U Build/R16NW) [FBAN/MessengerLite;FBAV/316.0.0.6.124;FBPN/com.facebook.mlite;FBLC/en_GB;FBBV/961744195;FBCR/Jazz;FBMF/samsung;FBBD/samsung;FBDV/SM-G955U;FBSV/8.0.0;FBCA/arm64-v8a:armeabi-v7a:armeabi;FBDM/{density=2.25,height=2048,width=4096};]'
+'Davik/2.1.0 (Linux; U; Android 8.0.0; SM-G955U Build/R16NW) [FBAN/MessengerLite;FBAV/320.0.0.1.136;FBPN/com.facebook.mlite;FBLC/en_GB;FBBV/331835316;FBCR/Jazz;FBMF/samsung;FBBD/samsung;FBDV/SM-G955U;FBSV/8.0.0;FBCA/arm64-v8a:armeabi-v7a:armeabi;FBDM/{density=2.25,height=2048,width=4096};]'
+'Davik/2.1.0 (Linux; U; Android 8.0.0; SM-G955U Build/R16NW) [FBAN/MessengerLite;FBAV/312.0.0.3.61;FBPN/com.facebook.mlite;FBLC/en_GB;FBBV/920649305;FBCR/Jazz;FBMF/samsung;FBBD/samsung;FBDV/SM-G955U;FBSV/8.0.0;FBCA/arm64-v8a:armeabi-v7a:armeabi;FBDM/{density=2.25,height=2048,width=4096};]'
+'Davik/2.1.0 (Linux; U; Android 8.0.0; SM-G955U Build/R16NW) [FBAN/MessengerLite;FBAV/308.0.0.4.91;FBPN/com.facebook.mlite;FBLC/en_GB;FBBV/554485524;FBCR/Jazz;FBMF/samsung;FBBD/samsung;FBDV/SM-G955U;FBSV/8.0.0;FBCA/arm64-v8a:armeabi-v7a:armeabi;FBDM/{density=2.25,height=2048,width=4096};]'
+'Davik/2.1.0 (Linux; U; Android 8.0.0; SM-G955U Build/R16NW) [FBAN/MessengerLite;FBAV/321.0.0.7.95;FBPN/com.facebook.mlite;FBLC/en_GB;FBBV/118823003;FBCR/Jazz;FBMF/samsung;FBBD/samsung;FBDV/SM-G955U;FBSV/8.0.0;FBCA/arm64-v8a:armeabi-v7a:armeabi;FBDM/{density=2.25,height=2048,width=4096};]'
+'Davik/2.1.0 (Linux; U; Android 8.0.0; SM-G955U Build/R16NW) [FBAN/MessengerLite;FBAV/302.0.0.3.76;FBPN/com.facebook.mlite;FBLC/en_GB;FBBV/267460405;FBCR/Jazz;FBMF/samsung;FBBD/samsung;FBDV/SM-G955U;FBSV/8.0.0;FBCA/arm64-v8a:armeabi-v7a:armeabi;FBDM/{density=2.25,height=2048,width=4096};]'
+'Davik/2.1.0 (Linux; U; Android 8.0.0; SM-G955U Build/R16NW) [FBAN/MessengerLite;FBAV/313.0.0.5.95;FBPN/com.facebook.mlite;FBLC/en_GB;FBBV/582185999;FBCR/Jazz;FBMF/samsung;FBBD/samsung;FBDV/SM-G955U;FBSV/8.0.0;FBCA/arm64-v8a:armeabi-v7a:armeabi;FBDM/{density=2.25,height=2048,width=4096};]']
 loop = 0
 oks = []
 cps = []
