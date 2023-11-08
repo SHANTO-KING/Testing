@@ -301,8 +301,6 @@ def numb():
             pwx.append(uid[:7])#front 7
             pwx.append(uid[:8])#front 8
             pwx.append(uid)# 11
-			pwx.append(@@@@@)
-			pwx.append(@#@#@#)
             feel.submit(need,uid,pwx,fb,tl)
 
 
