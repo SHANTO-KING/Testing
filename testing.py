@@ -869,8 +869,13 @@ def cek_opsi():
 	dah = '# DONE'
 	sol().print(mark(dah, style='green'))
 	exit()
-   
-login()
+
+if __name__=='__main__':
+	try:os.mkdir('CP')
+	except:pass
+	try:os.mkdir('OK')
+	except:pass
+()
 
 
 
