@@ -104,21 +104,38 @@ cv.add("[bold red]Choice Option")
 
 
 ugen=[]
-for x in range(1000):
-    aa='Mozilla/5.0 (Linux; Android 10;'
-    b=random.choice(['7.0','8.1.0','9','10','11','12'])
-    c=random.choice(['Redmi Note 10 Pro'])
-    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    e=random.randrange(1, 999)
-    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    g='AppleWebKit/537.36 (KHTML, like Gecko)'
-    h=random.randrange(80,103)
-    i='0'
-    j=random.randrange(4200,4900)
-    k=random.randrange(40,150)
-    l='Chrome/107.0.0.0 Mobile Safari/537.36'
-    uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-    ugen.append(uaku2)
+for ua in range(12000):
+	a='Mozilla/5.0 (Linux; Android'
+	b=random.choice(['8','9','10','11','12','13','14','15'])
+	y=random.choice(['RMX3572','RMX3395','RMX3396','RMX2117','RMX3161','RMX3121','RMX3125','RMX3041','RMX2200','RMX2111','RMX2111','RMX3560'])
+	c='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	d=random.randrange(40,115)
+	e='0'
+	f=random.randrange(3000,6000)
+	g=random.randrange(20,168)
+	h='Mobile Safari/537.36'
+	rocky=(f"{a} {b}; {y} {c}{d}.{e}.{f}.{g} {h}")
+	ugen.append(rocky)
+	
+for ua in range(10000):
+	a='Mozilla/5.0 (Linux; Android'
+	b=random.choice(['6','7','8','9','10','11','12','13'])
+	c=random.choice(['SM-M546B','SM-N981B','SSM-N981N','SM-N981W','SM-N985F','SM-N900','SM-N9002','LM-Q710(FGN)'])
+	d=') Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+	e=random.randrange(92,115)
+	x='0'
+	f=random.randrange(4200,6000)
+	g=random.randrange(62,199)
+	h='Mobile Safari/537.36'
+	lol=f'{a} {b}; {c}{d}{e}.{x}.{f}.{g} {h}'
+	ugen.append(lol)
+
+ua = [
+"Mozilla/5.0 (Linux; Android 12; RMX2111 Build/SP1A.210812.016; ) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.4638.69 Mobile Safari/537.36 BingSapphire/24.1.410218302",
+"Mozilla/5.0 (Linux; Android 11; RMX2121 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36 GSA/13.7.7.23.arm64",
+"Dalvik/1.6.0 (Linux; U; Android 5; SM-G3518 Build/JLS36C) [FBAN/FB4A;FBAV/251.0.0.31.111;FBPN/com.facebook.katana;FBLC/en_US;FBBV/188827991;FBCR/T-Mobile;FBMF/samsung;FBBD/samsung;FBDV/SM-G3518;FBSV/4.4.2;FBCA/x86:armeabi-v7a;FBDM/{density=1.5,width=720,height=1244};FB_FW/1;FBRV/190301973",
+"Dalvik/2.1.0 (Linux; U; Android 8.0.0; SM-A720F Build/R16NW) [FBAN/Orca-Android;FBAV/196.0.0.29.99;FBPN/com.facebook.orca;FBLC/th_TH;FBBV/135374479;FBCR/AIS;FBMF/samsung;FBBD/samsung;FBDV/SM-A720F;FBSV/8.0.0;FBCA/armeabi-v7a:armeabi;FBDM/{density=3.0,width=1080,height=1920};FB_FW/1",
+]
 
 
 note1="""- __Inbox__ Me for Join `Team Elite`\n- Try tool and **Review**"""
