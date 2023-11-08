@@ -136,6 +136,34 @@ def chk():
     
 chk()
 
+def login_kontol():
+	banner()
+	print("""%s ●▬▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬▬▬● """%(h))
+	print("""%s    \33[1;32mENTER FACEBOOK TOKEN """%(h))
+	print("""%s ●▬▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬▬▬● """%(h))
+	panda = input(x+'\33[1;96m•Token> ')
+	akun=open('.token.txt','w').write(panda)
+	try:
+		tes = requests.get('https://graph.facebook.com/me?access_token='+panda)
+		tes3 = json.loads(tes.text)['name']
+		print("""%s \n"""%(h))
+		print("""%s ●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬● """%(h))
+		jalan('%s╚══[%s✓%s] %s\33[1;96mLOGIN SUCCESSFUL RUN THE TOOLS'%(M,P,M,P))
+		print("""%s ●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬● """%(h))
+		print("""%s \33[1;96mRun the new python apk.py """%(h))
+		time.sleep(2.5)
+		menu(my_name)()
+	except KeyError:
+		print("""%s \n"""%(h))
+		jalan('%s╚══[%s!%s] %sLOGIN FAILED CHECK YOUR CURRENT ACCOUNT'%(M,P,M,P))
+		time.sleep(2.5)
+		login_kontol()
+	except requests.exceptions.ConnectionError:
+		li = '# PROBLEM INTERNET CONNECTION, CHECK AND TRY AGAIN'
+		lo = mark(li, style='yellow')
+		sol().print(lo, style='cyan')
+		exit()
+		
 def menu(my_name):
 	io = '[bold green][01] CLONE FROM PUBLIC\n[02] CLONE FROM PUBLIC (MULTI)\n[03] CHECK CRACK RESULTS\n[04] CHECKPOINT DETECTOR\n[00] LOGOUT[/bold green]'
 	oi = nel(io, style='green')
@@ -841,12 +869,6 @@ def cek_opsi():
 	dah = '# DONE'
 	sol().print(mark(dah, style='green'))
 	exit()
-
-if __name__=='__main__':
-	try:os.mkdir('CP')
-	except:pass
-	try:os.mkdir('OK')
-	except:pass
    
 login()
 
