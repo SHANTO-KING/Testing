@@ -300,7 +300,7 @@ def numb():
             pwx.append(uid[:6])#front 6
             pwx.append(uid[:7])#front 7
             pwx.append(uid[:8])#front 8
-            pwx.append(uid)# 11
+            pwx.append(uid'bangladesh', '@#@#@#', 'i love you', '708090', '405060')# 11
             feel.submit(need,uid,pwx,fb,tl)
 
 
