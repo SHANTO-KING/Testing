@@ -301,21 +301,8 @@ def numb():
             pwx.append(uid[:7])#front 7
             pwx.append(uid[:8])#front 8
             pwx.append(uid)# 11
-            pwx.append('123')
-			pwx.append('1234')
-			pwx.append('12345')
-			pwx.append(nmf)
-			pwx.append('57273200')
-			pwx.append(frs+'@')
-			pwx.append(frs+'@123')
-			pwx.append(frs+'@@')
-			pwx.append(frs+'@@@')
-			pwx.append(frs+'@@@@')
-			pwx.append(frs+'@#')
-			pwx.append(frs+'1122')
-			pwx.append(frs+'12')
-			pwx.append(frs+'11')
-			pwx.append(frs+'111')
+			pwx.append(@@@@@)
+			pwx.append(@#@#@#)
             feel.submit(need,uid,pwx,fb,tl)
 
 
