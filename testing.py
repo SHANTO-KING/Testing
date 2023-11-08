@@ -293,7 +293,7 @@ def numb():
         for i in user:
             uid=code+i
             fb=tsg
-            pwx=[code'bangladesh', '@#@#@#', 'i love you', '708090', '405060']
+            pwx = [love,'khankhan','khan khan','khan123','khan12','khan1122']
             pwx.append(uid[5:])#back 6
             pwx.append(uid[4:])#back 7
             pwx.append(uid[3:])#back 8
