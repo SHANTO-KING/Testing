@@ -70,21 +70,39 @@ for xd in range(1000):
 	l='Mobile/15E148 Safari/605.1'
 	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	ugen.append(uaku2)
-for x in range(10):
-	aa = 'Mozilla/5.0 (Linux; Android 13; TECNO CK9n Build/TP1A.220624.014; wv)'
-    b = random.choice(['6', '7', '8', '9', '10', '11', '12'])
-    c = 'Android 13; TECNO CK9n Build/'
-    d = random.choice(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    e = random.randint(1, 999)
-    f = random.choice(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    g = 'AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.128'
-    h = random.randint(73, 100)
-    i = '0'
-    j = random.randint(4200, 4900)
-    k = random.randint(40, 150)
-    l = 'Mobile Safari/537.36 [FBAN/EMA;FBLC/en_US;FBAV/361.0.0.12.5;]'
-    fullagnt = f'{aa} {b}; {c}{d}{e}{f}) {g} Mobile Safari/537.36 [FBAN/EMA;FBLC/en_US;FBAV/361.0.0.12.5;]'
-    print(fullagnt)
+
+ugen = []
+for agent in range(random.randint(89999, 100000)):
+    a='Mozilla/5.0 (iPod/'
+    aa=random.choice(['7.1','8.0','9.2','10.3','11.4','12.5','13.2','14.7','15.1','16.0'])
+    a1='; CPU iPhone OS'
+    b=random.choice(['3_1','3_2','3_3','16_5','13_4','3_0','4_0','15_0','11_0','12_1','13_3','14_2'])
+    n='like Mac OS X)'
+    c=random.randrange(7,12)
+    m='en-us; GT-'
+    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    e=random.randrange(100,999)
+    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    g='AppleWebKit/'
+    o=random.randrange(533,605)
+    p='1'
+    q=random.randrange(10,99)
+    r='(KHTML, like Gecko) Chrome/'
+    h=random.randrange(10,99)
+    i='0'
+    j=random.randrange(1000,9999)
+    k=random.randrange(10,99)
+    l='GSA/'
+    ll=random.randrange(155,159)
+    l1=random.randrange(1,9)
+    l2=random.randrange(111111111,999999999)
+    l3='Mobile/'
+    l4=random.choice(['18C79','18B92','18A374','17D47','16E23','15F91','14G60','13H15','12I82','11J33','10K04','09L78'])
+    l5='Safari/'
+    s=random.randrange(535,605)
+    t=random.randrange(1,9)
+    fullagent=f'{a}{aa}{a1} {b} {n} {c};  {m}{d}{e}{f}) {g}{o}.{p}.{q} {r}{h}.{i}.{j}.{k} {l}{ll}.{l1}.{l2} {l3}{l4} {l5}{s}.{t}'
+    ugen.append(fullagent)
  
 def uaku():
 	try:
