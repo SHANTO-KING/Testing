@@ -172,7 +172,7 @@ logo=(f"""\x1b[1;97m
  Github    : BANTUBD
  Facebook  : SADIK KHAN
  Tool Name : \033[1;36m𝗙 𝗢 𝗙\033[1;37m
- Tool Type : \033[1;31mTRIAL\033[1;37m
+ Tool Type : \033[1;31mPRAIVET\033[1;37m
  Version   : \033[1;36m2.6\033[1;37m
 \033[1;31m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\033[1;37m
 """)
