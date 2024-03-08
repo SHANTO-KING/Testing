@@ -412,7 +412,7 @@ def passwrd():
 	os.system('clear')
 	banner()
 	print('\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mTOTAL IDz :\033[0;97m '+str(len(id)))
-	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;94mYOUR OK IDz SAVED • /sdcard/SHANTO•Ok💚.txt
+	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mYOUR OK IDz SAVED • /sdcard/SHANTO•Ok💚.txt
 	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;95mCloning Speed Super Fast")
 	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mTURN ON/OFF FLIGHT MODE IN EVERY 5 MIN")
 	SHANTOj(f'\033[0;97m===============================================')
